@@ -36,9 +36,9 @@ Before we get too far into the storage and processing of information, we need to
 
 Inside of all computers are a bunch of wires and circuits that carry all of the information needed to receive input, store information, process, and output results.  Wires carry electricity which is either flowing, or not flowing.  The electricity is either on or off.  So, the state of this wire can represent any data that has only two options: on/off, yes/no, true/false, 1/0.  This single wire is called a **bit** (its just a little bit of information...).  This one wire can only have two possible pieces of information - 1 or 0.  How do we store more information?  With more wires!
 
-1 Wire: 1 or 0
-2 Wires: 0|0 or 1|0 or 0|1 or 1|1
-3 Wires: 0|0|0 or 0|0|1 or 0|1|0 or 0|1|1 or 1|0|0 or 1|0|1 or 1|1|0 or 1|1|1
+1 Wire: 1 or 0  
+2 Wires: 0|0 or 1|0 or 0|1 or 1|1  
+3 Wires: 0|0|0 or 0|0|1 or 0|1|0 or 0|1|1 or 1|0|0 or 1|0|1 or 1|1|0 or 1|1|1  
 More bits, more combinations!
 
 These combinations of binary values can be translated into all kinds of data!

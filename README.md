@@ -2,9 +2,9 @@
 
 ## Mod 1
 ### Week 1
-* 🎒[Intro to Programming (How Computers Work)](./lessons/introToProgramming.md)
+* 🎒[Intro to Programming (How Computers Work)](./lessons/mod1/introToProgramming.md)
 * 💡⬆️ Lab/Excercise
-* 🎒[Datatypes & Variables](./lessons/datatypesAndVariables.md)
+* 🎒[Datatypes & Variables](./lessons/mod1/datatypesAndVariables.md)
 * 💡⬆️ Lab/Excercise
 * 🎒Conditional Logic
 * 💡⬆️ Lab/Excercise

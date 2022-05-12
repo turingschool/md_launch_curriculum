@@ -23,6 +23,7 @@ With a partner, group the following items into two or more categories (you get t
 
 # Variables
 
+One of the most important concepts in programming is assigning information to a variable.  Let's take a look at [this replit project]() to get a better understanding.
 
 
 # Datatypes
@@ -46,15 +47,15 @@ With a partner, group the following items into two or more categories (you get t
 # Check for Understanding
 
 - Group the following items into each of their C# datatype (are there any that could be classified as more than one type?)
-> * horse
-> * 3
-> * run
-> * jump
-> * fourteen
-> * dog
-> * true
-> * rock
-> * apple
-> * 525600
-> * nothingness
-> * 3.14
+    > * horse
+    > * 3
+    > * run
+    > * jump
+    > * fourteen
+    > * dog
+    > * true
+    > * rock
+    > * apple
+    > * 525600
+    > * nothingness
+    > * 3.14

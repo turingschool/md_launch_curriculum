@@ -18,7 +18,9 @@ There are many objects that we interact with every day that are computers - lapt
 1. Process
 1. Output
 
-All computers have some mechnism for taking input, storing that input as data, process the data, and output the results.
+![Diagram of the four tasks of a comptuer](/images/Mod1/IntroToProgramming/ComputerTasks.png)
+
+All computers have some mechnism for taking input, storing that input as data, process the data, and outputting the results.
 
 > With a partner, discuss the input and output of one or more of the devices you indentified during the warm up.
 
@@ -32,9 +34,13 @@ Just like input, the output for different computers will be specific to the type
 
 ## Binary Data
 
-Before we get too far into the storage and processing of information, we need to take a moment to understand how the machinery of a computer works.  You may have heard that all computers work on 'ones and zeros' - this is true, but what does it mean?
+Before we get too far into the storage and processing of information, we need to take a moment to understand how the machinery that makes a computer work.  You may have heard that all computers work on 'ones and zeros' - this is true, but what does it mean?
 
-Inside of all computers are a bunch of wires and circuits that carry all of the information needed to receive input, store information, process, and output results.  Wires carry electricity which is either flowing, or not flowing.  The electricity is either on or off.  So, the state of this wire can represent any data that has only two options: on/off, yes/no, true/false, 1/0.  This single wire is called a **bit** (its just a little bit of information...).  This one wire can only have two possible pieces of information - 1 or 0.  How do we store more information?  With more wires!
+Inside of all computers are a bunch of wires and circuits that carry all of the information needed to receive input, store information, process, and output results.  Wires carry electricity which is either flowing, or not flowing.  Circuits can change the state of a wire. 
+
+![Diagram of a NOT circuit](/images/Mod1/IntroToProgramming/WireAndCircuit.png)
+
+The electricity is either on or off.  So, the state of this wire can represent any data that has only two options: on/off, yes/no, true/false, 1/0.  This single wire is called a **bit** (its just a little bit of information...).  This one wire can only have two possible pieces of information - 1 or 0.  How do we store more information?  With more wires!
 
 1 Wire: 1 or 0  
 2 Wires: 0|0 or 1|0 or 0|1 or 1|1  
@@ -43,9 +49,23 @@ More bits, more combinations!
 
 These combinations of binary values can be translated into all kinds of data!
 
-To learn more, let's check out [this video](https://www.youtube.com/watch?v=ewokFOSxabs)
+To learn more, let's check out this video:
 
-Fortunately, we no longer have to give input to computers in binary - we now use pre-built programs that take instructions and those instructions get translated for the computer.
+[![Link to 'How Computers Work' YouTube Video](/images/Mod1/IntroToProgramming/HowComputersWorkYouTube.png)](https://www.youtube.com/watch?v=ewokFOSxabs)
+
+## Storage and Processing
+
+The storage and processing of information works on many of these wires and circuits, typically organized into specialized circuit boards.  Some circuit boards are for storage, others for adding numbers, others for creating images, and all of the other things that computers can do.  For a computer like a laptop that has to perform many different tasks, we need a very specialized circuit board called a **CPU (Central Processing Unit)**.  The CPU is responsible for giving instructions to different circuits to perform a more complex task.
+
+All these wires and circuits are referred to as **hardware**.  They are the physical tools that make up your computer.
+
+> Discuss with a partner: Based on what you know so far, what happens to the hardware of a computer when you download an app to your phone or computer?  Does downloading that app change your device?
+
+When we download a new program or application, we are not changing the physical characteristics of our computer; but we *are* adding information and instructions.  These added programs are referred to as **software**, and they give specific instructions to the CPUs through an **Operating System (OS)**.  CPUs understand **machine language**; it is the job of an OS to translate instructions so that the CPUs can complete the correct tasks, in the correct order. 
+
+![Diagram of Operating System Interaction](/images/Mod1/IntroToProgramming/OSLayer.png)
+
+Thanks to the separation from software to the wires and circuits at the lowest level of computing, we no longer have to write programs in binary.  Because of operating systems and even higher level 'translators', we can use languages that are much easier for humans to read, debug, and build.
 
 # Programming
 
@@ -59,11 +79,14 @@ We are going to use a site called [replit](https://replit.com/) for this explora
 
 Once you are signed in to replit, _fork_ [this project](https://replit.com/@MeganMcMahon1/HelloWorld#main.cs) so that you have your own copy.  Read through the information in the center pane, and then click the green 'Run' button.  
 
+![Image of REPLit project](/images/Mod1/IntroToProgramming/REPLitRun.png)
+
 Replit takes a few seconds to compile (translate) your code into computer language (remember those ones and zeros?), then executes and prints the output.
 
 Take a few minutes to play around with the code - see if you can make the output say something different, add more lines of output.  Don't be afraid to break things!  
 
 # Check for Understanding
 - In your own words, what is programming?
+- For your REPLit project, Diagram the flow of information through the computer.
 - Describe how a calculator is a computer.
 - What is the basic language of computers? Do you need to know this language in order to be a developer? Why or why not?

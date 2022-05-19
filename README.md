@@ -11,16 +11,16 @@
 * 🧪Weekly Assessment
 ### Week 2
 * 🎒[Looping](/lessons/mod1/ConditionalLogic.md)
-* 💡⬆️ Lab/Excercise
+* 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
 * 🎒Intro to IDEs and Debugging
 * 💡⬆️ Lab/Excercise
-* 🎒Collections
-* 💡⬆️ Lab/Excercise
+* 🎒[Collections](/lessons/mod1/Collections.md)
+* 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 3
-* 🎒Methods
-* 💡⬆️ Lab/Excercise
+* 🎒[Methods](/lessons/mod1/Methods.md)
+* 💡⬆️ [Lab/Excercise](/labs/mod1/Methods.md)
 * 🎒Classes
 * 💡⬆️ Lab/Excercise
 * 🎒OOP

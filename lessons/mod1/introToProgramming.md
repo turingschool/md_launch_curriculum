@@ -49,6 +49,8 @@ More bits, more combinations!
 
 These combinations of binary values can be translated into all kinds of data!
 
+A common unit of measurement in computing is a **byte**, which is made up of 8 bits.
+
 To learn more, let's check out this video:
 
 [![Link to 'How Computers Work' YouTube Video](/images/Mod1/IntroToProgramming/HowComputersWorkYouTube.png)](https://www.youtube.com/watch?v=ewokFOSxabs)
@@ -90,3 +92,4 @@ Take a few minutes to play around with the code - see if you can make the output
 - For your REPLit project, Diagram the flow of information through the computer.
 - Describe how a calculator is a computer.
 - What is the basic language of computers? Do you need to know this language in order to be a developer? Why or why not?
+- What is the relationship between bits and bytes?

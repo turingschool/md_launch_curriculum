@@ -1,0 +1,27 @@
+azure functions & queues; configurations.
+
+* million rows in a database - display all on the website; make it performative.
+    * pagination
+    * search engine
+
+
+Learning about domains & how do deploy: 
+* must know git.
+
+adding strings - with StringBuilder (try adding many many lines together).
+
+CPU profiling in Visual Studio (Debugging).
+
+Incorporate Typescript into FE.
+
+Don't allow nulls in your projects. (can turn them off).
+
+Shortcuts and snippets.
+
+System-wide usings. 
+
+dependency injection. using .build()
+
+Justin - set up simple app on azure (scaffold out what a good app looks like). 
+
+Gang of Four - one per week. 

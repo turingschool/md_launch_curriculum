@@ -6,11 +6,11 @@
 * 🎒[Datatypes & Variables](./lessons/mod1/datatypesAndVariables.md)
 * 💡⬆️ [Lab/Excercise](./labs/mod1/DatatypesAndVariables.md)
 * 🎒[Conditional Logic](./lessons/mod1/ConditionalLogic.md)
-* 💡⬆️ Lab/Excercise
+* 💡⬆️ [Lab/Excercise](./labs/mod1/ConditionalLogic.md)
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 2
-* 🎒Looping
+* 🎒[Looping](/lessons/mod1/ConditionalLogic.md)
 * 💡⬆️ Lab/Excercise
 * 🎒Intro to IDEs and Debugging
 * 💡⬆️ Lab/Excercise

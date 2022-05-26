@@ -21,9 +21,9 @@
 ### Week 3
 * 🎒[Methods](/lessons/mod1/Methods.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Methods.md)
-* 🎒Classes
+* 🎒[Classes](/lessons/mod1/Classes.md)
 * 💡⬆️ Lab/Excercise
-* 🎒OOP
+* 🎒[OOP](/lessons/mod1/OOP.md)
 * 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment

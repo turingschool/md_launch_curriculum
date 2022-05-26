@@ -125,7 +125,7 @@ A method signature includes the return value of the method (or `void` if there i
 
 One of the advantages of using methods is that we can build methods that operate at higher levels of abstraction than other methods. Abstraction is a practice where less complex functionality is exposed in an interface and more complex functionality is suppressed. In some ways, this is like a pyramid where higher level methods rely on lower level methods to take care of the details.
 
-Think about how you drive a car. You don’t need to know how a combustion engine works in order to drive it. All you need to know is that when you put your foot down on the gas pedal, the car moves. The details of how the engine work are abstracted away from you. You only need to know how the gas pedal works, the interface.
+Think about how you might make a pot of coffee.  You need to know something about how coffee is made, but not everything.  You must add beans, and water, and then press a button to start the brewing process.  You do not need to know how the machine is accomplishing the actual brewing.
 
 Abstraction is an object-oriented programming concept that means that complexity is being hidden from the user.  We will continue to build on this idea as we learn more about programming.
 

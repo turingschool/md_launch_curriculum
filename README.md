@@ -7,8 +7,8 @@
 * 💡⬆️ [Lab/Excercise](./labs/mod1/DatatypesAndVariables.md)
 * 🎒[Conditional Logic](./lessons/mod1/ConditionalLogic.md)
 * 💡⬆️ [Lab/Excercise](./labs/mod1/ConditionalLogic.md)
-* 🎒Topic Review
-* 🧪Weekly Assessment
+* 🧪[Weekly Assessment](./assessments/mod1/week1.md)
+* 🎒[Topic Review](/lessons/mod1/Week1Review.md)
 ### Week 2
 * 🎒[Looping](/lessons/mod1/ConditionalLogic.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
@@ -28,9 +28,9 @@
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 4
-* 🎒Class Interaction
+* 🎒[Class Interaction](/lessons/mod1/ClassInteraction.md)
 * 💡⬆️ Lab/Excercise
-* 🎒Unit Tests I
+* 🎒[Unit Tests I](/lessons/mod1/UnitTesting.md)
 * 💡⬆️ Lab/Excercise
 * 🎒Unit Tests II
 * 💡⬆️ Lab/Excercise

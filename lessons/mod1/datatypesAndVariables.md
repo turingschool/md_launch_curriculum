@@ -34,12 +34,21 @@ Admittedly, this is a somewhat silly example, but it illustrates an important pr
 ![Screenshot showing variable values changed](/images/Mod1/DataTypesAndVariables/VariableAssignment2.png)
 
 ## Declaration and Assignment
+<!-- Rather than having this written out in a large block of text, I wonder if breaking things out into smaller steps/recipes helps make processes more clear? -->
+When creating a variable, we need to think about two things: 
 
-When creating a variable, we need to think about two things:  declaring the variable, and assigning a value to it.  Declaring a variable tells our program to set aside some memory (a spot where the information can live while the program is running), and assignment indicates precisely *what* information should be stored.  These two operations can be performed separately, or at the same time.
+1) Declaring the variable
+2) Assigning a value to it 
+
+Declaring a variable tells our program to set aside some memory (a spot where the information can live while the program is running), and assignment indicates precisely *what* information should be stored.  These two operations can be performed separately, or at the same time.
 
 ![Example of variable declaration and assignment](/images/Mod1/DataTypesAndVariables/DeclarationAndAssignment.png)
 
-In this example, we have two variables: `name` and `jobTitle`.  `name` is an example of declaration (on line 6) *and then* assignment.  We first tell our program that we will need a variable called `name` that will hold a **string**; different types of data require different kinds of storage, so it is necessary to know what kind of information the variable will hold when we declare it.  Then (on line 9), we use the **assignemnt operator** `=` to give that variable a value.  For the variable `jobTitle` we have combined these two operations into one line of code.
+<!-- Similar thought on the below, are there ways we can use formatting to our advantage to make the content easier to digest? -->
+
+In this example, we have two variables: `name` and `title`.  `name` is an example of declaration (on line 6) *and then* assignment.  We first tell our program that we will need a variable called `name` that will hold a **string**; different types of data require different kinds of storage, so it is necessary to know what kind of information the variable will hold when we declare it.  Then (on line 9), we use the **assignment operator** `=` to give that variable a value of `"Instructor"`.  
+
+For the variable `title` (line 12) we have combined these two operations into one line of code. 
 
 > Time to create your own variables!  Create at least 5 new variables, give them values, and print those variables to the console with `Console.WriteLine(variableName)`.  Be creative with your variable names; there are rules for what you can name a variable - see if you can break those rules!
 
@@ -63,7 +72,7 @@ Let's look at some examples of each category and the **datatypes** that make up 
 ### String
 
 A **string** is any combination of characters surrounded by double quotes `""`
-
+<!-- Thoughts on making these variable names more semantic/less contrived? Even something like userInput or badJoke or phoneNumber -->
 ```c#
 string aString = "this is a string with words in it";
 string anotherString = "32 horses walk into a bar";
@@ -73,6 +82,7 @@ string aSillyString = "525600";
 ### Char
 
 A **char** is a single alpha character surounded by single quotes `''`
+<!-- Is this place the time to give some explanation as to why/when a char will be used? Is there a better naming convention for these variables rather than a or b? -->
 
 ```c#
 char a = 'z';
@@ -150,7 +160,7 @@ class Program {
 ## Bool
 
 A **bool** (also referred to as boolean), can be one of two values: true or false.
-
+<!-- Similar thought on variable naming here - could we be more precise with a variable name that might actually be used like, loggedIn or hatesCoffee - I wonder if assinging isTrue = true makes things murkier? -->
 ```c#
 bool isTrue = true;
 bool notTrue = false;
@@ -167,12 +177,15 @@ Strings are special datatypes in c# because they are actually **objects**.  We w
 
 Strings have a **property** of Length which returns the number of characters in that string.  Strings also have methods, one of which is ToUpper(), which returns an all-caps version of that string.
 
+<!-- It might be worth while to have students come up with their own definition of what a method is. It could allow them an opportunity to start making connections to things they already know - "A method is kind of like a special ability that a video game character has?"  -->
+
 > With a partner, take a look at the [Microsoft C# String Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.string.contains?view=net-6.0).  Find two more **methods** that you can use on strings.
 
 # Casting
 
 Occasionally, you need to change a piece of data from one datatype to another.  This is most common when getting data from a user.
 
+<!-- Implicitly probably needs to be defined here to be more clear for our students. not sure everyone will know what that word means -->
 Casting can be done implicitly:
 
 ```c#
@@ -182,6 +195,8 @@ double myDouble = myInt;       // Automatic casting: int to double
 Console.WriteLine(myInt);      // Outputs 9
 Console.WriteLine(myDouble);   // Outputs 9
 ```
+
+<!-- Same thought with defining explictly, or at least explained in a different way -->
 
 Or, Explicitly:
 
@@ -223,6 +238,7 @@ It won't work because at the point the variable was declared, the program recogn
 
 # Check for Understanding
 
+
 - Group the following items into each of their C# datatype (are there any that could be classified as more than one type?)
     > * horse
     > * 3
@@ -238,4 +254,5 @@ It won't work because at the point the variable was declared, the program recogn
     > * 3.14
 - What datatype would the following statement return? `"I'm a little teapot".Length`
 - How many bits of data can be stored in a float?
+<!-- Should we provide a more concrete/specific example for students to practice casting with?-->
 - Try casting a string into a different datatype.  Did it work? Why or why not?

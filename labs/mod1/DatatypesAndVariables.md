@@ -25,10 +25,3 @@ In our [Intro to Programming](/lessons/mod1/introToProgramming.md) lesson, we le
 1. Work through [this tutorial](https://riptutorial.com/csharp/learn/100006/user-input)
 2. Read through [this resource](https://www.w3schools.com/cs/cs_user_input.php)
     * note that on the W3 site, you can 'Try It Yourself' to play around with the examples!
-
-Lab Notes
-- I think it would be beneficial to have a common workspace for students to complete activities after watching a tutorial. For example, if we created a REPL that has sections with a few scaffolded practice activities to cement learning, allow for practice, and make it easier to share resources/submit work. We could make a Datatypes + Variables REPL that has practice for...
-    - String interpolation
-    - Math operations
-    - User input
-- Similar to some thoughts I had on the assessment, I think we need to be EXTRA explicit in our instructions and expecations with students. I think the more uniform we can make things in the early mods, hopefully will lead to less overhead on students. 

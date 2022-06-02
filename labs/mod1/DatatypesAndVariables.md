@@ -25,3 +25,8 @@ In our [Intro to Programming](/lessons/mod1/introToProgramming.md) lesson, we le
 1. Work through [this tutorial](https://riptutorial.com/csharp/learn/100006/user-input)
 2. Read through [this resource](https://www.w3schools.com/cs/cs_user_input.php)
     * note that on the W3 site, you can 'Try It Yourself' to play around with the examples!
+
+Lab Feedback
+- Great work finding some decent resources to prevent "reinventing the wheel" and getting students used to consulting different resources
+- It would be great if we had an overall activity/REPL that students work working through for each lab. I envision a scenario where students work through some resources/tutorials/research and then have to do some combination of writing, coding, annotation, etc., all of which could be handled in a REPL (and eventually in a repo in later mods)
+- In addition to using a REPL to solidy learning + give more opportunity for scaffolded practice, I think it also highlights the need to be super explicit with instructions with students, especially in the early mods. The way this lab is currently set up, I think there could be some confusion for students about what the intended outcome of this work actually is. 

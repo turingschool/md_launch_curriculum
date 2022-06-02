@@ -41,6 +41,9 @@ We can use the "or" operator `||` and the "and" operator `&&` to combine two con
 ![Image of And and Or Operators](/images/Mod1/ConditionalLogic/AndOrOperators.png)
 
 <!-- I think the note below would also be a good time to do an example w/ code that shows this common error and hopefully produces an error message? or at least we can have students get in the habit of looking at code AND predicting what might happen when it executes -->
+
+> Now, you need to determine if the dog is mid-aged (older than 3 and younger than 9).  How would you write this condition?
+
 **Instructor Note** Discuss the importance of putting a condition on either side of the operators - c# will not compile code unless you do this, but it is a common error!
 
 # Conditional Branching
@@ -59,7 +62,7 @@ if (age >= 16)
 ```
 
 <!-- Could we also include a version of this diagram that has the specific situation written out? -->
-![inline](/images/Mod1/ConditionalLogic/if_condition.jpg)
+![inline](/images/Mod1/ConditionalLogic/IfStatementFlowChart.png)
 
 
 - If you want to spend a lot of money for dinner, go to a fancy restaurant. Otherwise, cook at home. (Two branches)
@@ -75,7 +78,7 @@ else
 }
 ```
 <!-- Could we also include a version of this diagram that has the specific situation written out? -->
-![inline](/images/Mod1/ConditionalLogic/if_else_condition.jpg)
+![inline](/images/Mod1/ConditionalLogic/IfElseStatementFlowChart.png)
 
 
 <!-- For the below examples, I think it could be useful to also include an example that is filled in - more like psuedocode, but somethign that can highlight the different options and how only one option can be "chosen"  -->
@@ -84,53 +87,60 @@ else
 All of our conditional branches will begin with an `if`. The code following the `if` will run if the condition is true.
 
 ```c#
-if (condition)
+if (userLoggedIn == True)
 {
-  // code to execute if the condition evaluates to true
+  DisplayProfilePicture();
 }
 ```
 
 ## `else if`
 
-Use an `else if` to create more branches.
-<!-- Do you think the below should be more explicit - specifically for the condition 2, should the comment incorproate that if condition 1 in NOT true AND condition 2 is true? I feel like we may want to be super clear that only one condition will ever trigger, not multiple. We could also include some exercises that focus on how ordering the conditions is really important and can lead to unexpected outputs if you switch them around -->
+Use an `else if` to create more branches. Keep in mind that only **one** branch will ever be executed.
+<!-- Do you think the below should be more explicit - specifically for the condition 2, should the comment incorproate that if condition 1 in NOT true AND condition 2 is true? I feel like we may want to be super clear that only one condition will ever trigger, not multiple. We could also include some exercises that focus on how ordering the conditions is really important and can lead to unexpected outputs if you switch them around ✅-->
 ```c#
-if (condition1)
+var age = 30;
+
+if (age > 40)
 {
-  // code to execute if above condition1 evaluates to true
+  Console.WriteLine("You are 'over the hill'");
 }
-else if (condition2)
+else if (age > 18)
 {
-  // code to execute if above condition2 evaluates to true
+  Console.WriteLine("You are a young adult");
 }
-else if (condition3)
+else if (age > 12 )
 {
-  // code to execute if above condition3 evaluates to true
+  Console.WriteLine("You are a teenager");
 }
 ```
+
+> With a partner, review the code above, and determine what will be printed to the console.  
+> What happens if you rearrange the order of the conditions (for example, check that `age > 12` first)?
 
 ## `else`
 
 Code inside an `else` will run when none of the previous conditions are true.
 
 ```c#
-if (condition1)
+if (age > 40)
 {
-  // code to execute if above condition1 evaluates to true
+  Console.WriteLine("You are 'over the hill'");
 }
-else if (condition2)
+else if (age > 18)
 {
-  // code to execute if above condition2 evaluates to true
+  Console.WriteLine("You are a young adult");
 }
-else if (condition3)
+else if (age > 12 )
 {
-  // code to execute if above condition3 evaluates to true
+  Console.WriteLine("You are a teenager");
 }
 else
 {
-    // code that will execute if none of the conditions above evaluate to true
+  Console.WriteLine("You are still a kid");
 }
 ```
+
+> Draw a flow chart that models the if-statement above.
 
 ## Other rules
 
@@ -143,7 +153,8 @@ else
 
 ## Check for Understanding
 
-What will the following code print to the screen?
+* In your own words, how does the order of conditions impact an if statement?
+* What will the following code print to the screen?
 
 ```c#
 var playAgain = true;
@@ -166,7 +177,7 @@ else
 }
 ```
 
-What values would `playAgain` and `lives` need to be assigned to in order to print each of the following to the console:
+* What values would `playAgain` and `lives` need to be assigned to in order to print each of the following to the console:
   * "You Lose!"
   * "Game Over!"
   * "Welcome back!"

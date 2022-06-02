@@ -56,7 +56,13 @@ To learn more, let's check out this video:
 
 [![Link to 'How Computers Work' YouTube Video](/images/Mod1/IntroToProgramming/HowComputersWorkYouTube.png)](https://www.youtube.com/watch?v=ewokFOSxabs)
 
-<!-- This might be a good place to add a quick CFU from the video - what is one or two things we want to reinforce with students from watching this? -->
+<!-- This might be a good place to add a quick CFU from the video - what is one or two things we want to reinforce with students from watching this? ✅-->
+
+> With a partner:
+> * What are some types of data we can store using binary?
+> * If you were going to build an audio speaker, what number of bits would you want your storage system to be based on?
+
+** Instructor Note ** We want students to understand that even though computers operate on ones and zeros (seemingly simple), we can add as much complexity as we want because computers operate on a high enough bit consumption.
 
 ## Storage and Processing
 

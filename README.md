@@ -2,35 +2,35 @@
 
 ## Mod 1
 ### Week 1
-* 🎒[Intro to Programming (How Computers Work)](./lessons/mod1/introToProgramming.md)
-* 🎒[Datatypes & Variables](./lessons/mod1/datatypesAndVariables.md)
-* 💡⬆️ [Lab/Excercise](./labs/mod1/DatatypesAndVariables.md)
-* 🎒[Conditional Logic](./lessons/mod1/ConditionalLogic.md)
-* 💡⬆️ [Lab/Excercise](./labs/mod1/ConditionalLogic.md)
-* 🧪[Weekly Assessment](./assessments/mod1/week1.md)
-* 🎒[Topic Review](/lessons/mod1/Week1Review.md)
+* 🎒[Intro to Programming (How Computers Work)](/Mod1/Lessons/introToProgramming.md)
+* 🎒[Datatypes & Variables](/Mod1/Lessons/datatypesAndVariables.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/DatatypesAndVariables.md)
+* 🎒[Conditional Logic](/Mod1/Lessons/ConditionalLogic.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/ConditionalLogic.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/week1.md)
+* 🎒[Topic Review](/Mod1/Review/Week1Review.md)
 ### Week 2
-* 🎒[Looping](/lessons/mod1/ConditionalLogic.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
+* 🎒[Looping]()
+* 💡⬆️ [Lab/Excercise]()
 * 🎒Intro to IDEs and Debugging
 * 💡⬆️ Lab/Excercise
-* 🎒[Collections](/lessons/mod1/Collections.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)
+* 🎒[Collections]()
+* 💡⬆️ [Lab/Excercise]()
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 3
-* 🎒[Methods](/lessons/mod1/Methods.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Methods.md)
-* 🎒[Classes](/lessons/mod1/Classes.md)
+* 🎒[Methods]()
+* 💡⬆️ [Lab/Excercise]()
+* 🎒[Classes]()
 * 💡⬆️ Lab/Excercise
-* 🎒[OOP](/lessons/mod1/OOP.md)
+* 🎒[OOP]()
 * 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 4
-* 🎒[Class Interaction](/lessons/mod1/ClassInteraction.md)
+* 🎒[Class Interaction]()
 * 💡⬆️ Lab/Excercise
-* 🎒[Unit Tests I](/lessons/mod1/UnitTesting.md)
+* 🎒[Unit Tests I]()
 * 💡⬆️ Lab/Excercise
 * 🎒Unit Tests II
 * 💡⬆️ Lab/Excercise

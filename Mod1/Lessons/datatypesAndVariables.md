@@ -193,9 +193,15 @@ Console.WriteLine(myDouble);   // Outputs 9.78
 Console.WriteLine(myInt);      // Outputs 9
 ```
 
+It is common to cast explicitly by using **Type Conversion Methods**.  We often do this when receiving user input:
+
+```c#
+string userInput = "45";
+int age = Convert.ToInt32(userInput);
+```
+
 Casting is done _implicitly_ when moving from smaller to larger datatypes. You must _explicitly_ cast from larger to smaller datatypes.
 
-For more information, check out this resource from [w3schools](https://www.w3schools.com/cs/cs_type_casting.php)
 
 # Using `var`
 
@@ -238,4 +244,4 @@ It won't work because at the point the variable was declared, the program recogn
     > * 3.14
 - What datatype would the following statement return? `"I'm a little teapot".Length`
 - How many bits of data can be stored in a float?
-- Try casting a string into a different datatype.  Did it work? Why or why not?
+- Try _casting_ a string into a different datatype.  Did it work? Why or why not?

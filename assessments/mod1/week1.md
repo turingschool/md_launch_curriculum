@@ -1,10 +1,19 @@
 # Week 1 Assessment
 
+** Instructor Note ** Would be a good idea to show what we want them to do with the comments in the assessment exercises before letting them start.  Also make sure to put your REPLit usernames in slack for submission!
+
 This weekly assessment is an opportunity for you to explore the main learning goals from the week.  If there are any topics that are unclear, now is the time to reach out for additional information and assistance!
 
 During this assessment, you may use any resource other than fellow students.  Feel free to google, look back at your notes, lessons, etc...
 
-## Build a Guessing Game
+## Questions and Exercises (10 Points Total)
+
+**Fork** [This REPL](https://replit.com/@MeganMcMahon1/Week1Assessment#main.cs) and complete the 9 questions and exercises it contains.  Each question or exercise is indicated by a single line comment prompt like this: `// This is a single line comment that gives instructions` followed by a multiline comment where you will complete the exercise: `/* < these are the multiline comment indicators > */`.  For the exercises, you can verify they are working by removing the multiline comments and running the program.
+
+### Submission and Feedback
+When completed, add your instructors as collaborators to your REPLit project and DM them a link to your forked repl.  Instructors will leave feedback on your replit project.
+
+## Build a Guessing Game (10 Points Total)
 
 In a new [Replit](https://replit.com/~) project, write a program to greet users by completing the following steps:
 
@@ -20,8 +29,18 @@ In a new [Replit](https://replit.com/~) project, write a program to greet users 
 
 ![](/images/Mod1/Assessments/week1_3.png)
 
-## Stretch Goals
-These can be done in any order.
+
+### Submission
+When completed, add your instructors as collaborators to your REPLit project and DM them a link.  Instructors will leave feedback on your replit project.
+
+### Rubric
+
+This assessment has a total of **20 Points**.  Earning **10 or more** points is a **pass** and will indicate that you are progressing well with the material.
+
+As a reminder, this assessment is for students and instructors to determine if there are any areas that need additional reinforcement!
+
+## Stretch Goals (0 Points, just for some fun 😊)
+These can be done in any order, and should only be completed if you have completed the **Questions and Exercises** and **Build a Guessing Game** portions
 
 * If a user opts to play the guessing game, loop through asking for guesses until the correnct answer is given.
 
@@ -33,11 +52,8 @@ These can be done in any order.
 
 * Update the guessing game to use a random number (between 1 and 10)
 
-## Submission
 
-In slack, DM a link to your replit project to your instructors.
-
-Assessment Notes
+<!-- Assessment Notes
 - I think we should include some sort of rubric that lays out what is considered Passing vs Not Passing
 - In addition to coding practice, it might be useful to have some short answer/fill in the blank type questions that allow students to show their learning in others way + explain concepts in their own words + make connections. Do you think we could do something similar to this using code comments? - https://www.w3schools.com/cs/exercise.php?filename=exercise_user_input1
 - I think a benefit of including some short answer/annotate/fill in the blank type questions is that it allows students to show (and see for themselves) some of their learning that may not fully be captured in the coding section. I think about a student who might actually be on track but struggles with a syntax error the entire time and can't show much of what they know.  
@@ -46,4 +62,4 @@ Assessment Notes
 - To me, the second exercise (evaluating whether a string contains "A") feels a little stretch-y. In my mind, we should aim to evaluate whether a student understands conditional logic, while this exercise also involves working with a method they would have to research more about (.Contains()). Is there a different exercise we could implement that is a little more targeted on conditional logic, perhaps with some work around variables too? Conversely, we could incorporate some "research" component where we link students directly to the .Contains() method, have them do some work with that to provide boolean outputs, and then give them the instruction to work it into the actual application. 
 - Related to the conditional logic, I wonder if we do some work where we give them either a scaffolded function that requires them to fill in key parts to get it to work OR have them annotate an already written function to predict what the output could be? I think about the third exercise a lot here - it seems they have to manage some type casting as well as the setup for the conditional logic. If we are really just trying to gauge their understandng of conditional logic, perhaps giving them some clues on how to handle taking a string from the user input + converting to a number might allow us to really focus on the meat of the issue. 
 - I do appreciate that you included some iterative approaches to building upon the previous exercise! I wonder if there is a way for us to include a place for them to comment out/submit/capture their prior code before moving onto the next step so we can still give feedback on those areas.
-- Thinking about student submission, I wonder how we think about actually delivering feedback. I think we could do something where we just fork the student's REPL and annotate directly into it for specific feedback. 
+- Thinking about student submission, I wonder how we think about actually delivering feedback. I think we could do something where we just fork the student's REPL and annotate directly into it for specific feedback.  -->

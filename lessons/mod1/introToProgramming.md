@@ -11,7 +11,7 @@
 
 # Computers
 
-There are many objects that we interact with every day that are computers - laptops, cellphones, watches, tvs, video games... the list goes on and on!  While all of these things may look and behave differently, they actually all have four very important similarities; the four tasks that make up the basis for any computer.
+There are many objects that we interact with every day that are computers - laptops, cellphones, watches, tvs, video games consoles... the list goes on and on!  While all of these things may look and behave differently, they actually all have four very important similarities; the four tasks that make up the basis for any computer.
 
 1. Input
 1. Storage
@@ -20,13 +20,13 @@ There are many objects that we interact with every day that are computers - lapt
 
 ![Diagram of the four tasks of a comptuer](/images/Mod1/IntroToProgramming/ComputerTasks.png)
 
-All computers have some mechnism for taking input, storing that input as data, process the data, and outputting the results.
+All computers have some mechnism for taking input, storing that input as data, processing the data, and outputting the results.
 
 > With a partner, discuss the input and output of one or more of the devices you indentified during the warm up.
 
 ## Input
 
-Input is the information that we give to a computer.  We can give that information in a lot of different ways. On our laptops, we can use the keyboard, mouse, or maybe a touchscreen.  With a video game, we might use a controller, or our own bodies.  Different computers can take in information differently, but all computers can receive input.
+Input is the information that we give to a computer.  We can give that information in a lot of different ways. On our laptops, we can use the keyboard, mouse, or maybe a touchscreen.  With a video game console, we might use a controller, or our own bodies.  Different computers can take in information differently, but all computers can receive input.
 
 ## Output
 
@@ -42,9 +42,10 @@ Inside of all computers are a bunch of wires and circuits that carry all of the 
 
 The electricity is either on or off.  So, the state of this wire can represent any data that has only two options: on/off, yes/no, true/false, 1/0.  This single wire is called a **bit** (its just a little bit of information...).  This one wire can only have two possible pieces of information - 1 or 0.  How do we store more information?  With more wires!
 
-1 Wire: 1 or 0  
-2 Wires: 0|0 or 1|0 or 0|1 or 1|1  
-3 Wires: 0|0|0 or 0|0|1 or 0|1|0 or 0|1|1 or 1|0|0 or 1|0|1 or 1|1|0 or 1|1|1  
+**1 Wire:** `1` or `0`  (2 combinations)
+**2 Wires:** `0|0` or `1|0` or `0|1` or `1|1` (4 combinations)
+**3 Wires:** `0|0|0` or `0|0|1` or `0|1|0` or `0|1|1` or `1|0|0` or `1|0|1` or `1|1|0` or `1|1|1`  (8 combinations)
+
 More bits, more combinations!
 
 These combinations of binary values can be translated into all kinds of data!
@@ -55,9 +56,19 @@ To learn more, let's check out this video:
 
 [![Link to 'How Computers Work' YouTube Video](/images/Mod1/IntroToProgramming/HowComputersWorkYouTube.png)](https://www.youtube.com/watch?v=ewokFOSxabs)
 
+<!-- This might be a good place to add a quick CFU from the video - what is one or two things we want to reinforce with students from watching this? ✅-->
+
+> With a partner:
+> * What are some types of data we can store using binary?
+> * If you were going to build an audio speaker, what number of bits would you want your storage system to be based on?
+
+** Instructor Note ** We want students to understand that even though computers operate on ones and zeros (seemingly simple), we can add as much complexity as we want because computers operate on a high enough bit consumption.
+
 ## Storage and Processing
 
-The storage and processing of information works on many of these wires and circuits, typically organized into specialized circuit boards.  Some circuit boards are for storage, others for adding numbers, others for creating images, and all of the other things that computers can do.  For a computer like a laptop that has to perform many different tasks, we need a very specialized circuit board called a **CPU (Central Processing Unit)**.  The CPU is responsible for giving instructions to different circuits to perform a more complex task.
+The storage and processing of information works on many of these wires and circuits, typically organized into specialized circuit boards.  Some circuit boards are for storage, others for adding numbers, others for creating images, and all of the other things that computers can do.  
+
+For a computer like a laptop that has to perform many different tasks, we need a very specialized circuit board called a **CPU (Central Processing Unit)**.  The CPU is responsible for giving instructions to different circuits to perform a more complex task. **CAN WE ADD AN COMPARISON TO SOMETHING ELSE HERE - LIKE THE CPU IS A BRAIN? OR HAVE STUDENTS MAKE A COMPARISON HERE?**
 
 All these wires and circuits are referred to as **hardware**.  They are the physical tools that make up your computer.
 
@@ -71,15 +82,18 @@ Thanks to the separation from software to the wires and circuits at the lowest l
 
 # Programming
 
-As programmers, we build the software that and applications that sit between the human user and the computer.  We write code in a language that is easier for us as developers to understand.  Then that code gets **compiled** into a language that our computer (specifically our operating system), can understand.
+As programmers, we build the software that and applications that sit between the human user and the computer.  We write code in a language that is easier for us as humans/developers to understand.  Then that code gets **compiled** into a language that our computer (specifically our operating system), can understand.
 
 There are ALOT of languages that we can choose from when we write code.  We are going to be using a language called C# (c-sharp).
 
 To get a feel for how this works, let's jump right in to creating our first program!
 
-We are going to use a site called [replit](https://replit.com/) for this exploration.  If this is your first time using replit, you will need to sign up (its free!).  If you have used this site before, you can go ahead and sign in.  In programming, a REPL stands for Read-Evaluate-Print Loop.  So a REPL takes input, stores/processes that input, and then outputs the result, and then loops back ready to take additional input - sound familiar?  A REPL is a computer! Replit (the site) is a place where you can write and store small programs; you can also share programs that you have written with other people.
+<!-- this below paragraph feels like good context for th -->
+We are going to use a site called [replit](https://replit.com/) for this exploration.  If this is your first time using replit, you will need to sign up (its free!).  If you have used this site before, you can go ahead and sign in.  
 
-Once you are signed in to replit, _fork_ [this project](https://replit.com/@MeganMcMahon1/HelloWorld#main.cs) so that you have your own copy.  Read through the information in the center pane, and then click the green 'Run' button.  
+In programming, a REPL stands for Read-Evaluate-Print Loop.  So a REPL takes input, stores/processes that input, and then outputs the result, and then loops back ready to take additional input - sound familiar?  A REPL is a computer! Replit (the site) is a place where you can write and store small programs; you can also share programs that you have written with other people.
+
+Once you are signed in to replit, **_fork_** [this project](https://replit.com/@MeganMcMahon1/HelloWorld#main.cs) so that you have your own copy.  Read through the information in the center pane, and then click the green 'Run' button.  
 
 ![Image of REPLit project](/images/Mod1/IntroToProgramming/REPLitRun.png)
 

@@ -125,7 +125,7 @@ while ( i < 5)
 ```
 
 **instructor note** discuss increment and decrement operator here!
-<!-- In the below example, is declaring the initializer as "m" intentional?  -->
+<!-- In the below example, is declaring the initializer as "m" intentional? I also think that maybe we start with a more basic exampel first (such as only decrementing by 1/incrementing by 1) before launching right into a more fancy version that decrments by 3. Also, I imagine more loops generally will only incrrement/decrement by 1, so seems like a good place to start/something to call out -->
 > With a partner, walk through the code below; at each point, indicate what the value of `i` is.  How many loops will be completed?
 > ```c#
 > for (var m = 15; i > 5; i -= 3)

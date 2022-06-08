@@ -7,12 +7,12 @@
 
 Imagine you are writing a program that will shuffle and deal a deck of cards to two players.  Each player should have 5 cards.  The program might have tasks such as: shuffle, and distribute a card.
 
-How many times will you shuffle the deck?
-How many times will you distribute cards?
+* How many times will you shuffle the deck?
+* How many times will you distribute cards?
 
 What if we need to deal 5 cards to 5 players?  Will the answers to the questions above change?
 
-**Instructor Note**: lead a discussion around the pros and cons of explicitly repeating actions.  You could even pull up [this repo]() to show the card example.
+**Instructor Note**: lead a discussion around the pros and cons of explicitly repeating actions.  You could even pull up [this repo](https://replit.com/@MeganMcMahon1/CardShuffle#main.cs:9:9) to show the card example.
 
 ## Looping
 
@@ -31,7 +31,7 @@ or it may be a question that returns a true/false (boolean) answer. For example:
 
 A `while` loop will execute a block of code as long as a specific condition is `true`. 
 
-![Diagram of while loop logic](/images/Mod1/Looping/WhileLoop.jpg)
+![Diagram of while loop logic](/images/Mod1/Looping/WhileLoop.png)
 
 ```c#
 while (condition)
@@ -53,11 +53,54 @@ while (parkingSpace == "full")
 
 ** Instructor Note **: discuss infinte loops.  In replit, you will need to `stop` the program to exit out.  
 
-> How might we avoid the problem of an infinte loop?
+When we have a loop where the condition always evaluates to `true`, we have created an **infinite loop**.  The loop will continue running forever (or until our computers run out of processing power!).  Because of this danger, it is always good to consider early in the implementation process, how a loop will stop.
+
+> How might we avoid the problem of an infinte loop in this parking space example?
 
 > Practice: in a replit project, write a program that continuously asks a user for a random fact until the user enters 'exit'.
 
-** Instructor Note **: this would be a great time to ask a few students to share out there code (solutions AND problems!).
+** Instructor Note **: this would be a great time to ask a few students to share out there code (implementations AND bugs!).
+
+### Code Blocks
+Now that we have worked with if statements and loops, you might have started to notice that we often group statements inside of two curly brackets `{}`.  We refer to this group of statements as a **block of code** or a **code block**.
+
+```c#
+if (isHungry == true)
+{
+  // Everything between the curly braces is the code block (even this comment).
+  Eat();
+}
+```
+
+```c#
+while (isHungry == true)
+{
+  // this is a code block.
+  if (foodExists == true)
+  {
+    // this is another code block nested INSIDE the while block.
+    Eat();
+  }
+}
+```
+
+Code blocks can be nested inside other blocks (though we generally want to avoid too much nesting, for readability).
+
+It is important for us to start recognizing code blocks because these blocks are how are program knows to end one task, and move on to the next one.  For example, how does the program below know when to check the condition again?  When we get to the end of the while statement's code block!
+
+```c#
+Console.WriteLine("What is the best cookie?");
+var userInput = Console.ReadLine();
+
+while (userInput != "Snickerdoodle")
+{
+  Console.WriteLine("Wrong! What is the best cookie?");
+} // <-- this is the end of the while statement's code block.
+
+Console.WriteLine("Yes! You are so smart.");
+```
+
+Without the idea of a code block, this program might mistakenly encourage users to believe that chocolate chip, or peanut butter were the best cookie.  We need the code block to _contain_ the code that we want to repeat as along as the  condition is true.
 
 ## `for`
 
@@ -106,12 +149,17 @@ do
 Console.WriteLine("All cookies removed!");
 ```
 
-What is the difference between `while` and `do...while`?  How would you change the `while` diagram to account for this difference?
+The `do... while` loop is similar to a `while loop`; the difference is that the conditional code block is run _first_ and then the condition is evaluated.
+
+> With a partner: How might you change the `while` diagram to account for this difference?
 
 ### Check for Understanding
 
-Without running the code first, write down what the output of the following code would be:
 
+* What might cause an infinite loop? What is a good way to avoid an infinite loop?
+* Write a **for** loop that will output a countdown from 10 to 1.
+* Write a **while** loop that will continually ask a user what the best animal is, until they provide the answer "Unicorn".
+* Without running the code first, write down what the output of the following code would be:
 ```c#
 for (var i = 0; i < 3; i++)
 {
@@ -123,3 +171,5 @@ for (var i = 0; i < 3; i++)
   }
 }
 ```
+After making a prediction, copy this code into a replit project and see if you were correct!  
+* How many code blocks are in the example above?

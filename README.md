@@ -10,7 +10,7 @@
 * 🧪[Weekly Assessment](./assessments/mod1/week1.md)
 * 🎒[Topic Review](/lessons/mod1/Week1Review.md)
 ### Week 2
-* 🎒[Looping](/lessons/mod1/ConditionalLogic.md)
+* 🎒[Looping](/lessons/mod1/Looping.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
 * 🎒Intro to IDEs and Debugging
 * 💡⬆️ Lab/Excercise

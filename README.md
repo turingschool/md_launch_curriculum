@@ -12,7 +12,7 @@
 ### Week 2
 * 🎒[Looping](/lessons/mod1/Looping.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
-* 🎒Intro to IDEs and Debugging
+* 🎒[Intro to IDEs and Debugging](/lessons/mod1/IDEandDebugging.md)
 * 💡⬆️ Lab/Excercise
 * 🎒[Collections](/lessons/mod1/Collections.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)

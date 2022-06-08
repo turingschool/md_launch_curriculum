@@ -13,13 +13,13 @@ From yesterday's lab work, answer the following questions.
 1. What is at index 2 in this array: `string [] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
 1. What are some drawbacks to using an array?
 
-One of the major drawbacks of an array is that we can not add or remove things.  An array is always the same size - great for storing collections of information that never change (like days of the week), but not so great at storing information that will change in size.
+One of the major drawbacks of an array is that we can not add or remove element positions in the array. In other words, an array that is created to store 5 strings, will always have 5 **elements** in it - no more, no fewer.  An array is always the same size - great for storing collections of information that never change (like days of the week, or suits in a deck of cards), but not so great at storing information that will change in size.
 
 Luckily, there is a built-in object in c# called a [**collection**](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections) that helps with this problem.  There are different types of collections, but today we will be focusing on **lists** and **dictionaries**.
 
 ## List
 
-A list is very similar to an array - it is an **ordered** collection that can hold any number of related objects of the same type.  When creating a new list, you can use an **initializer**, or not.
+A list is very similar to an array - it is an **ordered** collection that can hold any number of related objects of the same type.  When creating a new list, you can use an **initializer**, or not.  An **initializer** allows us to create a list with elements already in it.
 
 ```c#
 // with initializer
@@ -37,11 +37,11 @@ Just like arrays, a list can only contain **elements** of the same type - this i
 
 ### Accessing and Manipulating List Items
 
-> With a partner, do some googling to accomplish the following:  
-> 1. Add another dog breed to `dogBreeds`.
-> 2. Remove "poodle" from the list.
-> 3. Use a method to sort the list alphabetically.
-> 4. Use the list to print "GOLDEN RETRIEVER" to the console.
+> With a partner, take a look at the resources linked below, and see if you can accomplish the following:  
+> 1. [Resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections#BKMK_SimpleCollection): Add another dog breed to `dogBreeds`.
+> 2. [Resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections#BKMK_SimpleCollection): Remove "poodle" from the list.
+> 3. [Resource](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-6.0): Use a method to sort the list alphabetically.
+> 4. [Resource](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-6.0): Use the list to print "GOLDEN RETRIEVER" to the console.
 
 ** Instructor Note**: walk throught these examples showing _how_ you would research what to do.
 
@@ -142,4 +142,16 @@ foreach (var (item, qty) in inventory)
 ```
 
 ## Check for Understanding
+* Create an Array of the names of your favorite foods; let's call it `favoriteFoods`.
+* Imagine that you know need to change the list of your favorite foods (you've found you absolutely love green olives).  Recreate your `favoriteFoods` to the most appropriate collection type.
+* Write a program that will output a summary of your favorite foods.  Include the names of your favorite foods and the number of favorite foods that you have.  For example:
+```
+Megan has 5 Favorite Foods:
+Popcorn
+Pepperoni Pizza
+Pears
+Pecans
+Praline
+```
+* Describe the differences and similarites between an Array, a List, and a Dictionary.  What are some pros and cons of each?
 

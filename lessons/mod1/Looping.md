@@ -17,14 +17,21 @@ What if we need to deal 5 cards to 5 players?  Will the answers to the questions
 ## Looping
 
 A loop is a set of instructions that is executed repeatedly until some condition is met. This condition may be a certain number of times that the loop is executed, for example:
-<!-- In the below example, could we break out this block of text into separate steps/instructions? I wonder if we did that if it will a) look more code-like and b) reiterate the step by step nature of setting up a loop -->
-- After baking cookies, you pull the cookie sheet out of the oven which holds 24 cookies. One by one, you remove each of the cookies from the sheet and place them on a cooling rack.
-(Set of instructions that executes 24 times)
+<!-- In the below example, could we break out this block of text into separate steps/instructions? I wonder if we did that if it will a) look more code-like and b) reiterate the step by step nature of setting up a loop ✅ -->
+- After baking twenty four cookies on a sheetpan:
+  1. you pull the cookie sheet out of the oven. 
+  2. Take one cookie off the sheet.
+  3. Put that cookie on the cooling rack.
+  4. If there are still cookies on the sheetpan, repeat steps 2 and 3.
+You will end up repeating steps 2 and 3 twenty four times (a set number).
 
 or it may be a question that returns a true/false (boolean) answer. For example:
 
-- While looking for a parking spot at a crowded sporting event, a car continues to drive up and down the rows until an empty spot is found (full == false).   
-(Loop that executes until a question returns true or false)
+- While looking for a parking spot at a crowded sporting event, you will:
+  1. Look for a spot
+  2. If no spot is seen, continue driving
+  3. Repeat steps 1 and 2 until a spot is found (full == false)  
+A Loop that executes until a question returns true or false (for an unknown number of times).
 
 
 ## `while` loop
@@ -83,8 +90,8 @@ while (isHungry == true)
   }
 }
 ```
-<!-- In the below, I think it might be worthwhile to explain in a few more words what "readability" means and why it is important. -->
-Code blocks can be nested inside other blocks (though we generally want to avoid too much nesting, for readability).
+<!-- In the below, I think it might be worthwhile to explain in a few more words what "readability" means and why it is important. ✅-->
+Code blocks can be nested inside other blocks; though we generally want to avoid too much nesting, for readability.  **Readability** refers to how easy or difficult it is for a human to read and understand a piece of code.  If we have a file with too much code, too many nested blocks, or variable names that have no meaning, we would say that the code is not very **readable**.
 
 It is important for us to start recognizing code blocks because these blocks are how are program knows to end one task, and move on to the next one.  For example, how does the program below know when to check the condition again?  When we get to the end of the while statement's code block!
 
@@ -124,35 +131,48 @@ while ( i < 5)
 }
 ```
 
+### For Loop Structure
+Written out in english, the syntax of a **for** loop follows this structure:
+
+```
+for (Initial Expression; Condition; Increment Expression)
+{
+  Code Block
+}
+```
+
+#### Initial Expression
+We begin with the **initial expression**: `var i = 0`. Where do we want our loop to start? The first statement var i = 0; creates a variable that is assigned the value of 0. This variable is commonly named i, or index, and will act as a counter. It is created the first time the loop is run.
+
+#### Condition
+Then we set a **condition** that tells the loop when to stop running: `i < 5`;. In this case, the condition indicates that the loop will stop when i equals 5. 
+
+The condition _may_ use a variable that is assigned a value. for example:
+```c#
+var name = "Megan";
+
+for (var i = 0; i < name.Length; i++)
+{
+  Console.WriteLine(name);
+}
+```
+In this example, the for loop will run as many times as the number of characters in the variable `name`.
+
+#### Increment Expression
+Finally, with the statement `i++` we update the value of our counter, i. This adds 1 to the value of i. This syntax is using the increment operator `++`, which is a way of writing `i = i + 1`. It is also possible to decrement downwards using the decrement operator `--`, which is a way of writing `i = i - 1`.  While is is most common to increment or decrement by 1, you could update the value by any number (add 3 each time, subtract 10 each time, etc...).
+
+
 **instructor note** discuss increment and decrement operator here!
-<!-- In the below example, is declaring the initializer as "m" intentional? I also think that maybe we start with a more basic exampel first (such as only decrementing by 1/incrementing by 1) before launching right into a more fancy version that decrments by 3. Also, I imagine more loops generally will only incrrement/decrement by 1, so seems like a good place to start/something to call out -->
+<!-- In the below example, is declaring the initializer as "m" intentional? haha - nope. I also think that maybe we start with a more basic exampel first (such as only decrementing by 1/incrementing by 1) before launching right into a more fancy version that decrments by 3. Also, I imagine more loops generally will only incrrement/decrement by 1, so seems like a good place to start/something to call out -->
 > With a partner, walk through the code below; at each point, indicate what the value of `i` is.  How many loops will be completed?
 > ```c#
-> for (var m = 15; i > 5; i -= 3)
+> for (var i = 15; i > 5; i -= 1)
 > {
 >    Console.WriteLine("The current value of i is: " + i);
 > }
 >```
 
-<!-- I think if we focus on for loops, we will likely need to beef this section up to break down each component more explicitly. I think the FE lesson on this actually does an OK job of breaking down the different parts: https://frontend.turing.edu/lessons/module-1/js-for-loops.html -->
-## `do... while`
-
-Another type of loop is a `do...while`.  Take a look at the example below:
-
-```c#
-var numCookies = 24;
-do
-{
-  Console.WriteLine("Removing cookie number: " + numCookies);
-  numCookies -= 1;
-} while (numCookies > 0);
-
-Console.WriteLine("All cookies removed!");
-```
-
-The `do... while` loop is similar to a `while loop`; the difference is that the conditional code block is run _first_ and then the condition is evaluated.
-
-> With a partner: How might you change the `while` diagram to account for this difference?
+<!-- I think if we focus on for loops, we will likely need to beef this section up to break down each component more explicitly. I think the FE lesson on this actually does an OK job of breaking down the different parts: https://frontend.turing.edu/lessons/module-1/js-for-loops.html ✅ -->
 
 ### Check for Understanding
 
@@ -160,8 +180,8 @@ The `do... while` loop is similar to a `while loop`; the difference is that the 
 * What might cause an infinite loop? What is a good way to avoid an infinite loop?
 * Write a **for** loop that will output a countdown from 10 to 1.
 * Write a **while** loop that will continually ask a user what the best animal is, until they provide the answer "Unicorn".
-<!-- Could adding annotations to the code block below also be a good CFU for students? Maybe we could model annotating this when we review it as a group too. -->
-* Without running the code first, write down what the output of the following code would be:
+<!-- Could adding annotations to the code block below also be a good CFU for students? Maybe we could model annotating this when we review it as a group too.✅ -->
+* Write, in your own words, what is happening on each line of the code below.  Then, without running the code first, write down what the output of the following code would be:
 ```c#
 for (var i = 0; i < 3; i++)
 {
@@ -176,6 +196,6 @@ for (var i = 0; i < 3; i++)
 After making a prediction, copy this code into a replit project and see if you were correct!  
 * How many code blocks are in the example above?
 
-<!-- My initial takeaway on this lesson is that there are a LOT of different ways to handle looping and they all have very different syntax. I can imagine a new student feeling pretty overwhelmed with all of the different options. My main question here is: do we NEED to introduce all of these options in this lesson? Perhaps it's my old-school FE thinking, but part of me thinks digging into for loops allows us to cover looping, code blocks, variable assignment/reassignment, common code conventions (such as using the variable "i" as the initializer), etc.  -->
+<!-- My initial takeaway on this lesson is that there are a LOT of different ways to handle looping and they all have very different syntax. I can imagine a new student feeling pretty overwhelmed with all of the different options. My main question here is: do we NEED to introduce all of these options in this lesson? Perhaps it's my old-school FE thinking, but part of me thinks digging into for loops allows us to cover looping, code blocks, variable assignment/reassignment, common code conventions (such as using the variable "i" as the initializer), etc. ✅ I think you're right - I do want to cover `for` and `while`, but I don't think we need to go over `while...do`  -->
 
 <!-- Regardless of how many methods of looping we introduce, I think having some more hands-on REPL practice after each way of looping is introduced is probably a good way to break up teacher-talktime and put more on students to explore, break, etc. I imagine there will be time dedicated to this in lab as well, but definitely think there are still opportunities within lessons as well. -->

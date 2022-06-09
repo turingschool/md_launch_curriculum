@@ -12,3 +12,4 @@ In our [Intro to Programming](/lessons/mod1/introToProgramming.md) lesson, we le
 2. Read through [this resource](https://www.w3schools.com/cs/cs_user_input.php)
     * note that on the W3 site, you can 'Try It Yourself' to play around with the examples!
 
+**make sure to change user input**

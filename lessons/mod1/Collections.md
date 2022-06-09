@@ -2,17 +2,18 @@
 
 ## Learning Goals
 * Identify key differences between **arrays** and **lists**
-* Define and use a dictionary
+* Define and use a **dictionary**
 * Iterate through collections with `foreach` and `for`
 
 ## Array
-
+<!-- Where are they answering these questions? -->
 From yesterday's lab work, answer the following questions.
 
 1. What is an **array**?  How is it different from a string or integer?
 1. What is at index 2 in this array: `string [] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
 1. What are some drawbacks to using an array?
 
+<!-- You ask for drawbacks of an array in the above question and then say it right below - consider formatting adjustment? -->
 One of the major drawbacks of an array is that we can not add or remove element positions in the array. In other words, an array that is created to store 5 strings, will always have 5 **elements** in it - no more, no fewer.  An array is always the same size - great for storing collections of information that never change (like days of the week, or suits in a deck of cards), but not so great at storing information that will change in size.
 
 Luckily, there is a built-in object in c# called a [**collection**](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections) that helps with this problem.  There are different types of collections, but today we will be focusing on **lists** and **dictionaries**.
@@ -21,6 +22,7 @@ Luckily, there is a built-in object in c# called a [**collection**](https://docs
 
 A list is very similar to an array - it is an **ordered** collection that can hold any number of related objects of the same type.  When creating a new list, you can use an **initializer**, or not.  An **initializer** allows us to create a list with elements already in it.
 
+<!-- Might be worth calling out more explicitly the difference between using an initializer and not. For example, it appears that all Lists have an Add() method? Could be worth calling out that observation and quickly adding context for how it works? -->
 ```c#
 // with initializer
 
@@ -36,13 +38,13 @@ dogBreeds.Add("poodle");
 Just like arrays, a list can only contain **elements** of the same type - this is why we must declare what kind of object a List will contain.
 
 ### Accessing and Manipulating List Items
-
+<!-- Where is this work happening? An already built REPL with some starter code might be a good scaffolded approaach here. -->
 > With a partner, take a look at the resources linked below, and see if you can accomplish the following:  
 > 1. [Resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections#BKMK_SimpleCollection): Add another dog breed to `dogBreeds`.
 > 2. [Resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections#BKMK_SimpleCollection): Remove "poodle" from the list.
 > 3. [Resource](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-6.0): Use a method to sort the list alphabetically.
 > 4. [Resource](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-6.0): Use the list to print "GOLDEN RETRIEVER" to the console.
-
+<!-- Love this inclusion of modeling how to search/utilize documentation -->
 ** Instructor Note**: walk throught these examples showing _how_ you would research what to do.
 
 ## `foreach`
@@ -59,7 +61,7 @@ Console.WriteLine(dogBreeds[2]);
 ```
 
 This isn't too bad, but what if you needed to print a list of all 199 dog breeds recognized by the Westminster Kennel Club? This would be A LOT of repeated code.
-
+<!-- I think having students sort using a For Loop is a great idea here!  -->
 ** Instructor Note ** Good place to get the students together to see if they can use a regular `for` loop to solve this problem.
 
 When we need to do the same thing to/with an element in a collection, we can use a `foreach` loop:
@@ -132,6 +134,8 @@ dog bowls: 5
 
 > With a partner: Try to add a new key/value pair for an existing key `inventory.Add("nails", 7234);`. What happens?  And why?
 
+<!-- Before moving on to iterating over a dictionary, I think it might be helpful to do some more explicit exploration and/or explanation of key/value pairs -->
+
 You can also iterate over a dictionary collection.  Try running the code below; really think about what is happening on each line.
 
 ```c#
@@ -155,3 +159,8 @@ Praline
 ```
 * Describe the differences and similarites between an Array, a List, and a Dictionary.  What are some pros and cons of each?
 
+<!-- This CFU block is a little light on dictionary work - is this intentional? The learning goals call out being able to use a dictionary, which seems like we should have some CFU content around actually creating one. -->
+
+<!-- I could see a situation where arrays, lists and dictionaries all being their own separate lesson, which could make it easier to chunk out content AND would make it easier for students to circle back to resources on the Launch site once live? -->
+
+<!-- I am recognizing that it can be hard for me to truly see your vision for how a lesson and lab work together since your current workflow seems to be work on a bunch of lessons and then circle back on labs. Does adjusting workflow to 1) create lesson 2) build associated lab present any challenges that I am not considering? I also acknowledge that there is a "flow" you can get in where working on one type of task helps with productivity so feel free to push back here! -->

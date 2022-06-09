@@ -17,7 +17,7 @@ What if we need to deal 5 cards to 5 players?  Will the answers to the questions
 ## Looping
 
 A loop is a set of instructions that is executed repeatedly until some condition is met. This condition may be a certain number of times that the loop is executed, for example:
-
+<!-- In the below example, could we break out this block of text into separate steps/instructions? I wonder if we did that if it will a) look more code-like and b) reiterate the step by step nature of setting up a loop -->
 - After baking cookies, you pull the cookie sheet out of the oven which holds 24 cookies. One by one, you remove each of the cookies from the sheet and place them on a cooling rack.
 (Set of instructions that executes 24 times)
 
@@ -83,7 +83,7 @@ while (isHungry == true)
   }
 }
 ```
-
+<!-- In the below, I think it might be worthwhile to explain in a few more words what "readability" means and why it is important. -->
 Code blocks can be nested inside other blocks (though we generally want to avoid too much nesting, for readability).
 
 It is important for us to start recognizing code blocks because these blocks are how are program knows to end one task, and move on to the next one.  For example, how does the program below know when to check the condition again?  When we get to the end of the while statement's code block!
@@ -125,7 +125,7 @@ while ( i < 5)
 ```
 
 **instructor note** discuss increment and decrement operator here!
-
+<!-- In the below example, is declaring the initializer as "m" intentional? I also think that maybe we start with a more basic exampel first (such as only decrementing by 1/incrementing by 1) before launching right into a more fancy version that decrments by 3. Also, I imagine more loops generally will only incrrement/decrement by 1, so seems like a good place to start/something to call out -->
 > With a partner, walk through the code below; at each point, indicate what the value of `i` is.  How many loops will be completed?
 > ```c#
 > for (var m = 15; i > 5; i -= 3)
@@ -134,6 +134,7 @@ while ( i < 5)
 > }
 >```
 
+<!-- I think if we focus on for loops, we will likely need to beef this section up to break down each component more explicitly. I think the FE lesson on this actually does an OK job of breaking down the different parts: https://frontend.turing.edu/lessons/module-1/js-for-loops.html -->
 ## `do... while`
 
 Another type of loop is a `do...while`.  Take a look at the example below:
@@ -159,6 +160,7 @@ The `do... while` loop is similar to a `while loop`; the difference is that the 
 * What might cause an infinite loop? What is a good way to avoid an infinite loop?
 * Write a **for** loop that will output a countdown from 10 to 1.
 * Write a **while** loop that will continually ask a user what the best animal is, until they provide the answer "Unicorn".
+<!-- Could adding annotations to the code block below also be a good CFU for students? Maybe we could model annotating this when we review it as a group too. -->
 * Without running the code first, write down what the output of the following code would be:
 ```c#
 for (var i = 0; i < 3; i++)
@@ -173,3 +175,7 @@ for (var i = 0; i < 3; i++)
 ```
 After making a prediction, copy this code into a replit project and see if you were correct!  
 * How many code blocks are in the example above?
+
+<!-- My initial takeaway on this lesson is that there are a LOT of different ways to handle looping and they all have very different syntax. I can imagine a new student feeling pretty overwhelmed with all of the different options. My main question here is: do we NEED to introduce all of these options in this lesson? Perhaps it's my old-school FE thinking, but part of me thinks digging into for loops allows us to cover looping, code blocks, variable assignment/reassignment, common code conventions (such as using the variable "i" as the initializer), etc.  -->
+
+<!-- Regardless of how many methods of looping we introduce, I think having some more hands-on REPL practice after each way of looping is introduced is probably a good way to break up teacher-talktime and put more on students to explore, break, etc. I imagine there will be time dedicated to this in lab as well, but definitely think there are still opportunities within lessons as well. -->

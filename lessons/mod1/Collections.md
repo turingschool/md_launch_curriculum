@@ -7,18 +7,21 @@
 
 ## Array
 <!-- Where are they answering these questions? -->
-From yesterday's lab work, answer the following questions.
+From yesterday's lab work, in a notebook, answer the following questions.
 
 1. What is an **array**?  How is it different from a string or integer?
 1. What is at index 2 in this array: `string [] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
 1. What are some drawbacks to using an array?
 
-<!-- You ask for drawbacks of an array in the above question and then say it right below - consider formatting adjustment? -->
+The idea of a list of elements organized in one place, like an array,is a common function of all modern programming languages.  We will see collections of data organized into lists all over our projects.  While the concept of a list of elements is common among languages, the way that each language works with those lists can be slightly different.
+
+There are three common ways that c# manages groups or lists of data; one of which is an Array.  They other two most common ways are with **Lists** and **Dictionaries**.
+
+## List
+<!-- You ask for drawbacks of an array in the above question and then say it right below - consider formatting adjustment? ✅-->
 One of the major drawbacks of an array is that we can not add or remove element positions in the array. In other words, an array that is created to store 5 strings, will always have 5 **elements** in it - no more, no fewer.  An array is always the same size - great for storing collections of information that never change (like days of the week, or suits in a deck of cards), but not so great at storing information that will change in size.
 
 Luckily, there is a built-in object in c# called a [**collection**](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections) that helps with this problem.  There are different types of collections, but today we will be focusing on **lists** and **dictionaries**.
-
-## List
 
 A list is very similar to an array - it is an **ordered** collection that can hold any number of related objects of the same type.  When creating a new list, you can use an **initializer**, or not.  An **initializer** allows us to create a list with elements already in it.
 
@@ -35,11 +38,15 @@ dogBreeds.Add("golden retriever");
 dogBreeds.Add("poodle");
 ```
 
+All lists, regardless of how they are first created, can respond to some built-in methods, like `Add()`.  You can find a list of these methods on the [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-6.0)
+
 Just like arrays, a list can only contain **elements** of the same type - this is why we must declare what kind of object a List will contain.
 
 ### Accessing and Manipulating List Items
 <!-- Where is this work happening? An already built REPL with some starter code might be a good scaffolded approaach here. -->
 > With a partner, take a look at the resources linked below, and see if you can accomplish the following:  
+> 1. Create a new Console Application in Visual Studio called 'Collections'
+> 1. In 'Program.cs', create a variable `dogBreeds` that holds a `List<string>` of breeds (you can use the data from the example above)
 > 1. [Resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections#BKMK_SimpleCollection): Add another dog breed to `dogBreeds`.
 > 2. [Resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections#BKMK_SimpleCollection): Remove "poodle" from the list.
 > 3. [Resource](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-6.0): Use a method to sort the list alphabetically.
@@ -120,7 +127,9 @@ var inventory = new Dictionary<string, int> {
 }
 ```
 
-Much more readable!  We now have a collection of **key/value** pairs.  The keys are the inventory item, and the values are the quantity of that item.  When working with an array or list, we access specific elements with it's **index**.  But, a dictionary is an **unordered** collection, so there is not concept of an index.  Instead of accessing specific elements with an index, we will access specific **values** with their **key**.
+Much more readable!  We now have a collection of **key/value** pairs.  The keys are the inventory item, and the values are the quantity of that item.  When working with an array or list, we access specific elements with it's **index**.  But, a dictionary is an **unordered** collection, so there is not the concept of an index.  Instead of accessing specific elements with an index, we will access specific **values** with their **key**.
+
+In an Array or List, the index is a label for an element; similarly, in a Dictionary, a key is a label for a specific value. We use these labels (index or key) to access specific information (element or value).
 
 ```c#
 Console.WriteLine( $"toasters: {inventory["toasters"]}" );
@@ -132,11 +141,19 @@ dog bowls: 5
 */
 ```
 
-> With a partner: Try to add a new key/value pair for an existing key `inventory.Add("nails", 7234);`. What happens?  And why?
+> With a partner: 
+> * Try to add a new key/value pair for an existing key `inventory.Add("nails", 7234);`. What happens?  And why?
+> * Access the value of "toasters".
+> * Add 2 to the value of "dog bowls"
+> * Try to access the value of a key that doesn't exist, like "cups"? Can you predict what will happen?
+> In your own words, describe to each other what a key and value are.
 
 <!-- Before moving on to iterating over a dictionary, I think it might be helpful to do some more explicit exploration and/or explanation of key/value pairs -->
 
-You can also iterate over a dictionary collection.  Try running the code below; really think about what is happening on each line.
+
+#### Iterating Over a Dictionary
+
+As with a list, you can also iterate over a dictionary collection.  Try running the code below; really think about what is happening on each line.
 
 ```c#
 foreach (var (item, qty) in inventory)
@@ -146,6 +163,7 @@ foreach (var (item, qty) in inventory)
 ```
 
 ## Check for Understanding
+* What is the index of the first element in an Array or List?
 * Create an Array of the names of your favorite foods; let's call it `favoriteFoods`.
 * Imagine that you know need to change the list of your favorite foods (you've found you absolutely love green olives).  Recreate your `favoriteFoods` to the most appropriate collection type.
 * Write a program that will output a summary of your favorite foods.  Include the names of your favorite foods and the number of favorite foods that you have.  For example:
@@ -158,8 +176,9 @@ Pecans
 Praline
 ```
 * Describe the differences and similarites between an Array, a List, and a Dictionary.  What are some pros and cons of each?
+* Create a Dictionary of your favorite things.  The keys should be: "favorite food", "favorite movie", "favorite book", etc...
 
-<!-- This CFU block is a little light on dictionary work - is this intentional? The learning goals call out being able to use a dictionary, which seems like we should have some CFU content around actually creating one. -->
+<!-- This CFU block is a little light on dictionary work - is this intentional? The learning goals call out being able to use a dictionary, which seems like we should have some CFU content around actually creating one. ✅ -->
 
 <!-- I could see a situation where arrays, lists and dictionaries all being their own separate lesson, which could make it easier to chunk out content AND would make it easier for students to circle back to resources on the Launch site once live? -->
 

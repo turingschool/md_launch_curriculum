@@ -152,9 +152,9 @@ Now that there is a breakpoint placed on line 6, when we run the program, it wil
 
 Here, we can see that we are **paused** on line 6 (indicated by the orange arrow).
 
-When we look at the output panel, we can see our variable `dogs`, and expand into the details of that value.
+When we look at the output panel, we can see our variable `dogs` and the value it holds.
 
-> With a partner, discuss why we only see `"Sammy"` in the list.  Why are "Cutty" and "Nile" not in there?
+> With a partner, discuss why we only see `"Sammy"` in the string.  Why are "Cutty" and "Nile" not in there?
 
 ** Instructor Note ** we want students to understand that the breakpoint will pause the program *before* the line its on is executed.
 
@@ -193,9 +193,20 @@ In this example, part of the code before the next breakpoint includes a `ReadLin
 
 ![](/images/Mod1/ideanddebugging/BreakpointsInLoop.png)
 
+** Instructor Note ** Reiterate that breakpoints will cause a pause on a line _every_ time it is executed.  So, in a loop, we will have a break point on each iteration (not just the first one).
 
 ## Checks for Understanding
 * What is an IDE?
 * What are some benefits to using an IDE?
 * In your own words, describe how we use breakpoints to debug.
 * How do you add a breakpoint? How do you remove one or more breakpoints?
+* If we wanted to confirm the value of 'products' in the code below, what line would we put a breakpoint on?
+```
+1  string var products = "book, tv, iPad";
+2
+3  Console.WriteLine($"Current Inventory: {products}");
+4
+5  products = products + ", ear buds";
+6
+7  Console.WriteLine($"Current Inventory: {products});
+```

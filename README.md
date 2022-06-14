@@ -14,29 +14,31 @@
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
 * 🎒[Intro to IDEs and Debugging](/lessons/mod1/IDEandDebugging.md)
 * 💡⬆️ Lab/Excercise
-* 🎒[Collections](/lessons/mod1/Collections.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)
+* 🎒[Debugging](/lessons/mod1/IDEandDebugging.md)
+* 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 3
+* 🎒[Collections](/lessons/mod1/Collections.md)
+* 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)
 * 🎒[Methods](/lessons/mod1/Methods.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Methods.md)
 * 🎒[Classes](/lessons/mod1/Classes.md)
 * 💡⬆️ Lab/Excercise
-* 🎒[OOP](/lessons/mod1/OOP.md)
-* 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 4
+* 🎒[OOP](/lessons/mod1/OOP.md)
+* 💡⬆️ Lab/Excercise
 * 🎒[Class Interaction](/lessons/mod1/ClassInteraction.md)
 * 💡⬆️ Lab/Excercise
 * 🎒[Unit Tests I](/lessons/mod1/UnitTesting.md)
 * 💡⬆️ Lab/Excercise
-* 🎒Unit Tests II
-* 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 5
+* 🎒Unit Tests II
+* 💡⬆️ Lab/Excercise
 * 🎒Scope
 * 💡⬆️ Lab/Excercise
 * 🎒Refactoring

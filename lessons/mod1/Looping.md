@@ -172,6 +172,18 @@ Finally, with the statement `i++` we update the value of our counter, i. This ad
 > }
 >```
 
+### Iteration
+
+In any looping statement, we refer to each *loop* as an **iteration**.  Each time the code block is executed, that counts as a single iteration.  If a loop repeats 5 times, we would describe that loop as **iterating 5 times** or **including 5 iterations**.
+
+> With a partner, discuss how many iterations the following code will go through:
+> ```c#
+> var counter = 0;
+> while counter < 5
+> {
+>   Console.WriteLine($"Counter is: {counter}");
+> }
+
 <!-- I think if we focus on for loops, we will likely need to beef this section up to break down each component more explicitly. I think the FE lesson on this actually does an OK job of breaking down the different parts: https://frontend.turing.edu/lessons/module-1/js-for-loops.html ✅ -->
 
 ### Check for Understanding

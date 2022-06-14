@@ -12,12 +12,12 @@
 ### Week 2
 * 🎒[Looping](/lessons/mod1/Looping.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
-* 🎒[Intro to IDEs and Debugging](/lessons/mod1/IntroToIDE.md)
+* 🎒[Intro to IDEs](/lessons/mod1/IntroToIDE.md)
 * 💡⬆️ Lab/Excercise
 * 🎒[Debugging](/lessons/mod1/Debugging.md)
 * 💡⬆️ Lab/Excercise
-* 🎒Topic Review
 * 🧪Weekly Assessment
+* 🎒Topic Review
 ### Week 3
 * 🎒[Collections](/lessons/mod1/Collections.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)

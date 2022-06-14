@@ -7,7 +7,7 @@
 
 ## Warm Up
 
-> Thinking back to what we learned about Computers and Programming, write down some ideas on why we have been using REPLit to create programs, rather than a text editor like Word, Docs, or Notepad?
+> Thinking back to what we learned about Computers and how they use _input_. In your notebook, write down some ideas on why we have been using REPLit to create programs, rather than a text editor like Word, Docs, or Notepad?
 
 ## IDE
 In order for our computers to execute code that we write, that code needs to be compiled, or built, into an executable program that a computer can understand.  We write programs in language that is easy for us, as humans, to read (in this course, we use c#), but that is not what is executed by computers directly.  Before a computer can understand the instructions of a program, our code needs to be transformed (compiled, or built) into computer language.  The important thing  to understand is that there are multiple steps happening in the background when we 'run' a program.
@@ -132,81 +132,8 @@ For more information on customizations, you can review the [Microsoft Docs](http
 > 2. Ask a user for a movie genre; continue asking if the genre provided is not a key in the dictionary (you can hard-code this, or take a look at the [Contains()](https://www.geeksforgeeks.org/c-sharp-dictionary-containskey-method/) method.)
 > 3. Output a movie to the user based on their suggestion.
 
-## Debugging with Breakpoints
 
-One key reason to use an IDE is for the debugging options it provides.  **Debugging** refers to the process of identifying where a bug in your code exists, and updating the code to remove that bug.
-
-Up to now, your debugging has probably looked like a lot of guess and check - you've made an educated guess on what might be going wrong in your program, made a change, and then run the program again.  With an IDE and breakpoints, debugging can be more precise.
-
-A **breakpoint** is a line decoration that we can use to * pause * our progam at a certain point _while it is running_.  We can then explore the state of objects in that program - we can see the value of a specific variable, or the items in a list.
-
-### Adding a Breakpoint
-
-To place a **breakpoint**, we click in the 'gutter' on the line where we want to pause the program.
-
-![](/images/Mod1/ideanddebugging/AddBreakpoint.png)
-
-Now that there is a breakpoint placed on line 6, when we run the program, it will pause at that point, allowing us to inspect the state of our program in the **Output** panel.
-
-![](/images/Mod1/ideanddebugging/OneBreakpointPause.png)
-
-Here, we can see that we are **paused** on line 6 (indicated by the orange arrow).
-
-When we look at the output panel, we can see our variable `dogs` and the value it holds.
-
-> With a partner, discuss why we only see `"Sammy"` in the string.  Why are "Cutty" and "Nile" not in there?
-
-** Instructor Note ** we want students to understand that the breakpoint will pause the program *before* the line its on is executed.
-
-### Continuing or Stopping Program Execution
-
-With a breakpoint, we have **paused** our program at a certain point in its execution.  Once we have gathered the information we need from this point, we can either **contintue** or **stop** the program. To continue running the rest of the program, use the green `Continue` button; to stop execution and exit the program, use the red `stop` icon.
-
-![](/images/Mod1/ideanddebugging/ContinueOrStop.png)
-
-### Removing Breakpoints
-
-When you are done debugging, you will want to remove the breakpoints you have placed; you do not want to keep breakpoints in any final project.  You can remove a breakpoint by clicking on it again.  Or, if you are unsure of where your breakpoint(s) is, you can use the 'Delete All Breakpoints' option under the Debug menu.
-
-![](/images/Mod1/ideanddebugging/DeleteAllBreakpoints.png)
-
-### Adding Multiple Breakpoints
-
-Often, it will be useful to place multiple breakpoints.  You can do so by clicking in the gutter on as many lines as you like.
-
-When multiple breakpoints exist, the program will pause at each breakpoint in the order of execution.  In the example below, we pause first on line 6.
-
-![](/images/Mod1/ideanddebugging/FirstOfTwoBreakpoints.png)
-
-We can see that at this first breakpoint, the only variable that exists _at this moment_ is `dogs`.  The code below line 5 has not yet been executed.
-
-To continue execution to the next breakpoint, we click on the `Continue` button.
-
-In this example, part of the code before the next breakpoint includes a `ReadLine()`; so we will need to provide some user input, just like we would when running this program without breakpoints.  After providing that input, you will see that we are now at the second breakpoint, on line 12; note the difference between the breakpoint icons, the one with the orange arrow is where we are in the program execution.
-
-![](/images/Mod1/ideanddebugging/SecondOfTwoBreakpoints.png)
-
-
-### Breakpoints in Loops
-
-> With a partner, take a look at the code snippet below.  If we `Continue`d through the program, how many breakpoints would we hit?
-
-![](/images/Mod1/ideanddebugging/BreakpointsInLoop.png)
-
-** Instructor Note ** Reiterate that breakpoints will cause a pause on a line _every_ time it is executed.  So, in a loop, we will have a break point on each iteration (not just the first one).
 
 ## Checks for Understanding
 * What is an IDE?
 * What are some benefits to using an IDE?
-* In your own words, describe how we use breakpoints to debug.
-* How do you add a breakpoint? How do you remove one or more breakpoints?
-* If we wanted to confirm the value of 'products' in the code below, what line would we put a breakpoint on?
-```
-1  string var products = "book, tv, iPad";
-2
-3  Console.WriteLine($"Current Inventory: {products}");
-4
-5  products = products + ", ear buds";
-6
-7  Console.WriteLine($"Current Inventory: {products});
-```

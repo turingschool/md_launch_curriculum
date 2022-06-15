@@ -16,7 +16,12 @@ Think about the programs we have built in REPLit.  When we hit the 'Run' button,
     1. Compile our code into an executable program.
     2. Tell its internal computer to execute (run) that program.
 
-The good news is that we do not have to worry too much about all this 'behind the scenes' stuff because we have **Integrated Development Environments (IDEs)** that do this work for us. An IDE combines the activities of: editing code, building executables, and debugging.
+The good news is that we do not have to worry too much about all this 'behind the scenes' stuff because we have **Integrated Development Environments (IDEs)** that do this work for us. 
+
+An IDE combines the activities of: 
+- editing code 
+- building executables
+- debugging.
 
 REPLit is a very simple IDE.  Today, we are going to start working with a much more robust IDE - [Visual Studio](https://visualstudio.microsoft.com/free-developer-offers/)
 
@@ -28,7 +33,7 @@ We will follow these steps to download Visual Studio Community (a free IDE that 
 ![](/images/Mod1/ideanddebugging/VisualStudioDownloadButton.png)
 3. Click on the VisualStudioSetup.Exe file download
 ![](/images/Mod1/ideanddebugging/EXEfiledownload.png)
-4. When asked if you want to allow this program to make changes to your computer, click 'YES'.
+4. When asked if you want to allow this program to make changes to your computer, click `YES`.
 5. Follow the prompts of the download wizard to complete setup.  We will use all of the default settings.
 6. When completed, you should see a screen like this (with fewer options on the left hand side)
 ![](/images/Mod1/ideanddebugging/VisualStudioDownloaded.png)
@@ -55,11 +60,11 @@ Let's go back to our Visual Studio, select `Console App`, and click `Next`.
 
 ![](/images/Mod1/ideanddebugging/ChooseANewProject.png)
 
-We will choose the framework we want to use - .NET 6.0, and click `Create`.
+We will choose the framework we want to use - `.NET 6.0`, and click `Create`.
 
 ![](/images/Mod1/ideanddebugging/ChooseFrameworkCreate.png)
 
-Lastly, we will give our project a name, 'HelloWorld'.  We can leave the project in the suggested folder, and let the solution name autocomplete.
+Lastly, we will give our project a name, `HelloWorld`.  We can leave the project in the suggested folder, and let the solution name autocomplete.
 
 ![](/images/Mod1/ideanddebugging/NewProjectName.png)
 
@@ -77,17 +82,20 @@ After running, you will see a Console Window appear.  This is slightly different
 
 ### Anatomy of Visual Studio
 There is a lot that we will be using in Video Studio over the coming months.  We are going to focus on 4 features today:
-    * Solution Explorer
-    * Code Editor
-    * Run/Debug Functions
-    * Build/Debugging Output
+- Solution Explorer
+- Code Editor
+- Run/Debug Functions
+- Build/Debugging Output
 
 ![](/images/Mod1/ideanddebugging/AnatomyOfVisualStudio.png)
 
 **Code Editor**: This is where you will write and edit code.
+
 **Solution Explorer**: From here, you can navigate between different files in your program.  This is also where you can see different aspects of the project setup.  We will explore more about project setup in later lessons.
+
 **Build/Debug Output**: When you run your project, the first thing that will happen is that the project will be **built**.  Building is the process that .NET uses to compile our code into Computer Language.  If there are any errors during the build process, they will be displayed here.  Similarly, if we are **debugging** our program with breakpoints, we will see related information here - more on that later in the lesson!
-**Run/Debug**: The filled green 'play' button is how we will execute (run) our programs. You can also use the keyboard shortcut `F5` to run a program.
+
+**Run/Debug**: The filled green `Play` button is how we will execute (run) our programs. You can also use the keyboard shortcut `F5` to run a program.
 
 If at any point, your solution explorer our output panes disappear, you can use the `View` options to show them again.
 
@@ -113,10 +121,10 @@ You might come across an even more complex suggestion when creating specific cod
 The Visual Studio IDE is highly customizable.  There are a lot of changes you _could_ make to the appearance.  One customization that we will definitely want to make is to add the line numbers to the code editor (this will be helpful when describing your code, and debugging).
 
 Follow these steps:
-1. Under 'Tools', select 'Options'
-2. Expand 'Text Editor', 'All Languages'
-3. Select 'General'
-4. Check the box for 'Line Numbers' and click 'Ok'
+1. Under `Tools`, select `Options`
+2. Expand `Text Editor`, `All Languages`
+3. Select `General`
+4. Check the box for `Line Numbers` and click `OK`
 
 ![](/images/Mod1/ideanddebugging/LineNumberOption.png)
 
@@ -137,3 +145,9 @@ For more information on customizations, you can review the [Microsoft Docs](http
 ## Checks for Understanding
 * What is an IDE?
 * What are some benefits to using an IDE?
+
+
+<!-- Really strong use of visuals/screenshots in this lesson. I think some of the arrows get a little hard to see at times so it might be worth adjusting to a more prominent color/weight, but overall pretty solid!
+
+I am excited to see what the lab looks like for this! 
+ -->

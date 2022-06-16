@@ -30,10 +30,7 @@ or it may be a question that returns a true/false (boolean) answer. For example:
 - While looking for a parking spot at a crowded sporting event, you will:
   1. Look for a spot
   2. If no spot is seen, continue driving
-  3. Repeat steps 1 and 2 until a spot is found `(full == false)`  
-
-<!-- Was there supposed to be an example for the below? Perhaps I am misunderstood and it just reads a little unclear -->
-A Loop that executes until a question returns true or false (for an unknown number of times).
+  3. Repeat steps 1 and 2 until a spot is found `(full == false)`(for an unknown number of times).
 
 
 ## `while` loop
@@ -151,8 +148,15 @@ We begin with the **initial expression**: `var i = 0`. Where do we want our loop
 This variable is commonly named `i`, or `index`, and will act as a counter. It is created the first time the loop is run.
 
 #### Condition
-<!-- Wouldn't the below example stop when the index is at 4?-->
-Then we set a **condition** that tells the loop when to stop running: `i < 5`;. In this case, the condition indicates that the loop will stop when i equals 5. 
+<!-- Wouldn't the below example stop when the index is at 4? Yes, this is unclear ✅-->
+Then we set a **condition** that tells the loop when to stop running: `i < 5`;. In this case, the condition indicates that the loop will no longer execute the code block when `i` is 5.  In other words, in the last executed block:
+  * `i` is 4
+  * the condition is met (it returns `true`)
+  * the code block is executed
+  * `i` is incremented (`i` is now 5)
+  * The condition is **not** met, and the loop stops.
+
+** Instructor Note ** This would be a good opportunity to do some diagramming, keeping track of index values during iteration, and demostrating _explicit_ code annotation.
 
 The condition _may_ use a variable that is assigned a value. for example:
 ```c#

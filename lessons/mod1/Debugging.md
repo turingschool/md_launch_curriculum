@@ -1,7 +1,15 @@
 # Debugging
-<!-- Let's add some learning goals here-->
+<!-- Let's add some learning goals here - whoops! ✅-->
+
+## Learning Goals
+* Understand what a bug is
+* Practice Debugging with Breakpoints
 
 ## Warmup
+
+> In your notebook, write about a time when you tried something and it didn't go as planned.  How did you know things were going off course?  Were you able to make adjustments and get back on track?
+
+As developers there will often be times when things are not working in just the way we want.  It is a completely normal part of the process of writing code to come across issues and errors as we are developing.
 
 ## What is a bug?
 
@@ -79,8 +87,8 @@ In this example, part of the code before the next breakpoint includes a `ReadLin
 ## Checks for Understanding
 * In your own words, describe how we use breakpoints to debug.
 * How do you add a breakpoint? How do you remove one or more breakpoints?
-<!-- I think the question below is a little unclear - perhaps consider "confirm value of products after it has been reassigned? -->
-* If we wanted to confirm the value of `products` in the code below, what line would we put a breakpoint on?
+<!-- I think the question below is a little unclear - perhaps consider "confirm value of products after it has been reassigned? ✅-->
+* If we wanted to confirm the value of `products` after it has been reassigned in the code below, on what line would we put a breakpoint?
 ```
 1  string var products = "book, tv, iPad";
 2

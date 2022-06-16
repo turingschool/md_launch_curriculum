@@ -3,7 +3,6 @@
 ## Learning Goals
 * Define and start using an IDE
 * Identify the benefites of using an IDE
-* Practice Debugging with Breakpoints
 
 ## Warm Up
 

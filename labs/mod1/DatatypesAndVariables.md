@@ -42,7 +42,9 @@ After watching these videos, in the repl that you forked during the Practice seg
 
 ### String Interpolation and Concatenation
 
-It is common in programming to interpolate (or, bring together) multiple pieces of data into one string.  Work through [this tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/interpolated-strings) to get an introduction.
+It is common in programming to interpolate (or, bring together) multiple pieces of data into one string.  Work through Sections [1](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/interpolated-strings?tutorial-step=1) and [2](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/interpolated-strings?tutorial-step=2) of [this tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/interpolated-strings) to get an introduction.
+
+We have already seen another common string manipulation strategy: concatenation.  Concatenation appends or prepends additional information onto an existing string; in other words, it adds something to the end or beginning of an existing string.  Read through the [Microsoft Concatenate Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/how-to/concatenate-multiple-strings).  There is a lot of information here (as with most documentation!); not all of it is absolutely necessary to know.  The most important things will be the information that helps you answer the questions below.
 
 After working through the tutorial, answer the following questions in a notebook:
 1. Are there any differences between the following code statements? If yes, how are they different?  A good sentence starter might be: When I run this code, this is what happens...

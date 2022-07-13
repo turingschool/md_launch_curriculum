@@ -19,7 +19,7 @@ During today's lab, we will be assigning you into some groups to get you started
 
 With your group, discuss your answers to the Checks for Understanding from the [Intro To Programming Lesson](/lessons/mod1/introToProgramming.md#check-for-understanding).  To get the ball rolling, you can start with these prompts and sentence starters:
     * When I described programming, I said that...
-    * I was didn't quite understand...
+    * I didn't quite understand...
     * Let's discuss any differences in our diagrams.
 
 ### Preparation
@@ -36,3 +36,4 @@ Tomorrow, we will be discussing one of the most important fundamentals of progra
     - 10 books that are inside a box
 
 
+<!-- Like that we are having students do some combined learning + prep for future lessons here. I think it might be helpful to have a breakpoint in between the CFUs on Intro to Prrogramming and watching the video so that as a whole group/with instructor facilitation, we can practice some technical articulation and clear up any misunderstandings.  -->

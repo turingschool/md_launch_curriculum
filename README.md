@@ -1,5 +1,7 @@
 # Lesson List 
 
+[Syllabus](https://docs.google.com/document/d/1mG_CBgZsy_mTbdaKlpmaLlnNlNQlSNGHFQ1hJKsR_qY/edit)
+
 ## Mod 1
 ### Week 1
 * 🎒[Intro to Programming (How Computers Work)](./lessons/mod1/introToProgramming.md)

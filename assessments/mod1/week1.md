@@ -8,7 +8,7 @@ During this assessment, you may use any resource other than fellow students.  Fe
 
 ## Questions and Exercises (10 Points Total)
 
-**Fork** [This REPL](https://replit.com/@MeganMcMahon1/Week1Assessment#main.cs) and complete the 9 questions and exercises it contains.  Each question or exercise is indicated by a single line comment prompt like this: `// This is a single line comment that gives instructions` followed by a multiline comment where you will complete the exercise: `/* < these are the multiline comment indicators > */`.  For the exercises, you can verify they are working by removing the multiline comments and running the program.
+**Fork** [This REPL](https://replit.com/@MeganMcMahon1/Week1Assessment#main.cs) and complete the questions and exercises it contains.  Each question or exercise is indicated by a single line comment prompt like this: `// This is a single line comment that gives instructions` followed by a multiline comment where you will complete the exercise: `/* < these are the multiline comment indicators > */`.  For the exercises, you can verify they are working by removing the multiline comments and running the program.
 
 ### Submission and Feedback
 When completed, add your instructors as collaborators to your REPLit project and DM them a link to your forked repl.  Instructors will leave feedback on your replit project.

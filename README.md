@@ -1,8 +1,11 @@
 # Lesson List 
 
+[Syllabus](https://docs.google.com/document/d/1mG_CBgZsy_mTbdaKlpmaLlnNlNQlSNGHFQ1hJKsR_qY/edit)
+
 ## Mod 1
 ### Week 1
 * 🎒[Intro to Programming (How Computers Work)](./lessons/mod1/introToProgramming.md)
+* 💡⬆️ [Intro to Labs](./labs/mod1/IntroToLabs.md)
 * 🎒[Datatypes & Variables](./lessons/mod1/datatypesAndVariables.md)
 * 💡⬆️ [Lab/Excercise](./labs/mod1/DatatypesAndVariables.md)
 * 🎒[Conditional Logic](./lessons/mod1/ConditionalLogic.md)

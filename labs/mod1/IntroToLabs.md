@@ -13,7 +13,7 @@ During lab time, you are **encouraged** to work with your cohort-mates. By discu
 
 During today's lab, we will be assigning you into some groups to get you started down this collaborative path; but in future labs, you will be responsible for reaching out to your cohort for collaboration.
 
-** Instructor Note ** Because this is a shorter lab, we recommend splitting the cohort into groups of 3, and keeping them in those groups for both the Practice and the Preparation sections.  Keep an eye on the time, and with about 30 minutes left, ask the groups to switch to 'preparation' if they have not already.
+** Instructor Note ** Because this is a shorter lab, we recommend splitting the cohort into groups of 3, and keeping them in those groups for both the Practice and the Preparation sections.  Keep an eye on the time, and with about 30 minutes left, bring the groups back together for some large group shareout (a great opportunity to practice technical articulation!)
 
 ### Practice
 
@@ -21,6 +21,8 @@ With your group, discuss your answers to the Checks for Understanding from the [
     * When I described programming, I said that...
     * I didn't quite understand...
     * Let's discuss any differences in our diagrams.
+
+As you review and discuss, make note of any lingering questions you may have, or of interesting discoveries you make! We will be coming together as a large group to share out before moving on to the next part of the lab.
 
 ### Preparation
 

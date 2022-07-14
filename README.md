@@ -13,11 +13,11 @@
 * 🎒[Looping](/lessons/mod1/Looping.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
 * 🎒[Intro to IDEs](/lessons/mod1/IntroToIDE.md)
-* 💡⬆️ Lab/Excercise
+* 💡⬆️ [Lab/Excercise](/labs/mod1/IntrotoIDE.md)
 * 🎒[Debugging](/lessons/mod1/Debugging.md)
-* 💡⬆️ Lab/Excercise
-* 🧪Weekly Assessment
-* 🎒Topic Review
+* 💡⬆️ [Lab/Excercise](/labs/mod1/Debugging.md)
+* 🧪[Weekly Assessment](/assessments/mod1/week2.md)
+* 🎒[Topic Review](lessons/mod1/Week2Review.md)
 ### Week 3
 * 🎒[Collections](/lessons/mod1/Collections.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)

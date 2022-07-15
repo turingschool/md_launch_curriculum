@@ -2,7 +2,7 @@
 Lab time is designed for you to prepare for upcoming lessons, and practice what you have learned so far.  Both aspects are important for your success.  During this time, you are encouraged to collaborate with fellow students, and reach out to instructors with any and all questions!
 
 ** Instructor Note ** We are going to ask students to do some written reflection during today's lab. As you circulate among students, Be sure to check that students are doing this reflection (not just jumping right into code!).  
-Before the lab: create groups of 2-3 students and post them in slack!  These groups can be the starting point for student collaboration.
+Before the lab: create groups of 2-3 students and post them in slack!  The students will get into these groups to psuedo-code 'Fizz Buzz'
 
 ## Practice
 
@@ -37,13 +37,16 @@ For example:
 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz...
 ```
 
-1. Take 10-15 minutes to pseudocode an implementation of 'FizzBuzz' - it will probably be helpful to use one or more of the methods we learned in the [Looping](/lessons/mod1/Looping.md) lesson 😉.
+1. In small groups, take 10-15 minutes to pseudocode an implementation of 'FizzBuzz' - it will probably be helpful to use one or more of the methods we learned in the [Looping](/lessons/mod1/Looping.md) lesson 😉.
 
-2. In the 'FizzBuzz' Solution you created above, implement your psuedo-code!
+2. Individually, In the 'FizzBuzz' Solution you created above, implement your psuedo-code!
 
-3. There are multiple ways to solve this problem - see if you can find a cohortmate that used an alternative method to implement 'FizzBuzz'.
+3. There are multiple ways to solve this problem - your instructor is going to pair you with someone (or a group of someones) who approached the problem in a different way.  In that group, discuss the following:
+    * Each person will do a walkthrough of their code - share your screen and describe what is happening on each line.
+    * Discuss which parts of the project were difficult, or didn't work as expected.  Did you come accross any errors? If so, how did you fix them?
+    * As a group, come up with three benefits of using Visual Studio to write this code.  As you brainstorm, you might think about what tools Visual Studio has, or how you could (or could not) execute the program in an application like Microsoft Word or Google Docs.
+    * Nominate 1 person to share out 1 interesting thing your group discussed.
 
 
-
-## Preparation
+**Keep and eye on Slack** We will be coming together to discuss your reflections!
 

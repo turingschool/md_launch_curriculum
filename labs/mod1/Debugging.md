@@ -1,14 +1,91 @@
 # Lab
 Lab time is designed for you to prepare for upcoming lessons, and practice what you have learned so far.  Both aspects are important for your success.  During this time, you are encouraged to collaborate with fellow students, and reach out to instructors with any and all questions!
 
+** Instructor Note ** Before this lab, set up groups of 2-3 students.  They will be working through a broken order taking application, similar to the one they completed during week1.  The app has 4 bugs
+
 ## Practice
+
+In your small groups, you are going to work through the debugging exercise below.
+
+1. Create a new Console Application in Visual Studio; you can name your solution 'DebuggingLab'.
+
+2. Copy the code below into `Program.cs` in your new solution.
+
+```cs
+var margosMenu = "Menu:\nPizza\nPopcorn\nPears\nPistachio Ice Cream\nPeach Pie\nPupusas";
+
+Console.WriteLine("Welcome to Margo's Restaurant\n\n" + margosMenu);
+Console.Write("How many guests are in your party? ");
+
+var numGuests = Convert.ToString(Console.ReadLine());
+var combinedOrder;
+
+for (int i = 0; i < numGuests++; i++)
+{
+    Console.Write($"Order {i + 1}: ");
+    var order = Console.ReadLine();
+    if (margosMenu.ToLower().Contains(order))
+    {
+        combinedOrder += order;
+    }
+    if (i + 1 < numGuests)
+    {
+        combinedOrder += "\n";
+    }
+}
+
+var summary = $"Order Summary\n{combinedOrder}\n\nTotal: ${combinedOrder.Replace(" ", "").Replace(", ", "").Length * 2.12}";
+Console.WriteLine(summary);
+```
+
+3. There are are 5 bugs in this code that need to be fixed in order for the application to run as expected.  Use breakpoints and your knowledge of C# to clear out these bugs! Work one by one through each issue you encounter.  Fix ONE thing, and then try to run the program.
+
+4. As you work, take notes on each bug you find.
+    * What line is that bug on?
+    * Did you use a breakpoint to determine the issue?
+    * Was the bug preventing the program from building? Or causing unexpected behavior?
+    * How did you 'fix' the issue, and how did you know when it was fixed?
+
+When fixed, the application should be able to be used to process this order:
+```
+Welcome to Margo's Restaurant
+
+Menu:
+Pizza
+Popcorn
+Pears
+Pistachio Ice Cream
+Peach Pie
+Pupusas
+How many guests are in your party? 2
+Order 1: PIZZA
+Order 2: pistachio ice cream
+
+Order Summary
+PIZZA
+pistachio ice cream
+
+Total: $46.64
+```
+
+**Keep an eye on slack** We will be coming back together and asking groups to share out their findings on specific issues, so be ready to share some notes!
+
+**Instructor Note** The 4 bugs that we want to identify are on lines:
+    6> We should convert .ToInt16() or .ToInt32().
+    7> combinedOrder needs to either be initialized as an empty string.
+    9> numGuesses should not be incremented.
+    13> We need to call .ToLower() on the order.
+    23> Instead of replacing `", "`, they should repleace `"\n"` to get the correct price calculation.
 
 ## Preparation
 
-## Arrays
+### Arrays
 Up to this point, we have worked with single pieces of data: a string, a number, a date.  But, often we want to work with a list of many strings, numbers, or other datatypes.  Generally, in programming, these lists are referred to as **Arrays**.
 
 Work through [this arrays tutorial](
 https://docs.microsoft.com/en-us/learn/modules/csharp-arrays/1-introduction) (including the Knowledge Check at the end!)
 
-### Array CFU
+In your notebook, answer the following questions:
+    * What is an array?
+    * How is an array different from a string?
+    * Given this array: `string[] users = { "John", "Paul", "George", "Pete" }`, how would you change `"Pete"` to `"Ringo`?

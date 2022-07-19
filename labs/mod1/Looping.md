@@ -6,6 +6,10 @@ Lab time is designed for you to prepare for upcoming lessons, and practice what 
     2. Students will be asked to think about the implications of their current implemenation.
     3. In their groups, ask students to re-build their implementations using both 'for' and 'while' loops.
 
+## Lab Objectives
+* Practice using `for` and `while` loops.
+* Introduce **refactoring** by updating a previously completed application.
+
 ## Practice
 
 Now that we have learned about loops, let's revisit our restauraunt ordering application from [last week's lab](/labs/mod1/ConditionalLogic.md).  Open your forked copy of the starter repo - we are going to use that as a basis for today's lab.  

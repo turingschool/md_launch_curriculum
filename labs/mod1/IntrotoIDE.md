@@ -61,3 +61,7 @@ For example:
 <!-- I am really excited to see how this lab works! I like how it blends some exploration with a new tool (VS) while reinforcing concepts from previous lesosns. I think the temptation will be to focus mostly on the implementation of FizzBuzz, but we need to ensure we maintain a strong focus on the learning goals of utilziing an IDE. -->
 
 <!-- Speaking of learning goals, I wonder if students AND instructors would benefit from having 1-2 learning goals associated with each lab? I can imagine as we get into trickier content it may be difficult for students to know EXACTLY what the focus of the lab should be - do you want to take a stab at adding 1-2 learning goals for each lab moving forward? -->
+
+## Preparation
+
+Tomorrow, we are going to be discussing **debugging**.  Spend 5-10 minutes googling to come up with a definition of **debugging**; you could try phrases like `what is a bug in programming?`, `debugging code`, `c# debugging tools`.  In your notebook, write out your definition of debugging.

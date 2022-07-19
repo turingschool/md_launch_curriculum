@@ -3,6 +3,11 @@ Lab time is designed for you to prepare for upcoming lessons, and practice what 
 
 ** Instructor Note ** Before this lab, set up groups of 2-3 students.  They will be working through a broken order taking application, similar to the one they completed during week1.  The app has 4 bugs (outlined below).  Initially, keep an eye on how students are approaching the exercise - we may need to nudge them to describe how they believe the application is or should be running before jumping into fixing the bugs.
 
+## Lab Objectives
+* Practice placing and using breakpoints to debug an application.
+* Read errors and use that information to make changes.
+* Create and manipulate Arrays.
+
 ## Practice
 
 In your small groups, you are going to work through the debugging exercise below.

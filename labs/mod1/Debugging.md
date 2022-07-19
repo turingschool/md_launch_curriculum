@@ -89,3 +89,10 @@ In your notebook, answer the following questions:
     * What is an array?
     * How is an array different from a string?
     * Given this array: `string[] users = { "John", "Paul", "George", "Pete" }`, how would you change `"Pete"` to `"Ringo`?
+
+
+<!-- I love that this lab combines some technical exploration with some preparation for the following day! I think it would be great if we had even a small Preparation section for an upcoming lesson in each lab. Doesn't need to be too involved, but potentially some small exploration into the next day's topic! -->
+
+<!-- I remember there was an activity like this back in the day in FE and one pain point I remember was that students sometimes struggled to tinker enough with the small application to figure out where a bug might even exist. I like how you explained in the directions that there needs to be some exploration to find all of the bugs. I wonder if we will need to be even more explicit or if folks will figure it out on their own. I think having some language around having students discuss HOW they think the program should run vs. the observed behavior might have them hone in on where it might be screwing up. I think we can wait and see how this works in practice before making any tweaks!
+
+ -->

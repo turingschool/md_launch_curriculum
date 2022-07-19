@@ -13,33 +13,35 @@
 * 🧪[Weekly Assessment](./assessments/mod1/week1.md)
 * 🎒[Topic Review](/lessons/mod1/Week1Review.md)
 ### Week 2
-* 🎒[Looping](/lessons/mod1/ConditionalLogic.md)
+* 🎒[Looping](/lessons/mod1/Looping.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
-* 🎒Intro to IDEs and Debugging
-* 💡⬆️ Lab/Excercise
+* 🎒[Intro to IDEs](/lessons/mod1/IntroToIDE.md)
+* 💡⬆️ [Lab/Excercise](/labs/mod1/IntrotoIDE.md)
+* 🎒[Debugging](/lessons/mod1/Debugging.md)
+* 💡⬆️ [Lab/Excercise](/labs/mod1/Debugging.md)
+* 🧪[Weekly Assessment](/assessments/mod1/week2.md)
+* 🎒[Topic Review](lessons/mod1/Week2Review.md)
+### Week 3
 * 🎒[Collections](/lessons/mod1/Collections.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)
-* 🎒Topic Review
-* 🧪Weekly Assessment
-### Week 3
 * 🎒[Methods](/lessons/mod1/Methods.md)
 * 💡⬆️ [Lab/Excercise](/labs/mod1/Methods.md)
 * 🎒[Classes](/lessons/mod1/Classes.md)
 * 💡⬆️ Lab/Excercise
-* 🎒[OOP](/lessons/mod1/OOP.md)
-* 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 4
+* 🎒[OOP](/lessons/mod1/OOP.md)
+* 💡⬆️ Lab/Excercise
 * 🎒[Class Interaction](/lessons/mod1/ClassInteraction.md)
 * 💡⬆️ Lab/Excercise
 * 🎒[Unit Tests I](/lessons/mod1/UnitTesting.md)
 * 💡⬆️ Lab/Excercise
-* 🎒Unit Tests II
-* 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 5
+* 🎒Unit Tests II
+* 💡⬆️ Lab/Excercise
 * 🎒Scope
 * 💡⬆️ Lab/Excercise
 * 🎒Refactoring

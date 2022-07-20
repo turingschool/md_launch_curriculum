@@ -4,38 +4,38 @@
 
 ## Mod 1
 ### Week 1
-* 🎒[Intro to Programming (How Computers Work)](./lessons/mod1/introToProgramming.md)
-* 💡⬆️ [Intro to Labs](./labs/mod1/IntroToLabs.md)
-* 🎒[Datatypes & Variables](./lessons/mod1/datatypesAndVariables.md)
-* 💡⬆️ [Lab/Excercise](./labs/mod1/DatatypesAndVariables.md)
-* 🎒[Conditional Logic](./lessons/mod1/ConditionalLogic.md)
-* 💡⬆️ [Lab/Excercise](./labs/mod1/ConditionalLogic.md)
-* 🧪[Weekly Assessment](./assessments/mod1/week1.md)
-* 🎒[Topic Review](/lessons/mod1/Week1Review.md)
+* 🎒[Intro to Programming (How Computers Work)](/Mod1/Lessons/Week1/introToProgramming.md)
+* 💡⬆️ [Intro to Labs](/Mod1/Labs/Week1/IntroToLabs.md)
+* 🎒[Datatypes & Variables](/Mod1/Lessons/Week1/datatypesAndVariables.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week1/DatatypesAndVariables.md)
+* 🎒[Conditional Logic](/Mod1/Lessons/Week1/ConditionalLogic.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week1/ConditionalLogic.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/week1.md)
+* 🎒[Topic Review](/Mod1/Lessons/Week1/WeekInReview.md)
 ### Week 2
-* 🎒[Looping](/lessons/mod1/Looping.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Looping.md)
-* 🎒[Intro to IDEs](/lessons/mod1/IntroToIDE.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/IntrotoIDE.md)
-* 🎒[Debugging](/lessons/mod1/Debugging.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Debugging.md)
-* 🧪[Weekly Assessment](/assessments/mod1/week2.md)
-* 🎒[Topic Review](lessons/mod1/Week2Review.md)
+* 🎒[Looping](/Mod1/Lessons/Week2/Looping.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week2/Looping.md)
+* 🎒[Intro to IDEs](/Mod1/Lessons/Week2/IntroToIDE.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week2/Looping.md)
+* 🎒[Debugging](/Mod1/Lessons/Week2/Debugging.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week2/Debugging.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/week2.md)
+* 🎒[Topic Review](Mod1/Lessons/Week2/WeekInReview.md)
 ### Week 3
-* 🎒[Collections](/lessons/mod1/Collections.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Collections.md)
-* 🎒[Methods](/lessons/mod1/Methods.md)
-* 💡⬆️ [Lab/Excercise](/labs/mod1/Methods.md)
-* 🎒[Classes](/lessons/mod1/Classes.md)
-* 💡⬆️ Lab/Excercise
+* 🎒[Collections](/Mod1/Lessons/Week3/Collections.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week3/Collections.md)
+* 🎒[Methods](/Mod1/Lessons/Week3/Methods.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week3/Methods.md)
+* 🎒[Classes](/Mod1/Lessons/Week3/Classes.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week3/Classes.md)
 * 🎒Topic Review
 * 🧪Weekly Assessment
 ### Week 4
-* 🎒[OOP](/lessons/mod1/OOP.md)
+* 🎒[OOP]()
 * 💡⬆️ Lab/Excercise
-* 🎒[Class Interaction](/lessons/mod1/ClassInteraction.md)
+* 🎒Class Interaction
 * 💡⬆️ Lab/Excercise
-* 🎒[Unit Tests I](/lessons/mod1/UnitTesting.md)
+* 🎒Unit Tests I
 * 💡⬆️ Lab/Excercise
 * 🎒Topic Review
 * 🧪Weekly Assessment

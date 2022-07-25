@@ -10,7 +10,7 @@
 From yesterday's lab work, in a notebook, answer the following questions.
 
 1. What is an **array**?  How is it different from a string or integer?
-1. What is at index 2 in this array: `string [] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
+1. What is at index 2 in this array: `string[] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
 1. What are some drawbacks to using an array?
 
 The idea of a list of elements organized in one place, like an array,is a common function of all modern programming languages.  We will see collections of data organized into lists all over our projects.  While the concept of a list of elements is common among languages, the way that each language works with those lists can be slightly different.

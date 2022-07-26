@@ -100,3 +100,7 @@ And, answer these questions in your notebook:
 * Is `using System;` required for our programs to execute?  Why, or why not?
 * In your own words, what is a `namespace`?
 
+
+<!-- I think these are all pretty good exercises and can see some of these being pretty spicy! I think perhaps for some (if not all of these exercises), it would be good to include some pseudocoding/gameplanning around how they want to implement the method before writing any code. I've found that even with "straightforward" prompts students will ofter overthink, or misinterpret, what the prompt is actually asking them to do. Also, by emphasizing pseudocoding we can have students improve their problem solving AND it would give them some nice concepts to google to actualyl implement their methods -->
+
+<!-- Love the prelearning on namespaces too! -->

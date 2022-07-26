@@ -108,3 +108,5 @@ In your notebook, create a list of the built-in methods you have used recently. 
 
 **Keep an Eye on slack** we will be coming back together to do a quick oerview of .Split(), and the definition of **method**.
 
+
+<!-- Another great lab! I think you do a good job of blending fun, exploratory work with "Real world" type exercises. I also love that this lab includes some pre-work for the next day that builds off of the learning students have already done! Not to keep repeating myself, but I am really excited for how you are building these labs - on the surface it seems like a great blend of exploration, practice, individual vs team work, opportunities for whole group. We will see how it all plays out in practice haha!  -->

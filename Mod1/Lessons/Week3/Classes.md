@@ -12,7 +12,7 @@ For example:
 
 * Type of object: Car
 * Specific instances:
-    * Megan's Suburu Outback, Madonna's Rolls Royce, that yellow camero for sale at Bob's Auto Mart.
+    * Megan's Suburu Outback, Madonna's Rolls Royce, that yellow Camero for sale at Bob's Auto Mart.
 * Attributes:
   * Make, Model, Color
 * Behaviors:
@@ -25,9 +25,9 @@ In programming, a **Class** is something that models:
 1. State, and
 2. Behavior
 
-State is what something *is*. Behavior is what something *does*. In the warm up, our *Class* was Car. We modeled the state of a Car by defining the attributes "make", "model, and "color". We modeled the behavior of a Car by defining the functionalities "Drive", "Reverse", and "Open Trunk".
+State is what something *is*. Behavior is what something *does*. In the warm up example, our *Class* was Car. We modeled the state of a Car by defining the attributes "make", "model, and "color". We modeled the behavior of a Car by defining the functionalities "Drive", "Reverse", and "Open Trunk".
 
-An **Instance** or **Object** is a concrete representation of a Class. In the previous activity, "Megan's Suburu Outback" is a specific Instance of the Car Class. We can also say that "Madonna's Rolls Royce" is a Car Object. Do not get confused by the terms Instance and Object. They mean the exact same thing (for now).
+An **Instance** or **Object** is a concrete representation of a Class. In the warmup example, "Megan's Suburu Outback" is a specific Instance of the Car Class. We can also say that "Madonna's Rolls Royce" is a Car Object. Do not get too caught up with the differnce in the terms Instance and Object; we are going to use these terms interchangeably.
 
 You could think of a **Class** like a blueprint for a house and an **Instance** as an actual house. The blueprint is a just an idea of how the house should be built, and the house is the realization of that blueprint.
 
@@ -81,9 +81,9 @@ Unicorn gloria = new Unicorn();
 
 Will this program compile and run?
 
-> With a partner, see if you can update the program.cs file so that it will compile
+> With a partner, see if you can update the program.cs file so that it will compile and run.
 
-As we learned in our IDE class earlier, we use `namespaces` to orgnanize related material in our programs.  .NET will automatically give us a namespace for our classes that matches our project name; so, when we need to use any classes in our project, we must be _within_ that namespace.  A namespace is a very simple container - it can hold class definitions, but no **executable code**.  When we want to execute code that incorporates more than the built-in classes, we need to create a `Program` class with a `Main` method that will hold our executable code:
+As we learned in yesterday's lab, we use `namespaces` to organize related material in our programs.  .NET will automatically give us a namespace for our classes that matches our project name; so, when we need to use any classes in our project, we must be _within_ that namespace.  A namespace is a very simple container - it can hold class definitions, but no **executable code**.  When we want to execute code that incorporates more than the built-in classes, we need to create a `Program` class with a `Main` method that will hold our executable code:
 
 ```c#
 namespace Classes
@@ -223,7 +223,7 @@ namespace Classes
 
 With your pair, define a Dog class and create instances of that class in your `program.cs`.
 
-Now, give your Dog class some properties that are set using arguments to initialize and some properties that have default values. Make some instances of your Dog class, and use `Console.WriteLine()` to verify that your person objects are being created appropriately.
+Now, give your Dog class some properties that are set using arguments to initialize and some properties that have default values. Make some instances of your Dog class, and use `Console.WriteLine()` to verify that your dog objects are being created appropriately.
 
 ## Using and Updating Properties
 

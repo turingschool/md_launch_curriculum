@@ -98,3 +98,9 @@ Watch [this video](https://docs.microsoft.com/en-us/shows/csharp-fundamentals-fo
 * How would you create a DateTime variable that holds your birthdate?
 * Given the two birthdates called `megansBirthdate` and `andysBirthdate`, how would you determine the age difference between them?
 * Let's think about the possible `Patient` class that has an attribute of `Birthdate`.  Write a method that would live in this class called `Age()`; it should return an integer that represents the Patient's age in years.
+
+<!-- I LOVE the brainstorming aspects of this lab - having students get more comfortable with just thinking about code concepts. I think this lab also lends itself well to having opportunities to come back together whole group to share ideas and spur more ways of thinking! -->
+
+<!-- Love that you gave students some starting code w. a familiar app (Order Taker App) - I think this should save some time and allow students to feel more confident jumping in to implement their new learning -->
+
+<!-- Also a big fan of the Date work - it's definitely important but likely not worth it's own lesson + a good thing for students to wade into on the self-teaching front! Will be interesting to see how the lab timing plays out - could easily make this section HW or something if students don't get to this part -->

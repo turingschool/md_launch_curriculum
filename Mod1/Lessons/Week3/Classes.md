@@ -133,6 +133,7 @@ namespace Classes
     }
 }
 ```
+<!-- You use the word "instantiated" above in the code block - I think it might be good to explain what that word means/offer a synonym somewhere before the block so students aren't confused as to what that word is -->
 
 This code block is run once and only once during an Object's lifetime, when we call `new`.  Let's put something a bit silly in there just to see this in action:
 
@@ -194,7 +195,7 @@ When we include the arguments in our constructor, we will need to pass those arg
 ```c#
 Unicorn fred = new Unicorn("Fred", "Silver");
 ```
-
+<!-- I think if possible it might be a good idea to have a diagram that shows the order dependantness of the arguments. Like some arrows pointing from the arguments to where the "fill in" in the class instance? Just a thought.  -->
 What we have just done is a very common pattern. We gave our constructor some arguments and we saved those arguments to **properties**. While this is a strong pattern, it is not a rule. For instance, you may want to set a property in your constructor that has a default value that isn't set using an argument:
 
 ```c#
@@ -291,7 +292,7 @@ namespace Classes
     }
 }
 ```
-
+<!-- In the above example, the get/set method might not stand out to a new programmer. Would a screenshot of this code block with that method circled/highlighted make it easier for students to recognize? Or do we think it might be better training to have students get used to looking at code without hints? -->
 > With a partner, get our current program.cs to run with this new implmentation - don't be afraid to google to find the answer!
 
 ### Partner Practice
@@ -356,3 +357,6 @@ On your own, answer the questions below.
     * What is a method? How do we write methods?
     * What are arguments?
     * What is a return value? How do you know what the return value of a method is? Do all methods have return values?
+
+
+    <!-- This seems like one of the "heavier" technical lessons so far - a lot of sytnax, building on previous skills, etc. Excited to see how it goes for students! I think that given there is a LOT going on here, adding some diagrams/code blocks with circles/highlights may be a way to help ease the burden on students. Not sure if it is necessary, but perhaps being mindful of small ways to reduce the mental overhead on students can really add up over a lesson, day, week, etc. -->

@@ -20,8 +20,43 @@ Console.WriteLine(result);
 ```
 
 **Exercise 2**
-Create a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  
-*A note on zip codes:  All zip codes are 5 characters long; if an integer zip code is fewer than 5 digits, we should add as many `0`s to the front of that number as we need to reach 5 characters.  So, a given integer zip of `525` would be normalized into `"00525"`.  the method should be able to be called like this:
+Create a method called `GetTwoDigitNumbers()` that takes a list of integers as an argument, and returns a list of only the numbers that have 2 digits.  The method should be able to be called like this:
+
+```c#
+var nums = new List<int> {1, 8, 19, 21, 29, 31, 99, 102, 145};
+var twoDigitNums = GetTwoDigitNumbers(nums);
+
+Console.WriteLine(twoDigitNums);
+//Output -> 19, 21, 29, 31, 99
+```
+
+**Exercise 3**
+Create a method called `CountFourLetterWords()` that takes a list of words as an argument, and returns an integer that is the count of words in that list that have 4 characters.  The method should be able to be called like this:
+
+```c#
+var words = new List<string> {"bake", "bark", "corn", "apple", "wart", "bird", "umbrella", "fart"};
+var countOfFourLetterWords = CountFourLetterWords(words);
+
+Console.WriteLine(countOfFourLetterWords);
+//Output -> 6
+```
+
+For the next three exercises, we only want you to **psuedo-code** what the method might look like.  You do not need to implement the code.  Really think about what needs to happen during each iteration, and what values you have access to at any given point.  We will revisit these three exercises later in the week!
+
+**Exercise 4**
+Pseudocode a method called `SumSecondNumbers()` that takes a multidementional array as an argument, where each element is an array of 2 integers, and sums the second integer of each sub-array.  You may want to take a look at [this resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/passing-arrays-as-arguments#passing-multidimensional-arrays-as-arguments) to help you get started.  If implemented (you don't need to do that today!), the method should be able to be called like this:
+
+```c#
+int[,] numberPairs = { { 1, 2 }, { 2, 3 }, { 3, 4 } };
+int sumOfSecondNums = SumSecondNumbers(numberPairs);
+
+Console.WriteLine(sumOfSecondNums);
+//Output -> 9
+```
+
+**Exercise 5**
+Psuedocode a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  
+*A note on zip codes:  All zip codes are 5 characters long; if an integer zip code is fewer than 5 digits, we should add as many `0`s to the front of that number as we need to reach 5 characters.  So, a given integer zip of `525` would be normalized into `"00525"`.  If implemented (you don't need to do that today!), the method should be able to be called like this:
 ```c#
 var zipCodes = new[] {80228, 5031, 2112, 52556, 515 };
 string[] result = NormalizedZipCodes(zipCodes);
@@ -30,8 +65,8 @@ Console.WriteLine(result);
 //Output -> 80228, 05031, 02112, 52556, 00515
 ```
 
-**Exercise 3**
-Create a method called `GetWordsByFirstLetter()` that takes two arguments: a character, and a list of strings.  The method should return a subset of the given list that contains all the words that start with the given character.  The method should be able to be called like this:
+**Exercise 6**
+Psuedocode a method called `GetWordsByFirstLetter()` that takes two arguments: a character, and a list of strings.  The method should return a subset of the given list that contains all the words that start with the given character.  If implemented (you don't need to do that today!), the method should be able to be called like this:
 
 ```c#
 var words = new List<string> {"weirdo", "quill", "fast", "krill", "quaint", "quieter", "koala"};
@@ -49,42 +84,9 @@ console.WriteLine(jwords);
 //Output -> 
 ```
 
-**Exercise 4**
-Create a method called `GetTwoDigitNumbers()` that takes a list of integers as an argument, and returns a list of only the numbers that have 2 digits.  The method should be able to be called like this:
-
-```c#
-var nums = new List<int> {1, 8, 19, 21, 29, 31, 99, 102, 145};
-var twoDigitNums = GetTwoDigitNumbers(nums);
-
-Console.WriteLine(twoDigitNums);
-//Output -> 19, 21, 29, 31, 99
-```
-
-**Exercise 5**
-Create a method called `CountFourLetterWords()` that takes a list of words as an argument, and returns an integer that is the count of words in that list that have 4 characters.  The method should be able to be called like this:
-
-```c#
-var words = new List<string> {"bake", "bark", "corn", "apple", "wart", "bird", "umbrella", "fart"};
-var countOfFourLetterWords = CountFourLetterWords(words);
-
-Console.WriteLine(countOfFourLetterWords);
-//Output -> 6
-```
-
-**Exercise 6**
-Create a method called `SumSecondNumbers()` that takes a multidementional array as an argument, where each element is an array of 2 integers, and sums the second integer of each sub-array.  You may want to take a look at [this resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/passing-arrays-as-arguments#passing-multidimensional-arrays-as-arguments) to help you get started.  The method should be able to be called like this:
-
-```c#
-int[,] numberPairs = { { 1, 2 }, { 2, 3 }, { 3, 4 } };
-int sumOfSecondNums = SumSecondNumbers(numberPairs);
-
-Console.WriteLine(sumOfSecondNums);
-//Output -> 9
-```
-
 **Keep an eye on slack** We will come back together as a group to share some of the code we have been working on!
 
-** Instructor Note ** Make sure to discuss exercises 2, 3, and 6.  These are more difficult, and it is possible that students will struggle to implement these.
+** Instructor Note ** WE want to highlight student solutions to the first 3 exercises, and discuss good examples of psuedo-code for the last 3 exercises.
 
 
 ## Preparation

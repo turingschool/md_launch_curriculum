@@ -128,7 +128,7 @@ namespace Classes
     {
         public Unicorn()
         {
-            // This code block will be executed when when a new unicorn is instantiated.
+            // This code block will be executed when when a new unicorn is created.
         }
     }
 }
@@ -195,7 +195,10 @@ When we include the arguments in our constructor, we will need to pass those arg
 ```c#
 Unicorn fred = new Unicorn("Fred", "Silver");
 ```
-<!-- I think if possible it might be a good idea to have a diagram that shows the order dependantness of the arguments. Like some arrows pointing from the arguments to where the "fill in" in the class instance? Just a thought.  -->
+
+![diagram of constructor attribute assignment](/Mod1/Images/Week3/ctor-attribute-assignment.png)
+
+<!-- I think if possible it might be a good idea to have a diagram that shows the order dependantness of the arguments. Like some arrows pointing from the arguments to where the "fill in" in the class instance? Just a thought. ✅ -->
 What we have just done is a very common pattern. We gave our constructor some arguments and we saved those arguments to **properties**. While this is a strong pattern, it is not a rule. For instance, you may want to set a property in your constructor that has a default value that isn't set using an argument:
 
 ```c#
@@ -273,6 +276,8 @@ Console.WriteLine($"{gloria.Name} is {gloria.Color}");
 
 
 Because it is _so common_ for us to change the values of some properties, there is actually a shortcut for this functionality!
+
+Take a look at the code below - what is _different_ about it than what we have previosly seen?
 
 ```c#
 namespace Classes

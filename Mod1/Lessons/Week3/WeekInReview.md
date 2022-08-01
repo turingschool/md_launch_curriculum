@@ -18,3 +18,5 @@ As a group, review the weekly assessment - try to identify a few differences bet
 As you review your code, come up with at least 2 questions you still have.  Choose one person in your group to send these questions to your instructors via slack DM.
 
 ** Instructors ** after gathering questions, identify a few key pieces to review.  You may also want to followup with groups individually.
+
+<!-- I like how we are using the CFUs in conjunction with the review time - excited to see how they work together in reality! Do you have a sense of how much time will be dedicated to group work vs. whole group review? -->

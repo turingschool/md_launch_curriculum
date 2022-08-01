@@ -30,6 +30,8 @@ Banana Wind:
     - Desdamona's Building a Rocket Ship
 ```
 
+<!-- Jimmy Buffett lol. This is gold. I bet there is 0% chance our students will understand who/what a Jimmy Buffett is. -->
+
 7. Create a `User` class with the following properties and methods:
     * Properties
         - string FullName
@@ -65,6 +67,8 @@ int sumOfSecondNums = SumSecondNumbers(numberPairs);
 Console.WriteLine(sumOfSecondNums);
 //Output -> 9
 ```
+
+<!-- Love to see you circling back on the pseudocode that students wrote in the labs! This could be a great pattern to try to continue as we move forward! -->
 
 **Exercise 2**
 Implement a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  

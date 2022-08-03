@@ -46,5 +46,5 @@ public void MethodName(object argumentName) // this is the method signature
 
 **Keep an eye on Slack** We will be coming together to share your implementations!
 
-** Instructor Note ** we want to reiterate that the *type* of object is indicated for every argument and any method return value - even when those objects are instances of classes that _we_ create.
+** Instructor Note ** We don't need to go into too much detail on the exact implementation as this is something we will be covering in our object interaction lesson.  But, we do want to reiterate that the *type* of object is indicated for every argument and any method return value - and point out that the same is true for objects that are instances of classes that _we_ have created.
 

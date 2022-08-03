@@ -31,7 +31,7 @@
 * 🎒[Topic Review](/Mod1/Lessons/Week3/WeekInReview.md)
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md)
 ### Week 4
-* 🎒[OOP]()
+* 🎒[OOP](/Mod1/Lessons/Week4/OOP.md)
 * 💡⬆️ Lab/Excercise
 * 🎒Class Interaction
 * 💡⬆️ Lab/Excercise

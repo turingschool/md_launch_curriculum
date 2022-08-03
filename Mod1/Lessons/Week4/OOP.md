@@ -3,12 +3,13 @@
 ## Learning Goals
 * Define OOP
 * Introduce the 4 Pillars of OOP
+* Identify different sytaxes for object instantiation
 
 ## What is OOP?
 
 **OOP**, short for **Object Oriented Design**, is one of the most popular programming models.  OOP relies on **objects** to organize programs into simple and reusable pieces of code.  In C#, these objects are created using **classes**.
 
-> Discuss with a partner: what are some of the components of a class or the objects instantiated from a class definition?  What kinds of objects have we worked with so far?
+> Discuss with a partner: what are some of the components of a class or the objects created from a class definition?  What kinds of objects have we worked with so far?
 
 The **class** structure is fundamental to OOP, because it allows us to group related **attributes** and **behaviors** to be reused in individual objects.  So, how does that help us?
 
@@ -91,7 +92,7 @@ public class Program
         static void Main()
         {
             Dog nile = new("Nile", "Golden Mix", new DateTime(2018, 07, 04), 3);
-            Dog sammy = new("Sammy", "Wirehaird Pointing Griffon", new DateTime(2012, 10, 13), 1);
+            Dog sammy = new("Sammy", "Wirehaired Pointing Griffon", new DateTime(2012, 10, 13), 1);
 
             var dogs = new List<Dog> { nile, sammy };
 
@@ -112,9 +113,22 @@ Here, we have a **class** that serves as a blue-print for any dog; instead of bu
 
 > With a partner, talk through the code in these two files.  What is happening on each line? What are some benefits to this approach?  Are there any drawbacks?
 
-**Instructor Note**: we want to focus on the re-usability of code here.  Also note the different styles of instantiating obects `T variable = new T()` vs `T variable = new()` vs `var variable = new T()`
 
 With this OOP approach, it is much easier to update what a dog can do, or what information a dog stores.  We might want to be able to get a dog's age, for example. In the first version, we would need to calculate the age of each dog individually, but with OOP we can add a method to the Dog class.  Methods that exist on a class definition are availabe to be called on any instance of that object.
+
+**Instructor Note**: we want to focus on the re-usability of code here.  Also make sure to discuss the different styles of instantiating obects `T variable = new T()` vs `T variable = new()` vs `var variable = new T()`
+
+### Creating Instances of Objects
+
+The process of creating instances of objects from a class definition is often referred to as **instantiation**.  In the `Dog` example above, we could say that we `instantiated two Dog objects, nile and sammy`.  Any time you see the `new` keyword being used, some kind of object is being instantiated.
+
+![Image of three examples of object instantiation](/Mod1/Images/Week4/object-instantiation-examples.png)
+
+We can see in this example that there are three valid ways to create an instance of a Dog object - any of these instantiation patterns will work for any type of object!
+
+When instantiating an object, you _must_ include 2 things:
+* `new` this is the keyword that tells our program that we are going to create an instance of something.
+* the _type_ of thing that we are creating - in this case `Dog`.  
 
 ## Four Pillars of OOP
 
@@ -170,8 +184,9 @@ Like Inheritance, we will continue to explore polymorphism in later lessons!
 
 ## Check for Understanding
 
-* Think of your favorite board game; what are the classes that you would create to implement that board game in software?
-* Review the class definition below.  What are the ways that encapsulation and inhertance are implemented?
+* Imagine you have a class `Button` which has a constructor that takes no arguments.  Use three different syntax patterns to create three instances of the Button class.
+* Think of your favorite board game (or you can think of [Connect Four](https://en.wikipedia.org/wiki/Connect_Four)); what are the classes that you would create to implement that board game in code?
+* Review the class definition below.  What are some ways that encapsulation and inhertance are implemented?
 
 ```c#
     public class User

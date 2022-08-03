@@ -12,7 +12,7 @@ For example:
 
 * Type of object: Car
 * Specific instances:
-    * Megan's Suburu Outback, Madonna's Rolls Royce, that yellow camero for sale at Bob's Auto Mart.
+    * Megan's Suburu Outback, Madonna's Rolls Royce, that yellow Camero for sale at Bob's Auto Mart.
 * Attributes:
   * Make, Model, Color
 * Behaviors:
@@ -25,9 +25,9 @@ In programming, a **Class** is something that models:
 1. State, and
 2. Behavior
 
-State is what something *is*. Behavior is what something *does*. In the warm up, our *Class* was Car. We modeled the state of a Car by defining the attributes "make", "model, and "color". We modeled the behavior of a Car by defining the functionalities "Drive", "Reverse", and "Open Trunk".
+State is what something *is*. Behavior is what something *does*. In the warm up example, our *Class* was Car. We modeled the state of a Car by defining the attributes "make", "model, and "color". We modeled the behavior of a Car by defining the functionalities "Drive", "Reverse", and "Open Trunk".
 
-An **Instance** or **Object** is a concrete representation of a Class. In the previous activity, "Megan's Suburu Outback" is a specific Instance of the Car Class. We can also say that "Madonna's Rolls Royce" is a Car Object. Do not get confused by the terms Instance and Object. They mean the exact same thing (for now).
+An **Instance** or **Object** is a concrete representation of a Class. In the warmup example, "Megan's Suburu Outback" is a specific Instance of the Car Class. We can also say that "Madonna's Rolls Royce" is a Car Object. Do not get too caught up with the differnce in the terms Instance and Object; we are going to use these terms interchangeably.
 
 You could think of a **Class** like a blueprint for a house and an **Instance** as an actual house. The blueprint is a just an idea of how the house should be built, and the house is the realization of that blueprint.
 
@@ -81,9 +81,9 @@ Unicorn gloria = new Unicorn();
 
 Will this program compile and run?
 
-> With a partner, see if you can update the program.cs file so that it will compile
+> With a partner, see if you can update the program.cs file so that it will compile and run.
 
-As we learned in our IDE class earlier, we use `namespaces` to orgnanize related material in our programs.  .NET will automatically give us a namespace for our classes that matches our project name; so, when we need to use any classes in our project, we must be _within_ that namespace.  A namespace is a very simple container - it can hold class definitions, but no **executable code**.  When we want to execute code that incorporates more than the built-in classes, we need to create a `Program` class with a `Main` method that will hold our executable code:
+As we learned in yesterday's lab, we use `namespaces` to organize related material in our programs.  .NET will automatically give us a namespace for our classes that matches our project name; so, when we need to use any classes in our project, we must be _within_ that namespace.  A namespace is a very simple container - it can hold class definitions, but no **executable code**.  When we want to execute code that incorporates more than the built-in classes, we need to create a `Program` class with a `Main` method that will hold our executable code:
 
 ```c#
 namespace Classes
@@ -128,11 +128,12 @@ namespace Classes
     {
         public Unicorn()
         {
-            // This code block will be executed when when a new unicorn is instantiated.
+            // This code block will be executed when when a new unicorn is created.
         }
     }
 }
 ```
+<!-- You use the word "instantiated" above in the code block - I think it might be good to explain what that word means/offer a synonym somewhere before the block so students aren't confused as to what that word is -->
 
 This code block is run once and only once during an Object's lifetime, when we call `new`.  Let's put something a bit silly in there just to see this in action:
 
@@ -195,6 +196,9 @@ When we include the arguments in our constructor, we will need to pass those arg
 Unicorn fred = new Unicorn("Fred", "Silver");
 ```
 
+![diagram of constructor attribute assignment](/Mod1/Images/Week3/ctor-attribute-assignment.png)
+
+<!-- I think if possible it might be a good idea to have a diagram that shows the order dependantness of the arguments. Like some arrows pointing from the arguments to where the "fill in" in the class instance? Just a thought. ✅ -->
 What we have just done is a very common pattern. We gave our constructor some arguments and we saved those arguments to **properties**. While this is a strong pattern, it is not a rule. For instance, you may want to set a property in your constructor that has a default value that isn't set using an argument:
 
 ```c#
@@ -223,7 +227,7 @@ namespace Classes
 
 With your pair, define a Dog class and create instances of that class in your `program.cs`.
 
-Now, give your Dog class some properties that are set using arguments to initialize and some properties that have default values. Make some instances of your Dog class, and use `Console.WriteLine()` to verify that your person objects are being created appropriately.
+Now, give your Dog class some properties that are set using arguments to initialize and some properties that have default values. Make some instances of your Dog class, and use `Console.WriteLine()` to verify that your dog objects are being created appropriately.
 
 ## Using and Updating Properties
 
@@ -273,6 +277,8 @@ Console.WriteLine($"{gloria.Name} is {gloria.Color}");
 
 Because it is _so common_ for us to change the values of some properties, there is actually a shortcut for this functionality!
 
+Take a look at the code below - what is _different_ about it than what we have previosly seen?
+
 ```c#
 namespace Classes
 {
@@ -291,7 +297,7 @@ namespace Classes
     }
 }
 ```
-
+<!-- In the above example, the get/set method might not stand out to a new programmer. Would a screenshot of this code block with that method circled/highlighted make it easier for students to recognize? Or do we think it might be better training to have students get used to looking at code without hints? -->
 > With a partner, get our current program.cs to run with this new implmentation - don't be afraid to google to find the answer!
 
 ### Partner Practice
@@ -356,3 +362,6 @@ On your own, answer the questions below.
     * What is a method? How do we write methods?
     * What are arguments?
     * What is a return value? How do you know what the return value of a method is? Do all methods have return values?
+
+
+    <!-- This seems like one of the "heavier" technical lessons so far - a lot of sytnax, building on previous skills, etc. Excited to see how it goes for students! I think that given there is a LOT going on here, adding some diagrams/code blocks with circles/highlights may be a way to help ease the burden on students. Not sure if it is necessary, but perhaps being mindful of small ways to reduce the mental overhead on students can really add up over a lesson, day, week, etc. -->

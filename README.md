@@ -28,8 +28,8 @@
 * 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week3/Methods.md)
 * 🎒[Classes](/Mod1/Lessons/Week3/Classes.md)
 * 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week3/Classes.md)
-* 🎒Topic Review
-* 🧪Weekly Assessment
+* 🎒[Topic Review](/Mod1/Lessons/Week3/WeekInReview.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md)
 ### Week 4
 * 🎒[OOP]()
 * 💡⬆️ Lab/Excercise

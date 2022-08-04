@@ -48,3 +48,9 @@ public void MethodName(object argumentName) // this is the method signature
 
 ** Instructor Note ** We don't need to go into too much detail on the exact implementation as this is something we will be covering in our object interaction lesson.  But, we do want to reiterate that the *type* of object is indicated for every argument and any method return value - and point out that the same is true for objects that are instances of classes that _we_ have created.
 
+
+<!-- This seems like a really cool lab - I am getting some whiffs of "Mythical Critters" almost with having students complete just the method signatures/attributes to get the code to compile vs. run! -->
+
+<!-- I also like the "scenario" you are using for this exercise - modeling a small business/connecting to a real world problem! I think this is a great way to get our students thinking like developers. -->
+
+<!-- So this lab doesn't seem to contain any work around the 4 pillars of OOP, which brings me back to whether it is worth introducing this concept (encapsulation, polymorphism, etc.) at this point in the module? While I do think it is important for students to know these 4 pillars, I wonder if there is an opportunity to break those concepts up into a different mini-lesson, activity, or something that we can slowly introduce those after students have had some exposure/practice working with OOP. I'll defer to your judgment here, but want us to at least consider what it could look like to bring those concepts back at a different time/space in the program?  -->

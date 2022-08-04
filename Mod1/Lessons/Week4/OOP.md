@@ -213,3 +213,9 @@ Like Inheritance, we will continue to explore polymorphism in later lessons!
 
     }
 ```
+
+<!-- I like the way you showcased the initial advantages of OOP by comparing it to making several basic objects. Hopefully that example will resonate with students, especially if we focus on DRY principles. Speaking of, is DRY something we explicitly cover in M1? Could be an easy plug in this lesson. -->
+
+<!-- The three different ways of instantiating is interesting, and could be a little overwhelming for students. I think this could be a good place to include some content around consistency + dev empathy - pick one way of doing it and stick with that throughout your program. Switching throughout will lead to confusion for yourself and others. -->
+
+<!-- Still torn on the OOP Pillars. Do I think students need to know these... yes. Is this lesson the best time to introduce them... I'm not sure.-->

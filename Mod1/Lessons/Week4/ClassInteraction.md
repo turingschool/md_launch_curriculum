@@ -2,15 +2,15 @@
 
 ## Learning Goals
 * Implement appropriate class file structure
-* Gain familiarity with passing around smart objects
+* Gain familiarity with passing around 'smart' objects
 * Expand understanding of what an object can be
 
 ## Warm Up
-Outline the objects you might neet to create a city-wide library system (multiple locations with physical books).  How do these objects relate to each other?
+Outline the classes you might neet to create a city-wide library system (multiple locations with physical books).  How do these classes relate to each other?
 
 ## Building Necessary Objects
 
-To understand how objects can interact with each other, let's continue building on our Unicorn class from the [Classes Lesson](/lessons/mod1/Classes.md).  Right now, our Unicorn has a list of Magical powers that are simple strings.
+To understand how objects can interact with each other, let's continue building on our Unicorn class from the [Classes Lesson](/Mod1/Lessons/WEek3/Classes.md).  Right now, our Unicorn has a list of Magical powers that are simple strings.
 
 ```c#
     public class Unicorn
@@ -36,17 +36,34 @@ To understand how objects can interact with each other, let's continue building 
 Let's expand this idea of a magical power to indicate how much energy that power takes to perform.  We could imagine an interaction like this:
 
 ```c#
-var fred = new Unicorn("Fred", "Silver")
+var fred = new Unicorn("Fred", "Silver");
+//Unicorns start with 100 power points.
 
 fred.AddPower("Fly: 13");
 fred.AddPower("Be Invisible: 28");
+
+fred.Perform("Fly");
+//Now fred has 87 power points (13 points have been deducted from fred's original 100 points).
+
+fred.Perform("Be Invisible");
+//Now fred has 59 power points.
 ```
 
-This string version of a Magical Power now hold a lot of information: the name of the power, and the energy needed to perform it.  We _could_ work with these strings to accomplish the storage and performance of these powers, but we would need to do a lot of manipulation anytime we want to perform one of the powers (we would need to constantly be separating the idea of the name of the power, from its energy usage).
+This string version of a Magical Power now holds a lot of information: the name of the power, and the energy needed to perform it.  We _could_ work with these strings to accomplish the storage and performance of these powers, but we would need to do a lot of string manipulation anytime we want to perform one of the powers (we would need to constantly be separating the idea of the name of the power, from its energy usage).
 
-A better way would be to create a `Power` Class that will encapsulate these attributes.
+A better way would be to create a `Power` Class that will hold these attributes.
 
-> With a partner, build a class that will represent a Power.  Update your Unicorn to expect instances of that Power class, instead of strings.  Bonus: how might we implement the idea of energy usage?
+> With a partner, build a class that will represent a Power.  Update your Unicorn to expect instances of that Power class, instead of strings.  If you have some additional time: how might we implement the idea of energy usage?
+
+When complete, we should be able to execute the follwoing program:
+```c#
+var fred = new Unicorn("Fred", "Silver");
+var frank = new Unicorn("Frank", "Purple");
+var fly = new Power("Flight", 13);
+var beInvisible = new Power("Invisibility", 28);
+
+
+```
 
 ---------------------------------------
 

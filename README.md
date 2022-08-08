@@ -32,8 +32,8 @@
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md)
 ### Week 4
 * 🎒[OOP](/Mod1/Lessons/Week4/OOP.md)
-* 💡⬆️ Lab/Excercise
-* 🎒Class Interaction
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/OOP.md)
+* 🎒Class/Object Interaction
 * 💡⬆️ Lab/Excercise
 * 🎒Unit Tests I
 * 💡⬆️ Lab/Excercise

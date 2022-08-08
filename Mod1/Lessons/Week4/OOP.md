@@ -128,90 +128,136 @@ We can see in this example that there are three valid ways to create an instance
 
 When instantiating an object, you _must_ include 2 things:
 * `new` this is the keyword that tells our program that we are going to create an instance of something.
-* the _type_ of thing that we are creating - in this case `Dog`.  
+* the _type_ of thing that we are creating - in this case `Dog`. 
 
-## Four Pillars of OOP
+When we are writing code, there are often multiple ways to accomplish the same thing.  This can be great, because it allows us some flexibility, but it can also be confusing.  It is tough to know _all_ of the ways you can accomplish something, and you will be continually learning a new way of doing things.  
 
-There are 4 principles of OOP which we will introduce here, and continue to learn more about as we go.  At this point, some of these concepts might not make sense - that's ok!  We want to get a start on recognizing these patterns today, and we will re-inforce these patterns throughout your time at Turing.
+A good developer can recognize different approaches (like knowing these three ways of creating objects), but sticks to one way of doing it throughout their program.  So, a good developer would choose **one** of these object creation styles and stick to it.  That way, their code is easier for others to read and understand.
 
-### Encapsulation
+## Benefits of using Classes in Programming
 
-**Contain Information in an Object, Only Expose Necessary Information**
-Encapsulation hides the internal implementation of attributes and behaviors inside of objects.  When we declare a class, we are indicating what properties and methods will be encapsulated in the objects created from that class template.  These attributes and behaviors can be either **public** or **private**.  Public components are available from _outside_ the object; these are the properties and attributes that we can call on objects.  Private components are only available within the class; there is no mechanism to call that method or property from an object.
+OOP is not the _only_ programming design strategy (or the only way to program), but there are some benefits that it provides that make it an excellent choice for almost any code-based application.  Among others, there are two key benefits to using classes as the basis for our programs:
+* The ability to hold related information in a single place (inside a class), and 
+* the ability to hide more complex functionality from users.
 
-Let's take a car as a methophor.  When a car is created, all of the components that make it run are **encapsulated** in the body of the car - engine, gauges, breaks, seatbelts, indicators, etc... .  Some of these components are public: blinkers to indicate turns, brake lights, the sound of a reving engine.  These public pieces of information can be seen from _outside_ the car.  Other components are kept private: engine temperature, occupancy, transmission type.  These private components are essential attributes/behaviors of the car, but they do not need to be exposed - this additional information is not needed outside the car.
+### Holding Related Information
+When we declaring a clas, we often look at the data that we need to capture, then group that data into related ideas.  Then, those 'groups' become classes.  
 
-### Abstraction
+Let's imagine that we are going to build a program that holds information about a household that has one person, one dog, and two cats.  Each of these 4 entities probably has a name, and an age; but, they differ in the way that they communicate (humans speak, dogs bark, and cats meow).  We could store this data in strings, but as we saw in our 'Dog' example above, this is not a very sustainable solution:
 
-**Only Expose High Level Attributes and Methods**
-Abstraction is the practice of exposing _only_ what a user _needs_.  
+```c#
+var ellie = "Ellie, 28 years old, speaks";
+var millie = "Millie, 1 year old, barks";
+var jack = "Jack, 2 years old, meows";
+var jill = "Jill, 2 years old, meows";
+```
 
-> With a partner, what are some examples of abstraction in the real world?  You might want to go back to previous lessons 😉
+All the information we need is here, but it is not stored in a meaningful way, and none of these properties are enforced.  We can describe this data as unenforced because we could create a new 'person' who didn't have a name or an age; or, we might accidentally create a 'dog' who could speak.  A **class** allows us to give more meaning to this data by naming attributes, and allows us to enforce what data is required, and how the object can behave.
 
-Benefits of Abstraction
-* Simple User Interfaces
-* Complex Code is Hidden
-* Easier Software Maintenance
-* Security
+```c#
+public class Person
+{
+    public string Name;
+    public int Age;
 
-### Inheritance
+    public Person(string name, int yearsOld) // This constructor enforces a name and yearsOld to be provided; we can not create a Person without those things!
+    {
+        Name = name;
+        Age = yearsOld;
+    }
 
-**Child Classes Get Attributes/Behaviors From Parent Class**
-When we think about objects in the real world, we can often describe two different objects as having a 'type-of' relationship.  For example, a car, a motorcycle, and a semi are all _types of_ vehicles.  They all share some attributes and behaviors:
+    public string SayHello()
+    {
+        return "Hello";
+    }
+}
 
-![UML Diagram of Car Motorcycle and Semi Classes](/Mod1/Images/Week4/InheritancePre.png)
+public class Dog
+{
+    public string Name;
+    public int Age;
 
-While these classes are not identical, they do share a lot of attributes and behaviors.  Inheritance allows us to create a **parent** class that contains the shared components, with **child** classes that **inherit** these components and can include any additional attributes and behavior.
+    public Dog(string name, int yearsOld)
+    {
+        Name = name;
+        Age = yearsOld;
+    }
 
-![UML Diagram of Car/Moto/Semi inheriting from Vehicle](/Mod1/Images/Week4/Intherited.png)
+    public string sayHello()
+    {
+        return "WOOF"; // Now a dog will not accidentally be created with the ability to speak :)
+    }
+}
 
-**Instructor Note** Make sure to walk through UML class diagramming.  You could show them the free tool [smartdraw](https://cloud.smartdraw.com/)
+public class Cat
+{
+    public string Name;
+    public int Age;
 
-We will learn how to implement and work with Inheritance later in this mod!
+    public Dog(string name, int yearsOld)
+    {
+        Name = name;
+        Age = yearsOld;
+    }
 
-> With a partner: what other Inheritance relationships can you think of in the real world? (try to think of objects that are not humans!)
+    public string sayHello()
+    {
+        return "MEOW";
+    }
+}
+```
 
-### Polymorphism
+With the class structure defined above, we have attributes and behaviors _grouped_ into their related objects.  We can enforce that all Dogs, Cats, and People must have a name and age; and we can make sure that only cats 'meow, only dogs 'bark', and only people 'speak'.
 
-**Shared Behavior May Differ For Specific Types**
-In some cases, we might have objects that share behavior with potential small variations.  Take a look at the diagram below:
+In an ideal OOP application, all attributes and behaviors are grouped into one or more classes.  Each class holds information about only one type of object.
 
-![UML Diagram of Polymorphism](/Mod1/Images/Week4/Polymorphism.png)
+### Hiding Complex Functionality
+In addition to organizing related pieces of information, classes can also help us hide more complex parts of a program from users.  Most users do not need to know _exactly_ how an application is working, they just need to know what do to in order for the program to work.  Think about 'liking' a photo on instagram; users do not need to know what the application is doing in the background, users just need to know how to execute that process (by double tapping on a photo).
 
-In this example, all dogs can `Speak()`, but one type of dog has a very distinct bark that will **override** the behavior that is inherited from the parent class.  We want to inherit that behavior because _most_ of the types of that class behave in the same way, with just this one outlier.
+Think back to our lesson on [Methods](/Mod1/Lessons/Week3/Methods.md#abstraction).  In the section about **Abstraction**, we proposed that a user does not need to know exactly how a coffee machine works in order to make coffee.  They only need to know that they need to add water, add coffee grounds, and push start.  We might mimic that behavior in code like this:
 
-Like Inheritance, we will continue to explore polymorphism in later lessons!
+```c#
+var coffeeMaker = new CoffeeMachine();
+coffeeMaker.AddWater();
+coffeeMaker.AddCoffeeGrounds();
+coffeeMaker.Start();
+```
+
+A user does not need to know what attributes the CoffeeMachine has, or what _exactly_ happens when they execute the Start() method.  The only necessary information is these three methods - the rest of what makes up a CoffeeMachine is hidden from the user.  Or, to use some programming vocabulary, the rest of what makes up a CoffeeMachine is **abstracted away from the user**.
 
 ## Check for Understanding
 
 * Imagine you have a class `Button` which has a constructor that takes no arguments.  Use three different syntax patterns to create three instances of the Button class.
 * Think of your favorite board game (or you can think of [Connect Four](https://en.wikipedia.org/wiki/Connect_Four)); what are the classes that you would create to implement that board game in code?
-* Review the class definition below.  What are some ways that encapsulation and inhertance are implemented?
+* Review the class definition and code below.  What is one thing that is **abstracted** away (hidden) from the user?
 
 ```c#
-    public class User
+public class User
+{
+    public string Name;
+    public string Email;
+    public string UserName;
+    private string Role;
+    private string Password;
+
+    public void Register(string name, string email, string password)
     {
-        public string Name;
-        public string Email;
-        public string UserName;
-        private string Role;
-        private string Password;
-
-        public void Register(string name, string email, string password)
-        {
-            Name = name;
-            Email = email;
-            Password = password;
-            UserName = CreateUserName();
-        }
-
-        private string CreateUserName()
-        {
-            var index = Email.IndexOf("@");
-            return Email.Substring(0, index);
-        }
-
+        Name = name;
+        Email = email;
+        Password = password;
+        UserName = CreateUserName();
     }
+
+    private string CreateUserName()
+    {
+        var index = Email.IndexOf("@");
+        return Email.Substring(0, index);
+    }
+
+}
+
+var megan = new User("Megan", "mmcmahon@turing.edu", "test123");
+var username = megan.UserName;
 ```
 
 <!-- I like the way you showcased the initial advantages of OOP by comparing it to making several basic objects. Hopefully that example will resonate with students, especially if we focus on DRY principles. Speaking of, is DRY something we explicitly cover in M1? Could be an easy plug in this lesson. -->

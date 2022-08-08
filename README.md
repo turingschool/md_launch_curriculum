@@ -33,8 +33,8 @@
 ### Week 4
 * 🎒[OOP](/Mod1/Lessons/Week4/OOP.md)
 * 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/OOP.md)
-* 🎒Class/Object Interaction
-* 💡⬆️ Lab/Excercise
+* 🎒[Class/Object Interaction](/Mod1/Lessons/Week4/ClassInteraction.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/ClassInteraction.md)
 * 🎒Unit Tests I
 * 💡⬆️ Lab/Excercise
 * 🎒Topic Review

@@ -71,7 +71,11 @@ When we think about creating new classes, one of the first questions we need to 
 
 ![Image of Solution with multiple classes](/images/Mod1/ClassInteraction/SolutionFileStructure.png)
 
+<!-- This image wasn't pulling in correctly? -->
+
 You can take a look at how I might create this additional class, and how it interacts with our Unicorn class.  You and your partner might have come up with something slightly different, and that's ok!
+
+<!-- Before going into the actual implementation, it might be nice to have one of those diagrams w/ color coding that "shows" a bit more about how a Unicorn class can consume/interact with a Power class - in the code below I can see the Power interaction being a little hard to catch for a newer student -->
 
 ```c#
 // Power.cs
@@ -123,4 +127,4 @@ You can take a look at how I might create this additional class, and how it inte
 ```
 
 
-
+<!-- Overall, I like where this lesson is going! I'm excited to see how it progresses in the lab you have built! -->

@@ -117,6 +117,7 @@ Here, we have a **class** that serves as a blue-print for any dog; instead of bu
 With this OOP approach, it is much easier to update what a dog can do, or what information a dog stores.  We might want to be able to get a dog's age, for example. In the first version, we would need to calculate the age of each dog individually, but with OOP we can add a method to the Dog class.  Methods that exist on a class definition are availabe to be called on any instance of that object.
 
 **Instructor Note**: we want to focus on the re-usability of code here.  Also make sure to discuss the different styles of instantiating obects `T variable = new T()` vs `T variable = new()` vs `var variable = new T()`
+<!-- I think for the note above it would be great to use an actual example of a class instantiation, like new Dog or new Cat, basically anything besides a one letter varaiable. That is one of my biggest gripes about some documentation (using stuff like "foo" and "bar", which I don't think is very accessible for a lot of learners). It looks like you cover it in the img below but figured it was worth calling out for our new instructors -->
 
 ### Creating Instances of Objects
 
@@ -141,9 +142,11 @@ OOP is not the _only_ programming design strategy (or the only way to program), 
 * the ability to hide more complex functionality from users.
 
 ### Holding Related Information
-When we declaring a clas, we often look at the data that we need to capture, then group that data into related ideas.  Then, those 'groups' become classes.  
+When we declaring a class, we often look at the data that we need to capture, then group that data into related ideas.  Then, those 'groups' become classes.  
 
 Let's imagine that we are going to build a program that holds information about a household that has one person, one dog, and two cats.  Each of these 4 entities probably has a name, and an age; but, they differ in the way that they communicate (humans speak, dogs bark, and cats meow).  We could store this data in strings, but as we saw in our 'Dog' example above, this is not a very sustainable solution:
+
+<!-- Fun fact, cats only meow at humans! The thinking is that they learned that meowing sounds like the cries of a human child and cats learned to use that to manipulate humans to get what they want. -->
 
 ```c#
 var ellie = "Ellie, 28 years old, speaks";
@@ -160,7 +163,7 @@ public class Person
     public string Name;
     public int Age;
 
-    public Person(string name, int yearsOld) // This constructor enforces a name and yearsOld to be provided; we can not create a Person without those things!
+    public Person(string name, int yearsOld) // This constructor enforces a name and yearsOld to be provided; we can NOT create a Person without those things!
     {
         Name = name;
         Age = yearsOld;
@@ -260,8 +263,4 @@ var megan = new User("Megan", "mmcmahon@turing.edu", "test123");
 var username = megan.UserName;
 ```
 
-<!-- I like the way you showcased the initial advantages of OOP by comparing it to making several basic objects. Hopefully that example will resonate with students, especially if we focus on DRY principles. Speaking of, is DRY something we explicitly cover in M1? Could be an easy plug in this lesson. -->
-
-<!-- The three different ways of instantiating is interesting, and could be a little overwhelming for students. I think this could be a good place to include some content around consistency + dev empathy - pick one way of doing it and stick with that throughout your program. Switching throughout will lead to confusion for yourself and others. -->
-
-<!-- Still torn on the OOP Pillars. Do I think students need to know these... yes. Is this lesson the best time to introduce them... I'm not sure.-->
+<!-- I like the way you've introduced some OOP pillars in a more specific way - by tying it into the examples you've been referencing, it feels more natural and I imagine students will be able to follow along a bit easier! I think this also lends to better understanding of the pillars when we cover those in more detail down the road!  -->

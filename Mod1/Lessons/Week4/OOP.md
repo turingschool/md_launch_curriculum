@@ -116,7 +116,7 @@ Here, we have a **class** that serves as a blue-print for any dog; instead of bu
 
 With this OOP approach, it is much easier to update what a dog can do, or what information a dog stores.  We might want to be able to get a dog's age, for example. In the first version, we would need to calculate the age of each dog individually, but with OOP we can add a method to the Dog class.  Methods that exist on a class definition are availabe to be called on any instance of that object.
 
-**Instructor Note**: we want to focus on the re-usability of code here.  Also make sure to discuss the different styles of instantiating obects `T variable = new T()` vs `T variable = new()` vs `var variable = new T()`
+**Instructor Note**: we want to focus on the re-usability of code here.  Also make sure to discuss the different styles of instantiating obects `Dog variableName = new Dog()` vs `Dog variableName = new()` vs `var variableName = new Dog()`
 <!-- I think for the note above it would be great to use an actual example of a class instantiation, like new Dog or new Cat, basically anything besides a one letter varaiable. That is one of my biggest gripes about some documentation (using stuff like "foo" and "bar", which I don't think is very accessible for a lot of learners). It looks like you cover it in the img below but figured it was worth calling out for our new instructors -->
 
 ### Creating Instances of Objects

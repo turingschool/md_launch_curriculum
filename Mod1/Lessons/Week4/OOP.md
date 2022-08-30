@@ -2,7 +2,7 @@
 
 ## Learning Goals
 * Define OOP
-* Introduce the 4 Pillars of OOP
+* Discuss the benefits of OOP
 * Identify different sytaxes for object instantiation
 
 ## What is OOP?

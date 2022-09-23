@@ -8,6 +8,7 @@
 To re-inforce the concept of object interaction, and classes including references to other classes, let's build on the Library exercise from todays [warmup](/Mod1/Lessons/Week4/ClassInteraction.md#warm-up).
 
 In small groups, create a new Console app called DenverLibrary. In this project, create the following classes:
+<!-- I love that you are really specific on what each class should contain/do. However, this can get a little tricky to parse out with larger requirements. Could we possibly break these out into a bullet or checklist style to make it a little easier for students to follow along? -->
 
 ![Image of three class diagrams with required Properties and Methods](/Mod1/Images/Week4/LibraryUML.png)
 
@@ -64,3 +65,4 @@ Individually, spend 10-15 minutes reflecting on the following questions. Take no
 * Up to now, how have you known if your code was functioning?
 * Imagine you are a developer working at Google; what might be some drawbacks to your current approach?
 
+<!-- I think this is a great lab! One thing that I was thinking about re: instructor notes might be to be even more explicit for this particular lab - perhaps do a checkin after each portion of class building (one after Book, one after Branch, one after Library) and giving students some "targets" on how long they should spend on each section (although I recognize that may be difficult for us to predict! ) -->

@@ -7,7 +7,7 @@
 
 ## What is OOP?
 
-**OOP**, short for **Object Oriented Design**, is one of the most popular programming models.  OOP relies on **objects** to organize programs into simple and reusable pieces of code.  In C#, these objects are created using **classes**.
+**OOP**, short for **Object Oriented Programming**, is one of the most popular programming models.  OOP relies on **objects** to organize programs into simple and reusable pieces of code.  In C#, these objects are created using **classes**.
 
 > Discuss with a partner: what are some of the components of a class or the objects created from a class definition?  What kinds of objects have we worked with so far?
 

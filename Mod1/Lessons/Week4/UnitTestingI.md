@@ -22,13 +22,14 @@ Up to this point, the way that we have been verifying that our code works would 
 
 The good news: there is a better way to test! We can use **automated testing** to confirm the functionality of our code.  An **automated test** is a seperate project that a developer creates alongside their implementation code.  This test project:
 * relies on the implementation code that is being written, and 
+<!-- Might be worth explaining what "implementation code" means since this is the first time they will have encountered a different "kind" of code -->
 * provides feedback to the developer based on the **expected behavior**
 
 Like many things in programming, there are a lot of ways to write tests.  We are going to use **xUnit** to test our projects in Mod1.
 
 ## Testing with XUnit
 **xUnit** is a _framework_ that we can use to create test projects for our code.  A _framework_ is some pre-built functionality that we can include in our projects to help with specific tasks (like testing!).
-
+<!-- Is there an analogy we can use for frameworks? maybe something that makes our lives easier or takes a complex set of instructions and makes them easier to use? -->
 The standard file structure for testing our solutions is to have one test project for each solution project.  Within each test project, we will have one test file for each class in that project.  Take a look at a sample file structure below:
 
 ```
@@ -56,6 +57,7 @@ Name your project `IntroToTesting.UnitTests`. Click `Next` and then `Create`.
 
 ![Naming the test project](/Mod1/Images/Week4/CreateTestProject3.png)
 
+<!-- Great work on using screenshots to capture this user flow! -->
 We have now created a new project that is a `Console Application` with a few differences. One of the biggest differences between these two projects is the presence of a `Program.cs` file in IntroToTesting, and a lack of that file in IntroToTesting.UnitTests.
 
 > With a partner, discuss the purpose of the file `Program.cs`; how have we used this file in the past?  Why do you think we _don't_ have that file in the test project? Be ready to share out some ideas!
@@ -68,7 +70,10 @@ Similar to how we use `Program.cs` to execute the code that makes up our program
 
 ### Writing Our First Test
 
-Before we write our first test, we need to determine _what_ we should test.  You want to make sure that you are testing all of the ways that we could interact with an object (in this case, an instance of User).  That includes any methods and properties that exist for that class.  
+Before we write our first test, we need to determine _what_ we should test.  You want to make sure that you are testing all of the ways that we could interact with an object (in this case, an instance of User).  That includes:
+- methods that exist for a class
+- properties that exist for a class
+<!-- I broke the above out into bullets for more clarity/easier to digest -->
 
 In our starter project, we have an existing class - `User`.  Take a moment to review that class in Visual Studio, or below.  In your notebook, list all of the methods that exist in the `User` class.
 
@@ -129,6 +134,7 @@ Then, mark the box for `IntroToTesting` and click 'OK'
 ![Add a project reference](/Mod1/Images/Week4/AddProjectReference2.png)
 
 Once this refernce is added, you should see the red squiggles under `User` dissapear - our Test project now knows about any * public * class that exists in the IntroToTesting project.
+<!-- I am sort of excited about havign students use Visual Studio which seems to reduce some unnecessary headaches by incorporting more GUI-type functionality and not having do deal with a lot of filepathing/exports/etc. -->
 
 ### Test Syntax
 
@@ -173,6 +179,7 @@ We've tested that our user gets created with a Name, and an empty List of Tweets
 
 We can see that the structure of this test is just a bit different that our first test.  In addition to creating a user and making assertions, we are also executing some code (on line 17).  Frequently, we will need to do some execution of code in our tests to confirm that a particular behavior is working properly.  In this case, in order to verify that our User can be given a username, we have to actually execute that code - if the User class was not set up correctly, our tests will fail.
 
+<!-- I wonder if it makes sense to walk students through an example of a method test rather than two property tests. That way we can have them try those two separate types of test in the CFU portion below? -->
 > With a partner, write two more tests that verify the methods `Tweet()` and `MostRecentTweet()`.  
 
 ** Instructor Note ** Jump into some breakout rooms and see if there are any groups that have tests that we can share out and possibly build on to show a completed test.  If after 10 minutes or so, students are getting bogged down by the test for `Tweet()`, or if you are not seeing much progress, you can pull the group back together and walk through that test, and then release them to work on `MostRecentTweet()`

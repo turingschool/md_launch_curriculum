@@ -31,10 +31,10 @@
 * 🎒[Topic Review](/Mod1/Lessons/Week3/WeekInReview.md)
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md)
 ### Week 4
-* 🎒[OOP]()
-* 💡⬆️ Lab/Excercise
-* 🎒Class Interaction
-* 💡⬆️ Lab/Excercise
+* 🎒[OOP](/Mod1/Lessons/Week4/OOP.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/OOP.md)
+* 🎒[Class/Object Interaction](/Mod1/Lessons/Week4/ClassInteraction.md)
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/ClassInteraction.md)
 * 🎒Unit Tests I
 * 💡⬆️ Lab/Excercise
 * 🎒Topic Review

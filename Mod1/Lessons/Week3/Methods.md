@@ -130,7 +130,29 @@ A method signature includes the return value of the method (or `void` if there i
 
 ## Abstraction
 
-One of the advantages of using methods is that we can build methods that operate at higher levels of abstraction than other methods. Abstraction is a practice where less complex functionality is exposed in an interface and more complex functionality is suppressed. In some ways, this is like a pyramid where higher level methods rely on lower level methods to take care of the details.
+One of the advantages of using methods is that we can build methods that rely on _other methods_ to complete their task. This means that we don't have know know about every single method in an application in order to use that application.  
+
+For example, if we are building a program for a business manager to process payroll.  There are a number of steps that need to happen for payroll to be processed:
+1. Verify which employees are still employed
+2. Calculate how much each employee should be paid in that period
+3. Print the checks
+4. Mail checks to each employee
+
+Each of these tasks is likely performed by a different person (not the business manager); so, we could think of these tasks as different methods.  The business manager does not need to know how to do all of these tasks, they only need to know how to start the process going.  In code that might look something like:
+
+```c#
+public void ProcessPayroll()
+{
+    EmploymentVerification(); //this method, and those below are defined somewhere else in the program. The manager doesn't care what this method look like, only that it is completed.
+    CompensationCalculation();
+    PrintChecks();
+    MailChecks();
+}
+
+ProcessPayroll();
+```
+
+This process of *hiding* some parts of the program from a user is referred to as **Abstraction**.  Abstraction is a practice where less complex functionality is exposed and more complex functionality is suppressed. In some ways, this is like a pyramid where higher level methods rely on lower level methods to take care of the details.
 
 <!-- This sentence "Abstraction is a practice where less complex functionality is exposed in an interface and more complex functionality is suppressed." is pretty heavy haha. I think the pyramid example afterwards is good, but perhaps we include a visual of what that looks like too?  -->
 

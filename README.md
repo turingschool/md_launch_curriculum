@@ -35,17 +35,17 @@
 * 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/OOP.md)
 * 🎒[Class/Object Interaction](/Mod1/Lessons/Week4/ClassInteraction.md)
 * 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/ClassInteraction.md)
-* 🎒Unit Tests I
-* 💡⬆️ Lab/Excercise
-* 🎒Topic Review
-* 🧪Weekly Assessment
+* 🎒[Unit Tests](/Mod1/Lessons/Week4/UnitTestingI.md) I
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week4/UnitTestingI.md)
+* 🎒[Topic Review](/Mod1/Lessons/Week4/WeekInReview.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/Week4.md)
 ### Week 5
-* 🎒Unit Tests II
-* 💡⬆️ Lab/Excercise
-* 🎒Scope
-* 💡⬆️ Lab/Excercise
 * 🎒Refactoring
 * 💡⬆️ Lab/Excercise
+* 🎒Unit Tests II
+* 💡⬆️ Lab/Excercise
+* ~~🎒Scope~~  
+* ~~💡⬆️ Lab/Excercise~~
 * 🧪Module Assessment
 * 🎒Module Review
 ### Project

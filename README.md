@@ -40,7 +40,7 @@
 * 🎒[Topic Review](/Mod1/Lessons/Week4/WeekInReview.md)
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week4.md)
 ### Week 5
-* 🎒Refactoring
+* 🎒[Refactoring](/Mod1/Lessons/Week5/Refactoring.md)
 * 💡⬆️ Lab/Excercise
 * 🎒Unit Tests II
 * 💡⬆️ Lab/Excercise
@@ -52,6 +52,54 @@
 
 
 ## Mod 2
+### Week 1
+* Version Control and Solo Git/GitHub
+    - Describe the benefits of Version Control
+    - Create a repository
+    - Use branch workflow
+* Intro to Databases
+    - Describe a database its uses in various applications
+    - Define relational data
+    - Describe the benefits of data normalization
+* SQL CRUD
+    - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
+    - Use basic WHERE clause to filter records
+### Week 2
+* Test Driven Development
+    - Describe the benefits of TDD
+    - Practice a TDD workflow
+* Git for Pairs
+    - Outline a workflow for collaborating on a single repository
+    - Identify and resolve merge conflicts
+### Week 3
+* Data Relationships (One to One, One to Many, Many to Many)
+    - Develop a visualization for different relationships
+    - Define Primary and Foreign keys
+    - Practice describing different relationships
+* SQL JOINS
+    - Use JOIN to query related records
+    - Use WHERE to filter joined queries
+* SQL Aggregates
+    - Develop a visualization for grouping and aggregating data
+    - Use GROUP BY, COUNT, SUM, and AVERAGE
+    - Research additional aggregate functions
+### Week 4
+* Intro to ORM (Migrations & Schema)
+    - Define ORM
+    - Describe the benefits of working with Objects
+    - Set up Entity Framework in a Console Application
+* CRUD with ORM
+    - Deepen understanding of test setup by creating a test database
+    - Use TDD to implement CRUD functionality in a console application
+### Week 5
+* Querying Resources with ORM
+    - Use EF and LINQ to query database records
+    - Define 'framework'
+* Migrations and changing Db tables
+    - Explore business decisions that drive DB changes
+    - Practice making simple db changes
+    - Describe the dangers of database changes
+
 ## Mod 3
 ## Mod 4
 ## Mod 5

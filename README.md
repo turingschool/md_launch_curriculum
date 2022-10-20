@@ -101,6 +101,54 @@
     - Describe the dangers of database changes
 
 ## Mod 3
+### Week 1
+* HTTP Request/Response Cycle
+    - Develop a diagram of how the web works
+    - Identify the key responsiblities of Backend and Frontend development
+* HTML
+    - Define HTML and its purpose
+    - Identify and use attributes for appropriate elements
+    - Understand the importance of semantic HTML
+* CSS
+    - Define CSS and its purpose
+    - Practice Debugging with Chrome Dev Tools
+    - Demonstrate an understanding of the box model
+### Week 2
+* Interfaces (we need to learn this so that students can understand some of the setup for a .NET MVC project)
+    - Identify objects that have shared structure/behavior
+    - Implement an interface structure
+    - Practice identifying interfaces in existing code
+* Intro to MVC
+    - Identify the elements of the MVC design pattern
+    - Describe the single responsibility of each of the Model, View, and Controller
+    - Describe how data is passed through the MVC pattern
+* Feature Testing
+    - Understand why feature testing is important
+    - Make connections between a browser and an in-project client
+    - Practice testing basic user interactions with xUnit and Selenium.
+### Week 3
+* REST
+    - Define REST
+    - Identify RESTful and non-RESTful routes
+    - Explore the pros and cons of REST
+* Creating and Reading Single Resources
+    - Diagram the Request/Response cycle with a form submission
+    - Use a form to create single resources
+    - Create Index and Show pages for a single resource
+* Creating and Reading Related Resources
+    - Use a form to create a one-to-many relationship
+    - Create Show Page for a Resource with related data
+### Week 4
+* Dynamic Routing
+    - Understand how data is dynamically passed using Routes
+    - Use dynamic routing to filter data on a Show and Index page
+* Updating Resources
+    - Use a form to update single resources
+    - Use a form to create a one-to-many relationship
+* Destroying Resources
+    - Describe some common pitfalls when destroying resources
+    - Practice destruction of single and related resources
+
 ## Mod 4
 ## Mod 5
 ## Mod 6

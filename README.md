@@ -150,5 +150,39 @@
     - Practice destruction of single and related resources
 
 ## Mod 4
+### Week 1
+* Intro to APIs
+    - Understand how an API works at a conceptual level
+    - Expand our understanding of what a 'client' could be
+    - Create an in-app client to manipulate HTTP responses
+* JavaScript (Likely 2 lessons)
+    - Understand why it is important to be familiar with JavaScript
+    - Available DataTypes
+    - How to Build a Function
+    - Accessing DOM elements and events
+### Week 2
+* Building an API
+    - Review HTTP Request/Response Structure 
+    - Use TDD to Implement CRUD endpoints through an API
+    - Define and identify valid JSON data structures
+* Testing Strategies when Consuming an API
+    - Understand the necessity of faking API requests in tests
+    - Implment mock/vcr to maintain test coverage
+### Week 3
+* Maintaining State
+    - Identify the limitations of Stateless HTTP
+    - Introduce the concept of Sessions & Cookies
+    - Implement a simple Cookie
+* Authentication
+    - Explain the use of Authentication and its importance
+    - Implement Authentication
+* Authorization
+    - Identify the difference between Authentication and Authorization
+    - Implement User Roles with Authorization
+### Week 4
+* ?Advanced Data Manipulations? On the scope and sqnce doc, the learning goal includes Advanced SQL
+    - https://backend.turing.edu/module3/lessons/advanced_activerecord
+
+
 ## Mod 5
 ## Mod 6

@@ -4,8 +4,6 @@
 * Define 'Refactoring' in programming terms.
 * Define and implement the Single Responsibility Principle
 
-### Warm Up
-
 ## What is Refactoring?
 
 Refactoring refers to the process we use to improve the way our code is written.  Though we have not discussed refactoring in detail, we have seen it during some of our lessons!  For instance, we can see a good example of refactoring in our [OOP lesson](/Mod1/Lessons/Week4/OOP.md):

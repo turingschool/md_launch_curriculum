@@ -41,8 +41,8 @@
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week4.md)
 ### Week 5
 * 🎒[Refactoring](/Mod1/Lessons/Week5/Refactoring.md)
-* 💡⬆️ Lab/Excercise
-* 🎒Unit Tests II
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week5/Refactoring.md)
+* 🎒[Unit Tests II](/Mod1/Lessons/Week5/UnitTestingII.md)
 * 💡⬆️ Lab/Excercise
 * ~~🎒Scope~~  
 * ~~💡⬆️ Lab/Excercise~~

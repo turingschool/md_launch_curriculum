@@ -65,10 +65,10 @@ Compare what we built above with an OOP version below:
 // Dog.cs
     public class Dog
     {
-        public string Name;
-        public string Breed;
-        public DateTime Birthdate;
-        public int WalksRequired;
+        public string Name { get; }
+        public string Breed { get; }
+        public DateTime Birthdate { get; }
+        public int WalksRequired { get; }
 
         public Dog(string name, string breed, DateTime birthdate, int walksRequired)
         {
@@ -88,25 +88,25 @@ Compare what we built above with an OOP version below:
 ```cs
 // Program.cs
 public class Program
+{
+    static void Main()
     {
-        static void Main()
+        Dog nile = new("Nile", "Golden Mix", new DateTime(2018, 07, 04), 3);
+        Dog sammy = new("Sammy", "Wirehaired Pointing Griffon", new DateTime(2012, 10, 13), 1);
+
+        var dogs = new List<Dog> { nile, sammy };
+
+        // Take dogs on a walk
+        foreach (var dog in dogs)
         {
-            Dog nile = new("Nile", "Golden Mix", new DateTime(2018, 07, 04), 3);
-            Dog sammy = new("Sammy", "Wirehaired Pointing Griffon", new DateTime(2012, 10, 13), 1);
-
-            var dogs = new List<Dog> { nile, sammy };
-
-            // Take dogs on a walk
-            foreach (var dog in dogs)
-            {
-                Console.WriteLine($"Taking {dog.Name} for a walk...");
-                dog.GoOnWalk();
-            }
-
-            Console.WriteLine($"{nile.Name} now needs {nile.WalksRequired} walks");
-            Console.WriteLine($"{sammy.Name} now needs {sammy.WalksRequired} walks");
+            Console.WriteLine($"Taking {dog.Name} for a walk...");
+            dog.GoOnWalk();
         }
+
+        Console.WriteLine($"{nile.Name} now needs {nile.WalksRequired} walks");
+        Console.WriteLine($"{sammy.Name} now needs {sammy.WalksRequired} walks");
     }
+}
 ```
 
 Here, we have a **class** that serves as a blue-print for any dog; instead of building a dictionary (or using some other method of storing dog information), we use the _idea_ of a dog.

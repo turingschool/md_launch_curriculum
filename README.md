@@ -43,12 +43,10 @@
 * 🎒[Refactoring](/Mod1/Lessons/Week5/Refactoring.md)
 * 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week5/Refactoring.md)
 * 🎒[Unit Tests II](/Mod1/Lessons/Week5/UnitTestingII.md)
-* 💡⬆️ Lab/Excercise
-* ~~🎒Scope~~  
-* ~~💡⬆️ Lab/Excercise~~
+* 💡⬆️ [Lab/Excercise](/Mod1/Labs/Week5/UnitTestingII.md)
 * 🧪Module Assessment
 * 🎒Module Review
-### Project
+### [Project](/Mod1/Project/Index.md)
 
 
 ## Mod 2

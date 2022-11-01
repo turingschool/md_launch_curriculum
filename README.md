@@ -183,4 +183,39 @@
 
 
 ## Mod 5
+### Week1
+* Customizing JSON Responses
+    - Define and implement a Serializer
+    - Expand our understanding of MVC responsibilities
+    - Describe how a Serializer can support OOP Principles
+* Data Validations
+    - Identify the differences between Error Handling, and program crashing
+    - Throw situation-specific errors
+    - Implement try/catch blocks 
+* SOLID (Refactoring Patterns)
+    - Reinforce our understanding of SRP
+    - Introduce OLID Principles
+### Week2
+* Working with 3rd party APIs
+    - Implement Secure Environment Variables
+* Writing Good Documentation
+    - Understand the reasons for good documentation
+    - Identify what to include in your documentation
+* Interview Lifecycle
+    - Identify the varying steps of an interview
+    - Common Pitfalls in Interviewing
+    - The graceful exit
+### Week3
+* Caching
+    - Define Caching and why it is useful
+    - Implement caching
+* Background Workers
+    - Identify opportunities to use background workers
+    - Implement a background worker
+* BigO and Process Optimization
+    - Understand the impact of poor optimization
+    - Introduce the problem of over-iteration and optimization
+    - Gain a familiarity with Big0 terminology (I've heard of this thing, but may not be an expert)
+
+
 ## Mod 6

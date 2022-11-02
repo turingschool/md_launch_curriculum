@@ -50,53 +50,68 @@
 
 
 ## Mod 2
+Lab Project Goals:
+Create a Database for MessageLogger
+Use EF to create a connection to the DB
+Use EF to create and manipulate DB records
+Use TDD to create another class
+Test DB connections and records
 ### Week 1
-* Version Control and Solo Git/GitHub
+* Lesson: Version Control and Solo Git/GitHub
     - Describe the benefits of Version Control
     - Create a repository
     - Use branch workflow
-* Intro to Databases
+* Lesson: Intro to Databases
     - Describe a database its uses in various applications
     - Define relational data
     - Describe the benefits of data normalization
-* SQL CRUD
+  Lab Project: Create Database for MessageLogger (not connected) with Message Table
+* Lesson: SQL CRUD
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
     - Use basic WHERE clause to filter records
+  Lab Project: Use SQL to insert and query message records in the DB
 ### Week 2
-* Test Driven Development
+* Lesson: Test Driven Development
     - Describe the benefits of TDD
     - Practice a TDD workflow
-* Git for Pairs
+* Lesson: Git for Pairs
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
 ### Week 3
-* Data Relationships (One to One, One to Many, Many to Many)
+* Lesson: Data Relationships (One to One, One to Many, Many to Many)
     - Develop a visualization for different relationships
     - Define Primary and Foreign keys
     - Practice describing different relationships
-* SQL JOINS
+  Lab Project: Add a User Table to the MessageLogger Db
+* Lesson: SQL JOINS
     - Use JOIN to query related records
     - Use WHERE to filter joined queries
-* SQL Aggregates
+  Lab Project: User SQL to select related records
+* Lesson: SQL Aggregates
     - Develop a visualization for grouping and aggregating data
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions
+  Lab Project: Use SQL to query some Message Statistics
 ### Week 4
-* Intro to ORM (Migrations & Schema)
+* Lesson: Intro to ORM (Migrations & Schema)
     - Define ORM
     - Describe the benefits of working with Objects
     - Set up Entity Framework in a Console Application
-* CRUD with ORM
+  Lab Project: Create Db connection
+* Lesson: CRUD with ORM
     - Deepen understanding of test setup by creating a test database
     - Use TDD to implement CRUD functionality in a console application
+  Lab Project: Use TDD and EF to create users and messages
 ### Week 5
-* Querying Resources with ORM
+* Lesson: Querying Resources with ORM
     - Use EF and LINQ to query database records
     - Define 'framework'
-* Migrations and changing Db tables
+  Lab Project: Use TDD to query users and messages
+* Lesson: Migrations and changing Db tables
     - Explore business decisions that drive DB changes
     - Practice making simple db changes
     - Describe the dangers of database changes
+  Lab Project: use a migration to add a table to the database
 
 ## Mod 3
 ### Week 1

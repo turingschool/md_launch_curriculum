@@ -10,9 +10,10 @@ In small groups you are going to be writing tests and adding some functionality 
 
 1. Fork and Clone [this starter repo](https://github.com/turingschool-examples/RecordLabel).  Each person should fork and clone - while you are working collaboratively, we want everyone to stretch those coding muscles!
 2. Spend 10-15 minutes reviewing the existing code to become familiar with the existing functionality - don't hesitate to reach out to your instructors with questions.
-3. Once you are familiar with the application, finish writing tests for the existing classes.
+3. Identify what methods need tests, and determine if each method is a command or query method.
+3. Write tests for the method you identified in the previous step.
 
-<!-- Do  you think it would be helpful before students actually write some tests is to have a step where they just identify a) what to test and b) is it a command or query test? I think that way if we have students who can't even do that first step, we know exactly where we need to work with them on. -->
+<!-- Do  you think it would be helpful before students actually write some tests is to have a step where they just identify a) what to test and b) is it a command or query test? I think that way if we have students who can't even do that first step, we know exactly where we need to work with them on. ✅-->
 
 **Be ready to share out the tests that you have written!**
 

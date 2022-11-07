@@ -125,7 +125,7 @@ namespace ListCalculations
 }
 ```
 
-> In small groups, annotate what is happening in this program.  Take a look at each line and write down what is happening.  When you have a good idea of what the code is doing, see if you can list all of the **responsiblitities** (or steps) that happen as the program runs.  Be prepared to share out!
+> In small groups, annotate what is happening in this program.  Take a look at each line and write down what is happening. For example: On line 3, a class called 'Program' is being declared.  When you have a good idea of what the code is doing on each line, see if you can list all of the **responsiblitities** (or steps) that happen as the program runs.  Be prepared to share out!
 <!-- I suggest having students reference the actual line number in their description of "what is happening" - this will help them be more clear and is good practice for technical articulation. -->
 
 ** Instructor Note ** When bringing students back together to share out, guide them to identify some key words that indicate the end of one responsiblity and the beginning of the next.  For example, "First we get a user input **and then** we split that input into a list **and then** we ...

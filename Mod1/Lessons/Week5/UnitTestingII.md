@@ -22,30 +22,12 @@ Finally, we will verify that the method has worked by making an **Assertion** th
 
 ![Image of a test with the third and final line highlighted - the Assertion step](/Mod1/Images/Week5/AssertTestStep.png)
 
+<!-- LOVE LOVE LOVE the use of visuals here - great way to break up text on the page, arrows help direct student attention, and different colors for syntax highlighting are a great way to make it feel more like actual code! -->
+
 > With a partner, review the tests below - identify the Arrange, Act, and Assert steps for each test. Be prepared to share your findings!
+<!-- Is there a way we could screenshot this code in an editor so that students can reference actual line numbers? Or bring it to a REPL so students can use line numbers AND annotate? Just some thoughts to help students and instructors have clear guidleines for how to share. ✅ -->
 
-```c#
-public class UserTests
-{
-    [Fact]
-    public void MostRecentTweet_ReturnsLastTweetAdded
-    {
-        var user = new User("Archie");
-        user.Tweet("Hello Birdies");
-        user.Tweet("Something wicked this way comes...");
-        Assert.Equal("Something wicked this way comes...", user.MostRecentTweet());
-    }
-
-    [Fact]
-    public void EditLatestTweet_ChangesLastTweet
-    {
-        var user = new User("Archie");
-        user.Tweet("Hello Birdies");
-        user.EditLastTweet("Hello Birbs");
-        Assert.Equal("Hello Birbs", user.MostRecentTweet());
-    }
-}
-```
+![](/Mod1/Images/Week5/TestsForAAANotation.png)
 
 ** Instructor Note ** We want to make sure that students start to recognize that some tests may have a combined act/assert.
 
@@ -56,6 +38,7 @@ Well written methods will have **one responsibility**, in other words, a method 
 * Change some information
 
 > With a partner, take a look at the class below.  For each method, determine if the method is giving us information or changing information.  Be prepared to share out, including *why* you decided a method was one or the other.
+<!-- This is GREAT! Having students just identify what a method is doing should hopefully help them start to think about writing better SRP methods - do one thing and one thing only. Also makes it easier to test!  -->
 
 ```c#
 public class Student
@@ -90,9 +73,11 @@ public class Student
 
 These two categories of methods are sometimes referred to as **command** and **query**.  A command method changes the state of a program, and a query method gives us information about the state of a program.  Because these two types of methods are intended to do different things, their test structures will look different as well.  We have already been testing both command and query methods, but you may not yet have picked up on the two different test structures that verify a command or a query method.
 
-> With a partner, write the tests that would verify the behavior of the methods `Learn()` and `AllSkills()` above.  You do not need to write the tests in a project, you can outline them in a notebook or slack.  When we come back together, we will write the tests as a group - so be ready to share out your ideas!
+> With a partner, on paper or in slack, write the tests that would verify the behavior of the methods `Learn()` and `AllSkills()` above.  You do not need to write the tests in a project, you can outline them in a notebook or slack - it doesn't have to be perfect code structure.  When we come back together, we will write the tests as a group - so be ready to share out your ideas!
 
 ** Instructor Note **  When you pull the group back together, go through writing each test step by step - Arrange, Act, Assert - by asking students to navigate while you drive.  Highlight that when testing a Command method, you often need to use other methods or even other objects to confirm that the effect of the method has taken place.
+
+<!-- I think we want to be clear about WHERE this is happening. Where are students writing tests? In a REPL? In a forked repo? Just trying to think of places where we might "lose" students due to our directions so we can avoid any unnecessary pain points. ✅-->
 
 ## Check for Understanding
 * If a test is missing the first of the three AAA steps, which step is missing, and why will that be a problem?

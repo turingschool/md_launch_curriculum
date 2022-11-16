@@ -55,10 +55,6 @@ After you have completed the individual work above:
 ** Instructor Note ** After letting groups discuss their challenges and questions, do a walkthrough of the process, answering questions as you go.
 
 ### Branching
-- why branching?
-- diagram branching workflow
-- practice branching
-
 One of the benefits of using Git, is the ability to create **branches**.  A branch is a separate workspace where you can create new features, or work on fixing bugs, without altering your main project.
 
 Developers often have strict rules about when changes to a project can be made directly onto the `main` branch.  The `main` branch is typically reserved for production-ready code; `main` should always be ready to show to a client or stakeholder without fear of major bugs.  This means that new features are developed on tier own branches, and then **merged** into the main branch.
@@ -66,8 +62,13 @@ Developers often have strict rules about when changes to a project can be made d
 When we create a new branch to work on a new feature, we call this **checking out a branch**.  We checkout a branch by creating a copy of `main` - that way our new feature is built with our current functionality as its base.
 
 Check out this visual representation of branching:
+![](/Mod2/Images/Week1/VCBranches.jpg)
 
-Here, we have a project that is created, then two branches are formed to work on different features.  Once each feature is complete, it is merged into the `main` branch.  There may be many commits on each branch, and each of those commits will be represented in the commit history of the `main` branch when the feature branch is merged!
+Here, we have a project that is created, then two branches are formed to work on different features (user and cart).  Once each feature is complete, it is merged into the `main` branch.  There may be many commits on each branch, and each of those commits will be represented in the commit history of the `main` branch when the feature branch is merged!  In this example, when the branches are merged, the commits will line up like this: 
+
+![](/Mod2/Images/Week1/VCBranchCommitLog.jpg)
+
+When we look at a commit log, we see the history of commits from newest to oldest - the most recent commit will be on top, and we can look backward by looking further down the list.
 
 > Individually, we are going to continue to practice working with git and branching by following along with the following 3 videos.  As before, pause the videos as necessary, and complete all steps demonstrated.  When finished, you will have created two branches, and merged those branches back to `main`.
 >1. [Creating Branches](https://www.loom.com/share/d675a00c7c634d35b977a7df6972b13c)
@@ -103,6 +104,10 @@ After you have completed the individual work above:
 
 ### A Quick Note!
 In this lesson, we have covered a lot - and we have only scratched the surface of Git and version control processes.  As a developer you will continue to practice and improve these skills, so don't be discouraged if your first few tries with git don't go as planned!  There are very few Git experts in the world, and it is not something you must _master_ in order to be a great developer.  But, you do need to practice git, and ask questions when you get stuck 🙂.
+
+## Check for Understanding
+* In your own words, what is git?  What is Github?
+* Create a diagram that maps the branches and commits for the Git Practice project we created during the lesson.
 
 
 

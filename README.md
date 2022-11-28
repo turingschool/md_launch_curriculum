@@ -57,14 +57,15 @@ Use EF to create and manipulate DB records
 Use TDD to create another class  
 Test DB connections and records  
 ### Week 1
-* Lesson: Version Control and Solo Git/GitHub
+* 🎒[Version Control and Solo Git/GitHub](/Mod2/Lessons/Week1/VersionControlAndSoloGit.md)
     - Describe the benefits of Version Control
     - Create a repository
     - Use branch workflow
+* 💡[Lab/Exercise](/Mod2/Labs/Week1/VersionControl.md)
 * Lesson: Intro to Databases
     - Describe a database its uses in various applications
-    - Define relational data
-    - Describe the benefits of data normalization  
+    - Define relational data and data normalization
+    - Create a Database with Postgresql and PgAdmin  
   Lab Project: Create Database for MessageLogger (not connected) with Message Table
 * Lesson: SQL CRUD
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records

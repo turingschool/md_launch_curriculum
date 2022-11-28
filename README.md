@@ -16,28 +16,28 @@
 ### Week 2
 * 🎒[Looping](/Mod1/Lessons/Week2/Looping.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Looping.md)
-* 🎒[Collections](/Mod1/Lessons/Week3/Collections.md)
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/Collections.md)
-* 🎒[Methods](/Mod1/Lessons/Week3/Methods.md)
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/Methods.md)
+* 🎒[Collections](/Mod1/Lessons/Week2/Collections.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Collections.md)
+* 🎒[Methods](/Mod1/Lessons/Week2/Methods.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Methods.md)
 * 🧪[Weekly Assessment](/Mod1/Assessments/week2.md) *needs edit*
 * 🎒[Topic Review](Mod1/Lessons/Week2/WeekInReview.md) *needs edit*
 
 ### Week 3
 * 🎒[Classes](/Mod1/Lessons/Week3/Classes.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/Classes.md)
-* 🎒[OOP](/Mod1/Lessons/Week4/OOP.md)
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/OOP.md)
-* 🎒[Class/Object Interaction](/Mod1/Lessons/Week4/ClassInteraction.md)
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/ClassInteraction.md)
+* 🎒[OOP](/Mod1/Lessons/Week3/OOP.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/OOP.md)
+* 🎒[Class/Object Interaction](/Mod1/Lessons/Week3/ClassInteraction.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/ClassInteraction.md)
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md) *needs edit*
 * 🎒[Topic Review](/Mod1/Lessons/Week3/WeekInReview.md) *needs edit*
 
 ### Week 4
-* 🎒[Intro to IDEs](/Mod1/Lessons/Week2/IntroToIDE.md)
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Looping.md)
-* 🎒[Debugging](/Mod1/Lessons/Week2/Debugging.md)
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Debugging.md)
+* 🎒[Intro to IDEs](/Mod1/Lessons/Week4/IntroToIDE.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/Looping.md)
+* 🎒[Debugging](/Mod1/Lessons/Week4/Debugging.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/Debugging.md)
 * 🎒[Unit Tests I](/Mod1/Lessons/Week4/UnitTestingI.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/UnitTestingI.md)
 * 🧪[Weekly Assessment](/Mod1/Assessments/Week4.md) *needs edit*

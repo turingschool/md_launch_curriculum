@@ -83,7 +83,8 @@ Total: $46.64
     23> Instead of replacing `", "`, they should repleace `"\n"` to get the correct price calculation.
 
 ## Preparation
-
+<!-- Arrays moved to beginning of Collections lesson -->
+<!-- 
 ### Arrays
 Up to this point, we have worked with single pieces of data: a string, a number, a date.  But, often we want to work with a list of many strings, numbers, or other datatypes.  Generally, in programming, these lists are referred to as **Arrays**.
 
@@ -94,7 +95,7 @@ In your notebook, answer the following questions:
     * What is an array?
     * How is an array different from a string?
     * Given this array: `string[] users = { "John", "Paul", "George", "Pete" }`, how would you change `"Pete"` to `"Ringo`?
-
+-->
 
 <!-- I love that this lab combines some technical exploration with some preparation for the following day! I think it would be great if we had even a small Preparation section for an upcoming lesson in each lab. Doesn't need to be too involved, but potentially some small exploration into the next day's topic! -->
 

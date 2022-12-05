@@ -7,7 +7,7 @@
 
 ## Practice
 
-In your pairs, you will work through the following exercises.  Both partners will fork M1W2-MethodsLab in Replit.  As you work through the exercises, take turns being the person typing out code.  For example, Partner A will share their screen and typing code into their Repl for the first exercise; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  Repeat until you work through all of the exercises. This should be a collaborative process!
+In your pairs, you will work through the following exercises.  Both partners will fork `M1W2-MethodsLab` in Replit.  As you work through the exercises, take turns being the person typing out code.  For example, Partner A will share their screen and typing code into their Repl for the first exercise; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  Repeat until you work through all of the exercises. This should be a collaborative process!
 
 <!-- In your pairs, you will work through the following exercises.  Both partners will create a Visual Studio Console Application, called 'MethodsLab'.  As you work through the exercises, take turns being the person typing out code.  For example, on the first exercise, Partner A will be sharing their screen and typing code into Visual Studio; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  This should be a collaborative process! -->
 

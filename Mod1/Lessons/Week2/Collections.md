@@ -1,16 +1,18 @@
 # Collections
 
 ## Learning Goals
-* Define and use  **arrays** and **lists**
+* Define and use **arrays** and **lists**
 * Identify key differences between **arrays** and **lists**
 * Define and use a **dictionary**
 * Iterate through collections with `foreach` and `for`
 
-There are three common ways that c# manages groups or lists of data. The most common is to use an **Array**.  The other two are using a **List** and a **Dictionary**.
+<!-- There are three common ways that c# manages groups or lists of data. The most common is to use an **Array**.  The other two are using a **List** and a **Dictionary**. -->
+<!-- Generally, in programming, these lists are referred to as **Arrays**. -->
+Up to this point, we have worked with single pieces of data: a string, a number, a date.  But, often we want to work with a list or group of many strings, numbers, or other datatypes.  There are three common ways that c# manages a collection of data. **Array**, **List** and **Dictionary**.
 
 ## Array
 
-Up to this point, we have worked with single pieces of data: a string, a number, a date.  But, often we want to work with a list of many strings, numbers, or other datatypes.  Generally, in programming, these lists are referred to as **Arrays**.
+The most common method to manage a list of data is an **Array**. A C# array allows you to store a sequence of values in a single data structure. In other words, an array is a single variable that can hold many values. 
 
 Work through [this arrays tutorial](
 https://docs.microsoft.com/en-us/learn/modules/csharp-arrays/1-introduction) (including the Knowledge Check at the end!)

@@ -62,10 +62,11 @@ Test DB connections and records
     - Create a repository
     - Use branch workflow
 * 💡[Lab/Exercise](/Mod2/Labs/Week1/VersionControl.md)
-* Lesson: Intro to Databases
+* 🎒[Lesson: Intro to Databases](/Mod2/Lessons/Week1/IntroToDatabases.md)
     - Describe a database its uses in various applications
     - Define relational data and data normalization
     - Create a Database with Postgresql and PgAdmin  
+* 💡[Lab/Exercise](/Mod2/Labs/Week1/IntroToDatabases.md)
   Lab Project: Create Database for MessageLogger (not connected) with Message Table
 * Lesson: SQL CRUD
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records

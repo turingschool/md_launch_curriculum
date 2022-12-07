@@ -92,8 +92,20 @@ Will this program compile and run?
 
 <!-- As we learned in yesterday's lab, we use `namespaces` to organize related material in our programs.  .NET will automatically give us a namespace for our classes that matches our project name; so, when we need to use any classes in our project, we must be _within_ that namespace.  A namespace is a very simple container - it can hold class definitions, but no **executable code**.  When we want to execute code that incorporates more than the built-in classes, we need to create a `Program` class with a `Main` method that will hold our executable code: -->
 
+<!-- 
 ```c#
 internal class Program
+{
+    static void Main()
+    {
+        Unicorn fred = new Unicorn();
+        Unicorn gloria = new Unicorn();
+    }
+}
+``` 
+-->
+```c#
+class Program
 {
     static void Main()
     {
@@ -211,6 +223,7 @@ internal class Unicorn
     }
 }
 ```
+Note: you will need to add the following `using` statement near the top of the `Unicorn.cs` file to add the `MagicalPowers` property as a `List`: `using System.Collections.Generic;`
 
 ### Using an Initializer
 

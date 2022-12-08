@@ -7,20 +7,20 @@ Plan for at least 2 whole group checkins - after giving some time to pseudo-code
 
 <!-- I definitley agree that labs should be as collaborative as possible - I think at some point our instructor notes should be more explicit such as "Before this lab, create groups of 2-3 students and post groups in cohort Slack channel at the start of the lab." Almost making it like a checklist so it is easy for future instructors to prep. -->
 
+<!-- I'm in favor of creating random breakout room groups for students at the start of the lab. Is there a reason you prefer to post the groups in slack instead of creating breakout rooms with the groups? -->
+
 ## Practice
 
-In today's lab, you are going to be putting together what you have learned so far into a mini project - something you can (and should) show off to your family and friends!
+In today's lab, you will put together what you have learned so far into a mini project - something you can (and should) show off to your family and friends!
 
-Using your what you have learned in lessons and labs so far, you are going to build an order-taking program that could be used at a restaurant.  Because we are early on in our program, this application will have some unrealistic paramenters, but will give you a good idea of the kinds of things you might start building even with just the fundamentals!
-
-You SHOULD collaborate with others in your cohort!
+Using what you have learned in lessons and labs so far, you are going to build an order-taking program that could be used at a restaurant.  Because we are early on in our program, this application will have some unrealistic paramenters, but will give you a good idea of the kinds of things you might start building even with just the fundamentals!
 
 ### Order Taker
 In this restaurant, we only take orders in batches of 4.  So, 4 people can order at a time, or 1 person can pretend to be 4 people ordering 4 different meals 🙂.
 
 You are going to write a program that will ask for an order from 4 users.  We will want to store their orders in a variable called 'combinedOrder'.  A user's order will only be added to the 'combinedOrder' if what they ask for is included in the restaurant's 'menu'.
 
-After the combined order is made, we should print a summary of the order and include the total cost.  At our restaurant, we charge $2.12 per letter in the order.  So, an order of "tacos, popcorn, popcorn, ice cream" would cost $57.24 (we don't charge for spaces, or commas).
+After the combined order is made, we should print a summary of the order and include the total cost.  At our restaurant, we charge $2.12 per letter in the order.  So, an order of "tacos, popcorn, popcorn, ice cream" would cost $57.24 (we don't charge for spaces or commas).
 
 When completed, your program output may look something like this (if it is not exactly the same words, that's no big deal - make it your own!).  Do take note that if someone orders something in a different case (upper or lower) than it appears in the menu, we should still accept that item; TACOS is the same as tacos and the same as TaCoS.
 
@@ -29,10 +29,10 @@ When completed, your program output may look something like this (if it is not e
 
 If you have a user that orders something NOT on the menu, your program might look something like this:
 
-![](/Mod1/Images/Week1/Exercise2.png)
+![](/Mod1/Images/Week1/Restaurant2.png)
 
 ### Pre-code Prep
-Before you start implementing this project, we are going to take about 15 minutes to brainstorm on what this code may look like.  We can refer to this brainstorming as `Psuedocoding`.
+Before you start implementing this project, we are going to take about 15 minutes to brainstorm what this code may look like.  We can refer to this brainstorming as `Psuedocoding`.
 
 In your notebook, write an outline of what the code for this program might be.  Here are a few questions to consider:
 * What datatypes will I be using?

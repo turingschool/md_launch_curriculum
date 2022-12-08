@@ -2,7 +2,7 @@
 
 With your group, answer each question below.  Spend some time discussing each question _without_ using any resources; use your own recall of the topics covered this week.  If, after you have discussed without resources, your group needs assistance, use the raise hand feature and an instructor will come help!
 
-1. Create a diagram that showes the 4 tasks shared by all computers.
+1. Create a diagram that shows the 4 tasks shared by all computers.
 2. Describe how your phone demonstrates the 4 tasks of a computer.
 3. What is binary? What kinds of data can be represented with binary?
 4. Which is larger, a bit or a byte? 

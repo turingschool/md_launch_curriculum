@@ -1,7 +1,7 @@
 # Week 1 Review Guide
 
 ## Small Group 1
-In small groups (3/4 students), work through these these [Checks For Understanding](/Mod1/Lessons/Week1/CFUReview.md) questions that cover each of this week's lessons.  Make a note of any questions or topics that are unclear - instructors will be moving around break-out rooms helping to clarify tricky topics.  If you need an instructor, use the raise hand ✋ feature.
+In small groups (3/4 students), work through these [Checks For Understanding](/Mod1/Lessons/Week1/CFUReview.md) questions that cover each of this week's lessons.  Make a note of any questions or topics that are unclear - instructors will be moving around break-out rooms helping to clarify tricky topics.  If you need an instructor, use the raise hand ✋ feature.
 
 ** Instructor Note **
 As you move through different groups, keep a list of topics that need to be addressed for the larger group.

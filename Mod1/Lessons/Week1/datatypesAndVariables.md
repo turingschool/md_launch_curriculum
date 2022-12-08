@@ -52,8 +52,15 @@ These two operations can be performed separately, or at the same time.
 **1 Step Declaration and Assignment**
 ![Example of combined declaration and assignment](/Mod1/Images/Week1/1StepDeclarationAndAssigment.png)
 
-> Time to create your own variables!  Create at least 5 new variables, give them values, and print those variables to the console with `Console.WriteLine(variableName)`.  Be creative with your variable names; there are rules for what you can name a variable - see if you can break those rules!
+There is no limit to the number of times we can assign a new value to a variable.
 
+```c#
+int score = 0;
+score = 1;
+score = 11;
+```
+
+> Time to create your own variables!  Create at least 5 new variables, give them values, and print those variables to the console with `Console.WriteLine(variableName)`.  Be creative with your variable names; there are rules for what you can name a variable - see if you can break those rules!
 
 # Datatypes
 
@@ -106,7 +113,7 @@ int year = 2022;
 
 ### Long
 
-There may be some cases when you need to store a number that is larger than 2.1Billion.  For these situations you can use **long** instead of int.
+There may be some cases when you need to store a number that is larger than 2.1 Billion.  For these situations, you can use **long** instead of int.
 
 ```c#
 long anUncommonlyLargeNumber = 3462790410255L
@@ -184,7 +191,7 @@ Strings have a **property** of Length which returns the number of characters in 
 <!-- It might be worth while to have students come up with their own definition of what a method is. It could allow them an opportunity to start making connections to things they already know - "A method is kind of like a special ability that a video game character has?" ✅-->
 
 > With a partner:
->*  take a look at the [Microsoft C# String Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.string.contains?view=net-6.0).  Find two more **methods** that you can use on strings.
+>*  take a look at the [Microsoft C# String Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.string.contains?view=net-6.0).  Write down two more **methods** that you can use on strings.
 >* Come up with your own definitions of **property** and **method**. 
 
 # Casting
@@ -239,7 +246,7 @@ Console.WriteLine("the variable hello has a value of: " + hello + " and is of ty
 Console.WriteLine("the variable myNum has a value of: " + myNum + " and is of type: " + myNum.GetType());
 
 hello = "Hello Universe";
-myNum = 4
+myNum = 4;
 
 Console.WriteLine("the variable hello has a value of: " + hello + " and is of type: " + hello.GetType());
 Console.WriteLine("the variable myNum has a value of: " + myNum + " and is of type: " + myNum.GetType());

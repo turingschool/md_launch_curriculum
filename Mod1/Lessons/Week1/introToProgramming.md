@@ -20,7 +20,7 @@ There are many objects that we interact with every day that are computers - lapt
 
 ![Diagram of the four tasks of a comptuer](/Mod1/Images/Week1/ComputerTasks.png)
 
-All computers have some mechnism for taking input, storing that input as data, processing the data, and outputting the results.
+All computers have some mechanism for taking input, storing that input as data, processing the data, and outputting the results.
 
 > With a partner, discuss the input and output of one or more of the devices you indentified during the warm up.
 
@@ -30,17 +30,17 @@ Input is the information that we give to a computer.  We can give that informati
 
 ## Output
 
-Just like input, the output for different computers will be specific to the type of computer it is.  A calculator will output numbers, a video game outputs a digital rendering.  And, the output of some computers might become the input for other computers (sneak peak: this is the basis of the internet!).
+Just like input, the output for different computers will be specific to the type of computer it is.  A calculator will output numbers, a video game outputs a digital rendering.  And, the output of some computers might become the input for other computers (sneak peek: this is the basis of the internet!).
 
 ## Binary Data
 
-Before we get too far into the storage and processing of information, we need to take a moment to understand how the machinery that makes a computer work.  You may have heard that all computers work on 'ones and zeros' - this is true, but what does it mean?
+Before we get too far into the storage and processing of information, we need to take a moment to understand the machinery that makes a computer work.  You may have heard that all computers work on 'ones and zeros' - this is true, but what does it mean?
 
 Inside of all computers are a bunch of wires and circuits that carry all of the information needed to receive input, store information, process, and output results.  Wires carry electricity which is either flowing, or not flowing.  Circuits can change the state of a wire. 
 
 ![Diagram of a NOT circuit](/Mod1/Images/Week1/WireAndCircuit.png)
 
-The electricity is either on or off.  So, the state of this wire can represent any data that has only two options: on/off, yes/no, true/false, 1/0.  This single wire is called a **bit** (its just a little bit of information...).  This one wire can only have two possible pieces of information - 1 or 0.  How do we store more information?  With more wires!
+The electricity is either on or off.  So, the state of this wire can represent any data that has only two options: on/off, yes/no, true/false, 1/0.  This single wire is called a **bit** (it's just a little bit of information...).  This one wire can only have two possible pieces of information - 1 or 0.  How do we store more information?  With more wires!
 
 **1 Wire:** `1` or `0`  (2 combinations)
 **2 Wires:** `0|0` or `1|0` or `0|1` or `1|1` (4 combinations)
@@ -82,7 +82,7 @@ Thanks to the separation from software to the wires and circuits at the lowest l
 
 # Programming
 
-As programmers, we build the software that and applications that sit between the human user and the computer.  We write code in a language that is easier for us as humans/developers to understand.  Then that code gets **compiled** into a language that our computer (specifically our operating system), can understand.
+As programmers, we build the software and applications that sit between the human user and the computer.  We write code in a language that is easier for us as humans/developers to understand.  Then that code gets **compiled** into a language that our computer (specifically our operating system), can understand.
 
 There are ALOT of languages that we can choose from when we write code.  We are going to be using a language called C# (c-sharp).
 

@@ -42,7 +42,7 @@ As a reminder, this assessment is for students and instructors to determine if t
 ## Stretch Goals (0 Points, just for some fun 😊)
 These can be done in any order, and should only be completed if you have completed the **Questions and Exercises** and **Build a Guessing Game** portions
 
-* If a user opts to play the guessing game, loop through asking for guesses until the correnct answer is given.
+* If a user opts to play the guessing game, loop through asking for guesses until the correct answer is given.
 
 ![](/Mod1/Images/Week1/week1_4.png)
 

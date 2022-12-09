@@ -73,9 +73,11 @@ We link the two tables by using a **foreign key** on one or more tables.  In thi
 - Open PgAdmin
 - Create Database with one table -->
 
-So far, we have been working with representations of what data might look like inside of a database.  We have seen data organized into tables, using primary and foreign keys to relate to records in other tables.  Now, we are going to create a database.
+So far, we have been working with representations of what data might look like inside of a database.  We have seen data organized into tables, using primary and foreign keys to relate to records in other tables.  Now, we are going to create a database.  This database will live on your computer (it will be accessible only by you, or someone with your laptop).
 
 ### Download PostgreSQL
+
+There are [many different databases](https://appinventiv.com/blog/top-web-app-database-list/) that are available.  During your time at Turing, we will primarily work with [PostgreSQL](https://www.postgresql.org/).
 
 1. Download the [Windows x86-64 PostgreSQL Installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
     * Choose the installer for the most current version (the highest number).
@@ -92,6 +94,45 @@ So far, we have been working with representations of what data might look like i
 
 ### Create a Database with PgAdmin
 
-### Create a table for Customers
+** Instructor Note ** You could walk the students through the database and table creation, or let them explore on their own.  We do not need them to be _experts_ in database administration.
+
+Once in PgAdmin, we are going to create a database for our customer and order information.
+
+> In small groups, work through the following steps.  You should each complete the steps individually, but use your group-mates as resources if you get stuck.  And, if you need an instructor's help - reach out!  
+> 1. Right Click on `Databases` and `Create` a `Database`
+> ![](/Mod2/Images/Week1/CreateDb1.png)
+> 2. Give your database a name and `Save`
+> ![](/Mod2/Images/Week1/CreateDb2.png)
+> 3. If successful, your pgAdmin should look like: 
+> ![](/Mod2/Images/Week1/CreateDb3.png)
+
+Now that we have a database created, we need to add two tables to our database for `customers` and `orders`
+
+### Create a table for Customers and Orders
+
+> Continue working individually, using your small group for support!  
+> 1. Click on your Database to highligh it, then click the icon for `Query Tool`
+> ![](/Mod2/Images/Week1/CreateDb4.png)
+
+The Query Tool is where we will interact with our database.  Today, you are going to be copying the commands that we give you; we are going to dig deeper into SQL commands in later lessons!
+
+> 2. In the query window, recreate the command below - be very careful of spelling and semicolons!  When you have created the query, click the 'play' icon to run the query.  
+> ![](/Mod2/Images/Week1/CreateDb5.png)
+> 3. Again, In the query window, recreate the command below - be very careful of spelling and semicolons!  When you have created the query, click the 'play' icon to run the query.  
+> ![](/Mod2/Images/Week1/CreateDb6.png)
+> 4. To verify that you have created your tables appropriately, run this query: `SELECT * FROM orders JOIN customers ON orders.CustomerId = customers.Id;`.  Your output should look like this:  
+> ![](/Mod2/Images/Week1/CreateDb7.png)
+
+If you run into any error messages or issues - reach out to an instructor!
+
+> In small groups, discuss the following questions:
+> * What do you think `CREATE TABLE` is doing?
+> * How are column headers created?
+> * What datatypes do you think are being used for each column?
+> * What words/commands don't make much sense yet?
+
+** Instructor Note ** We want students to be able to recreate these steps, but they do not need to know too much about the commands yet - we will cover SELECT and JOIN in later lessons.  CREATE TABLE will not be covered in detail because we are not preparing students for database administration - in their first jobs, they will most likely be working with pre-existing databases.
 
 ## Check for Understanding
+* In your own words, what is a database?
+* Imagine that you are creating a database of books.  How might you create a relationship between a book and it's author?  

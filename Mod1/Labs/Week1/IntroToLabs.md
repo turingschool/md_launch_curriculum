@@ -33,7 +33,7 @@ Tomorrow, we will be discussing one of the most important fundamentals of progra
 #### Check for Understanding
 * Which of the following real life items is most similar to a **variable**:
     - a book
-    - a box labeled 'Nonfiction' that contains books
+    - the label 'NonfictionBooks' on a box that contains books
     - a box that contains books
     - 10 books that are inside a box
 

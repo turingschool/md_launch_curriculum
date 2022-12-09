@@ -6,8 +6,20 @@ In our Mod2 Labs, we are going to be building and working with a Database that c
 
 ** Instructor Note **  This lab includes group, and individual work.  Start with groups of 3/4 students for the outlining section, then let them work individually to create the database tables.  As an 'exit ticket' we will ask everyone for the SQL create statements they used - the key piece to verify is how students used primary and foreign keys.
 
-
 ## Practice
+### Datatypes
+
+One thing you may have noticed in the lesson is that we often see datatyps in PostgreSQL that are not familiar to us (not the same as the c# datatypes).  
+
+> With a group, research and define the following PostgreSQL datatypes.  You can use [this cheatsheet](https://www.simplecode.io/blog/resources/postgres-data-types-cheat-sheet/) to get you started!
+> * serial
+> * varchar
+> * text
+> * timestamp
+> Be ready to share out!
+
+** Instructor Note ** The most important datatypes for students to be familiar with are serial and varchar.  We want them to know that serial will auto-increment, and that varchar is given a character limitation.
+
 ### Outlining Database Tables
 
 In small groups, discuss what data you might want to store from the Message Logger application.  What tables would you need in a database?  What columns would those tables have?  How are those tables related?

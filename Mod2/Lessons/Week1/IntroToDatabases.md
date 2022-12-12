@@ -135,4 +135,4 @@ If you run into any error messages or issues - reach out to an instructor!
 
 ## Check for Understanding
 * In your own words, what is a database?
-* Imagine that you are creating a database of books.  How might you create a relationship between a book and it's author?  
+* Imagine that you are creating a database of books.  How might you create a relationship between a book and its author?  

@@ -85,11 +85,26 @@ After you have completed the individual work above:
 ** Instructor Note ** After letting groups discuss their challenges and questions, do a walkthrough of the process, answering questions as you go.
 
 ### GitHub
-So far, we have created a project with a git repository that exists _only_ on our local machines.  This is fine for some personal projects, but most of the time, you are going to want to share your code.  When you share your code, you can get feedback and help a lot more easily.  Also, sharing your code allows for easier collaboration!
+
+> With a partner, take a few minutes to discuss the following questions:
+> * Where does the project that you just created exist?
+> * If you lost your laptop tomorrow, would you still have access to this project?
+> * Can you think of some tools that you have used that allow you to access documents from different computers? 
+> Be ready to share out!
+
+** Instructor Note ** We want them to start thinking about how some applications, like Drive, make documents accessible from multiple devices.  Then they can draw a parallel from what they know (Drive), to what they are learning (GitHub)
+
+So far, we have created a project with a git repository that exists _only_ on our local machines.  This works fine for some personal projects, but it does have drawbacks:
+* If you lose or damage your computer, your code is gone as well.
+* It is difficult to share your code, and even more difficult to collaborate on projects.
+
+When you share your code, you can get feedback and help a lot more easily.  And, sharing your code allows for easier collaboration!
 
 **Github** is where we will share our git repositories.  You have used Github to fork and clone existing repositories - now let's create a Github repository of your own.  When this repository is created, you will have two versions of your project:
 * **local** repository that lives only on your computer
 * **remote** repository that lives in the cloud - it can be cloned by anyone on Github.
+
+![](/Mod2/Images/Week1/RemotevLocal.png)
 
 > Individually, watch the video below to create a GitHub Repository for your Git Practice project.
 > [Creating and Pushing to a Github Repository](https://www.loom.com/share/dba188a5f13e43059d9a84b630280c53)
@@ -107,6 +122,7 @@ In this lesson, we have covered a lot - and we have only scratched the surface o
 
 ## Check for Understanding
 * In your own words, what is git?  What is Github?
+* Why do we use git and Github?
 * Create a diagram that maps the branches and commits for the Git Practice project we created during the lesson.
 
 

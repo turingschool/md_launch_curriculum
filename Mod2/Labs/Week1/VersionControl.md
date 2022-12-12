@@ -7,6 +7,7 @@
 ## Practice
 
 ### Git Flow Diagram
+
 Individually, you are going to diagram the git workflow that you might use when creating the program described below.  Be as specific as possible in your diagramming - write out the steps for each git process that you use.  Your diagram should include at least: 1 branch, 2 pushes, 5 commits.
 
 
@@ -20,6 +21,8 @@ Individually, you are going to diagram the git workflow that you might use when 
 After you have diagrammed your git workflow, you will discuss your workflow in small groups.  Pay close attention to how your processes differ from your cohort-mates.  There is no "right" way to complete this exercise, but there are some steps in the git workflow that are necessary; reach out to your instructors with **any** questions!
 
 Create a slack DM with your small group members in preparation for the next section.
+
+** Instructor Note ** Plan to bring all groups together to discuss high-level plans for implementation as a class.  Students should have a clear plan prepared for the next section.
 
 ### Practicing Git Workflow
 Now, we are going to put your workflow into practice!

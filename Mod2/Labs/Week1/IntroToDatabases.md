@@ -9,13 +9,13 @@ In our Mod2 Labs, we are going to be building and working with a Database that c
 ## Practice
 ### Datatypes
 
-One thing you may have noticed in the lesson is that we often see datatyps in PostgreSQL that are not familiar to us (not the same as the c# datatypes).  
+One thing you may have noticed in the lesson is that we often see datatypes in PostgreSQL that are not familiar to us (not the same as the c# datatypes).  
 
 > With a group, research and define the following PostgreSQL datatypes.  You can use [this cheatsheet](https://www.simplecode.io/blog/resources/postgres-data-types-cheat-sheet/) to get you started!
 > * serial
 > * varchar
 > * text
-> * timestamp
+> * timestamp  
 > Be ready to share out!
 
 ** Instructor Note ** The most important datatypes for students to be familiar with are serial and varchar.  We want them to know that serial will auto-increment, and that varchar is given a character limitation.
@@ -26,7 +26,7 @@ In small groups, discuss what data you might want to store from the Message Logg
 
 You should come up with at least 2 tables.
 
-** Instructor Note ** As groups are working through the brainstorming process, visit each breakout room and offer guidance.  We don't expect students to be masters at determining database structure, so its ok to give a little nudge in the right direction.
+** Instructor Note ** As groups are working through the brainstorming process, visit each breakout room and offer guidance.  We don't expect students to be masters at determining database structure, so it's ok to give a little nudge in the right direction.
 
 ### Create the Database and Tables
 

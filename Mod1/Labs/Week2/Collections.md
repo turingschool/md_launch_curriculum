@@ -7,10 +7,12 @@
 
 ## Practice
 
-In your small group, each person will review one of the three code blocks below.  Take 5 minutes to review your code block, then take turns describing what is happening in each example.  Be sure to describe things line by line - "On line 1 _______ happens, then on line 2 _____________...". And, discuss what each variable holds at each point during the code block.
+<!-- In your small group, each person will review one of the three code blocks below.  Take 5 minutes to review your code block, then take turns describing what is happening in each example.  Be sure to describe things line by line - "On line 1 _______ happens, then on line 2 _____________...". And, discuss what each variable holds at each point during the code block. -->
+Each student should [fork this REPL](https://replit.com/@RichardTillies2/M1W2-CollectionsLab#main.cs). In your small group, each person will review one of the three example code blocks.  Take 5 minutes to review your code block, then take turns describing what is happening in each example.  Be sure to describe things line by line - "On line 1 _______ happens, then on line 2 _____________...". And, discuss what each variable holds at each point during the code block.
 
 After reviewing and sharing about your scenarios, Read the [Common Iterations Patterns](#common-iteration-patterns) section, and discussed the included questions.
 
+<!-- 
 Example One
 ```c#
 var names = new List<string> {"alice", "bob", "charlie"};
@@ -54,7 +56,8 @@ foreach (var num in nums)
 }
 
 Console.WriteLine(sum);
-```
+``` 
+-->
 
 ### Common Iteration Patterns
 

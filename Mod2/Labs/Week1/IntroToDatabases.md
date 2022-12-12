@@ -15,7 +15,8 @@ One thing you may have noticed in the lesson is that we often see datatypes in P
 > * serial
 > * varchar
 > * text
-> * timestamp  
+> * timestamp   
+>  
 > Be ready to share out!
 
 ** Instructor Note ** The most important datatypes for students to be familiar with are serial and varchar.  We want them to know that serial will auto-increment, and that varchar is given a character limitation.

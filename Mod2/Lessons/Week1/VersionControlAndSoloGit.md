@@ -43,8 +43,13 @@ The best way to learn how to use Git Version Control is to dive right in - so th
 
 > Individually, take 20 minutes to follow along with the 3 vidoes below; pause as needed and complete each step outlined.  After completing the steps, you will have completed a git workflow similar to the diagram above.
 >1. [Create A Project and Initialize a Git Repository](https://www.loom.com/share/d3af392e059147a699ce6ac1af65d251)
->2. [Add Commits to the Git Repository](https://www.loom.com/share/b7373e5aaad646c790965422719bb993)
+>2. [Add Commits to the Git Repository](https://www.loom.com/share/b7373e5aaad646c790965422719bb993)  
 >3. [Review the Commit History](https://www.loom.com/share/f419b8568ac348e391eb1c90580d894e)
+
+```
+About SAVE
+Most text editing software will try to enforce file-specific saving; this is meant to help save you from losing your work.  Many developers choose to suppress these 'save' warnings by turning on 'AutoSave' in their IDE.
+```
 
 After you have completed the individual work above:
 

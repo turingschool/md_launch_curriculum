@@ -1,7 +1,7 @@
 ## Lab Objectives
 * Practice creating methods
 * Reinforce the three common iteration patterns
-<!-- * Introduce **Namespaces** -->
+* Introduce **Namespaces**
 
 ** Instructor Note ** Before the lab, create pairs and post the groups in slack.  Before kicking off the practice exercises, introduce the idea of driver/navigator programming - you don't need to go into too much detail, or even use those words specifically, but we are going to have students start modeling this type of behavior.
 
@@ -59,7 +59,7 @@ Console.WriteLine(sumOfSecondNums);
 ```
 
 **Exercise 5**
-Psuedocode a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  
+Pseudocode a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  
 *A note on zip codes:  All zip codes are 5 characters long; if an integer zip code is fewer than 5 digits, we should add as many `0`s to the front of that number as we need to reach 5 characters.  So, a given integer zip of `525` would be normalized into `"00525"`.  If implemented (you don't need to do that today!), the method should be able to be called like this:
 ```c#
 var zipCodes = new[] {80228, 5031, 2112, 52556, 515 };
@@ -70,7 +70,7 @@ Console.WriteLine(result);
 ```
 
 **Exercise 6**
-Psuedocode a method called `GetWordsByFirstLetter()` that takes two arguments: a character, and a list of strings.  The method should return a subset of the given list that contains all the words that start with the given character.  If implemented (you don't need to do that today!), the method should be able to be called like this:
+Pseudocode a method called `GetWordsByFirstLetter()` that takes two arguments: a character, and a list of strings.  The method should return a subset of the given list that contains all the words that start with the given character.  If implemented (you don't need to do that today!), the method should be able to be called like this:
 
 ```c#
 var words = new List<string> {"weirdo", "quill", "fast", "krill", "quaint", "quieter", "koala"};

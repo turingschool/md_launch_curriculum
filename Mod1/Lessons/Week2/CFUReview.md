@@ -29,7 +29,7 @@ With your group, answer each question below.  Spend some time discussing each qu
     }
     ```
 1. How many **code blocks** are in the example above?
-1. Write a **for loop** that will as a user for 10 items to put on a wish list.  Store these items in a string called `wishList`.
+1. Write a **for loop** that will ask a user for 10 items to put on a wish list.  Store these items in a string called `wishList`.
 1. Visual Studio is an IDE.  In your own words, what is an IDE?
 1. Spend 1 minute googling to see if you can find any other IDEs. How many others did you find?
 1. Imagine you are chatting with your 10 year old niece about what you are learning at Turing.  How would you explain to them what a **bug** is?

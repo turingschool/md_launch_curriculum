@@ -13,7 +13,7 @@ From yesterday's lab work, in a notebook, answer the following questions.
 1. What is at index 2 in this array: `string[] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
 1. What are some drawbacks to using an array?
 
-The idea of a list of elements organized in one place, like an array,is a common function of all modern programming languages.  We will see collections of data organized into lists all over our projects.  While the concept of a list of elements is common among languages, the way that each language works with those lists can be slightly different.
+The idea of a list of elements organized in one place, like an array, is a common function of all modern programming languages.  We will see collections of data organized into lists all over our projects.  While the concept of a list of elements is common among languages, the way that each language works with those lists can be slightly different.
 
 There are three common ways that c# manages groups or lists of data; one of which is an Array.  They other two most common ways are with **Lists** and **Dictionaries**.
 
@@ -44,6 +44,8 @@ Just like arrays, a list can only contain **elements** of the same type - this i
 
 ### Accessing and Manipulating List Items
 <!-- Where is this work happening? An already built REPL with some starter code might be a good scaffolded approaach here. -->
+
+<!-- At this point do students have a way to validate if they successfully completed the task? I'm not seeing how. We might need to move the foreach console.writeline part up? -->
 > With a partner, take a look at the resources linked below, and see if you can accomplish the following:  
 > 1. Create a new Console Application in Visual Studio called 'Collections'
 > 1. In 'Program.cs', create a variable `dogBreeds` that holds a `List<string>` of breeds (you can use the data from the example above)

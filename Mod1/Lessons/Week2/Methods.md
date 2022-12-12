@@ -126,7 +126,7 @@ When we define new methods, we are creating a **method signature**
 ![Diagram of Method Signature](/Mod1/Images/Week3/MethodSignature.png)
 <!-- Love that this is broken down into a color coded diagram! these can be a nice visual way to also break up big blocks of text too -->
 
-A method signature includes the return value of the method (or `void` if there is none), the name of the method, and any arguments necessary for the method to execute. We will discuss more about **static** in a later lesson 😊.
+A method signature includes the return type of the method (or `void` if there is no value returned), the name of the method, and any arguments necessary for the method to execute. We will discuss more about **static** in a later lesson 😊.
 
 ## Abstraction
 

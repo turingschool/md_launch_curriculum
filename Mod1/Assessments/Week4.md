@@ -3,9 +3,10 @@
 ### Setup
 
 In Github, fork [this repository](https://github.com/memcmahon/Mod1Week4Assessment).
+<!-- I don't have permission to edit this repo, but it needs edits to match the scoring listed here with 8 points for the questions and 12 points for writing the tests -->
 
 1. In your forked repository on GitHub, edit the `README.md` file - answer the BLANK questions before moving on to the exercise.  Make sure to SAVE your changes to the README before moving on!
-2. In Visual Studio, clone your forked repository. In this solution, there is a `Vehicle` project and a `Vehicle.UnitTests` project.  The class in `Vehicle.cs` is complete, but the tests for that class are not yet finished.  Add tests to the `VehicleTests.cs` file so that all the methods and properties for the `Vehicle` class have tests.  When finished, there should be a minimum of BLANK tests. (12 Points Possible)
+2. In Visual Studio, clone your forked repository. In this solution, there is a `Vehicle` project and a `Vehicle.UnitTests` project.  The class in `Vehicle.cs` is complete, but the tests for that class are not yet finished.  Add tests to the `VehicleTests.cs` file so that all the methods and properties for the `Vehicle` class have tests.  When finished, there should fix the broken test and add a minimum of 2 more tests. (12 Points Possible)
 
 
 ### Submission

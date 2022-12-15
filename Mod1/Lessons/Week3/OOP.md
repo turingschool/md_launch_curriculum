@@ -3,7 +3,7 @@
 ## Learning Goals
 * Define OOP
 * Discuss the benefits of OOP
-* Identify different sytaxes for object instantiation
+* Identify different syntaxes for object instantiation
 
 ## What is OOP?
 
@@ -109,14 +109,14 @@ public class Program
 }
 ```
 
-Here, we have a **class** that serves as a blue-print for any dog; instead of building a dictionary (or using some other method of storing dog information), we use the _idea_ of a dog.
+Here, we have a **class** that serves as a blueprint for any dog; instead of building a dictionary (or using some other method of storing dog information), we use the _idea_ of a dog.
 
 > With a partner, talk through the code in these two files.  What is happening on each line? What are some benefits to this approach?  Are there any drawbacks?
 
 
-With this OOP approach, it is much easier to update what a dog can do, or what information a dog stores.  We might want to be able to get a dog's age, for example. In the first version, we would need to calculate the age of each dog individually, but with OOP we can add a method to the Dog class.  Methods that exist on a class definition are availabe to be called on any instance of that object.
+With this OOP approach, it is much easier to update what a dog can do, or what information a dog stores.  We might want to be able to get a dog's age, for example. In the first version, we would need to calculate the age of each dog individually, but with OOP we can add a method to the Dog class.  Methods that exist on a class definition are available to be called on any instance of that object.
 
-**Instructor Note**: we want to focus on the re-usability of code here.  Also make sure to discuss the different styles of instantiating obects `Dog variableName = new Dog()` vs `Dog variableName = new()` vs `var variableName = new Dog()`
+**Instructor Note**: we want to focus on the re-usability of code here.  Also make sure to discuss the different styles of instantiating objects `Dog variableName = new Dog()` vs `Dog variableName = new()` vs `var variableName = new Dog()`
 <!-- I think for the note above it would be great to use an actual example of a class instantiation, like new Dog or new Cat, basically anything besides a one letter varaiable. That is one of my biggest gripes about some documentation (using stuff like "foo" and "bar", which I don't think is very accessible for a lot of learners). It looks like you cover it in the img below but figured it was worth calling out for our new instructors -->
 
 ### Creating Instances of Objects
@@ -142,7 +142,7 @@ OOP is not the _only_ programming design strategy (or the only way to program), 
 * the ability to hide more complex functionality from users.
 
 ### Holding Related Information
-When we declaring a class, we often look at the data that we need to capture, then group that data into related ideas.  Then, those 'groups' become classes.  
+When we declare a class, we often look at the data that we need to capture, then group that data into related ideas.  Then, those 'groups' become classes.  
 
 Let's imagine that we are going to build a program that holds information about a household that has one person, one dog, and two cats.  Each of these 4 entities probably has a name, and an age; but, they differ in the way that they communicate (humans speak, dogs bark, and cats meow).  We could store this data in strings, but as we saw in our 'Dog' example above, this is not a very sustainable solution:
 
@@ -197,7 +197,7 @@ public class Cat
     public string Name;
     public int Age;
 
-    public Dog(string name, int yearsOld)
+    public Cat(string name, int yearsOld)
     {
         Name = name;
         Age = yearsOld;
@@ -215,7 +215,7 @@ With the class structure defined above, we have attributes and behaviors _groupe
 In an ideal OOP application, all attributes and behaviors are grouped into one or more classes.  Each class holds information about only one type of object.
 
 ### Hiding Complex Functionality
-In addition to organizing related pieces of information, classes can also help us hide more complex parts of a program from users.  Most users do not need to know _exactly_ how an application is working, they just need to know what do to in order for the program to work.  Think about 'liking' a photo on instagram; users do not need to know what the application is doing in the background, users just need to know how to execute that process (by double tapping on a photo).
+In addition to organizing related pieces of information, classes can also help us hide more complex parts of a program from users.  Most users do not need to know _exactly_ how an application is working, they just need to know what to do in order for the program to work.  Think about 'liking' a photo on instagram; users do not need to know what the application is doing in the background, users just need to know how to execute that process (by double tapping on a photo).
 
 Think back to our lesson on [Methods](/Mod1/Lessons/Week3/Methods.md#abstraction).  In the section about **Abstraction**, we proposed that a user does not need to know exactly how a coffee machine works in order to make coffee.  They only need to know that they need to add water, add coffee grounds, and push start.  We might mimic that behavior in code like this:
 

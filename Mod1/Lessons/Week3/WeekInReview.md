@@ -3,7 +3,7 @@
 ** Instructor Note **  For this review, we want to go over the three spicier iteration problems from earlier in the week's labs.  Plan to spend some extra time between groups1 and 2 to highlight students progress toward implementation of these problems.  If necessary, you may demonstrate an implementation of the problems so that students have at a minimum seen the patterns of transforming, finding, and building in iteration.
 
 ## Small Group 1
-In small groups (3/4 students), work through these these [Checks For Understanding](/Mod1/Lessons/Week3/CFUReview.md) questions that cover each of this week's lessons.  Make a note of any questions or topics that are unclear - instructors will be moving around break-out rooms helping to clarify tricky topics.  If you need an instructor, use the raise hand ✋ feature.
+In small groups (3/4 students), work through these [Checks For Understanding](/Mod1/Lessons/Week3/CFUReview.md) questions that cover each of this week's lessons.  Make a note of any questions or topics that are unclear - instructors will be moving around break-out rooms helping to clarify tricky topics.  If you need an instructor, use the raise hand ✋ feature.
 
 ** Instructor Note **
 As you move through different groups, keep a list of topics that need to be addressed for the larger group.

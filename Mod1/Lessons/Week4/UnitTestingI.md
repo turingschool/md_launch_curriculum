@@ -20,7 +20,7 @@ Up to this point, the way that we have been verifying that our code works would 
 * Manual testing takes a lot of human time - time that may be better spent doing other things.
 * Manual testing is more reactive than proactive - we test our code only _after_ it has been written (more on this in a our [Unit Testing II Lesson](/Mod1/Lessons/Week5/UnitTestingII.md)).
 
-The good news: there is a better way to test! We can use **automated testing** to confirm the functionality of our code.  An **automated test** is a seperate project that a developer creates alongside their implementation code.  This test project:
+The good news: there is a better way to test! We can use **automated testing** to confirm the functionality of our code.  An **automated test** is a separate project that a developer creates alongside their implementation code.  This test project:
 * relies on the implementation code that is being written, and 
 <!-- Might be worth explaining what "implementation code" means since this is the first time they will have encountered a different "kind" of code -->
 * provides feedback to the developer based on the **expected behavior**
@@ -62,7 +62,7 @@ We have now created a new project that is a `Console Application` with a few dif
 
 > With a partner, discuss the purpose of the file `Program.cs`; how have we used this file in the past?  Why do you think we _don't_ have that file in the test project? Be ready to share out some ideas!
 
-** Instructor Note **: we want students to start to think about the seperation of _writing_ and _executing_ code.  Because the execution of code in tests looks so different from executing code in Program, it can be difficult for them to make the connetion that the tests are _executing_ the implementation code.
+** Instructor Note **: we want students to start to think about the separation of _writing_ and _executing_ code.  Because the execution of code in tests looks so different from executing code in Program, it can be difficult for them to make the connection that the tests are _executing_ the implementation code.
 
 ---------------------------------------------
 
@@ -133,7 +133,7 @@ Then, mark the box for `IntroToTesting` and click 'OK'
 
 ![Add a project reference](/Mod1/Images/Week4/AddProjectReference2.png)
 
-Once this refernce is added, you should see the red squiggles under `User` dissapear - our Test project now knows about any * public * class that exists in the IntroToTesting project.
+Once this reference is added, you should see the red squiggles under `User` disappear - our Test project now knows about any * public * class that exists in the IntroToTesting project.
 <!-- I am sort of excited about havign students use Visual Studio which seems to reduce some unnecessary headaches by incorporting more GUI-type functionality and not having do deal with a lot of filepathing/exports/etc. -->
 
 ### Test Syntax
@@ -145,7 +145,7 @@ The test that we have has a few key pieces that are common to all tests:
 
 The attribute `[Fact]` tells xUnit that the following method is a test that should be executed when the project is run.  We will learn more about method attributes later; for now, you just need to know that every test needs this attribute.
 
-The Test Name can be any thing that describes the behavior that test is meant to confirm.  In this case we are testing that the class constructor sets up some property values when the user is created; so we've tried to name the test in a way that conveys that to other developers.
+The Test Name can be anything that describes the behavior that test is meant to confirm.  In this case, we are testing that the class constructor sets up some property values when the user is created; so we've tried to name the test in a way that conveys that to other developers.
 
 The expectations describe how we want an object to behave.  In this case, immediately after the user is created on line 8, we want `user.Name` to be `"Archie"`, and `user.Tweets` to be an empty list of strings.  We are using some objects and methods that we get from xUnit to confirm this (Assert, and .Equal()).
 
@@ -157,7 +157,7 @@ Now that we have a test written, we can run it by selecting Test > Run All Tests
 
 ![Run all tests](/Mod1/Images/Week4/RunAllTest.png)
 
-This will open the Test Explorer in either a new window, or in the same pane as your soulution explorer.  You should see a cascade of green checks indicating that your test has passed!
+This will open the Test Explorer in either a new window, or in the same pane as your solution explorer.  You should see a cascade of green checks indicating that your test has passed!
 
 ![Passing Tests](/Mod1/Images/Week4/PassingTests.png)
 
@@ -167,13 +167,13 @@ On line 9 of your test, change the expected name to be `"ARCHIE"`, then run your
 
 ![Failing Test](/Mod1/Images/Week4/FailingTest.png)
 
-Now, we can see that our test did not pass because what we _expected_ (`"ARCHIE"`) was not what we _actually_ got (`"Archie"`).  This failure means that our User class is sytactically correct (our program didn't crash), but is not behaving as expected.
+Now, we can see that our test did not pass because what we _expected_ (`"ARCHIE"`) was not what we _actually_ got (`"Archie"`).  This failure means that our User class is syntactically correct (our program didn't crash), but is not behaving as expected.
 
 Let's revert this test back to the passing version, and write some more tests!
 
 ### Writing additional tests
 
-We've tested that our user gets created with a Name, and an empty List of Tweets.  Now, lets confirm that we can set and retrieve their Username.
+We've tested that our user gets created with a Name, and an empty List of Tweets.  Now, let's confirm that we can set and retrieve their Username.
 
 ![Username Test](/Mod1/Images/Week4/UsernameTest.png)
 
@@ -186,7 +186,7 @@ We can see that the structure of this test is just a bit different that our firs
 
 ## Check for Understanding
 * What is automated testing?  How does it differ from manual testing?
-* The test below is missing something... what is it missing?  Why is the missing piece necesary?
+* The test below is missing something... what is it missing?  Why is the missing piece necessary?
 ```c#
 public class MathTest
 {

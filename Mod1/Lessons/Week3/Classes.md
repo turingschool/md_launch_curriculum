@@ -12,7 +12,7 @@ For example:
 
 * Type of object: Car
 * Specific instances:
-    * Megan's Suburu Outback, Madonna's Rolls Royce, that yellow Camero for sale at Bob's Auto Mart.
+    * Megan's Suburu Outback, Madonna's Rolls Royce, that yellow Camaro for sale at Bob's Auto Mart.
 * Attributes:
   * Make, Model, Color
 * Behaviors:
@@ -58,14 +58,11 @@ Generally we will want to put more information in our classes to make them usefu
 
 ### Example - Class/Instance Syntax
 
-Let's follow a class example with a Unicorn class. I will create a new Console Application called `Classes`. Within that solution, I'll add a `Unicorn` class, and put the following information into that file. (You will take these same steps later for a different class😉)
+Let's follow a class example with a Unicorn class. **Fork** [this REPL](https://replit.com/@RichardTillies2/M1W3-Week3Assessment#Program.cs). Within that solution, I'll add a `Unicorn` class, and put the following information into that file. (You will take these same steps later for a different class 😉)
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
-    {
-    }
 }
 ```
 
@@ -83,18 +80,13 @@ Will this program compile and run?
 
 > With a partner, see if you can update the program.cs file so that it will compile and run.
 
-As we learned in yesterday's lab, we use `namespaces` to organize related material in our programs.  .NET will automatically give us a namespace for our classes that matches our project name; so, when we need to use any classes in our project, we must be _within_ that namespace.  A namespace is a very simple container - it can hold class definitions, but no **executable code**.  When we want to execute code that incorporates more than the built-in classes, we need to create a `Program` class with a `Main` method that will hold our executable code:
-
 ```c#
-namespace Classes
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main()
-        {
-            Unicorn fred = new Unicorn();
-            Unicorn gloria = new Unicorn();
-        }
+        Unicorn fred = new Unicorn();
+        Unicorn gloria = new Unicorn();
     }
 }
 ```
@@ -122,30 +114,23 @@ Right now, these unicorns are **two different** objects.  You could imagine that
 When we run `new Unicorn()`, what actually happens? We can see from the last example that different Unicorn objects (or instances) are created. Other than that, nothing happens. If we want some specific code to run when we first create a new Unicorn, we need to tell our program what should happen when a new Unicorn instance (or object) is created. We do this with a class **constructor**.
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
+    public Unicorn()
     {
-        public Unicorn()
-        {
-            // This code block will be executed when when a new unicorn is created.
-        }
+        // This code block will be executed when when a new unicorn is created.
     }
 }
 ```
-<!-- You use the word "instantiated" above in the code block - I think it might be good to explain what that word means/offer a synonym somewhere before the block so students aren't confused as to what that word is -->
 
 This code block is run once and only once during an Object's lifetime, when we call `new`.  Let's put something a bit silly in there just to see this in action:
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
+    public Unicorn()
     {
-        public Unicorn()
-        {
-            Console.WriteLine("Unicorn being created...");
-        }
+        Console.WriteLine("Unicorn being created...");
     }
 }
 ```
@@ -161,19 +146,16 @@ Remember, a class models *State* and *Behavior*. Let's give our unicorn some sta
 Let's add some properties to the `Unicorn` class.
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
-    {
-        // Properties:
-        public string Name;
-        public string Color;
+    // Properties:
+    public string Name;
+    public string Color;
 
-        public Unicorn(string name, string color)
-        {
-            Name = name;
-            Color = color;
-        }
+    public Unicorn(string name, string color)
+    {
+        Name = name;
+        Color = color;
     }
 }
 ```
@@ -202,23 +184,21 @@ Unicorn fred = new Unicorn("Fred", "Silver");
 What we have just done is a very common pattern. We gave our constructor some arguments and we saved those arguments to **properties**. While this is a strong pattern, it is not a rule. For instance, you may want to set a property in your constructor that has a default value that isn't set using an argument:
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
-    {
-        public string Name;
-        public string Color;
-        public List<string> MagicalPowers;
+    public string Name;
+    public string Color;
+    public List<string> MagicalPowers;
 
-        public Unicorn(string name, string color)
-        {
-            Name = name;
-            Color = color;
-            MagicalPowers = new List<string>();
-        }
+    public Unicorn(string name, string color)
+    {
+        Name = name;
+        Color = color;
+        MagicalPowers = new List<string>();
     }
 }
 ```
+Note: you will need to add the following `using` statement near the top of the `Unicorn.cs` file to add the `MagicalPowers` property as a `List`: `using System.Collections.Generic;`
 
 ### Using an Initializer
 
@@ -235,25 +215,22 @@ Often, there will be classes that we build that will start with a property set t
 
 ```c#
 // Unicorn.cs
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
+    public string Name;
+    public string Color;
+    public List<string> MagicalPowers;
+
+    public Unicorn(string name, string color)
     {
-        public string Name;
-        public string Color;
-        public List<string> MagicalPowers;
+        Name = name;
+        Color = color;
+        MagicalPowers = new List<string>();
+    }
 
-        public Unicorn(string name, string color)
-        {
-            Name = name;
-            Color = color;
-            MagicalPowers = new List<string>();
-        }
-
-        public void ChangeColor(string newColor)
-        {
-            Color = newColor;
-        }
+    public void ChangeColor(string newColor)
+    {
+        Color = newColor;
     }
 }
 ```
@@ -277,23 +254,20 @@ Console.WriteLine($"{gloria.Name} is {gloria.Color}");
 
 Because it is _so common_ for us to change the values of some properties, there is actually a shortcut for this functionality!
 
-Take a look at the code below - what is _different_ about it than what we have previosly seen?
+Take a look at the code below - what is _different_ about it than what we have previously seen?
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
-    {
-        public string Name;
-        public string Color { get; set; }
-        public List<string> MagicalPowers;
+    public string Name;
+    public string Color { get; set; }
+    public List<string> MagicalPowers;
 
-        public Unicorn(string name, string color)
-        {
-            Name = name;
-            Color = color;
-            MagicalPowers = new List<string>();
-        }
+    public Unicorn(string name, string color)
+    {
+        Name = name;
+        Color = color;
+        MagicalPowers = new List<string>();
     }
 }
 ```
@@ -310,25 +284,22 @@ namespace Classes
 We can also create other methods that will allow us to send other messages to our Unicorn class. For example, let's say we wanted to add a magical power to our unicorn. We currently have a way to see what magical powers our unicorn has, but we don't have any way to _add_ to it. Let's do that by creating a method called `AddPower()` that will add a power to the `magicalPowers` list.
 
 ```c#
-namespace Classes
+internal class Unicorn
 {
-    internal class Unicorn
+    public string Name;
+    public string Color { get; set; }
+    public List<string> MagicalPowers;
+
+    public Unicorn(string name, string color)
     {
-        public string Name;
-        public string Color { get; set; }
-        public List<string> MagicalPowers;
+        Name = name;
+        Color = color;
+        MagicalPowers = new List<string>();
+    }
 
-        public Unicorn(string name, string color)
-        {
-            Name = name;
-            Color = color;
-            MagicalPowers = new List<string>();
-        }
-
-        public void AddPower(string magicalPower)
-        {
-            MagicalPowers.Add(magicalPower);
-        }
+    public void AddPower(string magicalPower)
+    {
+        MagicalPowers.Add(magicalPower);
     }
 }
 ```

@@ -1,6 +1,6 @@
 # Class Interaction
 
-** Instructor Note ** For this lesson, you will want to have a repo with some finished code that you can use if needed to supplement student examples.  Either create your own completed Unicorn & Power classes, or you can [fork this one](https://replit.com/@RichardTillies2/M1W3-ClassInteractionLesson#Unicorn.cs)
+** Instructor Note ** For this lesson, you will want to have a repo with some finished code that you can use if needed to supplement student examples.  Either create your own completed Unicorn & Power classes, or you can use [this one](https://github.com/memcmahon/ClassInteraction-Unicorn)
 
 ## Learning Goals
 * Implement appropriate class file structure
@@ -11,43 +11,43 @@ Outline the classes you might neet to create a city-wide library system (multipl
 
 ## Building Necessary Objects
 
-To understand how objects can interact with each other, let's continue building on our Unicorn class from the [Classes Lesson](/Mod1/Lessons/Week3/ClassesRepl.md).  Right now, our Unicorn has a list of Magical powers that are simple strings.
+To understand how objects can interact with each other, let's continue building on our Unicorn class from the [Classes Lesson](/Mod1/Lessons/WEek3/Classes.md).  Right now, our Unicorn has a list of Magical powers that are simple strings.
 
 ```c#
-public class Unicorn
-{
-    public string Name;
-    public string Color;
-    public List<string> MagicalPowers;
-
-    public Unicorn(string name, string color)
+    public class Unicorn
     {
-        Name = name;
-        Color = color;
-        MagicalPowers = new List<string>();
-    }
+        public string Name;
+        public string Color;
+        public List<string> MagicalPowers;
 
-    public void AddPower(string power)
-    {
-        MagicalPowers.Add(power);
+        public Unicorn(string name, string color)
+        {
+            Name = name;
+            Color = color;
+            MagicalPowers = new List<string>();
+        }
+
+        public void AddPower(string power)
+        {
+            MagicalPowers.Add(power);
+        }
     }
-}
 ```
 
 Let's expand this idea of a magical power to indicate how much energy that power takes to perform.  We could imagine an interaction like this:
 
 ```c#
 var fred = new Unicorn("Fred", "Silver");
-// Unicorns start with 100 power points.
+//Unicorns start with 100 power points.
 
 fred.AddPower("Fly: 13");
 fred.AddPower("Be Invisible: 28");
 
 fred.Perform("Fly");
-// Now fred has 87 power points (13 points have been deducted from fred's original 100 points).
+//Now fred has 87 power points (13 points have been deducted from fred's original 100 points).
 
 fred.Perform("Be Invisible");
-// Now fred has 59 power points.
+//Now fred has 59 power points.
 ```
 
 This string version of a Magical Power now holds a lot of information: the name of the power, and the energy needed to perform it.  We _could_ work with these strings to accomplish the storage and performance of these powers, but we would need to do a lot of string manipulation anytime we want to perform one of the powers (we would need to constantly be separating the idea of the name of the power, from its energy usage).
@@ -63,9 +63,9 @@ When complete, we should be able to execute the follwoing program:
 When we think about creating new classes, one of the first questions we need to answer is: Where should this class live?  (As in, what file should it be in).  Almost always, a class will live in its own file - there should be a one-to-one relationship between classes and files.  So, my file structure for this new class might look like:
 
 ![Image of Solution with multiple classes](/Mod1/Images/Week4/SolutionExplorerMultipleClasses.png)
-<!-- New image needed? -->
 
 ---------------------------------------
+<!-- This image wasn't pulling in correctly? -->
 
 You can take a look at how I might create this additional class, and how it interacts with our Unicorn class.  You and your partner might have come up with something slightly different, and that's ok!
 
@@ -73,42 +73,42 @@ You can take a look at how I might create this additional class, and how it inte
 
 ```c#
 // Power.cs
-public class Power
-{
-    public string Name;
-    public int EnergyRequired;
-
-    public Power(string name, int energyRequired)
+    public class Power
     {
-        Name = name;
-        EnergyRequired = energyRequired;
+        public string Name;
+        public int EnergyRequired;
+
+        public Power(string name, int energyRequired)
+        {
+            Name = name;
+            EnergyRequired = energyRequired;
+        }
     }
-}
 
 // Unicorn.cs
-public class Unicorn
-{
-    public string Name;
-    public string Color { get; set; }
-    public List<Power> MagicalPowers;
-    public int Energy;
-
-    public Unicorn(string name, string color)
+    public class Unicorn
     {
-        Name = name;
-        Color = color;
-        MagicalPowers = new List<Power>();
-        Energy = 100;
-    }
+        public string Name;
+        public string Color { get; set; }
+        public List<Power> MagicalPowers;
+        public int Energy;
 
-    public void AddPower(Power magicalPower)
-    {
-        MagicalPowers.Add(magicalPower);
+        public Unicorn(string name, string color)
+        {
+            Name = name;
+            Color = color;
+            MagicalPowers = new List<Power>();
+            Energy = 100;
+        }
+
+        public void AddPower(Power magicalPower)
+        {
+            MagicalPowers.Add(magicalPower);
+        }
     }
-}
 ```
 
-For many new developers, it can feel a bit odd to think about objects **holding** or **containing** objects of another self-defined class type (as in Unicorns having a list of Powers).  It's ok if this concept feels a bit weird now, but it is an important programming pattern that we are going to be seeing over and over.  One benefit of this pattern is that when we pass around **objects**, we have access to all of the Properties and Methods of that object.  So, our Unicorn class could contain a method like this:
+For many new developers, it can feel a bit odd to think about objects **holding** or **containing** objects of another self-defined class type (as in Unicorns having a list of Powers).  It's ok if this concept feels a bit weird now, but it is an important programming pattern that we are going to be seeing over and ovr.  One benefit of this pattern is that when we pass around **objects**, we have access to all of the Properties and Methods of that object.  So, our Unicorn class could contain a method like this:
 
 ```c#
 public void DisplayPowers()
@@ -203,5 +203,9 @@ class Person
     }
 }
 ```
+
+
+
+
 
 <!-- Overall, I like where this lesson is going! I'm excited to see how it progresses in the lab you have built! -->

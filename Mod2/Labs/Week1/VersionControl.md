@@ -8,7 +8,7 @@
 
 ### Git Flow Diagram
 
-Individually, you are going to diagram the git workflow that you might use when creating the program described below.  Be as specific as possible in your diagramming - write out the steps for each git process that you use.  Your diagram should include at least: 1 branch, 2 pushes, 5 commits.
+Individually, you are going to diagram the git workflow that you might use when creating the program described below.  Be as specific as possible in your diagramming - write out the steps for each git process that you use.  Your diagram should include at least: 1 branch, 2 pushes, and 5 commits.
 
 
 > ### E-Store
@@ -27,7 +27,7 @@ Create a slack DM with your small group members in preparation for the next sect
 ### Practicing Git Workflow
 Now, we are going to put your workflow into practice!
 
-Individually, create a new Console App in Visual Studio and implement your E-Store Inventory program using the git workflow you diagrammed in the first section of the lab.  This is a great opportunity to practice some Mod1 topics, while re-inforcing the learning goals from today's lesson.
+Individually, create a new Console App in Visual Studio and implement your E-Store Inventory program using the git workflow you diagrammed in the first section of the lab.  This is a great opportunity to practice some Mod1 topics and reinforce the learning goals from today's lesson.
 
 As you go, if anything does not go as you planned, reach out first to your lab group, and then to your instructor with questions.
 
@@ -35,7 +35,7 @@ As you go, if anything does not go as you planned, reach out first to your lab g
 ## Preparation
 
 Spend about 20 minutes reviewing your final Mod1 Project.  Brainstorm some additional features that would make it more useful for users.  To help get you started, you could think about the following questions:
-* Does this program allow for a user to ever quit and restart the program?  What is that experience like?
+* Does this program allow a user to ever quit and restart the program?  What is that experience like?
 * What happens if a user gets a new computer?
 * Can users make changes to messages that they have created?
 

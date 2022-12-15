@@ -26,16 +26,16 @@ Let's say you have a project on your computer that has the following file struct
 
 We can make changes to, and save each of these files individually. But, it would be useful if we could group certain changes to all files together, so that we could save changes to the **project** as a whole.  For example, if I were a teacher reviewing this student's final project, I would want to know that the student added supporting materials when they added a section specific to Grace Hopper - I would want to see that these changes are related.
 
-**Git** allows for the scenario described above!  Git is a program that allows us to group different files into one project, called a **repository**.  Once we add git to a project, we can make changes to many different files, and save those changes *with one command*. Also, we can add a comment to the project each time we save so we can give more information about _why_ a change was made. 
+**Git** allows for the scenario described above!  Git is a program that allows us to group different files into one project, called a **repository**.  Once we add git to a project, we can make changes to many different files, and save those changes *with one command*. Also, we can add a comment to the project each time we save the whole project so we can give more information about _why_ a change was made. 
 
 ### Version Control
-This process of managing changes on a project as a whole, is called **Version Control**.  Git is a **Version Control System** or VCS - there are multiple VCS programs available, but Git is the most widely used in software development.
+This process of managing changes on a project as a whole is called **Version Control**.  Git is a **Version Control System** or VCS - there are multiple VCS programs available, but Git is the most widely used in software development.
 
 At its most basic, a project's version control history might look like this:
 
 ![Single Branch VC Flow](/Mod2/Images/Week1/VCBasic.JPG)
 
-In this workflow, we are starting a project, and creating save-points along the way.  These save-points are called **commits** and each commit is a snapshot of what the project looks like at that moment.  We could go back (revert) to any of these commits to see previous versions of the project.  We can also see a history of the project's progrssion through the messages left in the commits - like `Add User Registration`. In this way, we are creating a more detailed history of the project than just saving files.
+In this workflow, we are starting a project, and creating save-points along the way.  These save-points are called **commits** and each commit is a snapshot of what the project looks like at that moment.  We could go back (revert) to any of these commits to see previous versions of the project.  We can also see a history of the project's progression through the messages left in the commits - like `Add User Registration`. In this way, we are creating a more detailed history of the project than just saving files.
 
 ### Git 
 
@@ -62,7 +62,7 @@ After you have completed the individual work above:
 ### Branching
 One of the benefits of using Git, is the ability to create **branches**.  A branch is a separate workspace where you can create new features, or work on fixing bugs, without altering your main project.
 
-Developers often have strict rules about when changes to a project can be made directly onto the `main` branch.  The `main` branch is typically reserved for production-ready code; `main` should always be ready to show to a client or stakeholder without fear of major bugs.  This means that new features are developed on tier own branches, and then **merged** into the main branch.
+Developers often have strict rules about when changes to a project can be made directly onto the `main` branch.  The `main` branch is typically reserved for production-ready code; `main` should always be ready to show to a client or stakeholder without fear of major bugs.  This means that new features are developed on their branches, and then **merged** into the main branch.
 
 When we create a new branch to work on a new feature, we call this **checking out a branch**.  We checkout a branch by creating a copy of `main` - that way our new feature is built with our current functionality as its base.
 
@@ -106,8 +106,8 @@ So far, we have created a project with a git repository that exists _only_ on ou
 When you share your code, you can get feedback and help a lot more easily.  And, sharing your code allows for easier collaboration!
 
 **Github** is where we will share our git repositories.  You have used Github to fork and clone existing repositories - now let's create a Github repository of your own.  When this repository is created, you will have two versions of your project:
-* **local** repository that lives only on your computer
-* **remote** repository that lives in the cloud - it can be cloned by anyone on Github.
+* A **local** repository that lives only on your computer
+* A **remote** repository that lives in the cloud - it can be cloned by anyone on Github.
 
 ![](/Mod2/Images/Week1/RemotevLocal.png)
 
@@ -120,10 +120,10 @@ After you have completed the individual work above:
 > * When you pushed to Github, did all of your branches get pushed?
 > * Will you only push a project to Github once?
 
-** Instructor Note ** After their discussion, we want to re-inforce that the work they do locally will not appear on github until they push that work up.  There is no 'open channel' between the two repositories.
+** Instructor Note ** After their discussion, we want to reinforce that the work they do locally will not appear on github until they push that work up.  There is no 'open channel' between the two repositories.
 
 ### A Quick Note!
-In this lesson, we have covered a lot - and we have only scratched the surface of Git and version control processes.  As a developer you will continue to practice and improve these skills, so don't be discouraged if your first few tries with git don't go as planned!  There are very few Git experts in the world, and it is not something you must _master_ in order to be a great developer.  But, you do need to practice git, and ask questions when you get stuck 🙂.
+In this lesson, we have covered a lot - and we have only scratched the surface of Git and version control processes.  As a developer you will continue to practice and improve these skills, so don't be discouraged if your first few tries with git don't go as planned!  There are very few Git experts in the world, and it is not something you must master in order to be a great developer.  But, you do need to practice git, and ask questions when you get stuck 🙂.
 
 ## Check for Understanding
 * In your own words, what is git?  What is Github?

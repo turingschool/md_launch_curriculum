@@ -15,6 +15,8 @@ Be ready to share your findings!
 
 **For this lesson, all SQL examples will be based on our Orders and Customers tables that we created in the [Intro to Databases Lesson](/Mod2/Lessons/Week1/IntroToDatabases.md)!**
 
+** Instructor Note ** Encourage students to try any SQL commands they find or see in the lesson.  Reassure students that they will not break anything on their computer or database - we are playing around with data to highlight the SQL commands we want them to learn.
+
 ## Inserting Data in our Tables
 
 In SQL, we **create** records using the `INSERT INTO` command.  `INSERT INTO` can add single or multiple records.
@@ -23,6 +25,10 @@ In SQL, we **create** records using the `INSERT INTO` command.  `INSERT INTO` ca
 > * What do we need to know about a table in order to create records?
 > * What do you think would happen if we did not include a customer's address?
 > * Why do you not see an id being created?
+> 
+> * Run these statements in your database - keep a close eye on syntax!
+> * Try creating additional records with different customer data
+> To check that records have been created, or anytime you want to see the current state of a table, you can run this statement: `SELECT * FROM <tablename>;`
 >
 > Be ready to share out!
 > 
@@ -31,8 +37,6 @@ In SQL, we **create** records using the `INSERT INTO` command.  `INSERT INTO` ca
 ** Instructor Note ** During the discussion, make sure to point out that we do _not_ need to include an id for these records because the Id field is a serial.
 
 Because we have created our database and tables with very few constraints, we could create a record with only partial information.  We could create a customer with only their name, or only their address.  We are not going to cover too much database administration (things like location settings, access rights, and table settings); as a developer, it is unlikely that you will be in charge of creating a database from scratch.
-
-To check that records have been created, or anytime you want to see the current state of a table, you can run this statement: `SELECT * FROM <tablename>;`
 
 ### Practice Insert
 
@@ -79,14 +83,14 @@ Occasionally, we will need to update records.  We can do that with the `UPDATE` 
 > 
 > ![](/Mod2/Images/Week1/SQL_UPDATE.png)
 
-** Instructor Note ** Be sure to point out that if we forget the `WHERE`, all records in the table will be updated!
+** Instructor Note ** Be sure to point out that if we forget the `WHERE`, all records in the table will be updated! You could type out an update without a where clause, ask for predictions from students, and then run it and show how everything changes so folks can really feel what happens.
 
 ### Practice UPDATE
 
 > With a partner, use what you know about UPDATE to make changes to one or more records in the orders table.  
 > As an extra challenge:
 > * Update more than one column with one statement.
-> * Update more 2 or more records with one statement.
+> * Update 2 or more records with one statement.
 > Do some googling and/or use [this resource](https://www.w3schools.com/sql/sql_update.asp) to help with these challenges!
 >
 > Reach out to an instructor with any questions or issues that come up!
@@ -117,16 +121,11 @@ Seeing the state of an entire table is great, and with a small dataset, it might
 
 ### More SELECTing
 
-There are so many things we can do by combining SELECT with other commands.  We have seen how we can use SELECT and WHERE together; take a look at the examples below for some more ways of SELECTing.  Feel free to try these out on your tables to explore what they do!
+There are so many things we can do by combining SELECT with other commands.  We have seen how we can use SELECT and WHERE together; take a look at the examples below for some more ways of SELECTing.  Try these out on your tables to explore what they do!
 
 ![](/Mod2/Images/Week1/SQL_ORDERBY.png)
 
 ## Check for Understanding
 * Imagine you are in an interview.  The interviewer asks: How would you describe CRUD? (make sure to use examples!)
 * Why do we need to use a `WHERE` when deleting or updating records?
-* Match each CRUD action to one (or more) SQL commands:
-|CRUD Action|SQL Command(s)|
-|||
-|||
-|||
-|||
+* List each CRUD action and its corresponding SQL command(s).

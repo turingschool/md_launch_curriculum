@@ -1,9 +1,9 @@
 ## Lab Objectives
-* Create a Database for our MessageLogger application
+* Create a Database for a Library
 
-In our Mod2 Labs, we are going to be building and working with a Database that could be used in our Message Logger application from Mod1.  This new 'feature' will give us the ability to store users' messages to be shown at a later date, and give users a better experience with the application.
+In our Mod2 Labs, we are going to be building and working with a Database that could be used in a library.  This database would help librarians and library patrons better understand what books the library has, which are available, and which are rented out.
 
-** Instructor Note **  This lab includes group, and individual work.  Start with groups of 3/4 students for the outlining section, then let them work individually to create the database tables.  As an 'exit ticket', we will ask everyone for the SQL create statements they used - the key piece to verify is how students used primary and foreign keys.
+** Instructor Note **  This lab includes group and individual work.  Start with groups of 3/4 students for the outlining section, then let them work individually to create the database tables.  As an 'exit ticket', we will ask everyone for the SQL create statements they used - the key piece to verify is how students used primary and foreign keys.
 
 ## Practice
 ### Datatypes
@@ -15,6 +15,7 @@ One thing you may have noticed in the lesson is that we often see datatypes in P
 > * varchar
 > * text
 > * timestamp   
+> * boolean  
 >  
 > Be ready to share out!
 
@@ -22,7 +23,12 @@ One thing you may have noticed in the lesson is that we often see datatypes in P
 
 ### Outlining Database Tables
 
-In small groups, discuss what data you might want to store from the Message Logger application.  What tables would you need in a database?  What columns would those tables have?  How are those tables related?
+In small groups, discuss what data you might want to store for a library.  What tables would you need in a database?  What columns would those tables have?  How are those tables related?
+
+Here are some questions to help get you started:
+* What kinds of things exist in a library?
+* Would a library ever have multiple copies of the same book?
+* How will we know if a book has been checked out?
 
 You should come up with at least 2 tables.
 
@@ -33,7 +39,7 @@ You should come up with at least 2 tables.
 When your group is happy with the outline of the database, use PgAdmin to create it!
 
 Following the same process we used in class:
-1. Create the database.  You can call it `MessageLogger`
+1. Create the database.  You can call it `Library`
 2. Create the tables that you outlined in your group.  If you need help with naming, reach out to an instructor!
 
 #### Exit Ticket!

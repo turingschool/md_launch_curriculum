@@ -51,10 +51,10 @@
 
 ## Mod 2
 Lab Project Goals:  
-Create a Database for MessageLogger  
+Create a Database for a Library Application  
 Use EF to create a connection to the DB  
 Use EF to create and manipulate DB records  
-Use TDD to create another class  
+Use TDD to create classes  
 Test DB connections and records  
 ### Week 1
 * 🎒[Version Control and Solo Git/GitHub](/Mod2/Lessons/Week1/VersionControlAndSoloGit.md)
@@ -68,17 +68,19 @@ Test DB connections and records
     - Define relational data and data normalization
     - Create a Database with Postgresql and PgAdmin  
 * 💡[Lab/Exercise](/Mod2/Labs/Week1/IntroToDatabases.md)
-        * Lab Project: Create Database for MessageLogger (not connected) with Message Table
+        * Lab Project: Create Database for Library (not connected)
 * ➡️[Preparation: SQL CRUD](/Mod2/Preparation/SQLCRUD.md)
 * 🎒[Lesson: SQL CRUD](/Mod2/Lessons/Week1/SQLCRUD.md)
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
     - Use basic WHERE clause to filter records  
-        * Lab Project: Use SQL to insert and query message records in the DB
+        * Lab Project: Use SQL to insert and query library records in the DB
 ### Week 2
 * ➡️[Preparation: TDD](/Mod2/Preparation/TDD.md)
 * Lesson: Test Driven Development
     - Describe the benefits of TDD
     - Practice a TDD workflow
+* Lab/Exercise
+    * Lab Project: use TDD to create classes for library records
 * Lesson: Git for Pairs
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
@@ -87,7 +89,7 @@ Test DB connections and records
     - Develop a visualization for different relationships
     - Define Primary and Foreign keys
     - Practice describing different relationships  
-  Lab Project: Add a User Table to the MessageLogger Db
+  Lab Project: Add an Author Table to the Library Db
 * Lesson: SQL JOINS
     - Use JOIN to query related records
     - Use WHERE to filter joined queries  
@@ -96,7 +98,7 @@ Test DB connections and records
     - Develop a visualization for grouping and aggregating data
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions  
-  Lab Project: Use SQL to query some Message Statistics
+  Lab Project: Use SQL to query some Library Statistics
 ### Week 4
 * Lesson: Intro to ORM (Migrations & Schema)
     - Define ORM
@@ -106,12 +108,12 @@ Test DB connections and records
 * Lesson: CRUD with ORM
     - Deepen understanding of test setup by creating a test database
     - Use TDD to implement CRUD functionality in a console application  
-  Lab Project: Use TDD and EF to create users and messages
+  Lab Project: Use TDD and EF to create library records
 ### Week 5
 * Lesson: Querying Resources with ORM
     - Use EF and LINQ to query database records
     - Define 'framework'  
-  Lab Project: Use TDD to query users and messages
+  Lab Project: Use TDD to query library records
 * Lesson: Migrations and changing Db tables
     - Explore business decisions that drive DB changes
     - Practice making simple db changes

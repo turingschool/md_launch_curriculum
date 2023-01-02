@@ -62,17 +62,20 @@ Test DB connections and records
     - Create a repository
     - Use branch workflow
 * 💡[Lab/Exercise](/Mod2/Labs/Week1/VersionControl.md)
+* ➡️[Preparation: Intro to Databases](/Mod2/Preparation/IntroToDatabases.md)
 * 🎒[Lesson: Intro to Databases](/Mod2/Lessons/Week1/IntroToDatabases.md)
     - Describe a database its uses in various applications
     - Define relational data and data normalization
     - Create a Database with Postgresql and PgAdmin  
 * 💡[Lab/Exercise](/Mod2/Labs/Week1/IntroToDatabases.md)
-  Lab Project: Create Database for MessageLogger (not connected) with Message Table
-* Lesson: SQL CRUD
+        * Lab Project: Create Database for MessageLogger (not connected) with Message Table
+* ➡️[Preparation: SQL CRUD](/Mod2/Preparation/SQLCRUD.md)
+* 🎒[Lesson: SQL CRUD](/Mod2/Lessons/Week1/SQLCRUD.md)
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
     - Use basic WHERE clause to filter records  
-  Lab Project: Use SQL to insert and query message records in the DB
+        * Lab Project: Use SQL to insert and query message records in the DB
 ### Week 2
+* ➡️[Preparation: TDD](/Mod2/Preparation/TDD.md)
 * Lesson: Test Driven Development
     - Describe the benefits of TDD
     - Practice a TDD workflow

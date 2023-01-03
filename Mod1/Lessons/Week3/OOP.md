@@ -120,7 +120,7 @@ With this OOP approach, it is much easier to update what a dog can do, or what i
 
 The process of creating instances of objects from a class definition is often referred to as **instantiation**.  In the `Dog` example above, we could say that we `instantiated two Dog objects, nile and sammy`.  Any time you see the `new` keyword being used, some kind of object is being instantiated.
 
-![Image of three examples of object instantiation](/Mod1/Images/Week4/object-instantiation-examples.png)
+![Image of three examples of object instantiation](/Mod1/Images/Week3/object-instantiation-examples.png)
 
 We can see in this example that there are three valid ways to create an instance of a Dog object - any of these instantiation patterns will work for any type of object!
 

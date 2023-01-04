@@ -57,9 +57,9 @@ Banana Wind:
     - Desdamona's Building a Rocket Ship
 ```
 
-Fork [this REPL](https://replit.com/@RichardTillies2/M1W2-CFUReview1#main.cs) 
+Fork [this REPL](https://replit.com/@launch-team/M1W2-CFUReview1) 
 1. Annotate the code. What is happening on each line?
 1. How many **code blocks** are in the example above?
 
-Fork [this other REPL](https://replit.com/@RichardTillies2/M1W2-CFUReview2#main.cs) to complete the following task.
+Fork [this other REPL](https://replit.com/@launch-team/M1W2-CFUReview2) to complete the following task.
 * Write a **for loop** that will ask a user for 5 items to put on a wish list.  Store these items in a string called `wishList`.

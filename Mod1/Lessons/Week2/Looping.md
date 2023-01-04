@@ -12,7 +12,7 @@ Imagine you are writing a program that will shuffle and deal a deck of cards to 
 
 What if we need to deal 5 cards to 5 players?  Will the answers to the questions above change?
 
-**Instructor Note**: lead a discussion around the pros and cons of explicitly repeating actions.  You could even pull up [this repo](https://replit.com/@MeganMcMahon1/CardShuffle#main.cs:9:9) to show the card example.
+**Instructor Note**: lead a discussion around the pros and cons of explicitly repeating actions.  You could even pull up [this repo](https://replit.com/@launch-team/M1W2-CardShuffle) to show the card example.
 
 ## Looping
 

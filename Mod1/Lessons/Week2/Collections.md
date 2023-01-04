@@ -1,21 +1,37 @@
 # Collections
 
 ## Learning Goals
+* Define and use **arrays** and **lists**
 * Identify key differences between **arrays** and **lists**
 * Define and use a **dictionary**
 * Iterate through collections with `foreach` and `for`
 
+<!-- There are three common ways that c# manages groups or lists of data. The most common is to use an **Array**.  The other two are using a **List** and a **Dictionary**. -->
+<!-- Generally, in programming, these lists are referred to as **Arrays**. -->
+Up to this point, we have worked with single pieces of data: a string, a number, a date.  But, often we want to work with a list or group of many strings, numbers, or other datatypes.  There are three common ways that c# manages a collection of data. **Array**, **List** and **Dictionary**.
+
 ## Array
-<!-- Where are they answering these questions? -->
+
+The most common method to manage a list of data is an **Array**. A C# array allows you to store a sequence of values in a single data structure. In other words, an array is a single variable that can hold many values. 
+
+Work through [this arrays tutorial](
+https://docs.microsoft.com/en-us/learn/modules/csharp-arrays/1-introduction) (including the Knowledge Check at the end!)
+
+In your notebook, answer the following questions:
+    * What is an array?
+    * How is an array different from a string?
+    * Given this array: `string[] users = { "John", "Paul", "George", "Pete" }`, how would you change `"Pete"` to `"Ringo`?
+
+<!-- Where are they answering these questions?
 From yesterday's lab work, in a notebook, answer the following questions.
 
 1. What is an **array**?  How is it different from a string or integer?
 1. What is at index 2 in this array: `string[] cars = { "Chevy", "Ford", "Toyota", "Tesla" }`
-1. What are some drawbacks to using an array?
+1. What are some drawbacks to using an array? -->
 
-The idea of a list of elements organized in one place, like an array,is a common function of all modern programming languages.  We will see collections of data organized into lists all over our projects.  While the concept of a list of elements is common among languages, the way that each language works with those lists can be slightly different.
+The idea of a list of elements organized in one place, like an array, is a common function of all modern programming languages.  We will see collections of data organized into lists all over our projects.  While the concept of a list of elements is common among languages, the way that each language works with those lists can be slightly different.
 
-There are three common ways that c# manages groups or lists of data; one of which is an Array.  They other two most common ways are with **Lists** and **Dictionaries**.
+<!-- There are three common ways that c# manages groups or lists of data; one of which is an Array.  The other two most common ways are with **Lists** and **Dictionaries**. -->
 
 ## List
 <!-- You ask for drawbacks of an array in the above question and then say it right below - consider formatting adjustment? ✅-->

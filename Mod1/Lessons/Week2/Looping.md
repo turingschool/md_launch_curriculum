@@ -37,7 +37,7 @@ or it may be a question that returns a true/false (boolean) answer. For example:
 
 A `while` loop will execute a block of code as long as a specific condition is `true`. 
 
-![Diagram of while loop logic](/Mod1/Images/Week2/WhileLoop.png)
+![Diagram of while loop logic](/Mod1/Images/Week2/whileLoop.png)
 
 ```c#
 while (condition)

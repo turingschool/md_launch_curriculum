@@ -16,12 +16,12 @@
 ### Week 2
 * 🎒[Looping](/Mod1/Lessons/Week2/Looping.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Looping.md)
-* 🎒[Collections](/Mod1/Lessons/Week2/Collections.md) *needs edit*
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Collections.md) *needs edit*
-* 🎒[Methods](/Mod1/Lessons/Week2/Methods.md) *needs edit*
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Methods.md) *needs edit*
-* 🧪[Weekly Assessment](/Mod1/Assessments/week2.md) *needs edit*
-* 🎒[Topic Review](Mod1/Lessons/Week2/WeekInReview.md) *needs edit*
+* 🎒[Collections](/Mod1/Lessons/Week2/Collections.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Collections.md)
+* 🎒[Methods](/Mod1/Lessons/Week2/Methods.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week2/Methods.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/week2.md)
+* 🎒[Topic Review](Mod1/Lessons/Week2/WeekInReview.md)
 
 ### Week 3
 * 🎒[Classes](/Mod1/Lessons/Week3/Classes.md) *needs edit*

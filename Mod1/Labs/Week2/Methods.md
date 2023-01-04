@@ -7,15 +7,19 @@
 
 ## Practice
 
-In your pairs, you will work through the following exercises.  Both partners will create a Visual Studio Console Application, called 'MethodsLab'.  As you work through the exercises, take turns being the person typing out code.  For example, on the first exercise, Partner A will be sharing their screen and typing code into Visual Studio; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  This should be a collaborative process!
+In your pairs, you will work through the following exercises. As you work through the exercises, take turns being the person typing out code.  For example, Partner A will share their screen and typing code into their Repl for the first exercise; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  Repeat until you work through all of the exercises. This should be a collaborative process!
+
+<!-- In your pairs, you will work through the following exercises.  Both partners will create a Visual Studio Console Application, called 'MethodsLab'.  As you work through the exercises, take turns being the person typing out code.  For example, on the first exercise, Partner A will be sharing their screen and typing code into Visual Studio; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  This should be a collaborative process! -->
+
+For the first three exercises, both partners will [fork this REPL](https://replit.com/@RichardTillies2/M1W2-MethodsLab#main.cs).
 
 **Exercise 1**
 Create a method called `Downcase()` that takes a list of strings as an argument, and returns a list of those strings downcased.  The method should be able to be called like this:
 ```c#
 var names = new List<string> {"Alice", "Bob", "Charlie"};
-var result = Downcase(names);
+var lowerNames = Downcase(names);
 
-Console.WriteLine(result);
+Console.WriteLine(String.Join(", ", lowerNames));
 //Output -> alice, bob, charlie
 ```
 
@@ -23,10 +27,10 @@ Console.WriteLine(result);
 Create a method called `GetTwoDigitNumbers()` that takes a list of integers as an argument, and returns a list of only the numbers that have 2 digits.  The method should be able to be called like this:
 
 ```c#
-var nums = new List<int> {1, 8, 19, 21, 29, 31, 99, 102, 145};
-var twoDigitNums = GetTwoDigitNumbers(nums);
+var numbers = new List<int> {1, 8, 19, 21, 29, 31, 99, 102, 145};
+var twoDigitNums = GetTwoDigitNumbers(numbers);
 
-Console.WriteLine(twoDigitNums);
+Console.WriteLine(String.Join(", ", twoDigitNums));
 //Output -> 19, 21, 29, 31, 99
 ```
 
@@ -41,7 +45,7 @@ Console.WriteLine(countOfFourLetterWords);
 //Output -> 6
 ```
 
-For the next three exercises, we only want you to **psuedo-code** what the method might look like.  You do not need to implement the code.  Really think about what needs to happen during each iteration, and what values you have access to at any given point.  We will revisit these three exercises later in the week!
+For the next three exercises, we only want you to **pseudo-code** what the method might look like.  You do not need to implement the code.  Really think about what needs to happen during each iteration, and what values you have access to at any given point.  We will revisit these three exercises later in the week!
 
 **Exercise 4**
 Pseudocode a method called `SumSecondNumbers()` that takes a multidementional array as an argument, where each element is an array of 2 integers, and sums the second integer of each sub-array.  You may want to take a look at [this resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/passing-arrays-as-arguments#passing-multidimensional-arrays-as-arguments) to help you get started.  If implemented (you don't need to do that today!), the method should be able to be called like this:
@@ -55,7 +59,7 @@ Console.WriteLine(sumOfSecondNums);
 ```
 
 **Exercise 5**
-Psuedocode a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  
+Pseudocode a method called `NormalizeZipCodes()` that takes an array of integers as an argument, and returns an array of stringified versions of those integers as zip codes.  
 *A note on zip codes:  All zip codes are 5 characters long; if an integer zip code is fewer than 5 digits, we should add as many `0`s to the front of that number as we need to reach 5 characters.  So, a given integer zip of `525` would be normalized into `"00525"`.  If implemented (you don't need to do that today!), the method should be able to be called like this:
 ```c#
 var zipCodes = new[] {80228, 5031, 2112, 52556, 515 };
@@ -66,7 +70,7 @@ Console.WriteLine(result);
 ```
 
 **Exercise 6**
-Psuedocode a method called `GetWordsByFirstLetter()` that takes two arguments: a character, and a list of strings.  The method should return a subset of the given list that contains all the words that start with the given character.  If implemented (you don't need to do that today!), the method should be able to be called like this:
+Pseudocode a method called `GetWordsByFirstLetter()` that takes two arguments: a character, and a list of strings.  The method should return a subset of the given list that contains all the words that start with the given character.  If implemented (you don't need to do that today!), the method should be able to be called like this:
 
 ```c#
 var words = new List<string> {"weirdo", "quill", "fast", "krill", "quaint", "quieter", "koala"};
@@ -86,7 +90,7 @@ console.WriteLine(jwords);
 
 **Keep an eye on slack** We will come back together as a group to share some of the code we have been working on!
 
-** Instructor Note ** WE want to highlight student solutions to the first 3 exercises, and discuss good examples of psuedo-code for the last 3 exercises.
+** Instructor Note ** We want to highlight student solutions to the first 3 exercises, and discuss good examples of psuedo-code for the last 3 exercises.
 
 
 ## Preparation

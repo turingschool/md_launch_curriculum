@@ -16,38 +16,41 @@ The **class** structure is fundamental to OOP, because it allows us to group rel
 To see this in action, let's imagine that we are building a program that will manage a dog sitting service.  You might want to have access to an animal's name, breed, birthday, and number of walks required.  _Without_ OOP, you might model that information like this:
 
 ```c#
-internal class Program
+namespace DogSitter
 {
-    static void Main()
+    internal class Program
     {
-        var nile = new Dictionary<string, string>
+        static void Main()
         {
-            { "name", "Nile" },
-            { "breed", "Golden Mix"},
-            { "birthday", "2018-07-04"},
-            { "walks required", "3" }
-        };
+            var nile = new Dictionary<string, string>
+            {
+                { "name", "Nile" },
+                { "breed", "Golden Mix"},
+                { "birthday", "2018-07-04"},
+                { "walks required", "3" }
+            };
 
-        var sammy = new Dictionary<string, string>
-        {
-            { "name", "Sammy" },
-            { "breed", "Wirehaired Pointing Griffon" },
-            { "birthday", "2012-10-13" },
-            { "walks required", "1" }
-        };
+            var sammy = new Dictionary<string, string>
+            {
+                { "name", "Sammy" },
+                { "breed", "Wirehaired Pointing Griffon" },
+                { "birthday", "2012-10-13" },
+                { "walks required", "1" }
+            };
 
-        var dogs = new List<Dictionary<string, string>> { nile, sammy };
+            var dogs = new List<Dictionary<string, string>> { nile, sammy };
 
-        // Take dogs on a walk
-        foreach (var dog in dogs)
-        {
-            var currentWalksRequired = int.Parse(dog["walks required"]);
-            Console.WriteLine($"Taking {dog["name"]} for a walk...");
-            dog["walks required"] = (currentWalksRequired - 1).ToString();
+            // Take dogs on a walk
+            foreach (var dog in dogs)
+            {
+                var currentWalksRequired = int.Parse(dog["walks required"]);
+                Console.WriteLine($"Taking {dog["name"]} for a walk...");
+                dog["walks required"] = (currentWalksRequired - 1).ToString();
+            }
+
+            Console.WriteLine($"{nile["name"]} now needs {nile["walks required"]} walks");
+            Console.WriteLine($"{sammy["name"]} now needs {sammy["walks required"]} walks");
         }
-
-        Console.WriteLine($"{nile["name"]} now needs {nile["walks required"]} walks");
-        Console.WriteLine($"{sammy["name"]} now needs {sammy["walks required"]} walks");
     }
 }
 ```
@@ -60,29 +63,29 @@ Compare what we built above with an OOP version below:
 
 ```c#
 // Dog.cs
-public class Dog
-{
-    public string Name { get; }
-    public string Breed { get; }
-    public DateTime Birthdate { get; }
-    public int WalksRequired { get; }
-
-    public Dog(string name, string breed, DateTime birthdate, int walksRequired)
+    public class Dog
     {
-        Name = name;
-        Breed = breed;
-        Birthdate = birthdate;
-        WalksRequired = walksRequired;
-    }
+        public string Name { get; }
+        public string Breed { get; }
+        public DateTime Birthdate { get; }
+        public int WalksRequired { get; }
 
-    public void GoOnWalk()
-    {
-        WalksRequired--;
+        public Dog(string name, string breed, DateTime birthdate, int walksRequired)
+        {
+            Name = name;
+            Breed = breed;
+            Birthdate = birthdate;
+            WalksRequired = walksRequired;
+        }
+
+        public void GoOnWalk()
+        {
+            WalksRequired--;
+        }
     }
-}
 ```
 
-```c#
+```cs
 // Program.cs
 public class Program
 {
@@ -106,7 +109,7 @@ public class Program
 }
 ```
 
-Here, we have a **class** that serves as a blueprint for any dog; instead of building a dictionary (or using some other method of storing dog information), we use the _idea_ of a dog.
+Here, we have a **class** that serves as a blue-print for any dog; instead of building a dictionary (or using some other method of storing dog information), we use the _idea_ of a dog.
 
 > With a partner, talk through the code in these two files.  What is happening on each line? What are some benefits to this approach?  Are there any drawbacks?
 
@@ -120,7 +123,7 @@ With this OOP approach, it is much easier to update what a dog can do, or what i
 
 The process of creating instances of objects from a class definition is often referred to as **instantiation**.  In the `Dog` example above, we could say that we `instantiated two Dog objects, nile and sammy`.  Any time you see the `new` keyword being used, some kind of object is being instantiated.
 
-![Image of three examples of object instantiation](/Mod1/Images/Week3/object-instantiation-examples.png)
+![Image of three examples of object instantiation](/Mod1/Images/Week4/object-instantiation-examples.png)
 
 We can see in this example that there are three valid ways to create an instance of a Dog object - any of these instantiation patterns will work for any type of object!
 
@@ -160,9 +163,7 @@ public class Person
     public string Name;
     public int Age;
 
-    // This constructor enforces 'name' and 'yearsOld' to be provided.
-    // We can NOT create a Person without those things!
-    public Person(string name, int yearsOld) 
+    public Person(string name, int yearsOld) // This constructor enforces a name and yearsOld to be provided; we can NOT create a Person without those things!
     {
         Name = name;
         Age = yearsOld;
@@ -216,7 +217,7 @@ In an ideal OOP application, all attributes and behaviors are grouped into one o
 ### Hiding Complex Functionality
 In addition to organizing related pieces of information, classes can also help us hide more complex parts of a program from users.  Most users do not need to know _exactly_ how an application is working, they just need to know what do to in order for the program to work.  Think about 'liking' a photo on instagram; users do not need to know what the application is doing in the background, users just need to know how to execute that process (by double tapping on a photo).
 
-Think back to our lesson on [Methods](/Mod1/Lessons/Week2/Methods.md#abstraction).  In the section about **Abstraction**, we proposed that a user does not need to know exactly how a coffee machine works in order to make coffee.  They only need to know that they need to add water, add coffee grounds, and push start.  We might mimic that behavior in code like this:
+Think back to our lesson on [Methods](/Mod1/Lessons/Week3/Methods.md#abstraction).  In the section about **Abstraction**, we proposed that a user does not need to know exactly how a coffee machine works in order to make coffee.  They only need to know that they need to add water, add coffee grounds, and push start.  We might mimic that behavior in code like this:
 
 ```c#
 var coffeeMaker = new CoffeeMachine();

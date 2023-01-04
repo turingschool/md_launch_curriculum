@@ -1,7 +1,8 @@
-# Week 2 Checks for Understanding
+# Week 3 Checks for Understanding
 
 With your group, answer each question below.  Spend some time discussing each question _without_ using any resources; use your own recall of the topics covered this week.  If, after you have discussed without resources, your group needs assistance, use the raise hand feature and an instructor will come help!
 
+<!-- 
 1. Imagine you are explaining an Array or List to one of your non-developer friends; write out an explanation of what **index** is - how does it apply to lists/arrays, and why is it useful?
 
 2. How are Arrays and Lists similar?  How are they different?
@@ -29,10 +30,11 @@ Banana Wind:
     - School Boy Heart
     - Desdamona's Building a Rocket Ship
 ```
+ -->
 
 <!-- Jimmy Buffett lol. This is gold. I bet there is 0% chance our students will understand who/what a Jimmy Buffett is. -->
 
-7. Create a `User` class with the following properties and methods:
+1. Create a `User` class with the following properties and methods:
     * Properties
         - string FullName
         - string UserName
@@ -52,11 +54,48 @@ Banana Wind:
         ```
         This summary should include **all** of a user's favorite foods, no matter how many, or few they have.
 
-8. In your own words, what is the difference between a **class** and an **instance of an object**.  How are the two terms related?
+1. In your own words, what is the difference between a **class** and an **instance of an object**.  How are the two terms related?
 
-9. A method signature could look like: `void SayHello();` or `string SayHello();`.  Based only on the signatures, what would be different about the implementation of each method?
+1. What is OOP, and what are some benefits of this programming approach?
 
-10.  Revisit some pseudo-code you wrote in the [Methods Lab](/Mod1/Labs/Week3/Methods.md).  Now, you are going to implement the methods!
+1. Imagine you are a developer at a new social media app, our app has two types of users: posting users, and following users.  Posting users create and post content; following users subscribe to (follow) posting users.  Come up with 2 classes that model these two user types.  Make sure there is a way to indicate how many followers a posting user has.
+
+1. Take a look at the class below.  What tests would need to be written to verify that this class is working properly?  You don't need to write the tests, just come up with the names those tests might have :)
+
+```c#
+public class MediaPlayer
+{
+	private File _content;
+
+    public MediaPlayer(File content)
+    {
+        _content = content;
+    }
+
+    public void Play()
+    {
+        // Code that plays the content.
+    }
+
+    public void Pause()
+    {
+        // Code that pauses the content.
+    }
+
+    public string Properties()
+    {
+        // Code that returns info about the file being played.
+    }
+}
+```
+
+6. In the code above, can you identify any abstractions? A reminder: abstractions are things that are hidden away from the person using this class.
+
+
+1. A method signature could look like: `void SayHello();` or `string SayHello();`.  Based only on the signatures, what would be different about the implementation of each method?
+
+1.  Revisit some pseudo-code you wrote in the [Methods Lab](/Mod1/Labs/Week2/Methods.md).  Now, you are going to implement the methods! Fork [this repl](https://replit.com/@launch-team/M1W3-CFUReview) and complete the following exercises:
+
 **Exercise 1**
 Implement a method called `SumSecondNumbers()` that takes a multidementional array as an argument, where each element is an array of 2 integers, and sums the second integer of each sub-array.  You may want to take a look at [this resource](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/passing-arrays-as-arguments#passing-multidimensional-arrays-as-arguments) to help you get started.  The method should be able to be called like this:
 

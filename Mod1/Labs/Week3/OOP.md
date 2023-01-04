@@ -6,7 +6,7 @@
 
 ## Practice
 
-In small groups, we are going to continue to build on the idea of a dog sitting service that we started talking about in today's [OOP lesson](/Mod1/Lessons/Week4/OOP.md)
+In small groups, we are going to continue to build on the idea of a dog sitting service that we started talking about in today's [OOP lesson](/Mod1/Lessons/Week3/OOP.md)
 
 Let's imagine that you have been tasked with creating a program that will help `North Denver Dog Sitters` manage their business.  This dog sitting service has 5 dog sitters, and each of those sitters can take on 3 dogs. The dog sitting service needs to be able to assign specific dogs to one sitter.
 

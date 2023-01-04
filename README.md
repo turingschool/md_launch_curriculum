@@ -24,14 +24,14 @@
 * 🎒[Topic Review](Mod1/Lessons/Week2/WeekInReview.md)
 
 ### Week 3
-* 🎒[Classes](/Mod1/Lessons/Week3/Classes.md) *needs edit*
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/Classes.md) *needs edit*
-* 🎒[OOP](/Mod1/Lessons/Week3/OOP.md) *needs edit*
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/OOP.md) *needs edit*
-* 🎒[Class/Object Interaction](/Mod1/Lessons/Week3/ClassInteraction.md) *needs edit*
-* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/ClassInteraction.md) *needs edit*
-* 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md) *needs edit*
-* 🎒[Topic Review](/Mod1/Lessons/Week3/WeekInReview.md) *needs edit*
+* 🎒[Classes](/Mod1/Lessons/Week3/Classes.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/Classes.md)
+* 🎒[OOP](/Mod1/Lessons/Week3/OOP.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/OOP.md)
+* 🎒[Class/Object Interaction](/Mod1/Lessons/Week3/ClassInteraction.md)
+* 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week3/ClassInteraction.md)
+* 🧪[Weekly Assessment](/Mod1/Assessments/Week3.md)
+* 🎒[Topic Review](/Mod1/Lessons/Week3/WeekInReview.md)
 
 ### Week 4
 * 🎒[Intro to IDEs](/Mod1/Lessons/Week4/IntroToIDE.md)

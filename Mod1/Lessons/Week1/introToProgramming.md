@@ -93,7 +93,7 @@ We are going to use a site called [replit](https://replit.com/) for this explora
 
 In programming, a REPL stands for Read-Evaluate-Print Loop.  So a REPL takes input, stores/processes that input, and then outputs the result, and then loops back ready to take additional input - sound familiar?  A REPL is a computer! Replit (the site) is a place where you can write and store small programs; you can also share programs that you have written with other people.
 
-Once you are signed in to replit, **_fork_** [this project](https://replit.com/@MeganMcMahon1/HelloWorld#main.cs) so that you have your own copy.  Read through the information in the center pane, and then click the green 'Run' button.  
+Once you are signed in to replit, **_fork_** [this project](https://replit.com/@launch-team/HelloWorld#main.cs) so that you have your own copy.  Read through the information in the center pane, and then click the green 'Run' button.  
 
 ![Image of REPLit project](/Mod1/Images/Week1/REPLitRun.png)
 

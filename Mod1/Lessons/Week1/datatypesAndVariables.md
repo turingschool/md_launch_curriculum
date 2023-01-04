@@ -23,7 +23,7 @@ With a partner, group the following items into two or more categories (you get t
 
 # Variables
 
-One of the most important concepts in programming is assigning information to a variable.  Let's take a look at [this replit project](https://replit.com/@MeganMcMahon1/VariableAssigment#main.cs) to get a better understanding.
+One of the most important concepts in programming is assigning information to a variable.  Let's take a look at [this replit project](https://replit.com/@launch-team/M1W1-VariablesLesson1) to get a better understanding.
 
 ![Screenshot showing two variables being assigned and used](/Mod1/Images/Week1/VariableAssignment1.png)
 
@@ -229,7 +229,9 @@ For more information, check out this resource from [w3schools](https://www.w3sch
 
 # Using `var`
 
-So far, we have always indicated what datatype a variable will have when we create it.  This is a common practice, and something you will see out in the world often; but it is not the only way!  If you are going to declare and assign a variable in one go, you can use the keyword `var` instead of indicating a datatype.  Recreate the code below into a repl project:
+So far, we have always indicated what datatype a variable will have when we create it.  This is a common practice, and something you will see out in the world often; but it is not the only way!  If you are going to declare and assign a variable in one go, you can use the keyword `var` instead of indicating a datatype. 
+
+Fork [this repl](https://replit.com/@launch-team/M1W1-VariablesLesson2#main.cs) and review the following code.
 
 ```c#
 var hello = "Hello World";
@@ -239,20 +241,19 @@ Console.WriteLine("the variable hello has a value of: " + hello + " and is of ty
 Console.WriteLine("the variable myNum has a value of: " + myNum + " and is of type: " + myNum.GetType());
 
 hello = "Hello Universe";
-myNum = 4
+myNum = 4;
 
 Console.WriteLine("the variable hello has a value of: " + hello + " and is of type: " + hello.GetType());
 Console.WriteLine("the variable myNum has a value of: " + myNum + " and is of type: " + myNum.GetType());
 ```
 
-We can see that our program is smart enough to know that when we assign a string value to `hello` that variable can hold a string.  It starts as "Hello World", but we can re-assign it to any string.  Similarly, we can reassin `myNum` to any integer.
+We can see that our program is smart enough to know that when we assign a string value to `hello` that variable can hold a string.  It starts as "Hello World", but we can re-assign it to any string.  Similarly, we can reassign `myNum` to any integer.
 
 What happens if you try to reassign myNum to a float? 
 
 It won't work because at the point the variable was declared, the program recognized that variable as holding an integer - we can not make it take a different datatype.
 
 # Check for Understanding
-
 
 - Group the following items into each of their C# datatype (are there any that could be classified as more than one type?)
     > * horse

@@ -1,6 +1,6 @@
 # Class Interaction
 
-** Instructor Note ** For this lesson, you will want to have a repo with some finished code that you can use if needed to supplement student examples.  Either create your own completed Unicorn & Power classes, or you can [fork this one](https://replit.com/@RichardTillies2/M1W3-ClassInteractionLesson#Unicorn.cs)
+** Instructor Note ** For this lesson, you will want to have a repo with some finished code that you can use if needed to supplement student examples.  Either create your own completed Unicorn & Power classes, or you can [fork this example](https://replit.com/@launch-team/M1W3-ClassInteractionLesson)
 
 ## Learning Goals
 * Implement appropriate class file structure
@@ -11,7 +11,7 @@ Outline the classes you might neet to create a city-wide library system (multipl
 
 ## Building Necessary Objects
 
-To understand how objects can interact with each other, let's continue building on our Unicorn class from the [Classes Lesson](/Mod1/Lessons/Week3/ClassesRepl.md).  Right now, our Unicorn has a list of Magical powers that are simple strings.
+To understand how objects can interact with each other, let's continue building on our Unicorn class from the [Classes Lesson](/Mod1/Lessons/Week3/Classes.md).  Right now, our Unicorn has a list of Magical powers that are simple strings.
 
 ```c#
 public class Unicorn

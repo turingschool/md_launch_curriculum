@@ -58,7 +58,7 @@ Generally we will want to put more information in our classes to make them usefu
 
 ### Example - Class/Instance Syntax
 
-Let's follow a class example with a Unicorn class. **Fork** [this REPL](https://replit.com/@RichardTillies2/M1W3-Week3Assessment#Program.cs). Within that solution, I'll add a `Unicorn` class, and put the following information into that file. (You will take these same steps later for a different class 😉)
+Let's follow a class example with a Unicorn class. **Fork** [this repl](https://replit.com/@launch-team/M1W3-ClassesLesson#program.cs). This solution contains a `Unicorn` class with the following code. Note: you will follow this template for a different class later 😉.
 
 ```c#
 internal class Unicorn

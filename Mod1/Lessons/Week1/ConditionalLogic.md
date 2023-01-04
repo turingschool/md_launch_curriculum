@@ -36,7 +36,7 @@ You can also use the negation operator `!` (also known as a "bang") to reverse s
 
 ## `||` and `&&`
 
-We can use the "or" operator `||` and the "and" operator `&&` to combine two conditions into a single condition. `||` evaluates to true if one of the conditions is true. `&&` evaluates to true if both are true:
+We can use the "or" operator `||` and the "and" operator `&&` to combine two conditions into a single condition. `||` evaluates to true if at least one of the conditions is true. `&&` evaluates to true if both are true:
 
 ![Image of And and Or Operators](/Mod1/Images/Week1/AndOrOperators.png)
 
@@ -80,6 +80,7 @@ else
 <!-- Could we also include a version of this diagram that has the specific situation written out? -->
 ![inline](/Mod1/Images/Week1/IfElseStatementFlowChart.png)
 
+> What are other real world examples of conditional branching?
 
 <!-- For the below examples, I think it could be useful to also include an example that is filled in - more like psuedocode, but somethign that can highlight the different options and how only one option can be "chosen"  -->
 ## `if`
@@ -148,8 +149,8 @@ else
 * The `if` can be following by any number of `else if`s
 * A conditional branch will have either zero or one `else`
 * The `else` comes after the `if`/`else if`s
-* Only one branch can be taken.
 * Conditions are evaluated in order.
+* Only one branch can be taken.
 
 ## Check for Understanding
 
@@ -177,7 +178,7 @@ else
 }
 ```
 
-* What values would `playAgain` and `lives` need to be assigned to in order to print each of the following to the console:
+* What values would we need to assign the variables `playAgain` and `lives` in order to print each of the following to the console:
   * "You Lose!"
   * "Game Over!"
   * "Welcome back!"

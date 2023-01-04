@@ -7,7 +7,7 @@ Lab time will include activities that are designed to:
     * present new information for you to explore with minimal instructor input,
     * and, prepare you for upcoming lessons.
 
-Much of your future work as developers will include doing some independent learning and exploration, so its a good idea to start practicing this habit now!
+Much of your future work as developers will include doing some independent learning and exploration, so it's a good idea to start practicing this habit now!
 
 During lab time, you are **encouraged** to work with your cohort-mates. By discussing what you are working on with each other, you will deepen your own understanding.  Instructors will be available during labs to answer questions, or discuss any code you want reviewed.  Instructors may also call the whole group back together to work through a tricky concept, or cover additional information as needed; so, it is important to still be keeping an eye on slack!
 
@@ -26,14 +26,14 @@ As you review and discuss, make note of any lingering questions you may have, or
 
 ### Preparation
 
-Tomorrow, we will be discussing one of the most important fundamentals of programming, Datatypes and Variables.  To prepare for that lesson, watch the video linked below, and discuss the check for understanding question with your group.
+Tomorrow, we will be discussing one of the most important fundamentals of programming, Datatypes and Variables. To prepare for that lesson, watch the video linked below, and discuss the check for understanding question with your group.
 
 [![video image link](/Mod1/Images/Week1/Variables_ProgrammingForBeginners.png)](https://www.youtube.com/watch?v=ghCbURMWBD8)
 
 #### Check for Understanding
 * Which of the following real life items is most similar to a **variable**:
     - a book
-    - the label 'BOOKS' on a box of books
+    - the label 'NonfictionBooks' on a box that contains books
     - a box that contains books
     - 10 books that are inside a box
 

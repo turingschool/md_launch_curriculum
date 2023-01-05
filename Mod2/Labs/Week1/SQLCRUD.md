@@ -1,10 +1,10 @@
 ## Lab Objectives
 * Practice using `SELECT` `UPDATE` `REMOVE` and `INSERT`
 
-** Instructor Note ** Students are going to build upon their work from yesterday's lab.  It would be helpful if they are in the same groups, if possible.  If students need to start from a fresh database setup, you can provide them with this script (it should work if their database is called 'Library').
+** Instructor Note ** Students are going to build upon their work from yesterday's lab.  It would be helpful if they are in the same groups, if possible.  If students need to start from a fresh database setup, you can provide them with this script (it should work if their database is called 'Library'):
 ```SQL
 DROP TABLE books, patrons;
--- this should be a list of their tables.
+-- this should be a list of the student's tables.  You should update this script with the appropriate table names if you need to help students get started with a clean version.
 
 CREATE TABLE patrons (
 	id serial PRIMARY KEY,
@@ -20,6 +20,7 @@ CREATE TABLE books (
 	CheckedOutBY int REFERENCES patrons
 );
 ```
+*** End of instructor Note :) ***
 
 
 ## Practice
@@ -29,11 +30,13 @@ In small groups, use PgAdmin to create, update, remove, and query some records f
 ### Add Books to the Library and Create Library Patrons
 
 1. Use `INSERT` to create at least 5 patrons for your library (these can be real, or fake people).
-2. Use `INSERT` to create at least 10 books in your library.  The books can be all unique, or you could have multiple copies of more popular titles!  (books can also be real, or fake)
+2. Use `INSERT` to create at least 10 books in your library.  You could have multiple copies of some books, but make sure you have at least 3 unique book titles, and 3 unique authors.  (books can also be real, or fake)
+
+**When creating records, make sure each record has information in all the database columns!**
 
 ### Check Out Books
 
-3. Use `UPDATE` to add a patron to at least 4 of your books (indicating that the book has been checked out by that patron). Make sure that at least 2 patrons have checked out a book.
+3. Use `UPDATE` to add a patron to at least 4 of your books (indicating that the book has been checked out by that patron). Make sure that at least 2 different patrons have checked out a book.
 
 ### Remove Old Books
 

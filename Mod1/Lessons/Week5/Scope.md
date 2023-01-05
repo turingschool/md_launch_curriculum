@@ -104,7 +104,7 @@ With your partner, take 15 minutes to walk through this training that introduces
 
 https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/2-exercise-variable-scope
 
-> In your own words, why did the code in step 2 have an error? </br> In your own words, how did we fix the scope error created in step 2? </br> What would happen if scope didn't exist? What problems might this cause?
+> In your own words, why did the code in step 2 have an error? </br> In your own words, how did you fix the scope error created in step 2? </br> What would happen if scope didn't exist? What problems might this cause?
 
 
 <!-- OPEN QUESTION: Any reason for students to know the difference between method, class, block scope. Seems to all act the same. Curly brackets cause a new code block with a new scope. -->
@@ -143,14 +143,14 @@ class BankAccount
     {
         Balance += deposit;
         // Update records to keep track of this deposit (not implemented in this example)
-        // updateRecords(someDataPassedInHere)
+        updateRecords(someDataPassedInHere)
     }
 
     public void MakeWithdrawal(double withdrawal)
     {
         Balance -= withdrawal;
         // Update records to keep track of this withdrawal (not implemented in this example)
-        // updateRecords(someDataPassedInHere);
+        updateRecords(someDataPassedInHere);
     }
 
     public double GetBalance() { 
@@ -176,7 +176,7 @@ class MisusingBankAccountClass
 ```
 
 
-Did you see how Sergio is directly updating the balance of the account?! He isn't using the MakeDeposit method that Isabella created. And because he's not using the MakeDeposit method, the code to update the records for the deposit isn't run!
+Did you see how Sergio is directly updating the balance of the account? He isn't using the MakeDeposit method that Isabella created. And because he's not using the MakeDeposit method, the code to update the records for the deposit isn't run!
 
 
 Isabella expected other developers would use the BankAccount class as follows where they use methods instead of modifying the balance directly.
@@ -213,13 +213,13 @@ Access modifiers can be applied to both variables and methods. Note above how Ba
 
 It can be helpful to as yourself the following questions when determining `public` vs `private`.
 
-Do I want code outside of the class to have access to this variable or method? (if yes, make it public)
+Do I need code outside of the class to have access to this variable or method? (if yes, make it public)
 
 Is this an internal detail that should not be accessed from outside of the class? (if yes, make it private)
 
 <!-- Not sure we should talk about how hiding implementation details is an OOP pattern, encapsalation. Or leave that for a later day and reference public vs private as an example. -->
 
-You *could* make all of your variables public and the code would still work, but as we saw that can lead to unexpected uses of the class and can lead to headaches down the line.
+You *could* make all of your variables and methods public and the code would still work, but as we saw, that can lead to unexpected uses of the class and headaches down the line.
 
 C# provides other types of access modifiers for more specific situations such as protected and internal. If you find yourself wanting a level of access between public and private, you can learn more in the documentation [here](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers). 
 

@@ -15,9 +15,10 @@ You will pair up with another group to compare your Checks for Understanding res
 ## Small Group 2
 As a group, review the weekly assessment - try to identify a few differences between your implementations.  You can use the following prompts as a starting point:
 
-*
-*
-*
+* How did you determine which songs were in the top 10?
+* When updating records, was there a possibility of updating the wrong record?
+* What was difficult about describing commits and branches?
+
 
 As you review your assessment, come up with at least 2 questions you still have.  Choose one person in your group to send these questions to your instructors via slack DM.
 

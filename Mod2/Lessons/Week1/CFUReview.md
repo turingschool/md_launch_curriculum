@@ -1,10 +1,18 @@
 ## Week 1 Check for Understanding
 
-* In your own words, what is git?  What is Github?
-* Why do we use git and Github?
-* Create a diagram that maps the branches and commits for the Git Practice project we created during the lesson.
-* In your own words, what is a database?
-* Imagine that you are creating a database of books.  How might you create a relationship between a book and its author?
-* Imagine you are in an interview.  The interviewer asks: How would you describe CRUD? (make sure to use examples!)
-* Why do we need to use a `WHERE` when deleting or updating records?
-* List each CRUD action and its corresponding SQL command(s).
+1. Imagine you are chatting with one of your non-developer friends.  They ask: "How are developers able to collaborate on projects?  Doesn't your code live on your computer?"  How would you explain git and Github to them?
+
+2. What are the benefits of using git branches?  Are there any drawbacks?
+
+3. Imagine that you are creating a database of plants.  In our database, we want to capture the ideal growing region for each plant.  The database will contain the following information: region, area of the region, plant name (common), plant name (scientific).  What tables and columns should we create?
+
+4. All database interactions can be categorized as one of four actions.  What are the four actions?
+
+5. Why is it necessary to use a `WHERE` statement when updating and removing records?
+
+![Database showing popular movies from 2010-2020](/Mod2/Images/Week1/PopularMovies2010-2020.png)
+
+6. Using the database outlined above, write queries to:
+    * List all genres
+    * List the title and director of all comedy movies
+    * List all directors with movies longer than 2 hours

@@ -40,8 +40,8 @@
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/Debugging.md)
 * 🎒[Unit Tests I](/Mod1/Lessons/Week4/UnitTestingI.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week4/UnitTestingI.md)
-* 🧪[Weekly Assessment](/Mod1/Assessments/Week4.md) *needs edit*
-* 🎒[Topic Review](/Mod1/Lessons/Week4/WeekInReview.md) *needs edit*
+* 🧪[Weekly Assessment](/Mod1/Assessments/Week4.md)
+* 🎒[Topic Review](/Mod1/Lessons/Week4/WeekInReview.md)
 
 ### Week 5
 * 🎒[Refactoring](/Mod1/Lessons/Week5/Refactoring.md)

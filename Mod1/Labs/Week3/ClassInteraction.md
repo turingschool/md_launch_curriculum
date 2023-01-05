@@ -60,9 +60,8 @@ List<string> allBooksTitles = denverPublicLibrary.AllBooks();
 
 ## Preparation
 
-Individually, spend 10-15 minutes reflecting on the following questions. Take notes on your reflection to share out in tomorrow's lesson warm-up.
+Up to this point, we've been using [Replit](https://replit.com/), an online version of an IDE (Integrated Development Environment). It is a great environment to learn the basics of programming. In fact, Replit supports dozens of programming languages, not just C#. However, to become a professional developer, we need to use more dedicated tools.
 
-* Up to now, how have you known if your code was functioning?
-* Imagine you are a developer working at Google; what might be some drawbacks to your current approach?
+As our first step, we will install an IDE called Visual Studio directly on our machines. While there are several versions of Visual Studio, we will use the FREE version called **Visual Studio Community**. Learn more about Visual Studio [here](https://visualstudio.microsoft.com/vs/). We will work through the installation process in the next lesson.
 
 <!-- I think this is a great lab! One thing that I was thinking about re: instructor notes might be to be even more explicit for this particular lab - perhaps do a checkin after each portion of class building (one after Book, one after Branch, one after Library) and giving students some "targets" on how long they should spend on each section (although I recognize that may be difficult for us to predict! ) -->

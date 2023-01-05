@@ -17,7 +17,7 @@ When completed, add your instructors as collaborators to your REPLit project and
 
 ## Build a Guessing Game (10 points)
 
-We are going to be expanding on a Guessing Game similar to the one we created in last week's assessment.  So that we are all starting from the same point, **fork** [this REPL](https://replit.com/@MeganMcMahon1/Week2AssessmentPractical#main.cs) and update the game based on the following instructions:
+We are going to be expanding on a Guessing Game similar to the one we created in last week's assessment.  So that we are all starting from the same point, **fork** [this REPL](https://replit.com/@launch-team/Week2AssessmentPractical) and update the game based on the following instructions:
 
 1. Update the game so that a user gets more specific feedback if their answer is incorrect.  If they guess a number that is too high or too low, the output should be `No, that number is too high!` or `... to low!`. If they guess a number that is outside of the range of 1 - 100, the output should be `That guess is out of range.  The number I'm thinking of is between 1 and 100`.
 

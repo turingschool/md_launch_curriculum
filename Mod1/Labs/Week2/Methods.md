@@ -11,7 +11,7 @@ In your pairs, you will work through the following exercises. As you work throug
 
 <!-- In your pairs, you will work through the following exercises.  Both partners will create a Visual Studio Console Application, called 'MethodsLab'.  As you work through the exercises, take turns being the person typing out code.  For example, on the first exercise, Partner A will be sharing their screen and typing code into Visual Studio; Person B will be helping direct Person A with what they should type.  Then, for the next exercise, switch roles.  This should be a collaborative process! -->
 
-For the first three exercises, both partners will [fork this REPL](https://replit.com/@RichardTillies2/M1W2-MethodsLab#main.cs).
+For the first three exercises, both partners will [fork this REPL](https://replit.com/@launch-team/M1W2-MethodsLab).
 
 **Exercise 1**
 Create a method called `Downcase()` that takes a list of strings as an argument, and returns a list of those strings downcased.  The method should be able to be called like this:

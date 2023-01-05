@@ -2,13 +2,13 @@
 
 ### Setup
 
-In Github, fork [this repository](https://github.com/memcmahon/Mod1Week3Assessment).  Then in Visual Studio, clone your fork.
+**Fork** [this repl](https://replit.com/@launch-team/M1W3-Week3Assessment).
 
-Open the `Program.cs` file - here there is some commented code and instructions for **6 exercises**.  Follow the instructions for each exercise; you may do some uncommenting, code additions, code removal, and code creation.  Reach out to your instructor with any questions that you have!
+The `Program.cs` file contains some commented code and instructions for **6 exercises**.  Follow the instructions for each exercise; you may do some uncommenting, code additions, code removal, and code creation.  Reach out to your instructor with any questions that you have!
 
-### Submission
+### Submission and Feedback
 
-When completed, commit the progress you have made, and push your project to GitHub.  Instructors will be following up with some video feedback!
+When completed, add your instructors as collaborators to your REPLit project and DM them a link to your forked repl.  Instructors will leave feedback on your replit project.
 
 ### Rubric
 

@@ -4,6 +4,7 @@
 * Identify how **scope** affects where variables can be accessed
 * Have a reference to look at when **scope** errors show up
 * Understand the difference between the **public** and **private** access modifiers
+* Start thinking about when to use **public** vs **private**
 
 # Scope
 
@@ -16,17 +17,15 @@ Scope is the kind of thing that you think you don’t need to know until it star
 
 You've probably already run into scope errors.
 
-Maybe you've seen something like this where you already defined a variable but are still getting an error saying your variable doesn't exist.
+Here are two screenshots of situations where I got an error because I didn't have access to a variable I wanted.
 
 Example 1:
 ![Scope Example 1](/Mod1/Images/Week5/ScopeExample1.png)
 
-Or maybe you've tried to use the variable i multiple times in your program and found that you need to create a new variable each time.
-
 Example 2:
 ![Scope Example 2](/Mod1/Images/Week5/ScopeExample2.png)
 
-These errors are both caused by scope!
+Take 3 minutes to brainstorm: Have you encountered this error before? What did you do to fix the issue?
 
 ## Scope Definition
 
@@ -34,9 +33,9 @@ I like this definition from a [Microsoft Tutorial](https://learn.microsoft.com/e
 
 > Variable scope is the **visibility of the variable** to the other code in your application. A locally scoped variable is only accessible inside of the code block in which it's defined. If you attempt to access the variable outside of the code block, you'll get a compiler error.
 
-<!-- Should I try and define a code block here? -->
-
 With this new definition in mind, we can see why the above code examples caused errors.
+
+<!-- Instructor Note: Look to see if students ask what a code block is. We could include it, but I'm leaning on the side of less. -->
 
 Example 1:
 ![Scope Example 1 With Highlighting](/Mod1/Images/Week5/ScopeExample1Highlighting.png)
@@ -53,11 +52,6 @@ Note that a variable is accessible **everywhere** inside the code block in which
 Here is a modified version of some code from our Class Interaction Lesson. 
 
 >Take 3 minutes: For each variable defined, determine the box for the scope where that variable is available.
-
-<details><summary>Solution</summary><br/>
-
-![Scope Example 3 With Highlighting](/Mod1/Images/Week5/ScopeExample3.png)
-</details>
 
 ```c#
 Person stevie = new Person("Stevie");
@@ -97,6 +91,10 @@ class Person
     }
 }
 ```
+<details><summary>Solution</summary><br/>
+
+![Scope Example 3 With Highlighting](/Mod1/Images/Week5/ScopeExample3.png)
+</details>
 
 ## Fixing Scope Errors
 
@@ -105,14 +103,6 @@ With your partner, take 15 minutes to walk through this training that introduces
 https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/2-exercise-variable-scope
 
 > In your own words, why did the code in step 2 have an error? </br> In your own words, how did you fix the scope error created in step 2? </br> What would happen if scope didn't exist? What problems might this cause?
-
-
-<!-- OPEN QUESTION: Any reason for students to know the difference between method, class, block scope. Seems to all act the same. Curly brackets cause a new code block with a new scope. -->
-
-
-
-
-<!-- Access modifiers is quite a nuanced topic and I'm inclided to separate it from scope. Maybe into a 30 minute mini lesson during projct work times? -->
 
 # Access Modifiers
 
@@ -175,9 +165,7 @@ class MisusingBankAccountClass
 }
 ```
 
-
 Did you see how Sergio is directly updating the balance of the account? He isn't using the MakeDeposit method that Isabella created. And because he's not using the MakeDeposit method, the code to update the records for the deposit isn't run!
-
 
 Isabella expected other developers would use the BankAccount class as follows where they use methods instead of modifying the balance directly.
 
@@ -216,8 +204,6 @@ It can be helpful to as yourself the following questions when determining `publi
 Do I need code outside of the class to have access to this variable or method? (if yes, make it public)
 
 Is this an internal detail that should not be accessed from outside of the class? (if yes, make it private)
-
-<!-- Not sure we should talk about how hiding implementation details is an OOP pattern, encapsalation. Or leave that for a later day and reference public vs private as an example. -->
 
 You *could* make all of your variables and methods public and the code would still work, but as we saw, that can lead to unexpected uses of the class and headaches down the line.
 

@@ -12,7 +12,7 @@ Imagine you are writing a program that will shuffle and deal a deck of cards to 
 
 What if we need to deal 5 cards to 5 players?  Will the answers to the questions above change?
 
-**Instructor Note**: lead a discussion around the pros and cons of explicitly repeating actions.  You could even pull up [this repo](https://replit.com/@MeganMcMahon1/CardShuffle#main.cs:9:9) to show the card example.
+**Instructor Note**: lead a discussion around the pros and cons of explicitly repeating actions.  You could even pull up [this repo](https://replit.com/@launch-team/M1W2-CardShuffle) to show the card example.
 
 ## Looping
 
@@ -37,7 +37,7 @@ or it may be a question that returns a true/false (boolean) answer. For example:
 
 A `while` loop will execute a block of code as long as a specific condition is `true`. 
 
-![Diagram of while loop logic](/Mod1/Images/Week2/WhileLoop.png)
+![Diagram of while loop logic](/Mod1/Images/Week2/whileLoop.png)
 
 ```c#
 while (condition)

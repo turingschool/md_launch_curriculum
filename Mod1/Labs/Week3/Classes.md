@@ -86,7 +86,7 @@ Now that we have been working with Visual Studio for a few days, you should be f
 
 If you are inside of a class and type `ctor`, the intellisense will give you a suggestion for creating the class constructor!
 
-![screenshot of ctor shortcut](/mod1/Images/Week3/ctor-shortcut.png)
+![screenshot of ctor shortcut](/Mod1/Images/Week3/ctor-shortcut.png)
 
 Using code snippets is not required to write code, but they can be helpful.  If you are interested in learning about more code snippets, take a look at the [Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/ide/code-snippets?view=vs-2022)!
 

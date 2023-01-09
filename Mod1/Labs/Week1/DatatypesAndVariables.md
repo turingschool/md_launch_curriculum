@@ -13,7 +13,7 @@ To complete the exercises, you will first remove the lines that say `/* REMOVE T
 
 See the images below for clarification, and ask an instructor if you have any confusion!
 
-An unstarted exercise looks like:
+An unstarted exercise looks like this:
 ![](/Mod1/Images/Week1/Exercise1.png)
 
 Before starting the exercise, remove the indicated lines:
@@ -30,7 +30,7 @@ Complete each of the exercises in this file - you are encouraged to work with ot
 ## Preparation
 ### Math Operations
 
-Similar to Interpolation, it is often necessary to do simple math equations.  Watch the video below to get an introduction to Math in C#:
+It is often necessary to do simple math equations.  Watch the video below to get an introduction to Math in C#:
 
 [![Image of Video 'How to do Math'](/Mod1/Images/Week1/HowToMath.png)](https://www.youtube.com/watch?v=d84ci6tg9lk)
 
@@ -38,7 +38,7 @@ When performing math, and other sequential operations, it is important to unders
 
 [![Image of Video 'Order of Operations'](/Mod1/Images/Week1/OrderOfOperations.png)](https://www.youtube.com/watch?v=-Wh9FYJDgiA)
 
-After watching these videos, in the repl that you forked during the Practice segment, work through the exercises in the `math.cs` file.  These exercises are formatted similar to the practice exercises, and you are encouraged to continue to work with each other and ask questions as you go!
+After watching these videos, in the repl that you forked during the Practice segment, work through the exercises in the `math.cs` file.  These exercises are formatted similarly to the practice exercises, and you are encouraged to continue to work with each other and ask questions as you go!
 
 ### String Interpolation and Concatenation
 

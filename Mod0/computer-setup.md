@@ -10,20 +10,12 @@ Here's what we'll cover in this guide. Click a link to jump to that portion of t
 
 - [Install Chrome](#install-chrome)
 - [Install Slack](#install-slack)
-- [Create a Replit Account](#replit)
+- [Create a GitHub Account](#create-github-account)
+- [Create a Replit Account](#create-replit-account)
 - [Create a Trello Account](#create-trello-account)
 - [Create a Loom Account](#create-loom-account)
-- [Create a GitHub Account](#create-github-account)
 - [Install Zoom](#install-zoom)
 - [Snap your Windows](#snap-windows)
-<!-- - [Enable Screen Sharing](#enable-screen-sharing) -->
-<!-- - [Install Xcode-select](#install-xcode-select) -->
-<!-- - [Install and Configure VS Code](#install-and-configure-vs-code) -->
-<!-- - [Install Homebrew](#install-homebrew) -->
-<!-- - [Install Git](#install-git) -->
-<!-- - [Install rbenv](#install-rbenv) -->
-<!-- - [Install Node](#install-node) -->
-
 
 <br>
 
@@ -45,13 +37,24 @@ Chrome includes a set of Developer Tools that will come in handy down the road. 
 Slack is our main communication tool at Turing. **You will receive an invitation to join the Turing Workspace 2 weeks before your Mod 0 start date**. If you are not familiar with it, it may seem overwhelming at first. There are a lot of tips and tricks you'll pick up along the way.
 
 **Action Steps:**
-- [Download and install the Slack desktop application](https://slack.com/downloads/mac)
+- [Download and install the Slack desktop application](https://slack.com/downloads/windows)
 
 To ensure that you are prepared for your first session:
 - Watch the [Slack Tutorial Video](https://www.youtube.com/watch?v=tfq333EpWgM).
 - Upload a clear and appropriate headshot for your profile image.
 - [Set up your Slack profile](https://www.loom.com/share/6f10b796c90f40c09594899d71bf401a) to include your cohort, program, pronouns, and time zone.
 - It's a good idea to get in the habit of checking Slack daily starting now.
+
+<br>
+
+### Create a GitHub Account
+
+GitHub is a widely used platform that hosts code projects and allows for collaborative workflows. You will spend a lot of time on this site and become fluent in using it as a tool.
+
+**Action Steps:**
+- [Create an account on GitHub](https://github.com/). Please use your Turing email address.
+- [Update your GitHub Profile](https://github.com/settings/profile) and be sure that you choose a username, status, profile info, and picture that are appropriate for a professional setting. GitHub is a platform where future/potential employers will be reviewing your work.
+
 <br>
 
 ### Create a Replit Account
@@ -59,7 +62,7 @@ To ensure that you are prepared for your first session:
 [Replit](https://replit.com/~) provides an online platform that allows us to write code and see the results almost immediately - all inside of one browser tab! There are many other similar (and awesome) tools available but replit is used regularly in Mods 1 and 2, so Mod 0 provides an introduction and some exposure.
 
 Follow the steps below (if they are not necessary because you have already done them or have experience with replit, you can skip this):
-- Create a free account.
+- Create a free account using your Turing email address.
 - [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
 - [Watch this video](https://www.youtube.com/watch?v=cnLE3bH6fHE) to learn how to navigate the interface and create new projects.
 
@@ -69,10 +72,10 @@ Follow the steps below (if they are not necessary because you have already done 
 
 [Trello](https://trello.com/) is a Kanban-style project management tool we will use in Mod 0. It and other similar tools are used by most software developers to manage the tasks within a project.
 
-- Please create a free account with Trello.
+- Please create a free account with Trello using your Turing email address.
 - [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
 - Create a copy of your program's Mod 0 Trello board by following the steps below:
-  1. Open the [Back End Mod 0 Trello Board](https://trello.com/b/2ynRge3d/back-end-mod-0) or the [Front End Mod 0 Trello Board](https://trello.com/b/WjbvqlqM/front-end-mod-0) to get started.
+  1. Open the [Launch Mod 0 Trello Board]() to get started. *need link*
   1. In the upper right corner, select the `...Show menu` button.
   1. Select `... More` about halfway down the side menu.
   1. Select `Copy board` and create a name for your personalized Trello board. This board will now be saved on your personal Trello account.
@@ -83,19 +86,10 @@ Follow the steps below (if they are not necessary because you have already done 
 
 [Loom](https://www.loom.com/) is a free online video tool that allows you to create instantly shareable videos. With Loom, you can record your camera, microphone, and desktop simultaneously. You will be required to submit videos throughout Mod 0 as part of the coursework. Although you can use other tools to accomplish the same goal, we strongly recommend using Loom as it is extremely user-friendly.
 
-- Please create a free account with Loom.
+- Please create a free account with Loom using your Turing email address.
 - [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
 - If you've never used Loom before, [watch this video](https://youtu.be/iugmJe8uDLE) to familiarize yourself with this tool.
 
-<br>
-
-### Create a GitHub Account
-
-GitHub is a widely used platform that hosts code projects and allows for collaborative workflows. You will spend a lot of time on this site and become fluent in using it as a tool.
-
-**Action Steps:**
-- [Create an account on GitHub](https://github.com/). 
-- [Update your GitHub Profile](https://github.com/settings/profile) and be sure that you choose a username, status, profile info, and picture that are appropriate for a professional setting. GitHub is a platform where future/potential employers will be reviewing your work.
 <br>
 
 ### Install Zoom
@@ -105,7 +99,7 @@ Zoom is the primary tool for classroom time, study halls, and community building
 **Action Steps:**
 - [Download and install Zoom](https://zoom.us/download/) for _Macs with Apple Silicon chips_
 - If you haven't already, create an account with Zoom.
-- [Update your name in your profile](https://support.zoom.us/hc/en-us/articles/201363203-My-Profile) following this pattern: First Name, Last Initial, pronouns, Program - `Kaitlyn V (she/her), FE`.
+- [Update your name in your profile](https://support.zoom.us/hc/en-us/articles/201363203-My-Profile) following this pattern: First Name, Last Initial, pronouns, Program - `Megan M (she/her), Launch`.
 - [Learn how to raise your hand](https://support.zoom.us/hc/en-us/articles/205566129-Raise-Hand-In-Webinar).
 - Give your Zoom account screen sharing permission and microphone permission.
 

@@ -7,7 +7,7 @@ Lab time is designed for you to prepare for upcoming lessons, and practice what 
 
 ** Instructor Note ** set up the practice repo together and walk through with students the first or first couple exercises so that they understand what they need to focus on, and how to get feedback on if they are completing the exercises correctly.
 
-Fork [this repl](https://replit.com/@MeganMcMahon1/Lab-DatatypesAndVariables#datatypes.cs) and complete the exercises in the `datatypes.cs` file.
+Fork [this repl](https://replit.com/@launch-team/M1W1-DataTypesVariablesLab#datatypes.cs) and complete the exercises in the `datatypes.cs` file.
 
 To complete the exercises, you will first remove the lines that say `/* REMOVE THIS LINE` and `AND REMOVE THIS LINE */`.  After removing these lines, you will either complete some code by replacing the blank lines (______), or insert code where indicated (`Your Code Here`).  Once you have completed an exercise, run the program, and you will see a confirmation output to the console if the exercise is correct.
 

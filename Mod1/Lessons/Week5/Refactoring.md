@@ -50,7 +50,7 @@ namespace DogSitter
 }
 ```
 
-This code _works_, but its not an ideal way to organize or implement the functionality we want.  Below is what the Program looks like _after_ we have **refactored** to include a `Dog` class:
+This code _works_, but it's not an ideal way to organize or implement the functionality we want.  Below is what the Program looks like _after_ we have **refactored** to include a `Dog` class:
 
 ```c#
 public class Program
@@ -75,7 +75,7 @@ public class Program
 }
 ```
 
-This refactored code resultes in the **same functionality** that has been implemented in a more readable and reusable way.  We have refactored (changed) the way that a dog is created by making it a class with properties and behaviors.
+This refactored code results in the **same functionality** that has been implemented in a more readable and reusable way.  We have refactored (changed) the way that a dog is created by making it a class with properties and behaviors.
 
 > With a partner, come up with your own definition for refactoring.  List some ways you would know if a change to your code is or is not a refactor. Be ready to share out your ideas!
 
@@ -137,7 +137,7 @@ Once we have a list of responsibilities, a good refactor would be to create meth
 ** Instructor Note **  As students are working, and during share-out, keep an eye on daisy-chaining methods.  We want students to get in the habit of creating methods that are self-contained - so the Main method might execute multiple methods in sequence instead of one method that executes the next method, that executes the next method, etc...  After the lesson, you _could_ share a possible solution in slack.
 
 ## Check for Understanding
-* Imagine you are in an interview.  The interviewer asks you to explain SRP; write down your explanantion, making sure to use examples to demonstrate your understanding.
+* Imagine you are in an interview.  The interviewer asks you to explain SRP; write down your explanation, making sure to use examples to demonstrate your understanding.
 * Imagine you are working as a developer.  You have just finished a coding task with 2 hours until the product is delivered to the client.  
     - What are some reasons that you **would** refactor your code?  
     - What are some reasons why you **would not** refactor? ('my code is perfect' is not an acceptable answer 😆)

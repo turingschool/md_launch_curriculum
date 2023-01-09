@@ -8,21 +8,21 @@ Complete the following steps before your first Mod 0 session in order to get the
 
 Here's what we'll cover in this guide. Click a link to jump to that portion of the guide:
 
-- [Install Rectangle](#install-rectangle)
 - [Install Chrome](#install-chrome)
 - [Install Slack](#install-slack)
 - [Create a Replit Account](#replit)
 - [Create a Trello Account](#create-trello-account)
 - [Create a Loom Account](#create-loom-account)
+- [Configure GitHub](#configure-github)
 - [Install Zoom](#install-zoom)
 - [Enable Screen Sharing](#enable-screen-sharing)
-- [Install Xcode-select](#install-xcode-select)
-- [Install and Configure VS Code](#install-and-configure-vs-code)
-- [Install Homebrew](#install-homebrew)
-- [Install Git](#install-git)
-- [Configure GitHub](#configure-github)
-- [Install rbenv](#install-rbenv)
-- [Install Node](#install-node)
+- [Snap your Windows](#snap-windows)
+<!-- - [Install Xcode-select](#install-xcode-select) -->
+<!-- - [Install and Configure VS Code](#install-and-configure-vs-code) -->
+<!-- - [Install Homebrew](#install-homebrew) -->
+<!-- - [Install Git](#install-git) -->
+<!-- - [Install rbenv](#install-rbenv) -->
+<!-- - [Install Node](#install-node) -->
 
 
 <br>

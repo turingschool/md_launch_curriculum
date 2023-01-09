@@ -120,6 +120,7 @@ for (var i = 0; i < 5; i++ )
   Console.WriteLine(i);
 }
 ```
+<!-- I wonder if we should use int 1 = 0, instead of var. It feels more clear to me and from a quick scan what other online tutorials are doing. -->
 
 A `for` loop is sometimes a bit difficult to understand at first.  To help us understand, let's take a look at the following `while` loop, that will result in the same outcome as the `for` loop above:
 

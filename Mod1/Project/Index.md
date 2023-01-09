@@ -18,7 +18,7 @@ While this idea is simple, it is actually the basis for many applications that y
 
 This project will give you the opportunity to showcase all of the concepts we have learned this Mod.  There might be skills that we covered all the way back in week 1, so don't forget to go back and review those earlier lessons and labs!
 
-We are going to work throught this project in small chunks, called **iterations**.  Completing each iteration will get you closer to building an application that will allow a user to: 
+We are going to work through this project in small chunks, called **iterations**.  Completing each iteration will get you closer to building an application that will allow a user to: 
 
 * Create a user profile
 * log a Message
@@ -45,7 +45,7 @@ As a group, you will produce **one** project; this means that even though your c
 **Project Setup**
 To get started on this project:
 
-1. The 'Keeper of Code' will **fork and clone** this [starter repo]()
+1. The 'Keeper of Code' will **fork and clone** this [starter repo](https://github.com/turingschool-examples/MessageLogger)
     * The starter repo has the project and test project set up already
 2. Make sure that the Test Project references the Project
 

@@ -10,12 +10,12 @@ Here's what we'll cover in this guide. Click a link to jump to that portion of t
 
 - [Install Chrome](#install-chrome)
 - [Install Slack](#install-slack)
-- [Create a GitHub Account](#create-github-account)
-- [Create a Replit Account](#create-replit-account)
-- [Create a Trello Account](#create-trello-account)
-- [Create a Loom Account](#create-loom-account)
+- [Create a GitHub Account](#create-a-github-account)
+- [Create a Replit Account](#create-a-replit-account)
+- [Create a Trello Account](#create-a-trello-account)
+- [Create a Loom Account](#create-a-loom-account)
 - [Install Zoom](#install-zoom)
-- [Snap your Windows](#snap-windows)
+- [Snap your Windows](#snap-your-windows)
 
 <br>
 
@@ -97,23 +97,20 @@ Follow the steps below (if they are not necessary because you have already done 
 Zoom is the primary tool for classroom time, study halls, and community building at Turing.
 
 **Action Steps:**
-- [Download and install Zoom](https://zoom.us/download/) for _Macs with Apple Silicon chips_
+- [Download and install Zoom](https://zoom.us/download/).
 - If you haven't already, create an account with Zoom.
 - [Update your name in your profile](https://support.zoom.us/hc/en-us/articles/201363203-My-Profile) following this pattern: First Name, Last Initial, pronouns, Program - `Megan M (she/her), Launch`.
 - [Learn how to raise your hand](https://support.zoom.us/hc/en-us/articles/205566129-Raise-Hand-In-Webinar).
-- Give your Zoom account screen sharing permission and microphone permission.
+- Give your Zoom account the following permissions: screen sharing, microphone, camera.
+<!-- - Give your Zoom account screen sharing permission and microphone permission. -->
 
 <br>
 
-### Install Rectangle
+### Snap your Windows
 
-Rectangle is a screen management application that allows you to move and resize windows to maximize your screen space as well as your time.
+Windows 11 offers a feature to position multiple windows on the screen. Known as Snap Windows, this feature lets you precisely control how and where a window is located by selecting a predefined layout. By snapping each window into a specific place on your desktop, you can more easily juggle multiple windows.
 
-Once you've installed Rectangle, open the application and it will run in the background. You should see a smaller version of the Rectangle icon in the top right corner of your screen.
-
-**Action Steps:**
-- [Download and install Rectangle](https://rectangleapp.com/).
-- Take some time to play around with the commands to adjust the position and size of different windows on your screen using the Rectangle keyboard shortcuts.
+The best part is that there's nothing to install! [Learn more about Snap Windows](https://support.microsoft.com/en-us/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
 <br>
 

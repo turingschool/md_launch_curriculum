@@ -53,6 +53,8 @@ With a breakpoint, we have **paused** our program at a certain point in its exec
 
 ![](/Mod1/Images/Week4/ContinueOrStop.png)
 
+<!-- I think it would be helpful to also demonstrate "Step Into" here so that students can use that to move the debugger line by line through the code. Not a lot of detail, just letting students know that's a debugging option. -->
+
 ## Removing Breakpoints
 
 When you are done debugging, you will want to remove the breakpoints you have placed; you do not want to keep breakpoints in any final project.  You can remove a breakpoint by clicking on it again.  Or, if you are unsure of where your breakpoint(s) is, you can use the `Delete All Breakpoints` option under the Debug menu.

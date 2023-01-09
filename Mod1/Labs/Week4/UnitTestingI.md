@@ -6,9 +6,9 @@
 
 ## Practice
 
-To re-inforce our testing lesson, you are going to implement tests for the [Library System](/Mod1/Labs/Week4/ClassInteraction.md) that we worked on earlier this week.  If you would like to use a starter project other than your own, you can clone [this repository](https://github.com/memcmahon/DenverLibrary).
+To reinforce our testing lesson, you are going to implement tests for the [Library System](/Mod1/Labs/Week4/ClassInteraction.md) that we worked on earlier this week.  If you would like to use a starter project other than your own, you can clone [this repository](https://github.com/memcmahon/DenverLibrary).
 
-**Keep and eye on Slack - we will be re-grouping frequently to discuss our progress**
+**Keep an eye on Slack - we will be re-grouping frequently to discuss our progress**
 
 ### Create a Test Project and First Tests
 
@@ -22,7 +22,7 @@ Be prepared to share your test(s).
 
 ### Create Tests for the Branch Class
 
-Back in your small groups, spend 20 minutes writing tests for the `Branch` class.  Keep in mind that each class should have it's own test file!
+Back in your small groups, spend 20 minutes writing tests for the `Branch` class.  Keep in mind that each class should have its own test file!
 
 When finished, you should have a minimum of **3** new tests.  
 

@@ -2,14 +2,14 @@
 
 ## Learning Goals
 * Define and start using an IDE
-* Identify the benefites of using an IDE
+* Identify the benefits of using an IDE
 
 ## Warm Up
 
 > Thinking back to what we learned about Computers and how they use _input_. In your notebook, write down some ideas on why we have been using REPLit to create programs, rather than a text editor like Word, Docs, or Notepad?
 
 ## IDE
-In order for our computers to execute code that we write, that code needs to be compiled, or built, into an executable program that a computer can understand.  We write programs in language that is easy for us, as humans, to read (in this course, we use c#), but that is not what is executed by computers directly.  Before a computer can understand the instructions of a program, our code needs to be transformed (compiled, or built) into computer language.  The important thing  to understand is that there are multiple steps happening in the background when we 'run' a program.
+In order for our computers to execute code that we write, that code needs to be compiled, or built, into an executable program that a computer can understand.  We write programs in language that is easy for us, as humans, to read (in this course, we use c#), but that is not what is executed by computers directly.  Before a computer can understand the instructions of a program, our code needs to be transformed (compiled, or built) into computer language.  The important thing to understand is that there are multiple steps happening in the background when we 'run' a program.
 
 Think about the programs we have built in REPLit.  When we hit the 'Run' button, does anything happen immediately? No.  The REPLit program has to:
     1. Compile our code into an executable program.
@@ -49,7 +49,7 @@ We first need to decide what **type** of program we are going to create. Up to n
 #### .NET
 Many of these program types reference [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet-framework).  .NET is a **framework** and **Common Language Runtime** for developing lots of different types of applications.
 
-A **Framework** is a developer tool that give us additional classes and methods that would not exist in plain c#.
+A **Framework** is a developer tool that gives us additional classes and methods that would not exist in plain c#.
 
 A **Common Language Runtime (CLR)** is the engine that handles running applications. CLRs translate the code that we write into Machine Code (ones and zeros).  The .NET CLR can handle C#, F#, and Visual Basic Code.  We will continue to code in C#, but it is good to understand that there are other options available to us!
 
@@ -96,7 +96,7 @@ There is a lot that we will be using in Video Studio over the coming months.  We
 
 **Run/Debug**: The filled green `Play` button is how we will execute (run) our programs. You can also use the keyboard shortcut `F5` to run a program.
 
-If at any point, your solution explorer our output panes disappear, you can use the `View` options to show them again.
+If at any point, your solution explorer or output panes disappear, you can use the `View` options to show them again.
 
 ![](/Mod1/Images/Week4/ViewOptions.png)
 
@@ -129,6 +129,7 @@ Follow these steps:
 
 For more information on customizations, you can review the [Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/ide/personalizing-the-visual-studio-ide?view=vs-2022).
 
+<!-- Line numbers were already enabled for me and I'm not seeing the autocomplete for assigning a variable -->
 ### Practice
 
 > With a partner, work through the following exercises.  You should collaborate on how to complete the tasks, and both complete them on your own machine.
@@ -143,7 +144,7 @@ For more information on customizations, you can review the [Microsoft Docs](http
 
 ## Checks for Understanding
 * What is an IDE?
-* What are some benefits to using an IDE?
+* What are some benefits of using an IDE?
 
 
 <!-- Really strong use of visuals/screenshots in this lesson. I think some of the arrows get a little hard to see at times so it might be worth adjusting to a more prominent color/weight, but overall pretty solid!

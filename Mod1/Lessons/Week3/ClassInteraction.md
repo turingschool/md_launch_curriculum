@@ -7,7 +7,7 @@
 * Gain familiarity with passing around 'smart' objects
 
 ## Warm Up
-Outline the classes you might neet to create a city-wide library system (multiple locations with physical books).  How do these classes relate to each other?
+Outline the classes you might need to create a city-wide library system (multiple locations with physical books).  How do these classes relate to each other?
 
 ## Building Necessary Objects
 
@@ -57,7 +57,7 @@ A better way would be to create a `Power` Class that will hold these attributes.
 
 > With a partner, build a class that will represent a Power.  Update your Unicorn to expect instances of that Power class, instead of strings.  If you have some additional time: how might we implement the idea of energy usage?
 
-When complete, we should be able to execute the follwoing program:
+When complete, we should be able to execute the following program:
 
 ![Image of crude Unicorn with powers added](/Mod1/Images/Week3/UnicornPowers.png)
 

@@ -8,14 +8,14 @@ During this assessment, you may use any resource other than fellow students.  Fe
 
 ## Questions and Exercises (10 Points Total)
 
-**Fork** [This REPL](https://replit.com/@MeganMcMahon1/Week1Assessment#main.cs) and complete the questions and exercises it contains.  Each question or exercise is indicated by a single line comment prompt like this: `// This is a single line comment that gives instructions` followed by a multiline comment where you will complete the exercise: `/* < these are the multiline comment indicators > */`.  For the exercises, you can verify they are working by removing the multiline comments and running the program.
+**Fork** [this repl](https://replit.com/@launch-team/M1W1-Week1Assessment) and complete the questions and exercises it contains.  Each question or exercise is indicated by a single line comment prompt like this: `// This is a single line comment that gives instructions` followed by a multiline comment where you will complete the exercise: `/* < these are the multiline comment indicators > */`.  For the exercises, you can verify they are working by removing the multiline comments and running the program.
 
 ### Submission and Feedback
 When completed, add your instructors as collaborators to your REPLit project and DM them a link to your forked repl.  Instructors will leave feedback on your replit project.
 
 ## Build a Guessing Game (10 Points Total)
 
-In a new [Replit](https://replit.com/~) project, write a program to greet users by completing the following steps:
+**Fork** [this repl](https://replit.com/@launch-team/M1W1-GuessingGame) as the starting point to build a guessing game program. Complete the following steps in order:
 
 1. Ask a user for their name, and then greet them by name.
 
@@ -28,7 +28,6 @@ In a new [Replit](https://replit.com/~) project, write a program to greet users 
 3. Ask the user if they would like to play a guessing game.  If they enter 'yes', have them guess a number between 1 and 10; at this point, you can set the answer to be any number you like (in the example below, I've used '7').  Give feedback to user based on the guess provided.  If a user answers anything other than 'yes' to the prompt asking if they want to play a guessing game, the program should end.
 
 ![](/Mod1/Images/Week1/week1_3.png)
-
 
 ### Submission
 When completed, add your instructors as collaborators to your REPLit project and DM them a link.  Instructors will leave feedback on your replit project.
@@ -51,7 +50,6 @@ These can be done in any order, and should only be completed if you have complet
 ![](/Mod1/Images/Week1/week1_5.png)
 
 * Update the guessing game to use a random number (between 1 and 10)
-
 
 <!-- Assessment Notes
 - I think we should include some sort of rubric that lays out what is considered Passing vs Not Passing

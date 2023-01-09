@@ -47,7 +47,7 @@ We will come back together as a group to discuss what you have brainstormed - be
 
 Now that we have done some ideating on what the implementation of this program will look like, it's time to put that into code!
 
-You are going to fork [this starter repl](https://replit.com/@MeganMcMahon1/ConditionalLogicLab#main.cs) and implement the simple Order Taker program for a restaurant.  Remember that cohort collaboration is encouraged!
+You are going to fork [this starter repl](https://replit.com/@launch-team/M1W1-ConditionalLogicLab) and implement the simple Order Taker program for a restaurant.  Remember that cohort collaboration is encouraged!
 
 **Keep an eye on slack!!** We will come together as a whole group every 30-45 minutes to work through some of the tougher parts of the project.  During these group sessions, we will ask for some of you to share out what you have been working on - a great opportunity to practice using technical language!
 

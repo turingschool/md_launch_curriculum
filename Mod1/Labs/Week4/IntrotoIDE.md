@@ -10,7 +10,7 @@ Before the lab: create groups of 2-3 students and post them in slack!  The stude
 
 ## Practice
 
-Today, we explored how to write code using Visual Studio.  This is where we will do _most_ of our work from now on, so its a good idea to get really comfortable with this tool.
+Today, we explored how to write code using Visual Studio.  This is where we will do _most_ of our work from now on, so it's a good idea to get really comfortable with this tool.
 
 ### Process Review
 
@@ -22,7 +22,7 @@ Again, in your notebook write down what you do to accomplish this task.
 
 3. In your notebook, write a reflection of what is different about this Visual Studio process from what we were previously doing in REPLit.  What is different about creating a project?  Are there differences in how the applications are run?
 
-**Keep and eye on Slack** We will be coming together to discuss your reflections!
+**Keep an eye on Slack** We will be coming together to discuss your reflections!
 
 ### FizzBuzz
 
@@ -34,7 +34,7 @@ FizzBuzz
 Your task is to print integers 1 to 100.  
 If a number is divisible by 3, print 'Fizz'.
 If a number is divisible by 5, print 'Buzz'.
-If a number is divisible by both 3 and 4, print 'FizzBuzz'.
+If a number is divisible by both 3 and 5, print 'FizzBuzz'.
 
 For example:
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 
@@ -56,7 +56,7 @@ For example:
     * Nominate 1 person to share out 1 interesting thing your group discussed.
 
 
-**Keep and eye on Slack** We will be coming together to discuss your reflections!
+**Keep an eye on Slack** We will be coming together to discuss your reflections!
 
 <!-- I am really excited to see how this lab works! I like how it blends some exploration with a new tool (VS) while reinforcing concepts from previous lesosns. I think the temptation will be to focus mostly on the implementation of FizzBuzz, but we need to ensure we maintain a strong focus on the learning goals of utilziing an IDE. -->
 

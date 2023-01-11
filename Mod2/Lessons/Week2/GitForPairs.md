@@ -33,3 +33,16 @@ In this scenario, a developer (we'll call them **Player 1**) is creating a repos
 | Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>`git add` , `git commit` , `git push` | |
 | Add collaborator in GitHub | |
 | Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>`git add` , `git commit` , `git push`
+
+
+### Adding collaborators
+
+We've added a new step to the process: adding a collaborator. Player 1 has invited Player 2 to contribute to the repo. There are several options when adding a collaborator; in this case, we want both developers to have equal access and rights to the repository. 
+
+> 4. P2: Accept GitHub invitation
+> 1. P2: Create new branch
+
+| Player 1 | Player 2 |
+| -------- | -------- |
+| | Accept invitation on GitHub<br>Clone `US_States` repo to local
+| | Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>`git add` , `git commit` , `git push`

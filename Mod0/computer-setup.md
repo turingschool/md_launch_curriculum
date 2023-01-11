@@ -26,7 +26,7 @@ Chrome includes a set of Developer Tools that will come in handy down the road. 
 **Action Steps:**
 - _If you haven't already,_ [download and install Chrome](https://www.google.com/chrome/).
 - Set Chrome as your default browser: 
-  - In your Chrome window, select the More menu by clicking on the three dots.
+  - In your Chrome window, select the More menu by clicking on the three dots in the upper right corner.
   - Select `Settings` from the list.
   - In the Default browser section on the left, click `Make default`.
 
@@ -41,7 +41,7 @@ Slack is our main communication tool at Turing. **You will receive an invitation
 
 To ensure that you are prepared for your first session:
 - Watch the [Slack Tutorial Video](https://www.youtube.com/watch?v=tfq333EpWgM).
-- Upload a clear and appropriate headshot for your profile image.
+- Upload a clear and appropriate photo of yourself for your profile image.
 - [Set up your Slack profile](https://www.loom.com/share/6f10b796c90f40c09594899d71bf401a) to include your cohort, program, pronouns, and time zone.
 - It's a good idea to get in the habit of checking Slack daily starting now.
 
@@ -54,7 +54,7 @@ GitHub is a widely used platform that hosts code projects and allows for collabo
 **Action Steps:**
 - [Create an account on GitHub](https://github.com/). Please use your Turing email address.
 - [Update your GitHub Profile](https://github.com/settings/profile) and be sure that you choose a username, status, profile info, and picture that are appropriate for a professional setting. GitHub is a platform where future/potential employers will be reviewing your work.
-- [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
+- Bookmark the GitHub webpage on Chrome so that you can easily find it again later. [Here's how to create bookmarks in Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop).
 
 <br>
 
@@ -64,7 +64,7 @@ GitHub is a widely used platform that hosts code projects and allows for collabo
 
 Follow the steps below (if they are not necessary because you have already done them or have experience with replit, you can skip this):
 - Create a free account using your Turing email address.
-- [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
+- Bookmark the Replit webpage on Chrome so that you can easily find it again later. [Here's how](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop).
 - [Watch this video](https://www.youtube.com/watch?v=cnLE3bH6fHE) to learn how to navigate the interface and create new projects.
 
 <br>
@@ -74,7 +74,7 @@ Follow the steps below (if they are not necessary because you have already done 
 [Trello](https://trello.com/) is a Kanban-style project management tool we will use in Mod 0. It and other similar tools are used by most software developers to manage the tasks within a project.
 
 - Please create a free account with Trello using your Turing email address.
-- [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
+- Bookmark the Trello webpage on Chrome so that you can easily find it again later. [Here's how](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop).
 - Create a copy of your program's Mod 0 Trello board by following the steps below:
   1. Open the [Launch Mod 0 Trello Board]() to get started. *need link*
   1. In the upper right corner, select the `...Show menu` button.
@@ -88,7 +88,7 @@ Follow the steps below (if they are not necessary because you have already done 
 [Loom](https://www.loom.com/) is a free online video tool that allows you to create instantly shareable videos. With Loom, you can record your camera, microphone, and desktop simultaneously. You will be required to submit videos throughout Mod 0 as part of the coursework. Although you can use other tools to accomplish the same goal, we strongly recommend using Loom as it is extremely user-friendly.
 
 - Please create a free account with Loom using your Turing email address.
-- [Bookmark this webpage on Chrome](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop), so that you can easily find it again later.
+- Bookmark the Loom webpage on Chrome so that you can easily find it again later. [Here's how](https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop).
 - If you've never used Loom before, [watch this video](https://youtu.be/iugmJe8uDLE) to familiarize yourself with this tool.
 
 <br>

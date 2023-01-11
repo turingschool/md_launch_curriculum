@@ -102,3 +102,21 @@ Let's answer a question before it's asked: **YES**, even though Player 1 owns th
 The changes from both Player 1 and Player 2 have been merged. However, neither developer have ALL of the changes on their own local machine. Let's fix that.
 
 Player 1 will check out their `main` branch, then pull down the `main` branch from GitHub. Then Player 2 will do the same thing. Or maybe Player 2 does it first, then Player 1. Maybe they do it at the same time.
+
+
+### The Reality
+
+For the sake of education, this process was presented as a linear process: Player 1 does something while Player 2 waits. Then Player 2 does something while Player 1 waits. It's like a relay race.
+
+However, that's not usually the case. 
+
+| Player 1 | Player 2 |
+| -------- | -------- |
+| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>`git add` , `git commit` , `git push` | |
+| Add collaborator in GitHub | Accept invitation on GitHub<br>Clone `US_States` repo to local
+| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>`git add` , `git commit` , `git push`| Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>`git add` , `git commit` , `git push`<br>Create PR on GitHub |
+| Review and comment on Player 2's PR<br>Merge Pull Request<br>Pull `main` branch<br> Fix Merge Conflict<br>Add, Commit, Push<br>Create PR | |
+| | Review and comment on P1's PR<br>Merge Pull Request |
+| Checkout main branch<br>Pull `main` branch | Checkout main branch<br>Pull `main` branch |
+
+Once Player 1 invites Player 2 as a collaborator, much of the process happens simultaneously. There's little reason to "wait" for other developers to finish before working on a new task. In fact, either developer could move onto a new branch (perhaps `virginia` or `new_york`) while the other continues working. Making pull requests and fixing conflicts along the way is par for the course.

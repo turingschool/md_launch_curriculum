@@ -70,3 +70,14 @@ To that end, Player 2 will create a Pull Request (PR). A **Pull Request** inform
 | Review and comment on Player 2's PR<br>Merge Pull Request | |
 
 Player 1 can review, comment, and merge the Pull Request. Player 2 can also add commits to the PR. There can be several rounds of reviews, comments, and additional commits before it is merged.
+
+> 7. P1: Fix Merge Conflict
+
+| Player 1 | Player 2 |
+| -------- | -------- |
+| Still on `north_carolina` branch<br>`git pull origin main`<br>Fix Merge Conflict<br>`git add` , `git commit` , `git push` | |
+| Create Pull Request on GitHub | |
+
+There's **Good News** and _Bad News_. The **Good News** is that Player 2's content has been successfully merged into the shared repo. The _Bad News_ is that when we integrate those changes into our current branch, we encounter a pesky Merge Conflict. But there's more **Good News**: fixing a Merge Conflict when working with a collaborator is no more difficult than working solo.
+
+Once Player 1 fixes the Merge Conflict, they will update their branch and author a Pull Request of their own.

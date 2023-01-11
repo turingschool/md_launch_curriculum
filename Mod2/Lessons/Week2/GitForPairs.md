@@ -120,3 +120,11 @@ However, that's not usually the case.
 | Checkout main branch<br>Pull `main` branch | Checkout main branch<br>Pull `main` branch |
 
 Once Player 1 invites Player 2 as a collaborator, much of the process happens simultaneously. There's little reason to "wait" for other developers to finish before working on a new task. In fact, either developer could move onto a new branch (perhaps `virginia` or `new_york`) while the other continues working. Making pull requests and fixing conflicts along the way is par for the course.
+
+### Rules of Engagement
+
+You will practice this often when working in pairs and groups throughout your time at Turing and in your new career. There are a few basic rules you should follow:
+  1. **_NEVER_** work directly on the `main` branch. **NEVER** *EVER* *EVER* **_EVER_**.
+  1. Always checkout a new or existing branch. If there is an open Pull Request and you need to add or change something related to that content, checkout the existing branch. Otherwise, create/checkout a new branch.
+  1. A good habit is to prefix the branch you're working on with your initials: e.g. `rt/north_carolina` , `zf/colorado`. This easily informs all collaborators of the branch's author.
+  1. Did we mention to never work on the `main` branch?

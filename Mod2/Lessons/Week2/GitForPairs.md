@@ -46,3 +46,13 @@ We've added a new step to the process: adding a collaborator. Player 1 has invit
 | -------- | -------- |
 | | Accept invitation on GitHub<br>Clone `US_States` repo to local
 | | Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>`git add` , `git commit` , `git push`
+
+### Cloning a repository
+
+Player 2 has performed two important tasks. First, they have cloned the repo created by Player 1. To clone a repository means to copy a remote Github repository to your local computer using the following command:
+
+```
+git clone <SSH KEY for repository>
+```
+
+When you clone a repository, you interact with that repository by pushing and pulling branches. Therefore, when you are working with teammates, i.e. in a group project, you all need to clone the same repository so that you are all working in the same code base.

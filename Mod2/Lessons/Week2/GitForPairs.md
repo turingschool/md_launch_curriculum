@@ -56,3 +56,17 @@ git clone <SSH KEY for repository>
 ```
 
 When you clone a repository, you interact with that repository by pushing and pulling branches. Therefore, when you are working with teammates, i.e. in a group project, you all need to clone the same repository so that you are all working in the same code base.
+
+### Pull Request
+
+Second, Player 2 has created content in a separate branch, but it not yet merged with the `main` branch. We've discussed how to merge branches, but we want one additional step to ensure that both developers agree on the content.
+
+To that end, Player 2 will create a Pull Request (PR). A **Pull Request** informs all collaborators of the changes made to a branch and the desire to merge this branch with another branch (usually the `main` branch).
+
+> 6. P2: Create Pull Request on GitHub
+
+| Player 1 | Player 2 |
+| -------- | -------- |
+| Review and comment on Player 2's PR<br>Merge Pull Request | |
+
+Player 1 can review, comment, and merge the Pull Request. Player 2 can also add commits to the PR. There can be several rounds of reviews, comments, and additional commits before it is merged.

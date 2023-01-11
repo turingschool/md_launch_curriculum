@@ -81,3 +81,24 @@ Player 1 can review, comment, and merge the Pull Request. Player 2 can also add 
 There's **Good News** and _Bad News_. The **Good News** is that Player 2's content has been successfully merged into the shared repo. The _Bad News_ is that when we integrate those changes into our current branch, we encounter a pesky Merge Conflict. But there's more **Good News**: fixing a Merge Conflict when working with a collaborator is no more difficult than working solo.
 
 Once Player 1 fixes the Merge Conflict, they will update their branch and author a Pull Request of their own.
+
+### Merge and Update Main Branch
+
+> P2: Merge PR and Update `main` branch
+
+| Player 1 | Player 2 |
+| -------- | -------- |
+| | Review and comment on Player 1's PR<br>Merge Pull Request
+
+Let's answer a question before it's asked: **YES**, even though Player 1 owns this repo, they also make pull requests so that their changes are reviewed by the other collaborators. And **YES**, the process for Player 2 is the same.
+
+> P1 & P2: Sync local repo
+
+| Player 1 | Player 2 |
+| -------- | -------- |
+| Checkout main branch<br>git pull origin main | |
+| | Checkout main branch<br>git pull origin main
+
+The changes from both Player 1 and Player 2 have been merged. However, neither developer have ALL of the changes on their own local machine. Let's fix that.
+
+Player 1 will check out their `main` branch, then pull down the `main` branch from GitHub. Then Player 2 will do the same thing. Or maybe Player 2 does it first, then Player 1. Maybe they do it at the same time.

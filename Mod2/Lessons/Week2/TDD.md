@@ -133,7 +133,7 @@ Customer Test
 
 ## Types of Tests
 
-When writing a program, you will likely have smaller methods that support each other to create greater functionality.  Often, these might be wrapped in some kind of runner method, or chained together for a grand result.  The tests for these methods are actually different kinds of tests.  There are four commonly referred to types of tests that build upon each other:
+When writing a program, you will likely have smaller methods that support each other to create greater functionality.  Often, these might be wrapped in some kind of runner method, or chained together for a grand result.  The tests for these methods are different kinds of tests.  There are four commonly referred to types of tests that build upon each other:
 
 * Programmer-centric:
     * **Unit Test** - tests one component (method) in isolation.

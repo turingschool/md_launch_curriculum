@@ -128,4 +128,5 @@ You will practice this often when working in pairs and groups throughout your ti
   1. **_NEVER_** work directly on the `main` branch. **NEVER** *EVER* *EVER* **_EVER_**.
   1. Always checkout a new or existing branch. If there is an open Pull Request and you need to add or change something related to that content, checkout the existing branch. Otherwise, create/checkout a new branch.
   1. A good habit is to prefix the branch you're working on with your initials: e.g. `rt/north_carolina` , `zf/colorado`. This easily informs all collaborators of the branch's author.
+  1. Another good habit: if you are working with collaborators, try to avoid approving and merging your own Pull Requests. Another developer should perform those tasks. In a team of two, the non-author of the PR should approve and merge it. With a team of three or more, it's not uncommon that another developer will approve the PR, and a _third_ developer will merge it.
   1. Did we mention to never work on the `main` branch?

@@ -7,7 +7,8 @@ permalink:  git-for-pairs
 # Git for Pairs
 
 ## Learning Goals
-  * 
+  * Outline a workflow for collaborating on a single repository
+  * Identify and resolve merge conflicts
 
 ## Vocabulary
   * Pull Request (PR)

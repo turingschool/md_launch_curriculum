@@ -4,7 +4,8 @@ There are many ways that objects can relate to each other.  There can be a *one 
 
 ## Learning Goals
 * Review Primary Key and Foreign Key
-* Understand and Visualize One-to-One, One-to-Many, and Many-to-Many relationships
+* Visualize One-to-One, One-to-Many, and Many-to-Many relationships
+* Implement a Many-to-Many relationship using a join table
 * Practice describing different relationships
 
 ## Warmup
@@ -92,6 +93,10 @@ In a many-to-many relationship both sides of the relationship reference multiple
 
 ## Implementing a Many-To-Many Relationship
 
+<p align='center'>
+  <img src='../../Images/Week2/many_to_many_bad.png'>
+</p>
+
 So far, we have used foreign keys to create relationships. The problem is that a foreign key can identify a single record from another table, but in a many-to-many both sides of the relationship need to reference multiple records. This means that we’re going to need more than just foreign keys.
 
 One solution that might come to mind is, instead of our foreign keys storing a single id, we could store an array of ids. This is a good guess, but in a database there is no concept of an array. The reason is that, for the database to be efficient, it needs to know the exact size of the datatype it is storing. For example, our DB knows exactly how much space an integer takes up (8 bytes).
@@ -104,53 +109,32 @@ The key takeaway here is a database can’t store an array of ids, so we’re go
 ## Join Tables
 Since we can’t achieve the many-to-many relationship with our given tables, we are going to add a third table to manage this relationship. This is called a join table.
 
-Songs Table
-id	title	length	play_count	artist_id
-1	This Must Be the Place	345	23	1
-2	Aint No Bread in the Breadbox	432	12	1
-3	Reuben and Cherise	367	45	2
-4	Purple Rain	183	49	3
-
-PlaylistSongs Table
-
-id	playlist_id	song_id
-1	1	1
-2	1	2
-3	1	3
-4	2	4
-5	3	2
-6	3	4
-
-Playlists Table
-id	name
-1	Classic Rock
-2	Uplifting Sound
-3	Jerry Jams
+<p align='center'>
+  <img src='../../Images/Week2/many_to_many_good.png'>
+</p>
 
 Note: Join tables are just ordinary tables with a unique purpose. Each row of our join table relates a row of one table to a row of another table.
 
 Turn and Talk: Which songs are associated with which playlists?
 
-The join table’s name doesn’t really matter. We could call it song_playlists or playlist_songs, it’s really up to you as the developer. You could even choose to name it happy_fun_times but that would be confusing.
+The join table’s name doesn’t really matter. We could call it Song_Playlist or Playlist_Song, it’s really up to you as the developer. You could even choose to name it happy_fun_times but that would be confusing.
 
 When you’re thinking about what to call this table, think about how you’re likely to use it most within your application. Since our app’s goal will be to show a playlist of songs more often, we’re going to call it playlist_songs.
 
 Note: Don’t confuse join table with a sql joins operation. They are two different things.
 
-<!-- Should we include the SQL commands here or nah? I'm thinking nah. -->
-
 
 ## ERD Practice
 
-These diagrams used to visualize data relationships are called Entity Relationship Diagrams, ERDs for short. Let's take a look at a larger ERD.
+These diagrams we've been drawing to visualize data relationships are called Entity Relationship Diagrams, ERDs for short. Let's take a look at a larger ERD.
 
 <p align='center'>
   <img src='../../Images/Week2/car_accident_ERD.png'>
 </p>
 
-Annotate it up! What type of relationships do you see?
+Annotate this diagram as much as you can! What type of relationships do you see? Do you see any primary or foreign keys?
 
-Write as many sentences as you can about the relationships shown here. 
+Then, write sentences to describe these relationships.
 
 <details><summary>Annotated Car Accident ERD</summary><br/>
 
@@ -162,14 +146,7 @@ Write as many sentences as you can about the relationships shown here.
 
 This ERD is from the [Visual Paradigm](https://circle.visual-paradigm.com/category/system-design-development/entity-relationship-diagram/) website. They have many more examples if you want more practice!
 
-
-
-
-<!-- This goes in the lab!!! -->
-
-<!-- Students take some of the examples from earlier, determine if one-to-one, one-to-many, or many-to-many and then draw ERD to represent the relationship -->
-
-Minimum one of each, including the many to many of books and authors. Make very clear this is different than songs and artists, that's one to many, this is many to many.
+There are more nuanced symbols you can use, such as the open circle. [Here](https://vertabelo.com/blog/crow-s-foot-notation/) is a blog post if you want to learn more.
 
 
 ## Checks for Understanding

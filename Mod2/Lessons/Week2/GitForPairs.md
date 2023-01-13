@@ -16,7 +16,7 @@ permalink:  git-for-pairs
   * Fork repo
 
 ## Review
-> If necessary, review the following video lessons from Version Control with Git/Github
+> Review the following video lessons from Version Control with Git/Github:
   >1. [Create A Project and Initialize a Git Repository](https://www.loom.com/share/d3af392e059147a699ce6ac1af65d251)
   >1. [Add Commits to the Git Repository](https://www.loom.com/share/b7373e5aaad646c790965422719bb993)  
   >1. [Creating and Pushing to a Github Repository](https://www.loom.com/share/dba188a5f13e43059d9a84b630280c53)
@@ -113,9 +113,9 @@ However, that's not usually the case.
 
 | Player 1 | Player 2 |
 | -------- | -------- |
-| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>`git add` , `git commit` , `git push` | |
+| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>Add, Commit, Push | |
 | Add collaborator in GitHub | Accept invitation on GitHub<br>Clone `US_States` repo to local
-| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>`git add` , `git commit` , `git push`| Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>`git add` , `git commit` , `git push`<br>Create PR on GitHub |
+| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>Add, Commit, Push| Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push<br>Create PR on GitHub |
 | Review and comment on Player 2's PR<br>Merge Pull Request<br>Pull `main` branch<br> Fix Merge Conflict<br>Add, Commit, Push<br>Create PR | |
 | | Review and comment on P1's PR<br>Merge Pull Request |
 | Checkout main branch<br>Pull `main` branch | Checkout main branch<br>Pull `main` branch |

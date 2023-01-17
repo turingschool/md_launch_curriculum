@@ -48,6 +48,7 @@
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week5/Refactoring.md)
 * 🎒[Unit Tests II](/Mod1/Lessons/Week5/UnitTestingII.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week5/UnitTestingII.md)
+* 🎒[Scope and Access Modifiers](/Mod1/Lessons/Week5/scope.md)
 * 🧪Module Assessment
 * 🎒Module Review
 ### [Project](/Mod1/Project/Index.md)
@@ -89,11 +90,14 @@ Test DB connections and records
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
 ### Week 3
-* Lesson: Data Relationships (One to One, One to Many, Many to Many)
-    - Develop a visualization for different relationships
-    - Define Primary and Foreign keys
-    - Practice describing different relationships  
-  Lab Project: Add an Author Table to the Library Db
+* ➡️[Preparation: Data Relationships](/Mod2/Preparation/Week3/DataRelationships.md)
+* 🎒[Lesson: Data Relationships](/Mod2/Lessons/Week3/DataRelationships.md) (One to One, One to Many, Many to Many)
+    * Solidify understanding of Primary Keys and Foreign Keys
+    * Visualize One-to-One, One-to-Many, and Many-to-Many relationships
+    * Implement a Many-to-Many relationship using a join table
+    * Practice describing different relationships 
+* 💡 [Lab/Exercise](/Mod2/Labs/Week3/DataRelationships.md)
+    * Lab Project: Add an Author Table to the Library Db (many-to-many)
 * Lesson: SQL JOINS
     - Use JOIN to query related records
     - Use WHERE to filter joined queries  

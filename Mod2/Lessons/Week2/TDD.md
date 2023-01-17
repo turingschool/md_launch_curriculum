@@ -9,12 +9,12 @@
 
 ## Why Write Tests
 
-It can be especially difficult to get started on a new project or even a new iteration of a project. The essence of testing is asking questions and coming up with difficult answers.
+Getting started on a new project, or a new feature in an existing project, can be difficult.  Sometimes it is hard to know where to start, or what functionality you should build.  This is where _design_ comes in; it is easier to start coding when you have an idea of the classes that will make up a project.  One tool we have to help us design our projects is testing.
 
 Testing compels you to make hard decisions early, and upfront. This is scary because you are making decisions in a context you don’t understand.
-Testing (especially in the context of TDD) is a discipline tool that forces you to a) be specific about what you are trying to do and b) stay focused on that objective.
+Testing (especially in the context of Test Driven Development) is a discipline tool that forces you to a) be specific about what you are trying to do and b) stay focused on that objective.
 
-Having a robust test suite is a way for us to be good to our future selves; and provides us with several advantages:
+Having a robust test suite is a way for us to be good to our future selves and our future teammates; and provides us with several advantages:
 1. _Refactor with Confidence_: When we decide we want to make a change to how we’ve implemented our code, we can make that change while ensuring that we know the code as a whole still works.
 2. _Add New Features with Confidence_: This also allows us to add new features with confidence. Sometimes it’s difficult to know how code we add may impact functionality that we’ve already provided. A test suite tells us when something new we’ve done has broken something else we did before.
 3. _Roadmap to Future Collaborators_: It’s very rare that someone will work on code alone - and if they do, they may be doing it over time. Your test suite serves as a roadmap of the codebase; another developer or future-you should be able to skim through the codebase and get a feel for what the code does, and where to find certain things in it.
@@ -62,12 +62,14 @@ We want to be able to see the total cost of an order, as well as the total a cus
 ** Instructor Note ** Prompt students to start looking at the class outline after 10 minutes - they do not need to brainstorm a full solution.
 
 <details><summary>Class Outline</summary><br/>
-![Class Ouline](/Mod2/Images/Week2/littleshopclassoutline.png)
+    <p align='center'>
+        <img src='../../Images/Week2/littleshopclassoutline.png'>
+    </p>
 </details>
 
 ### Writing our First Test
 
-We are going to start by creating tests for the Item class (because it is the simplest class 🙂).
+We are going to start by creating tests for the Item class (because it is one of the simplest 🙂).
 
 >Individually:
 >1. Create a new Console Application in Visual Studio, called `LittleShop`.
@@ -79,7 +81,9 @@ We are going to start by creating tests for the Item class (because it is the si
 >In small groups, review the tests you each created.  Take turns sharing your screens and asking questions.  Be ready to share out!
 
 <details><summary>Item Tests</summary><br/>
-![](/Mod2/Images/Week2/ItemTest.png)
+    <p align='center'>
+        <img src='../../Images/Week2/ItemTest.png'>
+    </p>
 </details>
 
 With this test created, we can see that Visual Studio is already giving us some insight into what we should do first in our implementation.  We see that `Item` is underlined in red - meaning that we don't have an Item class in scope. We are going to use feedback from our tests to determine how to implement the class.
@@ -91,9 +95,11 @@ Using TDD, we want to implement **only** the code required to clear a specific e
 > With a partner, take 5 minutes to determine the smallest amount of coding we need to do in order to resolve this first issue.
 
 <details><summary>Solution</summary><br/>
-The only thing we need to do is create an Item class (and add the project reference).  Doing that will clear the first issue, and presents us with new errors!
+<p>The only thing we need to do is create an Item class (and add the project reference).  Doing that will clear the first issue, and presents us with new errors!</p>
 
-![](/Mod2/Images/Week2/ItemClassCreated.png)
+<p align='center'>
+    <img src='../../Images/Week2/ItemClassCreated.png'>
+</p>
 </details>
 
 One of the biggest benefits of TDD is that we _only create the code that we need_.  Following TDD should ensure that we are not creating unnecessary code.  But, to get this benefit, we need to make **small, incremental** changes.  You should repeat the following steps:
@@ -107,28 +113,54 @@ One of the biggest benefits of TDD is that we _only create the code that we need
 ** Instructor Note ** Be sure to ask them at what point they started running the test to see what to do next.  It is possible (likely) that students have not run the tests at all - they may rely only on the text editor's feedback to determine what to do next. Following the steps above, they _should_ get to a point where the properties are created but are not assigned to the constructor argument values.
 
 <details><summary>Completed Item Class</summary><br/>
-![](/Mod2/Images/Week2/ItemClassComplete.png)
+<p align='center'>
+    <img src='../../Images/Week2/ItemClassComplete.png'>
+</p>
 </details>
 
+### TDD the Customer Class
 
-### TDD the Customer and Order Class
+> With a partner:
+> 1. Follow the same process as you did for the Item tests above to create the tests for our Customer class.
+> 2. When finished, compare your tests to the Solution below.  
+> 3. **AFTER** the tests are written, implement the Customer class.
+
+<details><summary>Customer Tests</summary><br/>
+    <p align='center'>
+        <img src='../../Images/Week2/CustomerTest.png'>
+    </p>
+</details>
+
+### TDD the Order Class
 
 Using TDD often shows us how interdependent our classes can be. This forces us to imagine not only what the classes will look like, but also how they will work together.  
 
-> With a partner, create the tests for the Customer class and Order class.
+> With a partner, create the tests for the Order class.
 > As you work, reach out with **any** questions!
 
 ** Instructor Note ** As you review groups' code, keep an eye on issues and bring the group back together to discuss common misunderstandings. When students are ready to move on to the Order, help them brainstorm what the Item List might look like.
 
-<details><summary>Completed Customer and Order Tests</summary><br/> 
-Order Test
-![](/Mod2/Images/Week2/OrderTest.png)
-
-Customer Test
-![](/Mod2/Images/Week2/CustomerTest.png)
+<details><summary>Order Tests</summary><br/> 
+    <p align='center'>
+        <img src='../../Images/Week2/OrderTest.png'>
+    </p>
 </details>
 
-> With a partner, use your tests to drive the implementation of the Customer and Order classes.
+> With a partner, use your tests to drive the implementation of the Order class.
+
+### TDD the Shop Class
+
+> With a partner, create the tests for the Shop class.
+> As you work, reach out with **any** questions!
+> The Total Revenue for the shop should be a sum of all order totals.
+
+<details><summary>Shop Tests</summary><br/> 
+    <p align='center'>
+        <img src='../../Images/Week2/ShopTest.png'>
+    </p>
+</details>
+
+> With a partner, use your tests to drive the implementation of the Shop class.
 
 
 ## Types of Tests
@@ -145,6 +177,10 @@ When writing a program, you will likely have smaller methods that support each o
 When you move into web development projects in later modules, you will rely more on Feature and Acceptance testing.  During modules 1 and 2, we are only using Unit and Integration tests.
 
 > With a partner, review the tests that we have created today.  Identify which are unit tests, and which are integration tests.  Be ready to share out!
+
+## A Note About Testing on the Job
+
+In this lesson, we really focused on writing tests **first**.  We enforced this practice by writing all of the tests for a class before implmenting _any_ code.  On the job, it is not likely that you will write **all** tests for a class prior to implementing anything.  It is more typical that you will write a single test, then implement the code to make that test pass, then write another test, and implement the code to make that new test pass.  You would continue in that pattern until the full functionality is complete.
 
 ## Check for Understanding
 * In your own words, describe the process of TDD.

@@ -22,6 +22,8 @@ The library should be able to tell us which books are NOT checked out.
 
 Be ready to share your brainstorm!  As a cohort, we will develop one class diagram that we will use to build our tests.
 
+** Instructor Note ** Ideally, students will come up with classes for Library, Book, and Patrion.
+
 ### Build Tests
 
 **Individually**

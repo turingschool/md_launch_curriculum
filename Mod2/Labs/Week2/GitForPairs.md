@@ -23,7 +23,7 @@ Player 1 has the following responsibilies:
   * Add a file that holds a list of everyone's favorite restaurant.
   * Commit and push the main branch to Github.
   * Add Player 2 as a collaborator.
-  * Create a new branch with your initials followed by the name (or abbreviation) of your favorite restaurant (e.g. `rt/red_lobster`).
+  * Create a new branch with your initials followed by the name (or abbreviation) of your favorite restaurant (e.g. `rt-red-lobster`).
   * In your branch, add a separate file with information on your favorite restaurant: name, location, why it is your favorite restaurant, your favorite dish, etc.
   * Add your name and the name of your favorite restaurant to the list.
   * Commit and push your branch to Github.
@@ -33,7 +33,7 @@ Player 1 has the following responsibilies:
 
 Player 2 has the following responsibilies:
   * Accept the invitation from Player 1.
-  * Create a new branch with your initials followed by the name (or abbreviation) of your favorite restaurant (e.g. `mm/ruths_chris`).
+  * Create a new branch with your initials followed by the name (or abbreviation) of your favorite restaurant (e.g. `mm-ruths-chris`).
   * In your branch, add a separate file with information on your favorite restaurant: name, location, why it is your favorite restaurant, your favorite dish, etc.
   * Add your name and the name of your favorite restaurant to the list.
   * Commit and push your branch to Github.
@@ -50,7 +50,7 @@ Player 2 has the following responsibilies:
   * Add a file that holds a list of everyone's favorite movies.
   * Commit and push the main branch to Github.
   * Add Player 1 as a collaborator.
-  * Create a new branch with your initials followed by the name of your favorite movie (e.g. `mm/social_network`).
+  * Create a new branch with your initials followed by the name of your favorite movie (e.g. `mm-social-network`).
   * In your branch, add a separate file with information on your favorite movie: name, year of release, characters, why it is your favorite movie, etc.
   * Add your name and the name of your favorite movie to the list.
   * Commit and push your branch to Github.
@@ -60,7 +60,7 @@ Player 2 has the following responsibilies:
 
 Player 1 has the following responsibilies:
   * Accept the invitation from Player 2.
-  * Create a new branch with your initials followed by the name of your favorite movie (e.g. `rt/black_panther`).
+  * Create a new branch with your initials followed by the name of your favorite movie (e.g. `rt-black-panther`).
   * In your branch, add a separate file with information on your favorite movie: name, year of release, characters, why it is your favorite movie, etc.
   * Add your name and the name of your favorite movie to the list.
   * Commit and push your branch to Github.

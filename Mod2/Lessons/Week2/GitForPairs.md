@@ -74,7 +74,7 @@ Player 1 can review, comment, and merge the Pull Request. Player 2 can also add 
 
 | Player 1 | Player 2 |
 | -------- | -------- |
-| Still on `north_carolina` branch<br>`git pull origin main`<br>Fix Merge Conflict<br>Add, Commit, Push to GitHub | |
+| Still on `north_carolina` branch:<br> - Merge in `main` branch<br> - Fix Merge Conflict<br> - Add, Commit, Push to GitHub | |
 | Create Pull Request on GitHub | |
 
 There's **Good News** and _Bad News_. The **Good News** is that Player 2's content has been successfully merged into the shared repo. The _Bad News_ is that when we integrate those changes into our current branch, we encounter a pesky Merge Conflict. But there's more **Good News**: fixing a Merge Conflict when working with a collaborator is no more difficult than working solo.
@@ -95,13 +95,12 @@ Let's answer a question before it's asked: **YES**, even though Player 1 owns th
 
 | Player 1 | Player 2 |
 | -------- | -------- |
-| Checkout main branch<br>git pull origin main | |
-| | Checkout main branch<br>git pull origin main
+| Checkout `main` branch<br>Pull `main` branch | |
+| | Checkout `main` branch<br>Pull `main` branch |
 
 The changes from both Player 1 and Player 2 have been merged. However, neither developer have ALL of the changes on their own local machine. Let's fix that.
 
 Player 1 will check out their `main` branch, then pull down the `main` branch from GitHub. Then Player 2 will do the same thing. Or maybe Player 2 does it first, then Player 1. Maybe they do it at the same time.
-
 
 ### The Reality
 
@@ -113,10 +112,10 @@ However, that's not usually the case.
 | -------- | -------- |
 | Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>Add, Commit, Push to GitHub | |
 | Add collaborator in GitHub<br>&nbsp;| Accept invitation on GitHub<br>Clone `US_States` repo to local
-| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>Add, Commit, Push to GitHub | Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push<br>Create PR on GitHub |
+| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>Add, Commit, Push to GitHub<br>&nbsp; | Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push<br>Create PR on GitHub |
 | Review and comment on Player 2's PR<br>Merge Pull Request<br>Pull `main` branch<br> Fix Merge Conflict<br>Add, Commit, Push to GitHub<br>Create PR on GitHub | |
 | | Review and comment on P1's PR<br>Merge Pull Request |
-| Checkout main branch<br>Pull `main` branch | Checkout main branch<br>Pull `main` branch |
+| Checkout `main` branch<br>Pull `main` branch | Checkout `main` branch<br>Pull `main` branch |
 
 Once Player 1 invites Player 2 as a collaborator, much of the process happens simultaneously. There's little reason to "wait" for other developers to finish before working on a new task. In fact, either developer could move onto a new branch (perhaps `virginia` or `new_york`) while the other continues working. Making pull requests and fixing conflicts along the way is par for the course.
 
@@ -125,6 +124,6 @@ Once Player 1 invites Player 2 as a collaborator, much of the process happens si
 You will practice this often when working in pairs and groups throughout your time at Turing and in your new career. There are a few basic rules you should follow:
   1. **_NEVER_** work directly on the `main` branch. **NEVER** *EVER* *EVER* **_EVER_**.
   1. Always checkout a new or existing branch. If there is an open Pull Request and you need to add or change something related to that content, checkout the existing branch. Otherwise, create/checkout a new branch.
-  1. A good habit is to prefix the branch you're working on with your initials: e.g. `rt/north_carolina` , `zf/colorado`. This easily informs all collaborators of the branch's author.
+  1. A good habit is to prefix the branch you're working on with your initials: e.g. `rt-north-carolina` , `zf-colorado`. This easily informs all collaborators of the branch's author.
   1. Another good habit: if you are working with collaborators, try to avoid approving and merging your own Pull Requests. Another developer should perform those tasks. In a team of two, the non-author of the PR should approve and merge it. With a team of three or more, it's not uncommon that another developer will approve the PR, and a _third_ developer will merge it.
   1. Did we mention to never work on the `main` branch?

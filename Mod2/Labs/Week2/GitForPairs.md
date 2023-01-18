@@ -38,7 +38,7 @@ Player 2 has the following responsibilies:
   * Add your name and the name of your favorite restaurant to the list.
   * Commit and push your branch to Github.
   * Make a PR for your branch.
-  * Review and merge the PR from Player 2. Fix any merge conflicts.
+  * Review and merge the PR from Player 1. Fix any merge conflicts.
   * After both Pull Requests have been merged, pull the `main` branch from Github.
 
 ### Part 2

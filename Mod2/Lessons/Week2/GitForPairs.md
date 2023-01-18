@@ -21,6 +21,9 @@ permalink:  git-for-pairs
   >1. [Add Commits to the Git Repository](https://www.loom.com/share/b7373e5aaad646c790965422719bb993)  
   >1. [Creating and Pushing to a Github Repository](https://www.loom.com/share/dba188a5f13e43059d9a84b630280c53)
 
+## Pair Programming
+
+Pair Programming is a technique in which two software developers work together on a problem. We commonly refer to it as Pairing. The concept of pairing comes from the Agile Methodology, which you’ll learn more about during your time at Turing.
 
 ## Paired Process
 In this scenario, a developer (we'll call them **Player 1**) is creating a repository about the 50 U.S. states. Player 1 recruits another developer (let's call them **Player 2**) to assist.
@@ -31,9 +34,9 @@ In this scenario, a developer (we'll call them **Player 1**) is creating a repos
 
 | Player 1 | Player 2 |
 | -------- | -------- |
-| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>`git add` , `git commit` , `git push` | |
+| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>Add, Commit, Push to GitHub | |
 | Add collaborator in GitHub | |
-| Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>`git add` , `git commit` , `git push`
+| Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push to GitHub
 
 
 ### Adding collaborators
@@ -46,17 +49,11 @@ We've added a new step to the process: adding a collaborator. Player 1 has invit
 | Player 1 | Player 2 |
 | -------- | -------- |
 | | Accept invitation on GitHub<br>Clone `US_States` repo to local
-| | Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>`git add` , `git commit` , `git push`
+| | Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>Add, Commit, Push to GitHub
 
 ### Cloning a repository
 
-Player 2 has performed two important tasks. First, they have cloned the repo created by Player 1. To clone a repository means to copy a remote Github repository to your local computer using the following command:
-
-```
-git clone <SSH KEY for repository>
-```
-
-When you clone a repository, you interact with that repository by pushing and pulling branches. Therefore, when you are working with teammates, i.e. in a group project, you all need to clone the same repository so that you are all working in the same code base.
+Player 2 has performed two important tasks. First, they have cloned the repo created by Player 1. To clone a repository means to copy a remote Github repository to your local computer. You interact with that repository by pushing and pulling branches. Therefore, when you are working with teammates, i.e. in a group project, you all need to clone the same repository so that you are all working in the same code base.
 
 ### Pull Request
 
@@ -72,11 +69,12 @@ To that end, Player 2 will create a Pull Request (PR). A **Pull Request** inform
 
 Player 1 can review, comment, and merge the Pull Request. Player 2 can also add commits to the PR. There can be several rounds of reviews, comments, and additional commits before it is merged.
 
-> 7. P1: Fix Merge Conflict
+> 7. P1: Review Pull Request
+> 1. P1: Fix Merge Conflict
 
 | Player 1 | Player 2 |
 | -------- | -------- |
-| Still on `north_carolina` branch<br>`git pull origin main`<br>Fix Merge Conflict<br>`git add` , `git commit` , `git push` | |
+| Still on `north_carolina` branch<br>`git pull origin main`<br>Fix Merge Conflict<br>Add, Commit, Push to GitHub | |
 | Create Pull Request on GitHub | |
 
 There's **Good News** and _Bad News_. The **Good News** is that Player 2's content has been successfully merged into the shared repo. The _Bad News_ is that when we integrate those changes into our current branch, we encounter a pesky Merge Conflict. But there's more **Good News**: fixing a Merge Conflict when working with a collaborator is no more difficult than working solo.
@@ -85,7 +83,7 @@ Once Player 1 fixes the Merge Conflict, they will update their branch and author
 
 ### Merge and Update Main Branch
 
-> P2: Merge PR and Update `main` branch
+> 9. P2: Merge PR and Update `main` branch
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -93,7 +91,7 @@ Once Player 1 fixes the Merge Conflict, they will update their branch and author
 
 Let's answer a question before it's asked: **YES**, even though Player 1 owns this repo, they also make pull requests so that their changes are reviewed by the other collaborators. And **YES**, the process for Player 2 is the same.
 
-> P1 & P2: Sync local repo
+> 10. P1 & P2: Sync local repo
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -113,10 +111,10 @@ However, that's not usually the case.
 
 | Player 1 | Player 2 |
 | -------- | -------- |
-| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>Add, Commit, Push | |
-| Add collaborator in GitHub | Accept invitation on GitHub<br>Clone `US_States` repo to local
-| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>Add, Commit, Push| Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push<br>Create PR on GitHub |
-| Review and comment on Player 2's PR<br>Merge Pull Request<br>Pull `main` branch<br> Fix Merge Conflict<br>Add, Commit, Push<br>Create PR | |
+| Create new local repo: `US_States`<br>Add `all_states.txt` file<br>Add title to `all_states.txt` file<br>Add, Commit, Push to GitHub | |
+| Add collaborator in GitHub<br>&nbsp;| Accept invitation on GitHub<br>Clone `US_States` repo to local
+| Checkout new branch: `colorado`<br>Add `colorado.txt` file<br>Add "Colorado" to `all_states.txt` file<br>Add, Commit, Push to GitHub | Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push<br>Create PR on GitHub |
+| Review and comment on Player 2's PR<br>Merge Pull Request<br>Pull `main` branch<br> Fix Merge Conflict<br>Add, Commit, Push to GitHub<br>Create PR on GitHub | |
 | | Review and comment on P1's PR<br>Merge Pull Request |
 | Checkout main branch<br>Pull `main` branch | Checkout main branch<br>Pull `main` branch |
 

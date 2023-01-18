@@ -2,6 +2,13 @@
 
 [Syllabus](https://docs.google.com/document/d/1mG_CBgZsy_mTbdaKlpmaLlnNlNQlSNGHFQ1hJKsR_qY/edit)
 
+## Mod 0
+### Day 1
+### Day 2
+### Day 3
+### Day 4
+
+
 ## Mod 1
 ### Week 1
 * 🎒[Intro to Programming (How Computers Work)](/Mod1/Lessons/Week1/introToProgramming.md)

@@ -1,43 +1,49 @@
 ## Learning Goals
 
-* Understand and Visualize a SQL join query
+* Visualize and practice a SQL join query
 * Use WHERE to filter joined queries 
+* Understand the difference between an inner join and a left join
 
-<!-- Question, are all three joins necessary here? -->
-<!-- What will happen if there is nothing to join on in one of the tables, data not there. There are other types of joins you can learn about to return all the data -->
-
-<!-- Practice with adding where clause to join. -->
-
-<!-- Maybe bring in some practice with the store db for the lab in addition to the library? -->
+<!-- TODO: Delete this link to BE lesson before merging -->
+https://docs.google.com/presentation/d/175ycpUYkQp8kmxrZrxaq-0wk63Uq0aFXL7l3cGX9O98/edit#slide=id.g11fafc7594a_0_59
 
 
-<!-- Maybe something with which queries would require a join? -->
+## Warm Up Challenge
 
-<!-- Aliasing as something extra to learn -->
+Let's keep practicing with our Songs and Artists tables.
 
+<p align='center'>
+  <img src='../../Images/Week3/1_to_many_db_image_5.png'>
+</p>
 
-## Warm Up
+For each of the following, what is the SQLcommand we would use to get this information:
+  - Get all song titles  
+  - Get the songs with a play count greater than 100
+  - Get the artists that have a hometown of Minneapolis, sorted alphabetically  
 
-For each of the following, what is the SQLcommand we would use to get this information (in our SetList app):  
-    - Get all songs  
-    - Get the lengths of all songs  
-    - Get the songs with a play count greater than 0  
-    - Get the titles of the songs with a play count greater than zero, sorted alphabetically  
-    - Get the length of the song with the most plays
-
+  Extra challenge!
+  - Get the 5 longest songs that have the word “bad” in the title and at least 100 plays
 
 ## Joining Tables
 
 ### The SQL Join Query
 
-So far, we have looked at SQL and ActiveRecord queries that deal only with one table, or we have asked our database for information related to a single resource.  But you will sometimes need to run queries based on information from more than one table.  When we come up against this problem, we rely on `JOIN` queries to accomplish this goal.
+So far, we have looked at SQL queries that deal only with one table. But you will sometimes need to run queries based on information from more than one table. Maybe our query involves both songs and artists!
 
-At the highest level, a `JOIN` pulls information from multiple tables into one temporary table.  Let's use our SetList app to see how this works.
+For example: 
+- Find the artists with songs that have been played more than 100 times
+- Find all songs where the artist name contains “Prince”
 
-In your terminal, run the following command to open your set_list_development database `rails dbconsole`, and let's take a look at our `songs` and `artists` tables:
+When we come up against this problem, we rely on `JOIN` queries to accomplish this goal.
+
+A `JOIN` pulls information from multiple tables into one temporary table.  Let's see how this works.
+
+
+<!-- Change this to PG admin -->
+In PG Admin, let's take a look at our `songs` and `artists` tables:
 
 ```
-set_list_development=# SELECT * FROM songs;
+SELECT * FROM songs;
 
 id |      title      | length | play_count | artist_id
 ----+-----------------+--------+------------+-----------
@@ -48,7 +54,7 @@ id |      title      | length | play_count | artist_id
 ```
 
 ```
-set_list_development=# SELECT * FROM artists;
+SELECT * FROM artists;
 
 id |      name      
 ----+----------------
@@ -61,7 +67,7 @@ id |      name
 Above, we see our songs and artists table - what happens if we `JOIN` these tables together?
 
 ```
-set_list_development=# SELECT artists.*, songs.* FROM songs JOIN artists ON artists.id = songs.artist_id;
+SELECT artists.*, songs.* FROM songs JOIN artists ON artists.id = songs.artist_id;
 
 id |     name      | id |      title      | play_count | length | artist_id
 ----+---------------+----+-----------------+------------+--------+-----------
@@ -73,104 +79,84 @@ id |     name      | id |      title      | play_count | length | artist_id
 
 **Turn and Talk** What did this query do? How might you describe the return value of this query?
 
-When we run this `JOIN`, we are _joining_ the songs and artists tables together to form a return value that is a table that includes all the information from _both_ tables. For each artist, we see a row for each song that they have, with the information from both the artists table and the songs table.
+When we run this `JOIN`, we are _joining_ the songs and artists tables together to return a table that includes all the information from _both_ tables. For each artist, we see a row for each song that they have, with the information from both the artists table and the songs table.
 
-When creating a `JOIN` query, there are three parts essential to the query:
+When creating a `JOIN` query, there are three essential parts:
 
   1. `SELECT` - this is what indicates which columns will be included in the resulting table
-  2. `ON` - this tells the join _how_ to join this two tables together, or what is the relationship between the two tables (most often, primary key = foreign key)
-  3. `JOIN` - the command to join to tables together!
-
+      - `SELECT * FROM songs`
+  2. `JOIN` - the command to join in data from another table
+      - `JOIN artists`
+  3. `ON` - this tells the join _how_ to join the two tables together, or what is the relationship between the two tables (most often, primary key = foreign key)
+      - `ON artists.id = songs.artist_id`
+  
 Looking at our joined table, what information could seem to be missing? What happened to `Zac Brown Band`?
 
 **Turn and Talk** Why are we not seeing _all_ our artists on this joined table?
 
-### Types of Join Queries
+<!-- Now add another song where the artist isn't in the table. Pause for predictions, and run the join again. -->
 
-When we create `JOIN` queries, there are a handful of different join types that we can declare that will affect the resulting table.  Today, we are going to cover 3 of those join types: **Left Join**, **Inner Join**, and **Right Join**
+## Types of Join Queries
 
-#### Inner Join
+When we create `JOIN` queries, there are a handful of different join types that we can declare that will affect the resulting table.  Today, we are going to cover the most common two: **Inner Join** and **Left Join**
 
-The default `JOIN` type in SQL is an **Inner JOIN**.  An inner join will grab only the information from the two tables where the information matches the `ON` condition - in our example above, it will grab only information for artists who have songs, and their song information.  This relationship is often visualized like this:
+### Inner Join
+<p align='center'>
+  <img src='../../Images/Week3/inner_join_venn_diagram.png'>
+</p>
 
-<img src='./images/inner_join.png'>
+The default `JOIN` type in SQL is an **Inner JOIN**.  
 
-#### Left Join
+- Default join type (This is what we've been doing so far when we use the SQL keyword `JOIN`)
+- Only returns records that match the ON condition
+- Only returns records from table A that have a corresponding record in table B
 
-The next most common `JOIN` type is a **Left Join**.  A left join will get all the records from one table, regardless of if they have corresponding rows in the joined table.  If we run a left join in our setlist app, it could look like this:
 
-```
-set_list_development=# SELECT artists.id, artists.name, songs.id, songs.title FROM artists LEFT JOIN songs ON songs.artist_id = artists.id;
- id |      name      | id |      title      
-----+----------------+----+-----------------
-  1 | Talking Heads  |  1 | And She Was
-  1 | Talking Heads  |  2 | Wild Wild Life
-  2 | Prince         |  3 | Raspberry Beret
-  3 | Zac Brown Band |    |
-(4 rows)
-```
+<p align='center'>
+  <img src='../../Images/Week3/inner_join_before.png'>
+</p>
 
-Now, we see 'Zac Brown Band' even though that artist has no songs.  We visualize this relationship like this:
+<p align='center'>
+  <img src='../../Images/Week3/inner_join_after.png'>
+</p>
 
-<img src='./images/left_join.png'>
+### Left Join
 
-### Right Join
+<p align='center'>
+  <img src='../../Images/Week3/left_join_venn_diagram.png'>
+</p>
 
-The last of these join types is a **Right Join** which will get only records from one table if they match with records from the joined table and will get all records from the joined table regardless of if they have a corresponding record from the starting table. We can visualize the join like this:
 
-<img src='./images/right_join.png'>
+The next most common `JOIN` type is a **Left Join**.  
 
-### Joining in ActiveRecord
+- Will get all records from table A regardless of if they have corresponding rows in table B
+- “Left” refers to the first table referenced in the query
+  - FROM artists LEFT JOIN songs artists is the “LEFT” table
 
-So what does all this look like in ActiveRecord?  Open a new tab in your terminal and open your console with `rails c`.
-
-In ActiveRecord, similar to how we can create a SQL `WHERE` with `.where`, we can use `.joins` to create a SQL `JOIN` query!
-
-```
-irb(main):001:0> Artist.joins(:songs)
-  Artist Load (3.4ms)  SELECT  "artists".* FROM "artists" INNER JOIN "songs" ON "songs"."artist_id" = "artists"."id" LIMIT $1  [["LIMIT", 11]]
-
-=> #<ActiveRecord::Relation [#<Artist id: 1, name: "Talking Heads", created_at: "2019-05-02 14:51:17", updated_at: "2019-05-02 14:51:17">,
-                             #<Artist id: 1, name: "Talking Heads", created_at: "2019-05-02 14:51:17", updated_at: "2019-05-02 14:51:17">,
-                             #<Artist id: 2, name: "Prince", created_at: "2019-05-02 14:51:18", updated_at: "2019-05-02 14:51:18">]>
-```
-
-**Turn and Talk** Why are we not seeing any song information in this ActiveRecord::Relation?
-
-Take a look at the SQL query that is generated with the ActiveRecord method call:
+Example: 
+```SQL
+SELECT artists.id, artists.name, songs.id, songs.title 
+FROM artists 
+LEFT JOIN songs 
+ON songs.artist_id = artists.id;
 
 ```
-SELECT  "artists".* FROM "artists" INNER JOIN "songs" ON "songs"."artist_id" = "artists"."id" LIMIT $1  [["LIMIT", 11]]
-```
 
-This is only SELECTing from our artists table.  If we want to change what is being SELECTed, we need to manually override the select like this:
+<p align='center'>
+  <img src='../../Images/Week3/left_join_before.png'>
+</p>
 
-```
-irb(main):014:0> Artist.select('artists.*, songs.*').joins(:songs)
-  Artist Load (1.3ms)  SELECT  artists.*, songs.* FROM "artists" INNER JOIN "songs" ON "songs"."artist_id" = "artists"."id" LIMIT $1  [["LIMIT", 11]]
-```
+<p align='center'>
+  <img src='../../Images/Week3/left_join_after.png'>
+</p>
 
-Now, we are SELECTing from artists _and_ songs, but has our return value changed? Unfortunately, no. Because we are starting our ActiveRecord query from our Artist model, ActiveRecord will try to create Artist objects from the resulting data; so, we don't see the song information, but it is actually there!  We can access it on each of the resulting 'artist' objects:
-
-```
-irb(main):015:0> first_record = Artist.select('artists.*, songs.*').joins(:songs).first
-  Artist Load (1.8ms)  SELECT  artists.*, songs.* FROM "artists" INNER JOIN "songs" ON "songs"."artist_id" = "artists"."id" ORDER BY "artists"."id" ASC LIMIT $1  [["LIMIT", 1]]
-=> #<Artist id: 2, name: "Talking Heads", created_at: "2019-05-02 14:51:18", updated_at: "2019-05-02 14:51:18">
-
-irb(main):016:0> first_record.title
-=> "Wild Wild Life"
-
-irb(main):017:0> first_record.length
-=> 456
-
-irb(main):018:0> first_record.play_count
-=> 894
-```
+Now, we see 'Jerry Garcia Band' even though that artist has no songs.
 
 ## Practice
 
-Let's see this in action by imagining that we might want to be able to get a list of artists who have songs longer than '400'.  Work with a partner to get this information using both SQL and ActiveRecord.  
+With your partner: Write a SQL query would to retrieve a list of artists who have songs longer than '400'.
 
+<!-- Make this drop down -->
 #### SQL
 ```
 set_list_development=# SELECT artists.name FROM artists JOIN songs ON artists.id = songs.artist_id WHERE songs.length > 400;
@@ -181,17 +167,24 @@ set_list_development=# SELECT artists.name FROM artists JOIN songs ON artists.id
 (1 row)
 ```
 
+### Combining `JOIN` and `WHERE`
 
-#### ActiveRecord
-```
-irb(main):021:0> Artist.joins(:songs).where('songs.length > ?', 400)
-  Artist Load (1.1ms)  SELECT  "artists".* FROM "artists" INNER JOIN "songs" ON "songs"."artist_id" = "artists"."id" WHERE (songs.length > 400) LIMIT $1  [["LIMIT", 11]]
-=> #<ActiveRecord::Relation [#<Artist id: 1, name: "Talking Heads", created_at: "2019-05-02 14:51:17", updated_at: "2019-05-02 14:51:17">]>
-```
+<!-- Practice filtering using where in combination with a join -->
+
+<!-- Open question, should multiple joins be here e.g. 
+
+SELECT * FROM songs JOIN playlist_songs ON playlist_songs.song_id = songs.id 
+JOIN playlists ON playlist_songs.playlist_id = playlists.id
+ -->
 
 ## Checks for Understanding
 
-1. What are the three types of joins covered today? And, what do they return?
+1. What are the two types of joins covered today? And, what do they return?
+1. What is the default type of join used when you just type `JOIN`?
 1. What is the SQL query to get a list of Artists who have songs that have been played more than 20 times?
-1. What is the ActiveRecord query to get a list of Artists who have songs that have been played more than 20 times?
-1. Looking back at your LaughTracks project, what would be the SQL and ActiveRecord queries to get a count of specials for comedians of a certain age?
+1. Which of the following queries would require a join. 
+    1. dfd
+    1. sdfs
+    1. dsfs
+    1. sdfsd
+1. How would you summarize when/why you need to use a join?

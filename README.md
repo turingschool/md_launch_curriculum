@@ -4,9 +4,24 @@
 
 ## Mod 0
 ### Day 1
+* Computer Setup [Richard's awesome setup]()
+* Communication via Slack NEED RESOURCE
+* Typing with Code Characters [typing.io](https://typing.io/lesson/csharp/asp.net/CSharpCodeParser.cs/1)
 ### Day 2
+* Google Productivity 
+    - [Calendaring](https://mod0.turing.edu/shared/calendaring)
+    - [gmail] NEED RESOURCE
+* [Observations and Decision Making in Programming](/Mod0/TechnicalDay1.md)
+
 ### Day 3
+* Google Office
+    - [Drive] NEED RESOURCE
+    - [Docs] NEED RESOURCE
+    - [Slides] NEED RESOURCE
+* [Keeping Track of Information in Programming](/Mod0/TechnicalDay2.md)
 ### Day 4
+* Prep for Presentations NEED RESOURCE
+* Presentations
 
 
 ## Mod 1

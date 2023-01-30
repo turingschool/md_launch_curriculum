@@ -1,6 +1,6 @@
 # How Humans Keep Track of Information and What That Means for Programming
 
-Like yesterday, this is an introduction designed to get you looking at code, getting familiar with syntax, and starting to think like a developer.  You are NOT expected to master any topics today!
+Like yesterday, this is an introduction designed to get you looking at code, getting familiar with syntax, and starting to think like a developer.  The expectation is that you will NOT master any topics today!
 
 ### Humans categorize information and things
 * dogs

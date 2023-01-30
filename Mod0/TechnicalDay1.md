@@ -1,8 +1,9 @@
 # How Humans make Decisions and What That Means for Programming
 
-This is an introduction designed to get you looking at code, getting familiar with syntax, and starting to think like a developer.  You are NOT expected to master any topics today!
+This is an introduction designed to get you looking at code, getting familiar with syntax, and starting to think like a developer.  The expectation is that you will NOT master any topics today!
 
 ## We make decisions by Observing, Analyzing Options, Acting
+<some example>
 
 ## Computer Action
 [Outputting Information](https://www.w3schools.com/cs/cs_output.php) - Walk through each `Try it yourself`

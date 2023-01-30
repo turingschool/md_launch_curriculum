@@ -57,6 +57,8 @@ public void DogHasNameAttribute()
 1. Why is it good practice to have someone else approve and/or merge your PR?
 
 ## Exercise
-* Git Workflow
+
+![Follow the instructions on this repo!](https://github.com/turingschool-examples/Launch-Mod2-AnimalTracker)
 
 ## Rubric
+

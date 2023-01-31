@@ -1,12 +1,48 @@
 ## Learning Goals
 
-* Visualize and practice a SQL join query
-* Use WHERE to filter joined queries 
+* Visualize and practice SQL join queries
+* Use WHERE and JOIN together
 * Understand the difference between an inner join and a left join
 
-<!-- TODO: Delete this link to BE lesson before merging -->
-https://docs.google.com/presentation/d/175ycpUYkQp8kmxrZrxaq-0wk63Uq0aFXL7l3cGX9O98/edit#slide=id.g11fafc7594a_0_59
+<!-- Instructor note, script if needed to get everyone at the same spot. -->
 
+```sql
+DROP TABLE songs, artists;
+
+CREATE TABLE artists (
+	id serial PRIMARY KEY,
+	name varchar(255),
+	hometown varchar(255),
+	years_active varchar(255)
+);
+
+
+CREATE TABLE songs (
+	id serial PRIMARY KEY,
+	title varchar(50),
+	length int,
+	play_count int,
+  artist_id int REFERENCES artists
+);
+
+INSERT INTO 
+	artists ( 
+		name, hometown, years_active
+	)
+VALUES
+	('Prince','Minneapolis','1975-2016'),
+	('Talking Heads','New York','1975-1991');
+
+
+INSERT INTO 
+  songs ( 
+    title, length, play_count, artist_id
+  )
+VALUES
+('Purple Rain',345,23,1),
+('Raspberry Beret',432,12,1),
+('Wild Wild Life',367,45,2);
+```
 
 ## Warm Up Challenge
 
@@ -16,14 +52,22 @@ Let's keep practicing with our Songs and Artists tables.
   <img src='../../Images/Week3/1_to_many_db_image_5.png'>
 </p>
 
-For each of the following, what is the SQLcommand we would use to get this information:
+For each of the following, what is the SQL command we would use to get this information:
   - Get all song titles  
-  - Get the songs with a play count greater than 100
-  - Get the artists that have a hometown of Minneapolis, sorted alphabetically  
+  - Get the songs with a play count greater than 40
+  - Get the artists that have a hometown of Minneapolis, sorted alphabetically by name
 
   Extra challenge!
-  - Get the 5 longest songs that have the word “bad” in the title and at least 100 plays
+  - Get the 5 longest songs that have the letter p in the title
 
+<!-- Instructor note,
+
+SELECT title FROM songs;
+SELECT * from songs where play_count > 40;
+SELECT * from artists where hometown = 'Minneapolis' ORDER BY name ASC;
+SELECT * from songs where title ILIKE '%p%' ORDER BY length DESC limit 5;
+
+ -->
 ## Joining Tables
 
 ### The SQL Join Query
@@ -32,36 +76,34 @@ So far, we have looked at SQL queries that deal only with one table. But you wil
 
 For example: 
 - Find the artists with songs that have been played more than 100 times
-- Find all songs where the artist name contains “Prince”
+- Find all songs where the artist names contains “Prince”
 
 When we come up against this problem, we rely on `JOIN` queries to accomplish this goal.
 
 A `JOIN` pulls information from multiple tables into one temporary table.  Let's see how this works.
 
 
-<!-- Change this to PG admin -->
 In PG Admin, let's take a look at our `songs` and `artists` tables:
 
 ```
-SELECT * FROM songs;
+SELECT * FROM songs;       434 |         2
 
 id |      title      | length | play_count | artist_id
-----+-----------------+--------+------------+-----------
- 1 | And She Was     |    234 |         23 |         1
- 2 | Wild Wild Life  |    456 |        894 |         1
- 3 | Raspberry Beret |    340 |        434 |         2
+---+-----------------+--------+------------+-----------
+ 1 | Purple Rain     |    345 |         23 |         1
+ 2 | Raspberry Beret |    432 |         12 |         1
+ 3 | Wild Wild Life  |    367 |        367 |         2
 (3 rows)
 ```
 
-```
+``` 
 SELECT * FROM artists;
 
-id |      name      
-----+----------------
- 1 | Talking Heads
- 2 | Prince
- 3 | Zac Brown Band
-(3 rows)
+id |      name      |  hometown    | years_active      
+----+---------------+--------------+-------------
+ 1 | Prince         | Minneapolis  | 1975-2016
+ 2 | Talking Heads  | New York     | 1975-1991
+(2 rows)
 ```
 
 Above, we see our songs and artists table - what happens if we `JOIN` these tables together?
@@ -69,11 +111,11 @@ Above, we see our songs and artists table - what happens if we `JOIN` these tabl
 ```
 SELECT artists.*, songs.* FROM songs JOIN artists ON artists.id = songs.artist_id;
 
-id |     name      | id |      title      | play_count | length | artist_id
-----+---------------+----+-----------------+------------+--------+-----------
- 1 | Talking Heads |  1 | And She Was     |         23 |    234 |         1
- 1 | Talking Heads |  2 | Wild Wild Life  |        894 |    456 |         1
- 2 | Prince        |  3 | Raspberry Beret |        434 |    340 |         2
+id |     name      | hometown     | years_active | id |      title      | length     | play_count | artist_id
+---+---------------+--------------+--------------+----+-----------------+------------+------------+----------
+ 1 | Prince        |  Minneapolis | 1975-2016    | 1  | Purple Rain     |        345 |        23  |         1
+ 1 | Prince        |  Minneapolis | 1975-2016    | 2  | Raspberry Beret |        432 |        12  |         1
+ 2 | Talking Heads |  New York    | 1975-1991    | 3  | Wild Wild Life  |        367 |       367  |         2
 (3 rows)
 ```
 
@@ -89,16 +131,58 @@ When creating a `JOIN` query, there are three essential parts:
       - `JOIN artists`
   3. `ON` - this tells the join _how_ to join the two tables together, or what is the relationship between the two tables (most often, primary key = foreign key)
       - `ON artists.id = songs.artist_id`
-  
-Looking at our joined table, what information could seem to be missing? What happened to `Zac Brown Band`?
 
-**Turn and Talk** Why are we not seeing _all_ our artists on this joined table?
+Let's now add another artist, Zac Brown Band.
 
-<!-- Now add another song where the artist isn't in the table. Pause for predictions, and run the join again. -->
+```SQL
+INSERT INTO 
+	artists ( 
+		name, hometown, years_active
+	)
+VALUES
+	('Zach Brown Band','Atlanta','2002-Present');
+```
 
+> **With Your Partner** Run the `JOIN` again, `Zac Brown Band` is not returned in the data! Why are we not seeing _all_ our artists on this joined table?
+
+
+
+Let's now add a song where we don't know the artist info.
+
+```SQL
+INSERT INTO 
+	songs ( 
+		title, length, play_count
+	)
+VALUES
+	('Wow such a great song', 10, 1000);
+```
+Do you think this data will be returned when we run our `JOIN`? Let's pause and predict and then run it!
+
+<!-- Add dropdown spoiler -->
+
+<details><summary>Spoiler</summary><br/>
+<p align='center'>
+The song without an artist was <b>not</b> returned in the join.
+</p>
+</details>
+
+
+# Venn Diagram Review
+When we create `JOIN` queries, there are a handful of different join types that we can declare that will affect the resulting table. We can use Venn Diagrams to represent what data will be returned for each type of join.
+
+Let's review the images you looked at in preparation for this lesson.
+
+<p align='center'>
+  <img src='../../Images/Week3/venn_diagrams.png'>
+</p>
+
+> **With Your Breakout Room** Explain what each of the shaded regions represents. What animals did you put in each region?
+
+<!-- Instructor note, it would be awesome for students to annotate and add animals to the image or use pair deck or something here. -->
 ## Types of Join Queries
 
-When we create `JOIN` queries, there are a handful of different join types that we can declare that will affect the resulting table.  Today, we are going to cover the most common two: **Inner Join** and **Left Join**
+While there are many different types of joins, today, we are going to cover the most common two: **Inner Join** and **Left Join**
 
 ### Inner Join
 <p align='center'>
@@ -150,41 +234,47 @@ ON songs.artist_id = artists.id;
   <img src='../../Images/Week3/left_join_after.png'>
 </p>
 
-Now, we see 'Jerry Garcia Band' even though that artist has no songs.
+Now, we see bands even if they have no songs.
 
-## Practice
-
-With your partner: Write a SQL query would to retrieve a list of artists who have songs longer than '400'.
-
-<!-- Make this drop down -->
-#### SQL
-```
-set_list_development=# SELECT artists.name FROM artists JOIN songs ON artists.id = songs.artist_id WHERE songs.length > 400;
-
-     name      
----------------
- Talking Heads
-(1 row)
-```
 
 ### Combining `JOIN` and `WHERE`
 
-<!-- Practice filtering using where in combination with a join -->
+With your partner: Write a SQL query would to retrieve a list of artists who have songs longer than '400'.
 
-<!-- Open question, should multiple joins be here e.g. 
+<details><summary>Completed Query</summary><br/>
+<p align='center'>
 
-SELECT * FROM songs JOIN playlist_songs ON playlist_songs.song_id = songs.id 
-JOIN playlists ON playlist_songs.playlist_id = playlists.id
- -->
+```SQL 
+SELECT artists.name FROM artists JOIN songs ON artists.id = songs.artist_id WHERE songs.length > 400;
+```
+</p>
+</details>
+</br>
+
+### More Advanced Joins
+
+Take a minute to look at this query. What tables are being joined here?
+
+```SQL
+SELECT * FROM songs JOIN playlists_songs ON playlists_songs.song_id = songs.id 
+JOIN playlists ON playlists_songs.playlist_id = playlists.id
+```
+
+<details><summary>Spoiler</summary><br/>
+<p>
+Did you see how we start by selecting everything form our songs table and then we join in data from <b>two</b> additional tables. We first bring in the data from our playlists_songs join table and then we bring in the data from our playlists table.
+
+Don't worry about fully understanding a query with multiple joins, but it's good to know this is an option. You can research this more if in the future you need to join the data in a many-to-many relationship.
+</p>
+</details>
 
 ## Checks for Understanding
 
 1. What are the two types of joins covered today? And, what do they return?
 1. What is the default type of join used when you just type `JOIN`?
 1. What is the SQL query to get a list of Artists who have songs that have been played more than 20 times?
-1. Which of the following queries would require a join. 
-    1. dfd
-    1. sdfs
-    1. dsfs
-    1. sdfsd
+1. Which of the following queries would require a join.
+    1. Find all of the songs with titles that start with the letter z written by artists from New York.
+    1. Find the 10 most listened to songs
+    1. Where is the most popular artist from?
 1. How would you summarize when/why you need to use a join?

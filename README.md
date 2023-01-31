@@ -81,10 +81,10 @@ Test DB connections and records
         * Lab Project: Use SQL to insert and query library records in the DB
 ### Week 2
 * ➡️[Preparation: TDD](/Mod2/Preparation/TDD.md)
-* Lesson: Test Driven Development
+* 🎒[Lesson: Test Driven Development](/Mod2/Lessons/Week2/TDD.md)
     - Describe the benefits of TDD
     - Practice a TDD workflow
-* Lab/Exercise
+* 💡[Lab/Exercise](/Mod2/Labs/Week2/TDD.md)
     * Lab Project: use TDD to create classes for library records
 * Lesson: Git for Pairs
     - Outline a workflow for collaborating on a single repository

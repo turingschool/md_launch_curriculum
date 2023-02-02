@@ -28,9 +28,9 @@ Pair Programming is a technique in which two software developers work together o
 ## Paired Process
 In this scenario, a developer (we'll call them **Player 1**) is creating a repository about the 50 U.S. states. Player 1 recruits another developer (let's call them **Player 2**) to assist.
 
-> 1. P1: Create new local repo
-> 1. P1: Add collaborator in Github
-> 1. P1: Create new branch
+> 1. P1: [Create new local repo](https://www.loom.com/share/71a517ddc5f94a1b8c8f32960e44e6cc)
+> 1. P1: [Add collaborator in Github](https://www.loom.com/share/81b90d19934e4be1ba630124cf0fdaa7)
+> 1. P1: [Create new branch](https://www.loom.com/share/a216eda4c9fa4a0d881528ef8e5458ff)
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -38,13 +38,11 @@ In this scenario, a developer (we'll call them **Player 1**) is creating a repos
 | Add collaborator in GitHub | |
 | Checkout new branch: `north_carolina`<br>Add `north_carolina.txt` file<br>Add "North Carolina" to `all_states.txt` file<br>Add, Commit, Push to GitHub
 
-
 ### Adding collaborators
 
 We've added a new step to the process: adding a collaborator. Player 1 has invited Player 2 to contribute to the repo. There are several options when adding a collaborator; in this case, we want both developers to have equal access and rights to the repository. 
 
-> 4. P2: Accept GitHub invitation
-> 1. P2: Create new branch
+> 4. P2: [Accept GitHub invitation](https://www.loom.com/share/f0e4dce877054420877fcd51ddfad6ea)
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -61,7 +59,7 @@ Second, Player 2 has created content in a separate branch, but it not yet merged
 
 To that end, Player 2 will create a Pull Request (PR). A **Pull Request** informs all collaborators of the changes made to a branch and the desire to merge this branch with another branch (usually the `main` branch).
 
-> 6. P2: Create Pull Request on GitHub
+> 5. P2: Create Pull Request on GitHub
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -69,8 +67,7 @@ To that end, Player 2 will create a Pull Request (PR). A **Pull Request** inform
 
 Player 1 can review, comment, and merge the Pull Request. Player 2 can also add commits to the PR. There can be several rounds of reviews, comments, and additional commits before it is merged.
 
-> 7. P1: Review Pull Request
-> 1. P1: Fix Merge Conflict
+> 6. P1: [Review Pull Request and Resolve Merge Conflict](https://www.loom.com/share/7f89993c4b4b41b38e204863242ed03d)
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -83,7 +80,7 @@ Once Player 1 fixes the Merge Conflict, they will update their branch and author
 
 ### Merge and Update Main Branch
 
-> 9. P2: Merge PR and Update `main` branch
+> 7. P1: [Fetch and Pull `main` branch](https://www.loom.com/share/09cbbc6bc2f348a89b944ebd6e0b7cf2)
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -91,7 +88,7 @@ Once Player 1 fixes the Merge Conflict, they will update their branch and author
 
 Let's answer a question before it's asked: **YES**, even though Player 1 owns this repo, they also make pull requests so that their changes are reviewed by the other collaborators. And **YES**, the process for Player 2 is the same.
 
-> 10. P1 & P2: Sync local repo
+> 8. P1 & P2: Sync local repo
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -120,6 +117,8 @@ However, that's not usually the case.
 Once Player 1 invites Player 2 as a collaborator, much of the process happens simultaneously. There's little reason to "wait" for other developers to finish before working on a new task. In fact, either developer could move onto a new branch (perhaps `virginia` or `new_york`) while the other continues working. Making pull requests and fixing conflicts along the way is par for the course.
 
 ### Rules of Engagement
+
+> 9. [Git Pairing Tips](https://www.loom.com/share/0dcb9eb1cc4945408a749e20739fcb58)
 
 You will practice this often when working in pairs and groups throughout your time at Turing and in your new career. There are a few basic rules you should follow:
   1. **_NEVER_** work directly on the `main` branch. **NEVER** *EVER* *EVER* **_EVER_**.

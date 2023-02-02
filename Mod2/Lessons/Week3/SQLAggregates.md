@@ -12,7 +12,8 @@ CREATE TABLE artists (
 	id serial PRIMARY KEY,
 	name varchar(255),
 	hometown varchar(255),
-	years_active varchar(255)
+	years_active varchar(255),
+    genre varchar(255)
 );
 
 
@@ -30,12 +31,12 @@ CREATE TABLE songs (
 For this lesson, you will want to have a good amount of data in your Set List database.  Use the script below to insert songs and artists into your database:
 
 ```
-INSERT INTO artists ( name, hometown, years_active )
+INSERT INTO artists ( name, hometown, years_active, genre )
 VALUES
-	('Prince','Minneapolis','1975-2016'),
-	('Talking Heads','New York','1975-1991'),
-    ('Blondie', 'New York', '1974-1982, 1997-Present'),
-    ('Madonna', 'Bay City, MI', '1979-Present');
+	('Prince','Minneapolis','1975-2016', 'funk'),
+	('Talking Heads','New York','1975-1991', 'new wave'),
+    ('Blondie', 'New York', '1974-1982, 1997-Present', 'funk'),
+    ('Madonna', 'Bay City, MI', '1979-Present', 'pop');
 
 
 INSERT INTO songs ( title, length, play_count, artist_id )
@@ -115,9 +116,9 @@ Grouping allows us to arrange data into sub-sections (groups) so that we can ans
 
 Using `GROUP BY` is a bit more complicated than only using Aggregate functions. As you build your query, you need to determine what to do (or not do) with every column in your table.
 
-** Instructor Note ** Instead of watching the video below, you could walk through an example in real-time.
+** Instructor Note ** You should walk through an example in addition to, or instead of the video. Draw students' attention to some confusing pieces of using multiple aggregators (like seeing count as a column name multiple times). `SELECT COUNT(name), COUNT(years_active) FROM artists GROUP BY hometown;`
 
-Watch [this short video](https://www.loom.com/share/4ce05601a3654b4c99ae2ecb40560fab) that walks through building a grouped aggregate statement on the `artists` table.  In the video, the narrator has one additional column to show that you _can_ group and include multiple aggregates if you want to or need to.  If you would like to try out a version of the SQL statement from the video, use the script below:
+Watch [this short video](https://www.loom.com/share/4ce05601a3654b4c99ae2ecb40560fab) that walks through building a grouped aggregate statement on the `artists` table.  If you would like to try out a version of the SQL statement from the video, you can use the script below:
 
 ```sql
 SELECT hometown, COUNT(name) FROM artists
@@ -132,7 +133,7 @@ GROUP BY hometown;
     When you are using aggregates, it can be difficult sometimes to determine what information is showing up in your result set.  Try running the two SQL statements below:
     </p>
     <code>SELECT hometown, COUNT(name) FROM artists GROUP BY hometown;</code></br>
-    <code>SELECT hometown, COUNT(name) AS count_of_artists FROM artists GROUP BY hometown;</code>
+    <code>SELECT hometown, COUNT(name) AS count_of_unique_artist_names FROM artists GROUP BY hometown;</code>
     </br>
     </br>
     <p>

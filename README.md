@@ -107,6 +107,7 @@ Test DB connections and records
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions  
   Lab Project: Use SQL to query some Library Statistics
+* PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
 * Lesson: Intro to ORM (Migrations & Schema)
     - Define ORM

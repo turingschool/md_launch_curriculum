@@ -12,21 +12,21 @@ DROP TABLE books, patrons;
 
 CREATE TABLE patrons (
 	id serial PRIMARY KEY,
-	FirstName varchar(50),
-	LastName varchar(50),
-	PhoneNumber varchar(10)
+	first_name varchar(50),
+	last_name varchar(50),
+	phone_number varchar(10)
 );
 
 CREATE TABLE books (
 	id serial PRIMARY KEY,
-	Title varchar(255),
-	Author varchar(255),
-	CheckedOutBy int REFERENCES patrons
+	title varchar(255),
+	author varchar(255),
+	checked_out_by int REFERENCES patrons
 );
 
 INSERT INTO 
   patrons ( 
-    FirstName, LastName, PhoneNumber
+    first_name, last_name, phone_number
   )
 VALUES
 ('Zoe', 'Farrell', '1231231234'),
@@ -35,7 +35,7 @@ VALUES
 
 INSERT INTO 
   books ( 
-    Title, Author, CheckedOutBy
+    title, author, checked_out_by
   )
 VALUES
 ('Winter Counts', 'David Heska Wanbli Weiden', 1),
@@ -53,7 +53,7 @@ Write a `JOIN` query to join the patrons and books data that only returns books 
 <details><summary>Spoiler</summary><br/>
 
 ```SQL
-SELECT books.*, patrons.* FROM books JOIN patrons ON books.CheckedOutBy = patrons.id;
+SELECT books.*, patrons.* FROM books JOIN patrons ON books.checked_out_by = patrons.id;
 ```
 
 </details>
@@ -63,7 +63,7 @@ Write a `JOIN` query to join the patrons and books data that returns all books, 
 <details><summary>Spoiler</summary><br/>
 
 ```SQL
-SELECT books.*, patrons.* FROM books LEFT JOIN patrons ON books.CheckedOutBy = patrons.id;
+SELECT books.*, patrons.* FROM books LEFT JOIN patrons ON books.checked_out_by = patrons.id;
 ```
 
 </details>
@@ -97,7 +97,7 @@ This is a tricky question, try building your query bit by bit instead of trying 
 <details><summary>Spoiler</summary><br/>
 
 ```SQL
-select count(*) from books LEFT JOIN patrons ON books.CheckedOutBy = patrons.id WHERE patrons.PhoneNumber = '1111111111' AND author = 'David Heska Wanbli Weiden';
+select count(*) from books LEFT JOIN patrons ON books.checked_out_by = patrons.id WHERE patrons.phone_number = '1111111111' AND author = 'David Heska Wanbli Weiden';
 ```
 
 </details>

@@ -85,9 +85,11 @@ Test DB connections and records
     - Practice a TDD workflow
 * Lab/Exercise
     * Lab Project: use TDD to create classes for library records
-* Lesson: Git for Pairs
+* 🎒[Lesson: Git for Pairs](Mod2/Lessons/Week2/GitForPairs.md)
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
+* 💡[Lab/Exercise](/Mod2/Labs/Week2/GitForPairs.md)
+    - 
 ### Week 3
 * Lesson: Data Relationships (One to One, One to Many, Many to Many)
     - Develop a visualization for different relationships

@@ -89,7 +89,10 @@ Test DB connections and records
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
 * 💡[Lab/Exercise](/Mod2/Labs/Week2/GitForPairs.md)
-    - 
+    - Add collaborator to GitHub repository
+    - Create and checkout branches in Git
+    - Practice basic Git workflow (add, commit, push, pull)
+    - Create, review, and merge Pull Requests
 ### Week 3
 * Lesson: Data Relationships (One to One, One to Many, Many to Many)
     - Develop a visualization for different relationships

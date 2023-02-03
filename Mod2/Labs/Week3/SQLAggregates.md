@@ -14,7 +14,7 @@ _A note on historic data_: Today, we strive to collect data that is accurate to 
 ### Setup
 
 1. In pgAdmin, create a database called `titanic`
-2. Run [this script]() to set up the database.
+2. Run [this script](/Mod2/Labs/Week3/passengers.txt) to set up the database.
 
 ### Questions
 

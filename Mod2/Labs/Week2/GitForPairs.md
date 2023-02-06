@@ -20,7 +20,7 @@ Player 1 is the owner of the repo and will add Player 2 as a collaborator.
 
 Player 1 has the following responsibilies:
   * Create a repository titled `FavoriteRestaurants`.
-  * Add a file that holds a list of everyone's favorite restaurant.
+  * Add a file that will hold a list of everyone's favorite restaurants.
   * Commit and push the main branch to Github.
   * Add Player 2 as a collaborator.
   * Create a new branch with your initials followed by the name (or abbreviation) of your favorite restaurant (e.g. `rt-red-lobster`).

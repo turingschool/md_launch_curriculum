@@ -30,7 +30,7 @@ In this scenario, a developer (we'll call them **Player 1**) is creating a repos
 
 > 1. P1: [Create new local repo](https://www.loom.com/share/71a517ddc5f94a1b8c8f32960e44e6cc)
 > 1. P1: [Add collaborator in Github](https://www.loom.com/share/81b90d19934e4be1ba630124cf0fdaa7)
-> 1. P1: [Create new branch](https://www.loom.com/share/a216eda4c9fa4a0d881528ef8e5458ff)
+> 1. P1: [Create new branch and Pull Request](https://www.loom.com/share/a216eda4c9fa4a0d881528ef8e5458ff)
 
 | Player 1 | Player 2 |
 | -------- | -------- |
@@ -58,8 +58,6 @@ Player 2 has performed two important tasks. First, they have cloned the repo cre
 Second, Player 2 has created content in a separate branch, but it not yet merged with the `main` branch. We've discussed how to merge branches, but we want one additional step to ensure that both developers agree on the content.
 
 To that end, Player 2 will create a Pull Request (PR). A **Pull Request** informs all collaborators of the changes made to a branch and the desire to merge this branch with another branch (usually the `main` branch).
-
-> 5. P2: Create Pull Request on GitHub
 
 | Player 1 | Player 2 |
 | -------- | -------- |

@@ -107,26 +107,40 @@ Test DB connections and records
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions  
   Lab Project: Use SQL to query some Library Statistics
+
+Other ORM Learning Goals that need to go somewhere
+- Work with one-to-many relationship using an ORM
+- Work with many-to-many relationship using an ORM
+- Write Asynchronous code when interacting with DB? Asynchronous code was introduced in EF 6. Not sure if it's crucial or a bonus...The tutorials I'm seeing start with sync, then have a "How to use async" section. https://www.entityframeworktutorial.net/crud-operation-in-connected-scenario-entity-framework.aspx
+- Should retrieving the data go in the intro to ORM lesson? Feels like that helps build the full picture, but don't want to much in one day.
+
 ### Week 4
+* Lesson: Intro to LINQ
+    - Use LINQ syntax with collections not related to a Database
+    - For example syntax such as .OrderBy(b => b.BlogId) 
+  Lab Project: ????
 * Lesson: Intro to ORM (Migrations & Schema)
-    - Define ORM
+    - Define ORM and Framework
     - Describe the benefits of working with Objects
-    - Set up Entity Framework in a Console Application  
-  Lab Project: Create Db connection
+    - Set up Entity Framework in a Console Application
+    - Create a one-to-many relationship using an ORM
+  Lab Project: Create some of the tables from our library DB, should we have a separate DB to not write over the existing DB?
 * Lesson: CRUD with ORM
     - Deepen understanding of test setup by creating a test database
     - Use TDD to implement CRUD functionality in a console application  
-  Lab Project: Use TDD and EF to create library records
-### Week 5
-* Lesson: Querying Resources with ORM
     - Use EF and LINQ to query database records
-    - Define 'framework'  
-  Lab Project: Use TDD to query library records
+  Lab Project: Use TDD and EF to create library records
+
+### Week 5
 * Lesson: Migrations and changing Db tables
     - Explore business decisions that drive DB changes
     - Practice making simple db changes
     - Describe the dangers of database changes  
   Lab Project: use a migration to add a table to the database
+* Lesson: Many-to-Many using an ORM
+    -   Reinforce how to structure many-to-many database relationships
+    -   Implement a many-to-many relationship using EF
+  Lab Project: Create whatever the one to many relationship was from the library DB using EF
 
 ## Mod 3
 ### Week 1

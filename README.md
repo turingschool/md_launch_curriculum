@@ -140,7 +140,7 @@ Other ORM Learning Goals that need to go somewhere
 * Lesson: Many-to-Many using an ORM
     -   Reinforce how to structure many-to-many database relationships
     -   Implement a many-to-many relationship using EF
-  Lab Project: Create whatever the one to many relationship was from the library DB using EF
+  Lab Project: Create whatever the many to many relationship was from the library DB using EF
 
 ## Mod 3
 ### Week 1

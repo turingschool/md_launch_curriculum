@@ -179,7 +179,7 @@ Let's review the images you looked at in preparation for this lesson.
 
 > **With Your Breakout Room** Explain what each of the shaded regions represents. What animals did you put in each region?
 
-<!-- Instructor note, it would be awesome for students to annotate and add animals to the image or use pair deck or something here. -->
+<!-- Instructor note, it would be awesome for students to annotate and add animals to the image or use pair deck or something here. Or maybe use something like Jamboard with animal images to drag in.-->
 ## Types of Join Queries
 
 While there are many different types of joins, today, we are going to cover the most common two: **Inner Join** and **Left Join**

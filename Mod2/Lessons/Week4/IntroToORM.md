@@ -24,11 +24,15 @@ One explanation of why we would want to use a framework:
 
 ## What is an ORM (Object Relational Mapping)
 
-//Some intro and why do we care
+There are many types of frameworks we can utilize when building applications, one type of framework is an ORM (Object Relational Mapping).
 
-// Why so cool? Write classes, then will build tables for us
-// Make the relationship between tables, we will see one-to-many
-// Use for CRUD operations
+What is an ORM? An ORM is a tool for creating a bridge between your database and the object oriented classes in your application. It allows you to interact with your database using the language of your choice (in our case C#) instead of SQL.
+
+Why is this useful?
+
+* We can connect to our database *through* our Console Application and using C# classes!
+* It makes CRUD operations simpler. Instead of writing something like `SELECT id, name, email, phone_number FROM users WHERE id = 20` you can write something like `context.Users.Find(20)`
+* The ORM can do a lot of work for us. We define the tables/columns/relationships in our classes and use the ORM to create the database tables. Once we learn this tool, it can help us be quicker developers and help catch our errors.
 
 ## Introducing Entity Framework
 
@@ -260,9 +264,9 @@ Let's take a look in PGAdmin at what entity framework created for us!
 
 We've already seen some of the benefits of an ORM in action!
 
-Instead of having to write SQL to build our database and tables, we used our ORM to build the tables for us based on our classes and their relationships.
+Instead of having to write SQL to build our database and tables, we used our ORM to build the tables based on our classes and their relationships.
 
-Tomorrow we'll learn how we can also use the power of an ORM to easily performing CRUD operations on our database (e.g. Add plants, select specific plants, modify plants, delete plants) in console application!
+Tomorrow we'll learn how we can also use the power of an ORM to easily performing CRUD operations on our database (e.g. Add plants, select specific plants, modify plants, delete plants) in our console application!
 
 We'll also learn how to run more advanced queries on the data in our database using LINQ syntax.
 

@@ -108,23 +108,18 @@ Test DB connections and records
     - Research additional aggregate functions  
   Lab Project: Use SQL to query some Library Statistics
 
-Other ORM Learning Goals that need to go somewhere
-- Work with one-to-many relationship using an ORM
-- Work with many-to-many relationship using an ORM
-- Write Asynchronous code when interacting with DB? Asynchronous code was introduced in EF 6. Not sure if it's crucial or a bonus...The tutorials I'm seeing start with sync, then have a "How to use async" section. https://www.entityframeworktutorial.net/crud-operation-in-connected-scenario-entity-framework.aspx
-- Should retrieving the data go in the intro to ORM lesson? Feels like that helps build the full picture, but don't want to much in one day.
-
 ### Week 4
 * Lesson: Intro to LINQ
     - Use LINQ syntax with collections not related to a Database
     - For example syntax such as .OrderBy(b => b.BlogId) 
   Lab Project: ????
-* Lesson: Intro to ORM (Migrations & Schema)
+* ➡️[Preparation: Intro to ORM](/Mod2/Preparation/Week4/IntroToORM.md)
+* 🎒[Lesson: Intro to ORM](/Mod2/Lessons/Week4/IntroToORM.md)
     - Define ORM and Framework
     - Describe the benefits of working with Objects
     - Set up Entity Framework in a Console Application
     - Create a one-to-many relationship using an ORM
-  Lab Project: Create some of the tables from our library DB, should we have a separate DB to not write over the existing DB?
+* 💡 [Lab/Exercise: ](/Mod2/Labs/Week4/IntroToORM.md) Create one-to-many book and patrons tables using EF
 * Lesson: CRUD with ORM
     - Deepen understanding of test setup by creating a test database
     - Use TDD to implement CRUD functionality in a console application  

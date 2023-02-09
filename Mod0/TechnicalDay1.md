@@ -1,6 +1,6 @@
 # How Humans make Decisions and What That Means for Programming
 
-This is an introduction designed to get you looking at code, getting familiar with syntax, and starting to think like a developer.  The expectation is that you will NOT master any topics today!
+This is an introduction designed to get you looking at code, getting familiar with syntax, and starting to think like a developer.  The expectation is that you will NOT master any topics today!  We will be covering these topics in much more detail in Mod1.
 
 ## Decision Making, and Why It Matters
 
@@ -11,7 +11,7 @@ But, how do we make decisions?  In general, we can break the decision making pro
 2. Analysis - determining what is important about the data we have observed.
 3. Action - Doing something that logically follows the analysis.
 
-For example, when determining what to where we would:
+For example, when determining what to wear we would:
 * Observe the weather conditions by
     * Looking outside to see if the sun is shining.
     * Go outside to feel the tempurature.
@@ -23,6 +23,8 @@ For example, when determining what to where we would:
     * Leaving our umbrella at home.
 
 It is important for us to understand how we make decisions, so that we can create programs that are good at making decisions. Just like humans, computer programs need to make decisions in order to operate.  Programs need to decide: which view should a user see, what should I do with the data a user gives me.
+
+** Instructor Note **  Organize students into groups of 3/4 to work through these sections together in breakout rooms.
 
 ## Computer Action
 
@@ -57,6 +59,8 @@ Open [this repl](https://replit.com/@MeganMcMahon1/MakingDecisions#main.cs) and 
 2. Identify as many of the tools you learned about above as you can.  Make a [comment](https://www.w3schools.com/cs/cs_comments.php) above each line where you see something you recognize. You may not recognize everything in this code - that's ok!
 3. Run the program by clicking on the green play button!
 
+** Instructor Note ** Check in with students and ask for volunteers to share their annotated code!
+
 ## Thinking Like a Developer
 
 As a reminder, this session was intended to give you an introduction to some programming concepts - you are not going to master these things yet.
@@ -65,7 +69,7 @@ What you have started doing today is practicing what it is like to 'think like a
 
 ## Reflection Questions
 
-In a notebook, reflect on the following:
+Your instructor will create a chat thread for each of the questions below; when you're ready, add your reflection to the thread!
 1. What is one decision you made today - how did you Observe, Analyze, and Act on that decision?
 2. Imagine you are building a program to determine how much water to put into a swimming pool.  What sorts of observations must be made before any water starts flowing?
 3. What questions do you have about computer decision making so far?

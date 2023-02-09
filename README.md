@@ -79,6 +79,7 @@ Test DB connections and records
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
     - Use basic WHERE clause to filter records  
         * Lab Project: Use SQL to insert and query library records in the DB
+* PD Idea: Get on linked in - intro just to start connecting as you meet people.
 ### Week 2
 * ➡️[Preparation: TDD](/Mod2/Preparation/TDD.md)
 * 🎒[Lesson: Test Driven Development](/Mod2/Lessons/Week2/TDD.md)

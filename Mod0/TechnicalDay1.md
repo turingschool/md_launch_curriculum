@@ -52,7 +52,7 @@ The final piece of decision making for computers, is an analysis of what to do b
 
 In order to create an interesting computer program, we need all three of the steps above to be working together.
 
-Open [this repl]() and complete the following:
+Open [this repl](https://replit.com/@MeganMcMahon1/MakingDecisions#main.cs) and complete the following:
 1. Fork the repl so that you have your own copy.
 2. Identify as many of the tools you learned about above as you can.  Make a [comment](https://www.w3schools.com/cs/cs_comments.php) above each line where you see something you recognize.
 3. Run the program by clicking on the green play button!

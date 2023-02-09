@@ -50,5 +50,7 @@ Open [this repl](https://replit.com/@MeganMcMahon1/WorkingWithLists#main.cs) and
 ## Reflection Questions
 Your instructor will create a chat thread for each of the questions below; when you're ready, add your reflection to the thread!
 1. Look around you and see if you can group the objects that you see into one or more lists.  Ex: games, books.
-2. Imagine you are going to create an application like Instagram; what types of objects will you program need to know about?
-3. What questions do you have about lists so far?
+2. What questions do you have about lists so far?
+3. Imagine you are going to create an application like Instagram; what types of objects will you program need to know about? Take a look at the screenshot below for inspiration!
+
+![](/Mod0/instagram.png)

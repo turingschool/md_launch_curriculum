@@ -79,16 +79,22 @@ Test DB connections and records
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
     - Use basic WHERE clause to filter records  
         * Lab Project: Use SQL to insert and query library records in the DB
+* PD Idea: Get on linked in - intro just to start connecting as you meet people.
 ### Week 2
 * ➡️[Preparation: TDD](/Mod2/Preparation/TDD.md)
-* Lesson: Test Driven Development
+* 🎒[Lesson: Test Driven Development](/Mod2/Lessons/Week2/TDD.md)
     - Describe the benefits of TDD
     - Practice a TDD workflow
-* Lab/Exercise
+* 💡[Lab/Exercise](/Mod2/Labs/Week2/TDD.md)
     * Lab Project: use TDD to create classes for library records
-* Lesson: Git for Pairs
+* 🎒[Lesson: Git for Pairs](Mod2/Lessons/Week2/GitForPairs.md)
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
+* 💡[Lab/Exercise](/Mod2/Labs/Week2/GitForPairs.md)
+    - Add collaborator to GitHub repository
+    - Create and checkout branches in Git
+    - Practice basic Git workflow (add, commit, push, pull)
+    - Create, review, and merge Pull Requests
 ### Week 3
 * ➡️[Preparation: Data Relationships](/Mod2/Preparation/Week3/DataRelationships.md)
 * 🎒[Lesson: Data Relationships](/Mod2/Lessons/Week3/DataRelationships.md) (One to One, One to Many, Many to Many)
@@ -107,6 +113,7 @@ Test DB connections and records
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions  
   Lab Project: Use SQL to query some Library Statistics
+* PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
 * Lesson: Intro to ORM (Migrations & Schema)
     - Define ORM

@@ -104,15 +104,15 @@ Test DB connections and records
     * Practice describing different relationships 
 * 💡 [Lab/Exercise](/Mod2/Labs/Week3/DataRelationships.md)
     * Lab Project: Add an Author Table to the Library Db (many-to-many)
-* Lesson: SQL JOINS
-    - Use JOIN to query related records
-    - Use WHERE to filter joined queries  
-  Lab Project: User SQL to select related records
 * Lesson: SQL Aggregates
     - Develop a visualization for grouping and aggregating data
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions  
   Lab Project: Use SQL to query some Library Statistics
+* Lesson: SQL JOINS
+    - Use JOIN to query related records
+    - Use WHERE to filter joined queries  
+  Lab Project: User SQL to select related records
 * PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
 * Lesson: Intro to ORM (Migrations & Schema)

@@ -24,7 +24,15 @@ Work through the tutorials below to learn about how c# manages lists, and uses l
 * [Arrays](https://www.w3schools.com/cs/cs_arrays.php)
 * [Looping](https://www.w3schools.com/cs/cs_arrays_loop.php)
 
-
 ## Putting it all together
 
-Review the code in [this repl](NEED A STARTER) On what lines do you find each of the concepts above?
+Open [this repl](https://replit.com/@MeganMcMahon1/WorkingWithLists#main.cs) and complete the following:
+1. Fork the repl so that you have your own copy.
+2. Identify as many of the tools you learned about above as you can.  Make a [comment](https://www.w3schools.com/cs/cs_comments.php) above each line where you see something you recognize. You may not recognize everything in this code - that's ok!
+3. Run the program by clicking on the green play button!
+
+## Reflection Questions
+In a notebook, reflect on the following:
+1. Look around you and see if you can group the objects that you see into one or more lists.  Ex: games, books.
+2. Imagine you are going to create an application like Instagram; what types of objects will you program need to know about?
+3. What questions do you have about lists so far?

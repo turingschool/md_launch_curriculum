@@ -2,6 +2,32 @@
 
 [Syllabus](https://docs.google.com/document/d/1mG_CBgZsy_mTbdaKlpmaLlnNlNQlSNGHFQ1hJKsR_qY/edit)
 
+## Mod 0
+* Computer Setup [Richard's awesome setup]()
+### Day 1
+* Intro and Welcome to Turing
+* Computer Tools check
+    - double check bookmarks
+    - how to use loom, trello, replit
+* Communication via Slack NEED RESOURCE
+    - At some point, want something that has them practice giving instructions.  COULD start their DMs to all instructors with that
+* Typing with Code Characters [typing.io](https://typing.io/lesson/csharp/asp.net/CSharpCodeParser.cs/1)
+### Day 2
+* Google Productivity 
+    - [Calendaring](https://mod0.turing.edu/shared/calendaring)
+    - [gmail] NEED RESOURCE
+* [Observations and Decision Making in Programming](/Mod0/TechnicalDay1.md)
+### Day 3
+* Google Office
+    - [Drive] NEED RESOURCE
+    - [Docs] NEED RESOURCE
+    - [Slides] NEED RESOURCE
+* [Keeping Track of Information in Programming](/Mod0/TechnicalDay2.md)
+### Day 4
+* Prep for Presentations NEED RESOURCE
+* Presentations
+
+
 ## Mod 1
 ### Week 1
 * 🎒[Intro to Programming (How Computers Work)](/Mod1/Lessons/Week1/introToProgramming.md)

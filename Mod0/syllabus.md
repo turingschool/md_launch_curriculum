@@ -4,8 +4,13 @@ title:      Syllabus
 ---
 
 
-## Your Instructor
-The current Mod 0 Lead is Kaitlyn Van Gorkom, our Pre-Program Instructor at Turing. If you have any questions about the course or computer setup, Kaitlyn is the person to contact! You can find her on Slack with the handle **@kvg**. Kaitlyn and a team of Pre-Program Teaching Assistants run sessions and provide students feedback throughout Mod 0. They're an all-star team of Turing alumni and current software developers who have a passion for supporting students as they begin their journey at Turing.
+## Your Instructors
+The Launch Program instructors will guide you through the Mod 0 sessions:
+* Megan McMahon (Slack: @megan)
+* Richard Tillies (Slack: @ProfessorT)
+* Zoe Farrell (Slack: @zoe)
+If you have any questions about the course or computer setup, contact any of us via Slack.
+
 
 ## Description
 Mod 0 is a prerequisite course for attending Turing. The primary focus of the course is setting students up with the necessary tools and programming foundations to be successful in the full-time course. Students will be evaluated throughout the course on their communication, collaboration, and technical skills. 
@@ -13,16 +18,19 @@ Mod 0 is a prerequisite course for attending Turing. The primary focus of the co
 ## Computer Literacy Skill Requirements
 While computer literacy skills have never been an entry requirement for students at Turing, we recognize that some students may need to spend more time developing these skills to feel comfortable in this remote learning environment. Read through the following skills to identify where you might need to spend more time practicing before starting your Turing journey.
 
-- **Typing Speed:** It is recommended that students have an average typing speed of at least 50 words per minute before beginning their journey at Turing. You can test your current typing speed [here](https://www.typing.com/student/tests). If you find that you are not currently typing 50 words per minute or faster, this does not mean you cannot be successful at Turing, but it does mean you will need to improve this skill. Typing quickly and accurately without looking at the keyboard will make many things easier throughout your time at Turing.
+- **Typing Speed:** It is recommended that students have an average typing speed of at least 50 words per minute before beginning their journey at Turing. You can test your current typing speed [here](https://www.typing.com/student/tests). While not a requirement for the program, aim for a goal of typing 50 words per minute or faster. Typing quickly and accurately without looking at the keyboard will make many things easier throughout your time at Turing. Also, you will find that typing code is different than typing "regular" text (e.g. a letter or essay).
 - **Keyboard Shortcuts:** The students who are most successful at Turing regularly use [keyboard shortcuts](https://support.apple.com/en-us/HT201236) to complete routine tasks on the computer. Prior to starting your time in Mod 0, you should be comfortable with at least the following commands: 
-    - `command + c` - copy
-    - `command + v` - paste
-    - `command + x` - cut
-    - `command + f` - find words
-    - `command + s` - save a file
-    - `command + q` - quit an application
-    - `command + tab` - switch applications
-- **Navigating the Mac Environment:** There are many things that are different about using the Mac environment if you're more familiar with PC. For example, did you know that using two fingers on the trackpad allows you to scroll up and down efficiently? Did you also know that swiping up on your trackpad with three fingers allows you to see all open windows? If this is your first time using a Mac, it is highly recommended that you watch this [Mac Tutorial for Beginners](https://www.youtube.com/watch?v=67keaaWOKzE&t=0s) and spend some time getting comfortable with your new machine.
+    - `Ctrl + c` - copy
+    - `Ctrl + v` - paste
+    - `Ctrl + x` - cut
+    - `Ctrl + f` - find words
+    - `Ctrl + s` - save a file
+    - `Ctrl + q` - quit an application
+    - `Alt + tab` - switch applications
+- 
+- **Navigating the Windows 11 Environment:** If you are new to using Windows, or even if you are familiar with previous versions of Windows, you may be interested to learn some of the differences and new features introduced in Windows 11. 
+	- Here is a [Windows 11 Tutorial for Beginners](https://www.youtube.com/watch?v=K3B5vorjvEE) video tutorial. 
+	- If you're interested in additional features, here are some additional [Windows 11 Tips & Tricks](https://www.youtube.com/watch?v=MqMIjSDkqz4)
 
 ## Before Your First Mod 0 Session
 There are a number of steps you must complete before attending your first session of Mod 0. First and foremost, it is **essential** that all students complete the [Computer Setup]({{ site.baseurl }}/computer-setup) (1-2 hours) prior to attending the first session. It is recommended that you start this computer setup at least _one week_ before attending the first session to give yourself enough time to work through any issues that arise. In addition to completing the Computer Setup, student must also complete the following steps: 
@@ -55,12 +63,7 @@ The specific schedule for your course and Mod 0 format can be found on the [Cale
 All Turing staff members will use Slack as the primary means of communication with students. As an incoming student, any information you need can usually be found in our Turing Slack workpace. As a norm, we expect members of our community to respond to Slack messages within 24 hours.
 
 ## Grading
-While we don't have a traditional grading scale at Turing, your successful completion of this course depends on your ability to complete assignments on time, implement feedback on those assignments, and demonstrate your learning in a live evaluation. Follow the links below to find all required assignments for your specific program:
-
-- [Back End Mod 0 Assignments]({{ site.baseurl }}/back-end)
-- [Front End Mod 0 Assignments]({{ site.baseurl }}/front-end)
-
-At the very top of each program page, you will see a link to a Trello board that also outlines each required task along with the due date.
+While we don't have a traditional grading scale at Turing, your successful completion of this course depends on your ability to complete assignments on time, implement feedback on those assignments, and demonstrate your learning in a live evaluation. [Click here]({{ site.baseurl }}/launch-mod0) for all required assignments for the Launch program. At the very top of the page, you will find a link to a Trello board that also outlines each required task along with the due date.
 
 ### Implementing Feedback
 Throughout the course, students will complete many assignments to demonstrate their understanding of the topics. These assignments are organized into segments of work, with each segment due by the next live session. It is expected that students implement feedback provided by staff. Sometimes this will mean revising submissions and other times this will mean implementing that feedback in future assignments. In the event a student gets behind and needs an extension and/or support to adjust their schedule to get back on track, it is the student's responsibility to proactively reach out and discuss what that could look like. 
@@ -77,22 +80,15 @@ There will be no “gotchas”. The rubric that follows communicates what we car
 ## Required Supplies
 This may be your first time learning and/or working in a remote setting. There are a few key tools we recommend to set yourself up for success as a remote student. 
 
-- **External Monitor/Display:** There are plenty of great used options available on eBay, Facebook Marketplace, Craigslist, etc. All you really need is something that fits in your workspace and can connect to your MacBook! If you are unable to acquire an external monitor prior to Mod 1, please DM the Mod 0 Lead on Slack and we can discuss other options.
-- **USB-C to HDMI Cable:** This cable will allow you to connect your MacBook to your external monitor/display. If you are purchasing a new monitor, it will likely come with the cable to you, but you may need to aquire one.
+- **External Monitor/Display:** You will receive an external monitor along with your laptop. You will appreciate the additional screen space using all the tools as you navigate your new career. An HDMI-to-HDMI cable (i.e. full-size HDMI plug on both ends) is included in the monitor box to connect your laptop to the monitor.
 - **Dedicated Workspace:** It is crucial to have a workspace that has access to a reliable internet connection and is both quiet and free from distractions. Take time before Mod 0 to build your workspace and experiment with different setups until you find a configuration that works for you.
-- **Notebook + Writing Utensils:** While you will be working on your laptop while you code, work on projects, etc., we recommend using a physical notebook to take notes during class and workshops.
+- **Notebook + Writing Utensils:** While you will be working on your laptop while you code, work on projects, etc., we recommend using a physical notebook to take notes during class and workshops. There are apps available 
 
 ## Optional Supplies
 - **Headphones with Microphone:** While your Turing-issued laptop has built-in speakers and a microphone, if your workspace has a lot of ambient noise, it might be a good idea to invest in headphones + microphone. 
-- **USB-C Hub:** Your Turing-issued laptop only has 2 ports. You'll need one for your charger and one for your external monitor. If you require more ports, a USB-C Hub is a great idea!
+- **USB-C Hub:** Your Turing-issued laptop has a limited number of ports. One is for your charged and another is for your external monitor. If you require more ports, a USB-C Hub is a great idea!
 - **Laptop Stand:** These can be useful when using a separate keyboard and for preventing strain on your neck. This also creates more real estate for your workspace.
 - **External Keyboard:** You may benefit from using a different keyboard than the integrated one in your laptop, especially if you are using a laptop stand. If you plan to use a wired keyboard, you'll likely need the USB-C hub mentioned above to connect to your keyboard in addition to your charger and monitor.
-
-
-<!-- ## Resources
-- Turing Lingo
-- JavaScript Cheat Sheet
-- Ruby Cheat Sheet -->
 
 ## Accommodations
 We do our best to work with students who need additional accommodations while attending Turing. If this applies to you, please review [this form](https://frontend.turing.edu/documents/reasonable_accommodation_request_form.pdf) prior to starting Mod 0 at Turing and communicate with the Mod 0 Lead. 
@@ -105,9 +101,4 @@ In order to secure a seat as a student at Turing, one must complete all the regi
 
 If you are enrolled in Mod 0, that means you've paid your deposit. The remainder of your tuition is due 30 days prior to your Mod 1 start date. Turing does provides financial counseling, however, it is _the student's_ responsibility to take advantage of that resource if needed, and that should be done well in advance of the tuition deadline as exceptions will not be made. To set up a financial counseling session or ask clarifying questions about your tuition, please email `financialaid@turing.edu`.
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>

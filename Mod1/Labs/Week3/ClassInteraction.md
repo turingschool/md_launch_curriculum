@@ -64,4 +64,6 @@ Up to this point, we've been using [Replit](https://replit.com/), an online vers
 
 As our first step, we will install an IDE called Visual Studio directly on our machines. While there are several versions of Visual Studio, we will use the FREE version called **Visual Studio Community**. Learn more about Visual Studio [here](https://visualstudio.microsoft.com/vs/). We will work through the installation process in the next lesson.
 
+Before we install Visual Studio, we need to install Git on our local machine. [Follow these instructions to install Git](/Mod1/Lessons/Week3/InstallGit.md). We won't use it right away, but it will be important as we continue working on new and existing projects.
+
 <!-- I think this is a great lab! One thing that I was thinking about re: instructor notes might be to be even more explicit for this particular lab - perhaps do a checkin after each portion of class building (one after Book, one after Branch, one after Library) and giving students some "targets" on how long they should spend on each section (although I recognize that may be difficult for us to predict! ) -->

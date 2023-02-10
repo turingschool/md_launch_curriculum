@@ -18,7 +18,13 @@ Mod 0 is a prerequisite course for attending Turing. The primary focus of the co
 ## Computer Literacy Skill Requirements
 While computer literacy skills have never been an entry requirement for students at Turing, we recognize that some students may need to spend more time developing these skills to feel comfortable in this remote learning environment. Read through the following skills to identify where you might need to spend more time practicing before starting your Turing journey.
 
-- **Typing Speed:** It is recommended that students have an average typing speed of at least 50 words per minute before beginning their journey at Turing. You can test your current typing speed [here](https://www.typing.com/student/tests). While not a requirement for the program, aim for a goal of typing 50 words per minute or faster. Typing quickly and accurately without looking at the keyboard will make many things easier throughout your time at Turing. Also, you will find that typing code is different than typing "regular" text (e.g. a letter or essay).
+- **Typing Speed:** While not a requirement for the program, a typing speed of 50 words per minute or faster is a nice goal to achieve as a developer. Typing quickly and accurately without looking at the keyboard will make many things easier throughout your time at Turing. Also, you will find that typing code is different than typing "regular" text (e.g. a letter or essay).
+	- You can test your current typing speed [here](https://www.typing.com/student/tests). 
+		- The 1-minute, 3-minute, and 5-minute timed tests are FREE!
+		- Select a timed test and follow the directions to complete the test and see your results!
+	- You can also test your code typing speed [here](https://typing.io/lesson/csharp/asp.net/CSharpCodeParser.cs/1).
+		- Just start typing, don't stop until you're done!
+		- Once you're finished, scroll down to the bottom to see your results.
 - **Keyboard Shortcuts:** The students who are most successful at Turing regularly use [keyboard shortcuts](https://support.apple.com/en-us/HT201236) to complete routine tasks on the computer. Prior to starting your time in Mod 0, you should be comfortable with at least the following commands: 
     - `Ctrl + c` - copy
     - `Ctrl + v` - paste
@@ -55,9 +61,7 @@ Students are expected to attend all scheduled live sessions, on time. Staff will
 ### Schedule
 The specific schedule for your course and Mod 0 format can be found on the [Calendar]({{ site.baseurl }}/calendar) page. A general overview of each format is listed below.
 
-**_Classic:_** Students should expect to spend about 18-20 hours/week while in Mod 0 - this includes attending live sessions, completing  self-paced work, and checking Slack daily. Students will be expected to join a zoom call at least 5 times throughout the course in the evenings from 6-8pm MT. Taking this course while working a full-time (~40 hours/week) job is a great way for students to get an understanding of a realistic week, in regards to timing and scheduling challenges.
-
-**_Intensive:_** Students are expected to join a zoom call every morning from approximately 9-10am MT. A handful of other live sessions will be placed on the calendar, schedule will vary based, but students should plan to work for about 10-12 hours/day each day of the week. Students should not have any other work commitments or responsibilities while taking this course.
+**_Classic:_** Students should expect to spend about 18-20 hours/week while in Mod 0 - this includes attending live sessions, completing  self-paced work, and checking Slack daily. Students will be expected to join a zoom call for 4 consecutive days from 9am-4pm MT. The Mod 0 Curriculum is a great way for students to get an understanding of a realistic week, in regards to timing and scheduling challenges, especially if you intend to have a job in the evenings and on weekends.
 
 ### Communication 
 All Turing staff members will use Slack as the primary means of communication with students. As an incoming student, any information you need can usually be found in our Turing Slack workpace. As a norm, we expect members of our community to respond to Slack messages within 24 hours.
@@ -82,11 +86,11 @@ This may be your first time learning and/or working in a remote setting. There a
 
 - **External Monitor/Display:** You will receive an external monitor along with your laptop. You will appreciate the additional screen space using all the tools as you navigate your new career. An HDMI-to-HDMI cable (i.e. full-size HDMI plug on both ends) is included in the monitor box to connect your laptop to the monitor.
 - **Dedicated Workspace:** It is crucial to have a workspace that has access to a reliable internet connection and is both quiet and free from distractions. Take time before Mod 0 to build your workspace and experiment with different setups until you find a configuration that works for you.
-- **Notebook + Writing Utensils:** While you will be working on your laptop while you code, work on projects, etc., we recommend using a physical notebook to take notes during class and workshops. There are apps available 
+- **Notebook + Writing Utensils:** While you will be working on your laptop while you code, work on projects, etc., we recommend using a physical notebook to take notes during class and workshops. There are several note taking apps available for use on your laptop or mobile device, but handwriting notes with pen and paper will greatly improve your retention of new concepts.
 
 ## Optional Supplies
 - **Headphones with Microphone:** While your Turing-issued laptop has built-in speakers and a microphone, if your workspace has a lot of ambient noise, it might be a good idea to invest in headphones + microphone. 
-- **USB-C Hub:** Your Turing-issued laptop has a limited number of ports. One is for your charged and another is for your external monitor. If you require more ports, a USB-C Hub is a great idea!
+- **USB-C Hub:** Your Turing-issued laptop has a limited number of ports. One is for your charger and another is for your external monitor. If you require more ports, a USB-C Hub is a great idea!
 - **Laptop Stand:** These can be useful when using a separate keyboard and for preventing strain on your neck. This also creates more real estate for your workspace.
 - **External Keyboard:** You may benefit from using a different keyboard than the integrated one in your laptop, especially if you are using a laptop stand. If you plan to use a wired keyboard, you'll likely need the USB-C hub mentioned above to connect to your keyboard in addition to your charger and monitor.
 
@@ -101,4 +105,9 @@ In order to secure a seat as a student at Turing, one must complete all the regi
 
 If you are enrolled in Mod 0, that means you've paid your deposit. The remainder of your tuition is due 30 days prior to your Mod 1 start date. Turing does provides financial counseling, however, it is _the student's_ responsibility to take advantage of that resource if needed, and that should be done well in advance of the tuition deadline as exceptions will not be made. To set up a financial counseling session or ask clarifying questions about your tuition, please email `financialaid@turing.edu`.
 
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>

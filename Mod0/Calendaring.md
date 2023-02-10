@@ -51,6 +51,6 @@ When it comes to the way they spend their time, there are two major pitfalls we 
 1. Not dedicating any time to their personal needs: scheduling seven 14-hour days of coding a week.
 1. Underestimating the commitment and then being very disappointed when they don't have time to do things they enjoy (play guitar for 3 hours a day, work a part-time job, go to Happy Hour several evenings a week, or go skiing every weekend).
 
-Since each Mod is only 6 weeks long, if you fall behind by one week, it can be really hard to catch up. Having a proactive and realistic plan is the best way to set yourself up for success.
+Since each Mod is only 6 weeks long, if you fall behind by one week, it can be really hard to catch up. Having a proactive and realistic plan is the best way to set yourself up for success
 
 

@@ -37,7 +37,7 @@ Your email signature should **NOT** include:
 
 ### A Note About Your @turing.edu Email
 
-As a student at Turing, you have access to a turing.edu email for 2 years! This email can/should be used for obtaining student discounts on various sites.
+As a student at Turing, you have access to a turing.edu email for 2 years! This email can/should be used for obtaining student discounts on various sites
 
 This email should **NOT** be used for:
 - External communication with employers or networking opportunities

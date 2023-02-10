@@ -141,6 +141,9 @@ Test DB connections and records
   Lab Project: User SQL to select related records
 * PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
+* ➡️[Preparation: LINQ]()
+* 🎒[Lesson: LINQ]()
+* 💡[Lab/Exercise: LINQ]()
 * Lesson: Intro to ORM (Migrations & Schema)
     - Define ORM
     - Describe the benefits of working with Objects

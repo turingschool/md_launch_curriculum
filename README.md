@@ -2,6 +2,32 @@
 
 [Syllabus](https://docs.google.com/document/d/1mG_CBgZsy_mTbdaKlpmaLlnNlNQlSNGHFQ1hJKsR_qY/edit)
 
+## Mod 0
+* Computer Setup [Richard's awesome setup]()
+### Day 1
+* Intro and Welcome to Turing
+* Computer Tools check
+    - double check bookmarks
+    - how to use loom, trello, replit
+* Communication via Slack NEED RESOURCE
+    - At some point, want something that has them practice giving instructions.  COULD start their DMs to all instructors with that
+* Typing with Code Characters [typing.io](https://typing.io/lesson/csharp/asp.net/CSharpCodeParser.cs/1)
+### Day 2
+* Google Productivity 
+    - [Calendaring](https://mod0.turing.edu/shared/calendaring)
+    - [gmail] NEED RESOURCE
+* [Observations and Decision Making in Programming](/Mod0/TechnicalDay1.md)
+### Day 3
+* Google Office
+    - [Drive] NEED RESOURCE
+    - [Docs] NEED RESOURCE
+    - [Slides] NEED RESOURCE
+* [Keeping Track of Information in Programming](/Mod0/TechnicalDay2.md)
+### Day 4
+* Prep for Presentations NEED RESOURCE
+* Presentations
+
+
 ## Mod 1
 ### Week 1
 * 🎒[Intro to Programming (How Computers Work)](/Mod1/Lessons/Week1/introToProgramming.md)
@@ -79,16 +105,22 @@ Test DB connections and records
     - Use SQL to SELECT, INSERT, REMOVE and UPDATE records
     - Use basic WHERE clause to filter records  
         * Lab Project: Use SQL to insert and query library records in the DB
+* PD Idea: Get on linked in - intro just to start connecting as you meet people.
 ### Week 2
 * ➡️[Preparation: TDD](/Mod2/Preparation/TDD.md)
-* Lesson: Test Driven Development
+* 🎒[Lesson: Test Driven Development](/Mod2/Lessons/Week2/TDD.md)
     - Describe the benefits of TDD
     - Practice a TDD workflow
-* Lab/Exercise
+* 💡[Lab/Exercise](/Mod2/Labs/Week2/TDD.md)
     * Lab Project: use TDD to create classes for library records
-* Lesson: Git for Pairs
+* 🎒[Lesson: Git for Pairs](Mod2/Lessons/Week2/GitForPairs.md)
     - Outline a workflow for collaborating on a single repository
     - Identify and resolve merge conflicts
+* 💡[Lab/Exercise](/Mod2/Labs/Week2/GitForPairs.md)
+    - Add collaborator to GitHub repository
+    - Create and checkout branches in Git
+    - Practice basic Git workflow (add, commit, push, pull)
+    - Create, review, and merge Pull Requests
 ### Week 3
 * ➡️[Preparation: Data Relationships](/Mod2/Preparation/Week3/DataRelationships.md)
 * 🎒[Lesson: Data Relationships](/Mod2/Lessons/Week3/DataRelationships.md) (One to One, One to Many, Many to Many)
@@ -98,15 +130,16 @@ Test DB connections and records
     * Practice describing different relationships 
 * 💡 [Lab/Exercise](/Mod2/Labs/Week3/DataRelationships.md)
     * Lab Project: Add an Author Table to the Library Db (many-to-many)
-* Lesson: SQL JOINS
-    - Use JOIN to query related records
-    - Use WHERE to filter joined queries  
-  Lab Project: User SQL to select related records
 * Lesson: SQL Aggregates
     - Develop a visualization for grouping and aggregating data
     - Use GROUP BY, COUNT, SUM, and AVERAGE
     - Research additional aggregate functions  
   Lab Project: Use SQL to query some Library Statistics
+* Lesson: SQL JOINS
+    - Use JOIN to query related records
+    - Use WHERE to filter joined queries  
+  Lab Project: User SQL to select related records
+* PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
 * Lesson: Intro to ORM (Migrations & Schema)
     - Define ORM

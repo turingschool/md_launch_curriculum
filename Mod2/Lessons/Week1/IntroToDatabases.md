@@ -120,7 +120,7 @@ The Query Tool is where we will interact with our database.  Today, you are goin
 > ![](/Mod2/Images/Week1/CreateDb5.png)
 > 3. Again, In the query window, recreate the command below - be very careful of spelling and semicolons!  When you have created the query, click the 'play' icon to run the query.  
 > ![](/Mod2/Images/Week1/CreateDb6.png)
-> 4. To verify that you have created your tables appropriately, run this query: `SELECT * FROM orders JOIN customers ON orders.CustomerId = customers.Id;`.  Your output should look like this:  
+> 4. To verify that you have created your tables appropriately, run this query: `SELECT * FROM orders JOIN customers ON orders.customer_id = customers.id;`.  Your output should look like this:  
 > ![](/Mod2/Images/Week1/CreateDb7.png)
 
 If you run into any error messages or issues - reach out to an instructor!

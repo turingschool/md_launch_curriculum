@@ -13,4 +13,4 @@ Reach out to your group or an instructor if you're stuck coming up with one of t
 7. What is a primary key?
 8. What is a foreign key?
 
-Tomorrow we're going to learn about Entity Framework Core. Take a look at this documentation that introduces the technology. Most of this page probably doesn't make sense yet, but try to get a rough sense of the purpose of Entity Framework and how it fits in with what we know so far: https://learn.microsoft.com/en-in/ef/core/
+Tomorrow we're going to learn about Entity Framework Core. Take a look at this documentation that introduces the technology. Most of this page isn't going to make sense yet, but try to get a rough sense of the purpose of Entity Framework and how it fits in with what we know so far: https://learn.microsoft.com/en-in/ef/core/

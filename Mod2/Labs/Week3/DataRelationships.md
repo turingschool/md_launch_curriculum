@@ -5,7 +5,7 @@
 We are going to continue building on our Library database by adding a many-to-many relationship between books and authors. We're going to make this relationship many-to-many so that we can store books such as Zombies Vs. Unicorns that have many authors. And also have authors associated with many books.
 
 <p align='center'>
-  <img src='../../Images/Week2/book_many_authors.png'>
+  <img src='../../Images/Week3/book_many_authors.png'>
 </p>
 
 <!-- ** Instructor Note **  For this lab we again use the library lab groups of 3/4 established during the intro to databases lesson. This will let folks build off of the databases they already created.

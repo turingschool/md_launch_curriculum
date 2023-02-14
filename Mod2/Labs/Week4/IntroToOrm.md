@@ -24,12 +24,16 @@ CREATE TABLE books (
 );
 ```
 <!-- This isn't great, but I like the idea of students still having their library db as a reference. Very open to other ideas! -->
-Note: If you already have a Library database, I recommend renaming it to something like 'Library_old' so that you can create a fresh Library database.
+Note: If you already have a Library database, I recommend naming this new database something like `Library_orm` so that you can keep your old database as a reference.
 
 As you're creating your database, follow the same steps we went through in the lesson.
 
+// Complete steps 1-2 once
 1. Create New Project
 2. Install Entity Framework
+
+// Loops steps 3-6 for each change to your database. For example, every time you add a new class.
+
 3. Build our Class/Classes
 4. Build our Context
 5. Create a Migration

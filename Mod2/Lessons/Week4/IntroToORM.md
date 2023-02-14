@@ -16,11 +16,28 @@ Today we're going to be using a framework called Entity Framework. Let's start b
 > * "What is a framework in programming?"
 > * "Why would we want to use a framework?"
 
-<!-- Make this a dropdown -->
-One definition of a framework is:
+<details><summary>One answer to these questions...</summary>
 
-One explanation of why we would want to use a framework:
+Codecademy has a great post about frameworks! https://www.codecademy.com/resources/blog/what-is-a-framework/
 
+**What is a framework?**
+>"A framework is a structure that you can build software on. It serves as a foundation, so you’re not starting entirely from scratch. Frameworks are typically associated with a specific programming language and are suited to different types of tasks.
+>
+>Let’s say you’re building a house. You could pour the foundation and frame the house yourself. It would take a lot of time, but you could do it. If all of that were already done for you, though, it would save you quite a bit of effort — especially if it was done by expert home builders.
+>
+>In software development, a framework serves a similar purpose. It’s designed and tested by other Software Developers and Engineers, so you know it’s a solid foundation." - Codecademy
+
+
+**Why would we want to use a framework?**
+>"Using frameworks saves time and reduces the risk of errors. You don’t need to write everything from the ground up, so there’s less chance of introducing errors. Plus, frameworks have already been tested, so there’s less to worry about. Other advantages include:
+>* More secure code
+>* Simpler testing and debugging
+>* Avoiding duplicate code
+>* Clean and easily adaptable code
+>* Able to focus on writing code specific to the project
+Can be extended"
+
+</details>
 
 ## What is an ORM (Object Relational Mapping)
 
@@ -127,12 +144,37 @@ namespace PlantApp
     public class PlantTrackerContext : DbContext {
         public DbSet<Plant> Plants { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=<your_password_for_postgres_user>;Database=PlantTracker");
+    => optionsBuilder.UseNpgsql("Host=localhost;Username=<postgress_user>;Password=<your_password_for_postgres_user>;Database=<database_name>")
     }
 }
 ```
 
-DbContext has a red underline, that's because DbContext is part of the Entity Framework Package we installed earlier. Let's import it. 
+Replace `<postgress_user>` with the Postgres user you want to connect with.
+
+Replace `<your_password_for_postgres_user>` with the password for that Postgres user.
+
+Replace `<database_name>` with the name of your database.
+
+After replacing the values your code will look something like this.
+
+```C#
+using PlantApp;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PlantApp
+{
+    public class PlantTrackerContext : DbContext {
+        public DbSet<Plant> Plants { get; set; }
+       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=password123;Database=PlantTracker");
+    }
+}
+```
+
+DbContext has a red underline because DbContext is part of Entity Framework that came along with the package we installed earlier. We just need to import it.
 
 <p align='center'>
   <img src='../../Images/Week4/import_DbContext.png'>
@@ -140,23 +182,19 @@ DbContext has a red underline, that's because DbContext is part of the Entity Fr
 
 We're almost done creating our context, just one small thing to add. In our postgrSQL database tables, we've been using snake case to name our columns. For example, purchase_date or last_name. We're going to use an extension to tell Entity Framework to use this snake case naming convention when creating tables for us.
 
-Install the `EFCore.NamingConventions` package and update your onConfiguring function.
+Install the `EFCore.NamingConventions` package and update your onConfiguring function. 
 
 ```C#
-
-protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=<your_password_for_postgres_user>;Database=PlantTracker").UseSnakeCaseNamingConvention();
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=password123;Database=PlantTracker").UseSnakeCaseNamingConvention();
 ```
 
 ### 5. Create a Migration
 
 We need one more package to allow us to create a **migration**. Install the `Microsoft.EntityFrameworkCore.Tools` package.
 
-<p align='center'>
-  <img src='../../Images/Week4/accessing_package_manager.png'>
-</p>
-
 Open the Package Manager Console and type the following command.
+
+*Tools > NuGet Package Manager > Package Manager Console*
 
 ```
 add-migration CreatePlantTrackerDb
@@ -166,12 +204,14 @@ add-migration CreatePlantTrackerDb
 
 Open up your Solution Explorer. You should now have a migrations folder, take a look at what's there!
 
-What's created is not very human readable, but we can get a rough understanding of what's happening. We can see there is something about creating a table with the name plants.
+What's created is not very human-readable, but we can get a rough understanding of what's happening. We can see there is something about creating a table with the name plants.
 
 You can think of your migration file as instructions for what SQL should be run on your database.
 
 ### 6. Apply the Migration to Create our Database
-To actually execute the intructions in our migration file, or in technical terms "apply the migration", we run the following command in the Package Manager Console.
+To actually execute the instructions in our migration file, or in technical terms "apply the migration", we run the following command in the Package Manager Console.
+
+*Tools > NuGet Package Manager > Package Manager Console*
 
 ```
 update-database
@@ -179,7 +219,7 @@ update-database
 
 ❓ How can we check if this worked?
 
-> With your group: Take a look in PG Admin and try to answer the folling questions.
+> With your group: Take a look in PG Admin and try to answer the following questions.
 > - What database was created? What code specified that name?
 > - What table with created? What code specified that name?
 > - What columns were created and what data type are they? What code specified the column names and data types?
@@ -266,15 +306,15 @@ We've already seen some of the benefits of an ORM in action!
 
 Instead of having to write SQL to build our database and tables, we used our ORM to build the tables based on our classes and their relationships.
 
-Tomorrow we'll learn how we can also use the power of an ORM to easily performing CRUD operations on our database (e.g. Add plants, select specific plants, modify plants, delete plants) in our console application!
+Tomorrow we'll learn how we can also use the power of an ORM to easily perform CRUD operations on our database (e.g. Add plants, select specific plants, modify plants, delete plants) in our console application!
 
 We'll also learn how to run more advanced queries on the data in our database using LINQ syntax.
 
-<!-- TODO: Would be awesome to fill in a more complicated example of a query to further demonstrate the power of an ORM. -->
+<!-- Instructor TODO: Would be awesome to fill in a more complicated example of a query to further demonstrate the power of an ORM. -->
 
 ## Checks for Understanding
 
-We covered a lot of new concepts today! We'll keep practicing with Entity Framework over the next couple weeks, so totally expected that these terms are still confusing, just give these definitions your best shot!
+We covered a lot of new concepts today! We'll keep practicing with Entity Framework over the next couple of weeks, so it's expected that these terms are still confusing, just give these definitions your best shot!
 
 In your own words, define the following terms.
 
@@ -284,112 +324,3 @@ In your own words, define the following terms.
 1. Context
 1. A Migration
 1. Applying a Migration
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```c#
-    public class MessageLoggerContext : DbContext
-{
-    // Open question, uppercase or lowercase
-    public DbSet<Message> Messages { get; set; }
-    // Pretty sure not needed, but seems good practice to add everything and not rely on cascade
-    public DbSet<User> Users { get; set; }
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql(@"Host=localhost;Username=postgres;Password=password123;Database=MessageLogger");
-}
-internal class Program
-{
-    static void Main()
-    {
-        using var ctx = new MessageLoggerContext();
-
-        // -- This is a lightweight alternative to creating migrations, This wipes the DB and then creates the tables when they do not exist. Not sure what good practice for teaching is before we get to migrations later in the unit.
-        // ctx.Database.EnsureDeleted();
-        ctx.Database.EnsureCreated();
-        // Looks like this syntax might be better 
-        // new Blog { Url = "http://blogs.msdn.com/adonet" }
-        var myMessage = new Message("does it have a date?");
-        ctx.Messages.Add(myMessage);
-        ctx.SaveChanges();
-    }
-}
-
-public class Message
-	{
-        public int Id { get; set; }
-
-        public string Content { get; set; }
-		// Interesting, if no setter silently isn't creating a database column....
-        public DateTime CreatedAt { get; set; }
-
-	}
-```
-
-
-This is another good example of this from Microsoft: https://learn.microsoft.com/en-us/ef/ef6/fundamentals/async#create-a-synchronous-program
-```c#
- public static void PerformDatabaseOperations()
-            {
-                using (var db = new BloggingContext())
-                {
-                    // Create a new blog and save it
-                    db.Blogs.Add(new Blog
-                    {
-                        Name = "Test Blog #" + (db.Blogs.Count() + 1)
-                    });
-                    Console.WriteLine("Calling SaveChanges.");
-                    db.SaveChanges();
-                    Console.WriteLine("SaveChanges completed.");
-
-                    // Query for all blogs ordered by name
-                    Console.WriteLine("Executing query.");
-                    var blogs = (from b in db.Blogs
-                                orderby b.Name
-                                select b).ToList();
-
-                    // Write all blogs out to Console
-                    Console.WriteLine("Query completed with following results:");
-                    foreach (var blog in blogs)
-                    {
-                        Console.WriteLine(" " + blog.Name);
-                    }
-                }
-            }
-```
-
-
-
-
-<!-- You need to close the connection from your application before trying to run a query from pg admin. -->
-
-<!-- Maybe together making another entity with different properties, same DB same context. More independently working on it in groups -->
-
-<!-- In the lab maybe trying out different types of data in an entity. -->

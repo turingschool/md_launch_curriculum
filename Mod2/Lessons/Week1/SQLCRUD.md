@@ -81,8 +81,12 @@ Occasionally, we will need to update records.  We can do that with the `UPDATE` 
 >
 > Be ready to share out!
 > 
-> ![](/Mod2/Images/Week1/SQL_UPDATE.png)
-
+##### Update Donovan Castle's Address
+```SQL
+UPDATE customers
+SET address = '1700 Emerson Dr'
+WHERE full_name = 'Domovan Castle';
+```
 ** Instructor Note ** Be sure to point out that if we forget the `WHERE`, all records in the table will be updated! You could type out an update without a where clause, ask for predictions from students, and then run it and show how everything changes so folks can really feel what happens.
 
 ### Practice UPDATE
@@ -107,8 +111,19 @@ Seeing the state of an entire table is great, and with a small dataset, it might
 > * Given these examples, what does `*` indicate?
 > 
 > Be ready to share out!
-> 
-> ![](/Mod2/Images/Week1/SQL_SELECT.png)
+>##### Option 1
+>```SQL
+>SELECT full_name FROM customers;
+>```
+>
+>##### Option 2
+>```SQL
+>SELECT full_name, address FROM >customers WHERE id = 2;
+>```
+>##### Option 3
+>```SQL
+>SELECT * from customers WHERE id = 2;
+>```
 
 ### Practice SELECT
 
@@ -123,8 +138,17 @@ Seeing the state of an entire table is great, and with a small dataset, it might
 
 There are so many things we can do by combining SELECT with other commands.  We have seen how we can use SELECT and WHERE together; take a look at the examples below for some more ways of SELECTing.  Try these out on your tables to explore what they do!
 
-![](/Mod2/Images/Week1/SQL_ORDERBY.png)
+##### Order the result alphabetically by first name
+```SQL
+SELECT * FROM customers ORDER BY full_name;
+```
 
+##### Return only the item column from all of customer 1's orders, order the result by price, from high to low
+```SQL
+SELECT item FROM orders
+WHERE customer_id = 1
+ORDER BY price_in_cents DESC;
+```
 ## Check for Understanding
 * Imagine you are in an interview.  The interviewer asks: How would you describe CRUD? (make sure to use examples!)
 * Why do we need to use a `WHERE` when deleting or updating records?

@@ -8,16 +8,16 @@ DROP TABLE books, patrons;
 
 CREATE TABLE patrons (
 	id serial PRIMARY KEY,
-	FirstName varchar(50),
-	LastName varchar(50),
-	PhoneNumber varchar(10)
+	first_name varchar(50),
+	last_name varchar(50),
+	phone_number varchar(10)
 );
 
 CREATE TABLE books (
 	id serial PRIMARY KEY,
-	Title varchar(255),
-	Author varchar(255),
-	CheckedOutBY int REFERENCES patrons
+	title varchar(255),
+	author varchar(255),
+	checked_out_by int REFERENCES patrons
 );
 ```
 *** End of instructor Note :) ***

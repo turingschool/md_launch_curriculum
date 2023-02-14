@@ -4,10 +4,8 @@ We've learned the foundations of our ORM, Entity Framework. Today we're going to
 
 ## Learning Goals
 - Explore business decisions that drive database changes
-- Practice making simple database changes
+- Practice making database changes to add and remove columns
 - Learn how to create seed data
-
-<!-- Instructor note: An additional goal I have outside of these is for students to start feeling the impact of their decisions as developers. To realize that some things like renaming, are much more difficult to do later than when building the db. -->
 
 ## Warmup
 
@@ -30,18 +28,22 @@ Here are some sentence starters to help you get started!
 
 **One business decision that probably to a database change was when __________ decided to __________. The developers probably needed to update the database by ______________________.**
 
-### Our First DB Changes
+### Implementing DB Changes
 
-Let's work together to make a DB Change in our plant app. We now want to keep track of when each plant was last watered so that we can remind our users when to water their plants. Let's call the column `last_watered` and make it of type DateTime.
+Let's work together to make a DB Change in our plant app. We now want to keep track of when each plant was last watered so that we can remind our users when to water their plants. Let's call the column `last_watered` and make it type DateTime.
 
 I'm going to pull up the documentation from the preparation to use as a reference. https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
-
 
 >"At a high level, migrations function in the following way:
 >When a data model change is introduced, the developer uses EF Core tools to add a corresponding migration describing the updates necessary to keep the database schema in sync. EF Core compares the current model against a snapshot of the old model to determine the differences, and generates migration source files; the files can be tracked in your project's source control like any other source file." - The Migration Documentation
 
-<!-- WHat's up with the existing data with a new column? -->
--infinity vs null, props should say tiny thing about optionally null.
+#### Existing Records After Adding New Column
+
+Take a look at what happened to the existing records when we added a new column. There needs to be some value for the column and the default is -infinity. It's a bit of a confusing value, but -infinity means it is earlier than all other timestamps.
+
+<p align='center'>
+  <img src='../../Images/Week5/new_column_infinity.png'>
+</p>
 
 #### Deleting a Column
 
@@ -62,46 +64,23 @@ You may have noticed that each migration file has an `Up` function and a `Down` 
   <img src='../../Images/Week5/migration_up_and_down.png'>
 </p>
 
-❓Do we want to store our migration files in github?
+❓Do we want to store our migration files in Github?
 
-### Dangerous Database Changes
+#### Code Organization
 
-Now let's imagine that we decide after adding the column `type` we realize that we actually want the column name to be `common_name`.
+As our projects grow, we will get to a point where we want more organization in our project file structure. The convention when working with entity framework is to have a folder called `Models` and a folder called `Data`. 
 
-Let's try renaming the field in our `Plant` model and creating a migration.
+Let's add those folders together and move our files into the appropriate folders. You will notice that Visual Studio suggests modifying the namespace, let's accept this suggestion. So the namespace for our models will be `PlantApp.Models` instead of just `PlantApp`.
 
-Oh no!! There is something very dangerous that might happen if we run this migration. 
-
-> With you partner, try to figure out what's dangerous about this migration.
-
-<!-- TODO, why isn't it making us dangerous migrations??? -->
-
-<!-- Dropdown -->
-
-If we run this migration, we will drop the column `last_watered` and all the data in that column would be deleted. Then we would create a new column called `last_watered_date` with no data in it. 
-
-As the documentation says "EF Core is generally unable to know when the intention is to drop a column and create a new one (two separate changes), and when a column should be renamed."
-
-Let's see the suggested approach to renaming a column and not losing data. https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/managing?tabs=vs#column-renames
-
-Replace
-
-<!-- Maybe instead I try to remove a column and add a new column at the same time. And EF tries to rename which is incorrect? -->
-
-<!-- Then to fix we break into two parts -->
-
-
-# Takeaways About Database Migrations
-
-
+<p align='center'>
+  <img src='../../Images/Week5/folder_structure.png'>
+</p>
 
 ### Seed Data
 
-Microsoft docs on database seeding: https://learn.microsoft.com/en-us/training/modules/persist-data-ef-core/4-interacting-data
+Database seeding is populating a database with an initial set of data. Oftentimes you want to start your database with some initial data so that as you're testing edit or delete functionality you have a set of data to experiment with. It's also common to start your users table with information for all of the company's employees so they don't need to be added manually.
 
-<!-- Introduce as a way of starting with something so that you can experiment with delete and update and such. -->
-
-Or maybe you want to start your users table with information for all of the company's employees so they don't need to be added manually.
+There are many ways to create seed data. The approach we're going to use is building a DataSeeder Class similar to the following. Notice the `PlantApp.Data` namespace because this class belongs in the `Data` folder.
 
 ```C#
 namespace PlantApp.Data
@@ -139,45 +118,18 @@ namespace PlantApp.Data
 }
 ```
 
+<!-- TODO: this might change based on the structure from the CRUD lesson -->
 
-<!-- Instructor Note
+When we want to run this file and seed some plants and rooms into our database we can add (or uncomment) the following in our `Program.cs` file.
 
-Adding this to the context is one option
+```C#
+using (var context = new PlantTrackerContext())
+{
+    DataSeeder.SeedPlantsAndRooms(context);
+}
+```
 
-protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-
-            builder.Entity<Plant>().HasData(new List<Plant> {
-                 new Plant { Id = 1, Type = "Fern", PurchaseDate = DateTime.Parse("1975-06-15T13:45:30-07:00").ToUniversalTime(), RoomId = 1 },
-                 new Plant { Id = 2, Type = "Rubber", PurchaseDate = DateTime.Parse("2021-01-15T11:45:02-07:00").ToUniversalTime(), RoomId = 1},
-                 new Plant { Id = 3, Type = "Jade", PurchaseDate = DateTime.Parse("2021-01-15T11:45:02-07:00").ToUniversalTime(), RoomId = 2 },
-            });
-
-            builder.Entity<Room>().HasData(new List<Room> {
-                 new Room
-                {
-                    Id = 1,
-                    Name = "Office",
-                    HasSunlight = true,
-                },
-                new Room
-                {
-                    Id = 2,
-                    Name = "Kitchen",
-                    HasSunlight = true
-                },
-            });
-
-        } 
--->
-
-
-#### Good Code Organization
-
-Something about working on larger teams, may have many many model. Possibly mention multiple contexts?
-
-<!-- Move into models and data folders -->
-
-
-
+### Checks for Understanding
+1. How would you describe the process of removing a column from your database using entity framework?
+1. What is the purpose of seed data?
+1. True or False: After adding a new column to my database using Entity Framework, existing records will have no value for that column. Why?

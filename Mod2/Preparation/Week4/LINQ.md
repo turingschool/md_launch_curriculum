@@ -1,7 +1,7 @@
-## Lamda Functions
-* Show how to build small functions
-* store functions in variable
+## Pre-work for [LINQ](/Mod2/Lessons/Week4/LINQ.md)
 
-## Passing Functions as Parameters
-* Create All Functions: AllLargerThan100, AllEven
-* Refactor into lamda parameters
+Before our lesson on LINQ, we need to learn some additional C# syntax - `Lambda Expressions`.  Also referred to as `anonymous functions`, lambda expressions are a tool used in many different programming languages.
+
+Before we define what a lambda expression **is**, let's look at some code examples to see what a lambda expression **does**.
+
+To follow along with the examples below, you can clone [this GitHub Repo]()

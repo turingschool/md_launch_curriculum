@@ -19,11 +19,11 @@ Each question will relate to the table diagram below:
 
 4. Write the SQL query to get the most expensive food item.
 
-5. Write the SQL query that would return a count of Diners by table.
+5. Write the SQL query that would return a count of diners by table.
 
 6. Imagine you are in Mod3 - a Mod2 student has asked you to help them understand aggregates.  How would you explain the query you wrote above to them?
 
-7. Write the SQL query that would return a list of orders with their tableId.
+7. Write the SQL query that would return a list of orders with their table_id.
 
 8. How do you know when to use `JOIN`?
 

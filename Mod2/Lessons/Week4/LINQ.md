@@ -27,7 +27,7 @@ When working with collections (lists, arrays, dictionaries), we often need to us
 
 In C#, these additional methods are in the LINQ package.  Most C# developers use LINQ methods to accomplish what you just did in the warm-up.  LINQ makes these tasks easier.
 
-We are going to use [this repo]() to learn some LINQ methods.  Fork and clone the repo, and take about 5 minutes to familiarize yourself with the current code.
+We are going to use [this repo](https://github.com/turingschool-examples/Launch_LinqLesson) to learn some LINQ methods.  Fork and clone the repo, and take about 5 minutes to familiarize yourself with the current code.
 
 ### Where
 

@@ -141,10 +141,10 @@ Test DB connections and records
   Lab Project: User SQL to select related records
 * PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
-* Lesson: Intro to LINQ
-    - Use LINQ syntax with collections not related to a Database
-    - For example syntax such as .OrderBy(b => b.BlogId) 
-  Lab Project: ????
+
+* ➡️[Preparation: LINQ]()
+* 🎒[Lesson: LINQ]()
+* 💡[Lab/Exercise: LINQ]()
 * ➡️[Preparation: Intro to ORM](/Mod2/Preparation/Week4/IntroToORM.md)
 * 🎒[Lesson: Intro to ORM](/Mod2/Lessons/Week4/IntroToORM.md)
     - Define ORM and Framework

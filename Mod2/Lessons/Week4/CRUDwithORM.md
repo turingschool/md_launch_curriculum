@@ -2,14 +2,14 @@
 
 ## Intro
 
-Up to this point, you’ve created a database using PostGreSQL and pgAdmin. You’ve used CRUD operations to manipulate your database:
+Up to this point, you've created a database using PostGreSQL and pgAdmin. You've used CRUD operations to manipulate your database:
 
 -   (C)reate new data using the INSERT statement
 -   (R)ead existing data using the SELECT statement
 -   (U)pdate data using the UPDATE statement
 -   (D)elete data using the DELETE statement  
 
-In addition, you’ve used Entity Framework to create a database in PostGreSQL within a C# application. The next logical step is to CRUD-ify your database through your ORM. Is that a word? Do we have too many acronyms? Don’t know yet, stay tuned.
+In addition, you've used Entity Framework to create a database in PostGreSQL within a C# application. The next logical step is to CRUD-ify your database through your ORM. Is that a word? Do we have too many acronyms? Don't know yet, stay tuned.
 
 ## Setup
 
@@ -22,11 +22,11 @@ We will use the application and database from the Intro to ORM lesson and build 
 
 In the previous lesson, we created the PlantTracker database with two tables: `plants` and `rooms`. There is a one-to-many relationship between rooms and plants: each plant is located in one room, and each room can have many plants. 
 
-Let’s add a record to the room table. A room has an ID number (integer) as its primary key, along with a name field (text) and if the room has sunlight (boolean). Our first room is the kitchen that has ample sunlight.
+Let's add a record to the room table. A room has an ID number (integer) as its primary key, along with a name field (text) and if the room has sunlight (boolean). Our first room is the kitchen that has ample sunlight.
 
 ### Room
 
-Let’s add a record to the room table. A room has an ID number as its primary key, along with a name field and if the room has sunlight. Our first room is the kitchen that has ample sunlight.
+Let's add a record to the room table. A room has an ID number as its primary key, along with a name field and if the room has sunlight. Our first room is the kitchen that has ample sunlight.
 
 > How would you add this room to your database using SQL statements?
 > `INSERT INTO rooms (id, name, has_sunlight)`
@@ -36,7 +36,7 @@ In this example, we have given the room id a value of `1`. Remember that the `id
 
 > What happens if there is already a room with an id of `1` in our database?
 
-Let’s use Entity Framework to perform this task for us. In `Program.cs`, add the following code in the `Main` method:
+Let's use Entity Framework to perform this task for us. In `Program.cs`, add the following code in the `Main` method:
 
   
 
@@ -66,7 +66,7 @@ In your breakout room, add another room to our application. This time, we need a
 
 ### Plant
 
-We now have two rooms. Let’s now add a plant. A plant has an ID number as its primary key, a type, a purchase date, and a room. Now it makes sense that we added rooms before adding plants. It also means that we need to select a room for the plant. After much shopping, we purchased a pothos plant on Valentine’s Day (February 14, 2023) to add to the kitchen.
+We now have two rooms. Let's now add a plant. A plant has an ID number as its primary key, a type, a purchase date, and a room. Now it makes sense that we added rooms before adding plants. It also means that we need to select a room for the plant. After much shopping, we purchased a pothos plant on Valentine's Day (February 14, 2023) to add to the kitchen.
 
 > How would you add this plant to your database using SQL statements?
 > `INSERT INTO plants (id, type, purchase_date, room_id)`
@@ -88,7 +88,7 @@ context.SaveChanges();
 
   
 
-Adding a plant isn't much different than adding a room, except for two major differences. 
+Adding a plant isn't much different than adding a room, except for two major differences.
 1.  In the database, a Plant record has a room ID field, which serves as a foreign key to the Room table. On the other hand, we attach a plant to a Room object.    
 2.  Additionally, a Room contains a list of the Plants it houses. When we create a Plant, we also update the corresponding Room object.     
 
@@ -126,7 +126,7 @@ We have tables and records in our database, and we can access them from our appl
 
 > How would you update this room in your database using SQL statements?
 
-Let’s do the same using Entity Framework. Add the following code to the `Main` method to in `Program.cs`, :
+Let's do the same using Entity Framework. Add the following code to the `Main` method to in `Program.cs`, :
   
 ```c#
 // UPDATE operation
@@ -145,13 +145,13 @@ foreach (var room in rooms)
 }
 ```
 
-In your breakout room, update the type of your snake plant to a peace lily, then display all the information for each plant in the Plants table to the console. Don't be concerned if you named your variable SnakePlant or some other identifier that no longer makes sense. 
+In your breakout room, update the type of your snake plant to a peace lily, then display all the information for each plant in the Plants table to the console. Don't be concerned if you named your variable SnakePlant or some other identifier that no longer makes sense.
 
 ## Delete
 
 We have tables and records in our database, we can access them from our application, and we can update data as needed. What if we no longer need a record in our database? For example, we've decided that we will no longer house plans in our kitchen.  
 
-> How would you delete this room in your database using an SQL statement? 
+> How would you delete this room in your database using an SQL statement?
 
 In our application, add the following code to the `Main` method to in `Program.cs`, : 
 
@@ -172,7 +172,7 @@ foreach (var room in rooms)
 }
 ```
 
-In your breakout room, delete your pothos plant (yeah, I know), then display all the information for each plant in the Plants table to the console.  
+In your breakout room, delete your pothos plant (yeah, I know), then display all the information for each plant in the Plants table to the console. 
 
 > Note: If there were any plants left in the kitchen after it was deleted, we will need to update the room for those plants.
 

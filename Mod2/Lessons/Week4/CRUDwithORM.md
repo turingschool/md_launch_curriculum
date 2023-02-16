@@ -7,7 +7,9 @@ Up to this point, you've created a database using PostGreSQL and pgAdmin. You've
 -   (C)reate new data using the INSERT statement
 -   (R)ead existing data using the SELECT statement
 -   (U)pdate data using the UPDATE statement
--   (D)elete data using the DELETE statement  
+-   (D)elete data using the DELETE statement
+
+You've also used a `WHERE` clause to filter data, the `JOIN` keyword to combine data from multiple tables, and `ORDER BY` and `GROUP BY` to sort and arrange data for better analysis.
 
 In addition, you've used Entity Framework to create a database in PostGreSQL within a C# application. The next logical step is to CRUD-ify your database through your ORM. Is that a word? Do we have too many acronyms? Don't know yet, stay tuned.
 
@@ -78,7 +80,7 @@ Using Entity Framework, add the following code to the using block in the `Main` 
 var pothos = new Plant
 {
 	Type = "Pothos"
-	PurchaseDate = "Kitchen",
+	PurchaseDate = "2023-02-14 12:00:00",
 	Room = kitchen
 };
 
@@ -149,7 +151,7 @@ In your breakout room, update the type of your snake plant to a peace lily, then
 
 ## Delete
 
-We have tables and records in our database, we can access them from our application, and we can update data as needed. What if we no longer need a record in our database? For example, we've decided that we will no longer house plans in our kitchen.  
+We have tables and records in our database, we can access them from our application, and we can update data as needed. What if we no longer need a record in our database? For example, we've decided that we will no longer keep plants in our kitchen.  
 
 > How would you delete this room in your database using an SQL statement?
 

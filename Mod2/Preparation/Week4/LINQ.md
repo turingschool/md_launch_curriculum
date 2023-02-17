@@ -45,6 +45,9 @@ This code works just fine, but there are other ways we could accomplish the same
 
             Console.WriteLine(Square(5));
             Console.WriteLine(Double(5));
+
+            Console.WriteLine(Square(3));
+            Console.WriteLine(Double(3));
         }
     }
 ```
@@ -67,9 +70,13 @@ Consider an alternative refactor to our program.  Both `Square` and `Double` tak
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Square: {Calculate(5, number => number * number)}");
-            Console.WriteLine($"Double: {Calculate(5, number => number * 2)}");
-            Console.WriteLine($"Triple: {Calculate(5, number => number * 3)}");
+            var squared = Calculate(5, number => number * number);
+            var doubled = Calculate(5, number => number * 2);
+            var tripled = Calculate(5, number => number * 3);
+
+            Console.WriteLine($"Square: {squared}");
+            Console.WriteLine($"Double: {doubled}");
+            Console.WriteLine($"Triple: {tripled}");
         }
 
         static int Calculate(int number, Func<int, int> operation)
@@ -78,6 +85,8 @@ Consider an alternative refactor to our program.  Both `Square` and `Double` tak
         }
     }
 ```
+
+Try running the code above with different input (something other than 5).  How does that change the result?
 
 ### Lambdas in the Wild
 

@@ -158,11 +158,12 @@ Test DB connections and records
   Lab Project: Use TDD and EF to create library records
 
 ### Week 5
-* Lesson: Migrations and changing Db tables
-    - Explore business decisions that drive DB changes
-    - Practice making simple db changes
-    - Describe the dangers of database changes  
-  Lab Project: use a migration to add a table to the database
+* ➡️[Preparation: Database Migrations](/Mod2/Preparation/Week5/DatabaseMigrations.md)
+* 🎒[Lesson: Database Migrations](/Mod2/Lessons/Week5/DatabaseMigrations.md)
+    - Explore business decisions that drive database changes
+    - Practice making database changes to add and remove columns
+    - Learn how to create seed data
+* 💡 [Lab/Exercise: ](/Mod2/Labs/Week5/DatabaseMigrations.md)  use a migration to add a table and column to the database
 * Lesson: Many-to-Many using an ORM
     -   Reinforce how to structure many-to-many database relationships
     -   Implement a many-to-many relationship using EF

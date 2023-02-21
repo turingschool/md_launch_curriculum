@@ -131,7 +131,7 @@ bedroom.HasSunlight = "false";
 context.SaveChanges();
 ```
 
-This code updates the value of HasSunlight to false in the bedroom object, then saves that change in the database. Add another foreach loop to see the change in the bedroom.
+This code updates the value of `HasSunlight` to false in the bedroom object, then saves that change in the database. Add another foreach loop to see the change in the bedroom.
 
 ```c#
 // READ operation
@@ -141,7 +141,7 @@ foreach (var room in context.Rooms)
 }
 ```
 
-But wait... this object exists in our application because we created it first. What happens if we don't already have the object in our application? The answer is we need to find it in our database first using a LINQ method, then we can modify is as described above.
+But wait, this object exists in our application because we created it first. What happens if we don't already have the object in our application? The answer is we need to find it in our database first using a LINQ method, then we can modify is as described above.
 
 ```c#
 // FIND using LINQ method
@@ -197,6 +197,6 @@ In your breakout room, delete your pothos plant then display all the information
 
 ## Checks for Understanding
 
-1.  
+1. 
   
 **

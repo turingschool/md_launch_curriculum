@@ -17,8 +17,9 @@ In addition, you've used Entity Framework to create a database in PostGreSQL wit
 
 We will use the application and database from the Intro to ORM lesson and build from there.
 
--   If you need a refresher, [revisit this lesson]() to build the application and database.    
+-   If you need a refresher, revisit [this lesson](IntroToORM.md) to build the application and database.    
 -   If you want a clean version of the application, [clone this repo]() and follow the instructions in the README.
+-   Review [this lesson](LINQ.md) to the basics of LINQ methods.
 
 ## Create
 
@@ -40,9 +41,8 @@ In this example, we have given the room id a value of `1`. Remember that the `id
 
 Let's use Entity Framework to perform this task for us. In `Program.cs`, add the following code in the `Main` method:
 
-  
-
 ```c#
+// CREATE operation
 using (var context = new PlantTrackerContext())
 {
 	var kitchen = new Room
@@ -56,13 +56,11 @@ using (var context = new PlantTrackerContext())
 }
 ```
 
-  
-
 This code does four things:
 1.  Creates a local `context` object from the `PlantTrackerContext` class. The context object is doing the heavy lifting in terms of connecting the C# objects (Plants and Rooms) to the database.    
-2.  Creates a new Room object in C# called `kitchen`.    
-3.  Adds the `kitchen` to the context object. This step creates an SQL statement to insert the record into the Rooms table.    
-4.  Saves the change to the database.    
+1.  Creates a new Room object in C# called `kitchen`.    
+1.  Adds the `kitchen` to the context object. This step creates an SQL statement to insert the record into the Rooms table.    
+1.  Saves the change to the database.    
 
 In your breakout room, add another room to our application. This time, we need a bedroom that has adequate sunlight. Hint: you can reuse an existing context (i.e. you do not need to make a new context object to add another room).  
 
@@ -77,6 +75,7 @@ We now have two rooms. Let's now add a plant. A plant has an ID number as its pr
 Using Entity Framework, add the following code to the using block in the `Main` method in `Program.cs`:
   
 ```c#
+// CREATE operation
 var pothos = new Plant
 {
 	Type = "Pothos"
@@ -88,11 +87,9 @@ context.Plants.Add(pothos);
 context.SaveChanges();
 ```
 
-  
-
 Adding a plant isn't much different than adding a room, except for two major differences.
 1.  In the database, a Plant record has a room ID field, which serves as a foreign key to the Room table. On the other hand, we attach a plant to a Room object.    
-2.  Additionally, a Room contains a list of the Plants it houses. When we create a Plant, we also update the corresponding Room object.     
+1.  Additionally, a Room contains a list of the Plants it houses. When we create a Plant, we also update the corresponding Room object.     
 
 In your breakout room, add a new plant to the bedroom in our application. It is a snake plant purchased on January 15, 2023. 
 
@@ -107,18 +104,16 @@ We have records in our database; specifically two rooms with a plant in each roo
 But what fun is that? We can read from the database using our application. Let's get information about the rooms using Entity Framework. Add the following code to the using block in the `Main` method in `Program.cs`:
   
 ```c#
-var rooms = from r in context.Rooms select r;
-foreach (var room in rooms)
+// READ operation
+foreach (var room in context.Rooms)
 {
-	Console.WriteLine($"Room {room.Id}, Name: {room.Name},  Has Sunlight? {room.HasSunlight}");
+	Console.WriteLine($"Room {room.Id}, Name: {room.Name}, Has Sunlight? {room.HasSunlight}");
 }
 ```
 
 This code accomplishes the following:
-
-1.  Creates an array variable to hold all the rooms in the database.    
-2.  Iterates through each room using a foreach loop.    
-3.  For each room, display the ID, name, and if it has sunlight to the console.    
+1.  Iterates through each room using a foreach loop.    
+1.  For each room, display the ID, name, and if it has sunlight to the console.    
 
 In your breakout room, read and display all the information for each plant in the Plants table to the console. Use the previous Room example to give your output some "context".
 
@@ -134,18 +129,37 @@ Let's do the same using Entity Framework. Add the following code to the `Main` m
 // UPDATE operation
 bedroom.HasSunlight = "false";
 context.SaveChanges();
-}
 ```
 
 This code updates the value of HasSunlight to false in the bedroom object, then saves that change in the database. Add another foreach loop to see the change in the bedroom.
 
 ```c#
-var rooms = from r in context.Rooms select r;
-foreach (var room in rooms)
+// READ operation
+foreach (var room in context.Rooms)
 {
-	Console.WriteLine($"Room {room.Id}, Name: {room.Name},  Has Sunlight? {room.HasSunlight}");
+	Console.WriteLine($"Room {room.Id}, Name: {room.Name}, Has Sunlight? {room.HasSunlight}");
 }
 ```
+
+But wait... this object exists in our application because we created it first. What happens if we don't already have the object in our application? The answer is we need to find it in our database first using a LINQ method, then we can modify is as described above.
+
+```c#
+// FIND using LINQ method
+var updateRoom = context.Rooms.Single(room => room.Name == "Bedroom")
+
+// UPDATE operation
+updateRoom.HasSunlight = "false";
+context.SaveChanges();
+
+// READ operation
+foreach (var room in context.Rooms)
+{
+	Console.WriteLine($"Room {room.Id}, Name: {room.Name}, Has Sunlight? {room.HasSunlight}");
+}
+
+```
+
+> `Single` is similar to `Where` with one key difference; `Where` returns a list, while `Single` returns one value that fits the criteria. In this case, it works because we know there is (or should be) exactly one "Bedroom" in our Rooms table. If there are multiple rooms named "Bedroom" (or none), we would need a different solution.
 
 In your breakout room, update the type of your snake plant to a peace lily, then display all the information for each plant in the Plants table to the console. Don't be concerned if you named your variable SnakePlant or some other identifier that no longer makes sense.
 
@@ -158,19 +172,22 @@ We have tables and records in our database, we can access them from our applicat
 In our application, add the following code to the `Main` method to in `Program.cs`, : 
 
 ```c#
+// FIND using LINQ
+var deleteRoom = context.Rooms.First(room => room.Name == "Kitchen")
+
 // DELETE operation
-context.Rooms.Remove(kitchen);
+context.Rooms.Remove(deleteRoom);
 context.SaveChanges();
-}
 ```
 
-This code deletes the kitchen object from the context, saves that change in the database. Let's loop through the rooms one last time to witness the change. 
+> `First` is similar to `Single` as they both return one record. If there are multiple rooms that fit the criteria, the `First` method returns the first "Kitchen" in the Rooms table.
+
+This code deletes the kitchen object from the context and saves that change in the database. Let's loop through the rooms one last time to witness the change. 
 
 ```c#
-var rooms = from r in context.Rooms select r;
-foreach (var room in rooms)
+foreach (var room in context.Rooms)
 {
-	Console.WriteLine($"Room {room.Id}, Name: {room.Name},  Has Sunlight? {room.HasSunlight}");
+	Console.WriteLine($"Room {room.Id}, Name: {room.Name}, Has Sunlight? {room.HasSunlight}");
 }
 ```
 
@@ -178,7 +195,8 @@ In your breakout room, delete your pothos plant (yeah, I know), then display all
 
 > Note: If there were any plants left in the kitchen after it was deleted, we will need to update the room for those plants.
 
-  
-  
+## Checks for Understanding
+
+1.  
   
 **

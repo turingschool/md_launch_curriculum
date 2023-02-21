@@ -164,10 +164,12 @@ Test DB connections and records
     - Practice making simple db changes
     - Describe the dangers of database changes  
   Lab Project: use a migration to add a table to the database
-* Lesson: Many-to-Many using an ORM
-    -   Reinforce how to structure many-to-many database relationships
-    -   Implement a many-to-many relationship using EF
-  Lab Project: Create whatever the many to many relationship was from the library DB using EF
+* ➡️[Preparation: Many-to-Many using an ORM](/Mod2/Preparation/Week5/ManyToManyWithAnORM.md)
+* 🎒[Lesson: Many-to-Many using an ORM](/Mod2/Lessons/Week5/ManyToManyWithAnORM.md)
+    -  Understand why frameworks have versions
+    -  Reinforce how to structure many-to-many database relationships
+    -  Implement a many-to-many relationship using Entity Framework
+* 💡[Lab/Exercise: ](/Mod2/Labs/Week5/ManyToManyWithAnORM.md) Create many-to-many relationship between books and authors using ORM.
 
 ## Mod 3
 ### Week 1

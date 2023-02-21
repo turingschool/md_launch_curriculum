@@ -191,7 +191,7 @@ foreach (var room in context.Rooms)
 }
 ```
 
-In your breakout room, delete your pothos plant (yeah, I know), then display all the information for each plant in the Plants table to the console. 
+In your breakout room, delete your pothos plant then display all the information for each plant in the Plants table to the console. 
 
 > Note: If there were any plants left in the kitchen after it was deleted, we will need to update the room for those plants.
 

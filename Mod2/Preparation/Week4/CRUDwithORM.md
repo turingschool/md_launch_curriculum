@@ -2,7 +2,7 @@
 
 ## Preparation
 
-The next lesson will combine two concepts you’ve learned recently: CRUD and ORM. Remind yourself:
+The next lesson will combine two concepts you've learned recently: CRUD and ORM. Remind yourself:
 
 1.  What does the acronym CRUD stand for?
 2.  What SQL keywords are used for each CRUD operation?

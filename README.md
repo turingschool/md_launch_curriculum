@@ -75,8 +75,8 @@
 * 🎒[Unit Tests II](/Mod1/Lessons/Week5/UnitTestingII.md)
 * 💡⬆️ [Lab/Exercise](/Mod1/Labs/Week5/UnitTestingII.md)
 * 🎒[Scope and Access Modifiers](/Mod1/Lessons/Week5/scope.md)
-* 🧪Module Assessment
-* 🎒Module Review
+* 🧪Weekly Assessment
+* 🎒Topic Review
 ### [Project](/Mod1/Project/Index.md)
 
 

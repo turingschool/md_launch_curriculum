@@ -129,7 +129,7 @@ Follow these steps:
 3. Select `CodeLens`
 4. Uncheck the box for `Enable CodeLens` and click `OK`
 
-![](/Mod1/Images/Week4/LineNumberOption.png)
+![](/Mod1/Images/Week4/RemoveCodeLens.png)
 
 For more information on customizations, you can review the [Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/ide/personalizing-the-visual-studio-ide?view=vs-2022).
 

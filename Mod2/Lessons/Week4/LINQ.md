@@ -188,7 +188,7 @@ class QueryVMethodSyntax
  */
  ```
 
- Query and Method syntax both accomplish the same thing, but Method syntax is a bit easier to write and read.  So, nearly all of the time, we will ask you to use Method syntax when using LINQ.
+ Query and Method syntax both accomplish the same thing, but Method syntax is a bit easier to write and read.  So, we will be using Method syntax when using LINQ.
 
 ## Checks for Understanding
 ```c#

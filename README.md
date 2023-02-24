@@ -141,10 +141,9 @@ Test DB connections and records
   Lab Project: User SQL to select related records
 * PD POTENTIAL: Practice sending and responding to requests for other teams (as a dev you won't always be coding, you will be asked for datapoints from other teams.)
 ### Week 4
-
-* ➡️[Preparation: LINQ]()
-* 🎒[Lesson: LINQ]()
-* 💡[Lab/Exercise: LINQ]()
+* ➡️[Preparation: LINQ](/Mod2/Preparation/Week4/LINQ.md)
+* 🎒[Lesson: LINQ](/Mod2/Lessons/Week4/LINQ.md)
+* 💡[Lab/Exercise: LINQ](/Mod2/Labs/Week4/LINQ.md)
 * ➡️[Preparation: Intro to ORM](/Mod2/Preparation/Week4/IntroToORM.md)
 * 🎒[Lesson: Intro to ORM](/Mod2/Lessons/Week4/IntroToORM.md)
     - Define ORM and Framework

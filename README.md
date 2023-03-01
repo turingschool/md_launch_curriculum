@@ -163,11 +163,13 @@ Test DB connections and records
     - Explore business decisions that drive database changes
     - Practice making database changes to add and remove columns
     - Learn how to create seed data
-* 💡 [Lab/Exercise: ](/Mod2/Labs/Week5/DatabaseMigrations.md)  use a migration to add a table and column to the database
-* Lesson: Many-to-Many using an ORM
-    -   Reinforce how to structure many-to-many database relationships
-    -   Implement a many-to-many relationship using EF
-  Lab Project: Create whatever the many to many relationship was from the library DB using EF
+* 💡[Lab/Exercise: ](/Mod2/Labs/Week5/DatabaseMigrations.md)  use a migration to add a table and column to the database
+* ➡️[Preparation: Many-to-Many using an ORM](/Mod2/Preparation/Week5/ManyToManyWithAnORM.md)
+* 🎒[Lesson: Many-to-Many using an ORM](/Mod2/Lessons/Week5/ManyToManyWithAnORM.md)
+    -  Understand why frameworks have versions
+    -  Reinforce how to structure many-to-many database relationships
+    -  Implement a many-to-many relationship using Entity Framework
+* 💡[Lab/Exercise: ](/Mod2/Labs/Week5/ManyToManyWithAnORM.md) Create many-to-many relationship between books and authors using an ORM.
 
 ## Mod 3
 ### Week 1

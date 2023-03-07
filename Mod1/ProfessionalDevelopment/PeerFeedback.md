@@ -19,7 +19,7 @@ For part 2, which will take place tomorrow morning, you will be in a breakout ro
 
 ### Setup
 First,
-* Clone down your partner’s project
+* Clone down your partner’s project. You do not need to fork before cloning.
 * Run your partner's project as a user would
 
 ### Usability

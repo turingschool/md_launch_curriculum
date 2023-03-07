@@ -79,6 +79,9 @@
 * 🎒Topic Review
 ### [Project](/Mod1/Project/Index.md)
 
+### Week 6
+PD: 💼 [Peer Feedback](/Mod1/ProfessionalDevelopment/PeerFeedback.md)
+
 
 ## Mod 2
 Lab Project Goals:  

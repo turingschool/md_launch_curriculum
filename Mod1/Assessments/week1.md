@@ -21,7 +21,7 @@ When completed, add your instructors as collaborators to your REPLit project and
 
 ![](/Mod1/Images/Week1/week1_1.png)
 
-2. Update the program to only greet user's whose names include the letter 'a' (or 'A').  If the user's name does not include the letter 'a', we should let them know that we don't recognize their name.
+2. Update the program to only greet user's whose names `Contains` the letter 'a' (or 'A'). If the user's name does not include the letter 'a', we should let them know that we don't recognize their name. (Hint: remember that you can look back on labs, as well as lessons as a resource!)
 
 ![](/Mod1/Images/Week1/week1_2.png)
 

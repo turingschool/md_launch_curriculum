@@ -4,7 +4,7 @@
 
 This weekly assessment is an opportunity for you to explore the main learning goals from the week.  If there are any topics that are unclear, now is the time to reach out for additional information and assistance!
 
-During this assessment, you may use any resource other than fellow students.  Feel free to google, look back at your notes, lessons, etc...
+During this assessment, you may use any resource other than fellow students.  Feel free to google, look back at your notes, lessons, labs, etc...
 
 ## Questions and Exercises (10 Points Total)
 

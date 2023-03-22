@@ -11,7 +11,9 @@ During this assessment, you may use any resource other than fellow students.  Fe
 **Fork** [this repl](https://replit.com/@launch-team/M1W1-Week1Assessment) and complete the questions and exercises it contains.  Each question or exercise is indicated by a single line comment prompt like this: `// This is a single line comment that gives instructions` followed by a multiline comment where you will complete the exercise: `/* < these are the multiline comment indicators > */`.  For the exercises, you can verify they are working by removing the multiline comments and running the program.
 
 ### Submission and Feedback
-When completed, add your instructors as collaborators to your REPLit project and DM them a link to your forked repl.  Instructors will leave feedback on your replit project.
+When completed, click the `Invite` button in the upper right corner and `Generate a join link`.  Copy and DM that link to all your instructors.
+
+![](/Mod1/Images/Week1/GenerateJoinLink.png)
 
 ## Build a Guessing Game (10 Points Total)
 
@@ -32,7 +34,7 @@ When completed, add your instructors as collaborators to your REPLit project and
 
 
 ### Submission
-When completed, add your instructors as collaborators to your REPLit project and DM them a link.  Instructors will leave feedback on your replit project.
+When completed, click the `Invite` button in the upper right corner and `Generate a join link`.  Copy and DM that link to all your instructors.
 
 ### Rubric
 

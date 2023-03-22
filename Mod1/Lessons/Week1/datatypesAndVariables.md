@@ -31,8 +31,6 @@ One of the most important concepts in programming is assigning information to a 
 
 Admittedly, this is a somewhat silly example, but it illustrates an important programming problem.  We often need to re-use the same piece of information over and over again throughout out our application (as in the need for "Megan McMahon" in three different places).  And/Or, we need to use information that might change periodically (as in a person's job title).  It would be time consuming and allows for more data-entry errors. **Variables** give us a way to put a label on a piece of information, and then use that label throughout our program.  That way, if we need to update the information, we only have to make the change in one place.  For example, if we want to change `"Megan McMahon"` to `"Megan"`, we only need to change the value on line 7 and we will see the change throughout our program.
 
-![Screenshot showing variable values changed](/Mod1/Images/Week1/VariableAssignment2.png)
-
 ## Declaration and Assignment
 <!-- Rather than having this written out in a large block of text, I wonder if breaking things out into smaller steps/recipes helps make processes more clear? ✅-->
 When creating a variable, we need to think about two things: 

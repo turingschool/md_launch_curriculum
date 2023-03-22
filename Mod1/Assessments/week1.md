@@ -21,13 +21,15 @@ When completed, add your instructors as collaborators to your REPLit project and
 
 ![](/Mod1/Images/Week1/week1_1.png)
 
-2. Update the program to only greet user's whose names `Contains` the letter 'a' (or 'A'). If the user's name does not include the letter 'a', we should let them know that we don't recognize their name. (Hint: remember that you can look back on labs, as well as lessons as a resource!)
+2. Ask the user if they would like to play a guessing game.  If they enter 'yes', have them guess a number between 1 and 10; at this point, you can set the answer to be any number you like (in the example below, I've used '7').  Give feedback to user based on the guess provided.  If a user answers anything other than 'yes' to the prompt asking if they want to play a guessing game, the program should end.
+
+![](/Mod1/Images/Week1/week1_3.png)
+
+3. Update the program to only greet user's whose names `Contains` the letter 'a' (or 'A'). If the user's name does not include the letter 'a', we should let them know that we don't recognize their name. (Hint: remember that you can look back on labs, as well as lessons as a resource!)
 
 ![](/Mod1/Images/Week1/week1_2.png)
 
-3. Ask the user if they would like to play a guessing game.  If they enter 'yes', have them guess a number between 1 and 10; at this point, you can set the answer to be any number you like (in the example below, I've used '7').  Give feedback to user based on the guess provided.  If a user answers anything other than 'yes' to the prompt asking if they want to play a guessing game, the program should end.
 
-![](/Mod1/Images/Week1/week1_3.png)
 
 ### Submission
 When completed, add your instructors as collaborators to your REPLit project and DM them a link.  Instructors will leave feedback on your replit project.

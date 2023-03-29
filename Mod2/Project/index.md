@@ -7,6 +7,7 @@
     * Database CRUD with an ORM.
 
 - Explore:
+    * Dive into a new (not written by you) code base!
     * Using TDD to add additional features!
 
 
@@ -26,12 +27,32 @@ When you have completed the Project Setup, send a link to your cloned repository
 
 
 ### Iteration 1 - Creating and Conecting a Database
+In order to save messages and users so that they persist when a user exits and restarts the program, we will need to create a database for our Message Logger application.
 
+You should create a branch for your work on this iteration.
+
+* Review the classes that exist in the starter program - determine how these classes will be reflected in the tables of a database.  Be sure to think about what relationships may exist.
+* Use the Npgsql.EntityFrameworkCore.PostgreSQL Nuget package to create a database context in your application.
+* Update your Message and User classes to be used as a basis for your database tables.
+
+When you are finished with iteration 1, create a pull request and schedule time with a cohort-mate for some code review.
 
 ### Iteration 2 - User and Message CRUD
 
+Now that the database is created, we need to start saving our users and messages!  You will need to review the `program.cs` file and identify where changes need to be made in order to maintain the user experience **and** save users and messages into the database.
+
+You should create a branch for your work on this iteration.
+
+* Annotate your `program.cs` file with notes on how you will update the code to save records into the database.  Commit these annotations and push up your branch.  DM your instructors a link to your GitHub repo - we will reach out with feedback on your plans!
+* Update the program so that users and messages are being saved to the database.
+
+When you are finished with iteration 2, create a pull request and schedule time with a cohort-mate or your instructor for some code review.
 
 ### Iteration 3 - Using LINQ to query the database
+
+* return the hour with the most messages
+* return most commonly used word for messages (by user and overall)
+* return users ordered by number of messages created (most to least)
 
 
 ## Version Control Expectations

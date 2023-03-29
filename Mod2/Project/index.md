@@ -50,10 +50,16 @@ When you are finished with iteration 2, create a pull request and schedule time 
 
 ### Iteration 3 - Using LINQ to query the database
 
-* return the hour with the most messages
-* return most commonly used word for messages (by user and overall)
-* return users ordered by number of messages created (most to least)
+Since we are now saving more than one session's worth of messages, we should be able to write some fun LINQ methods to analyze our data.
 
+In addition to the existing statistics about how many messages each user has written, update the program to output the following data at the end of each session:
+
+* users ordered by number of messages created (most to least)
+* most commonly used word for messages (by user and overall)
+* the hour with the most messages
+* Brainstorm your own interesting statistic(s)!
+
+When you are finished with iteration 3, create a pull request and schedule time with a cohort-mate or your instructor for some code review.
 
 ## Version Control Expectations
 In order to demonstrate what you have learned about version control, you will be using commits, branches and pull requests during this project.
@@ -65,3 +71,6 @@ You must provide feedback on at least one other student's pull request!
 ## Project Presentation
 
 You will present your project to other members of the cohort.  Keep presentations to 10 minutes. Since we are all working on the same application, we would like you to address the following questions/topics in your presentation:
+1. What was your process for building migrations?
+1. What changes did you make based on peer or instructor feedback?
+1. How did you ensure that messages and users were getting saved into the database appropriately?

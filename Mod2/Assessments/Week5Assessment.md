@@ -35,7 +35,7 @@ namespace BusTransitApp
 ```
 ![citation](https://www.visual-paradigm.com/tutorials/how-to-model-relational-database-with-erd.jsp)
 
-1. Replace the _______________s with the code required to seed at least one `Route` and at least one `Stop` that are part of a many-to-many relationship. (2 points possible)
+1. Replace the _______________s with the code required to seed at least two `Route` objects and at least two `Stop` objects based on your models above. Make sure that there is a many-to-many relationship between your data. (2 points possible)
 
 ```C#
 namespace BusTransitApp.Data

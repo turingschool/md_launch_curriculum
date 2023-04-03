@@ -51,7 +51,7 @@ Take a look at what happened to the existing records when we added a new column.
 
 #### Deleting a Column
 
-With your partner, to try figure out how to delete a column. Feel free to try things, search in the documentation, or use google to try and figure it out!
+With your partner, try to figure out how to delete a column. Feel free to try things, search in the documentation, or use google to try and figure it out!
 
 <details><summary>View this after you've tried on your own!</summary>
 The data that existed in that column will be lost, but deleting the column only requires removing the field from the model, making a migration, and updating the database to apply that migration.

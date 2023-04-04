@@ -196,13 +196,28 @@ The question mark after string indicates that the property is nullable. For more
 
 #### Add NuGet packages
 
-<!-- TODO, add image here installing packages. -->
+<!-- TODO, not using image here installing packages. -->
+`From the Tools menu, select NuGet Package Manager > Package Manager Console (PMC)`
 
+```
+Install-Package Npgsql.EntityFrameworkCore.PostgreSQL
+<!-- Install-Package Microsoft.EntityFrameworkCore.Design -->
+```
+Make sure to install version 6 not version 7!
+
+<!-- Todo, why is it still connecting to SQL server DB? -->
+
+#### Scaffold Movie Pages
 
 <!-- TODO, when do we talk about dependency injection, it's key to understanding how the parts connect and how the DBContect gets into the controller, but is too much for this lesson. -->
 
 
 
+
+Add-Migration InitialCreate
+Update-Database
+
+<!-- Scavenger hunt for familiar parts? Where is db connection string. Where is context? -->
 
 ### How are The Model, View, and Controller Connected?
 

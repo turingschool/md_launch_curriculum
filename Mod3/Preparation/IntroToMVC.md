@@ -1,9 +1,26 @@
-Maybe the preparation is to learn about path parameters and query string parameters?
+## Pre-Work for [Intro To MVC](/Mod3/Lessons/Week1/?????????.md)
 
-Reading the intro to MVC feels like a good prep too: https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-6.0
+### Review: Path Parameters and Query String Parameters
+Will they learn about path and query string params in the how the web works lesson? I think they should. Then review before this lesson.
+
+### Independent Research: What is MVC?
+https://docs.google.com/presentation/d/19iyOaSs2Ssi23KWflWR88zaCAPpRgRPAPcJFFKTkdjs/edit#slide=id.g20ea0665d67_0_38
 
 
-Open question: do we introduce path and query string parameters as part of the intro MVC lesson. Do we together follow along through the microsoft docs?
+You will definitely want to read the ASP.NET official MVC documentation: https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-6.0
+
+https://www.codecademy.com/article/mvc
+
+https://www.youtube.com/watch?v=DUg2SWWK18I
+
+* In your own words, what is a Controller?
+* In your own words, what is a View?
+* In your own words, what is a Model?
+
+
+
+
+Open question: Do we together follow along through the microsoft docs? I think we follow along through a version of it, maybe screenshots.
 
 
 

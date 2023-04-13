@@ -58,7 +58,7 @@ As the instructors demonstrate responses, reflect on these questions:
 
 Take turns being the interviewer and the interviewee.
 
-As the interviewee, even if you do know the answer, pretend you do not so you can practice a graceful exit.
+As the interviewee, to the best of your abilities - remembering to practice a graceful exit if you don't know the answer!
 
 After the interviewee answers, the rest of the group can give kind and actionable feedback, again referring to the questions above about what additional information the answer tells you about the candidate.
 

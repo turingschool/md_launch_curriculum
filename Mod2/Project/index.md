@@ -35,7 +35,7 @@ You should create a branch for your work on this iteration.
 * Use the Npgsql.EntityFrameworkCore.PostgreSQL Nuget package to create a database context in your application.
 * Update your Message and User classes to be used as a basis for your database tables.
 
-When you are finished with iteration 1, create a pull request and schedule time with a cohort-mate for some code review.
+When you are finished with iteration 1, create a pull request and schedule time with a cohort-mate for some code review.  During the code review, make comments on the pull request indicanting changes that you will make based on your review!
 
 ### Iteration 2 - User and Message CRUD
 

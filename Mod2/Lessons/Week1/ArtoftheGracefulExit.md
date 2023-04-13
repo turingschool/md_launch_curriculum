@@ -1,7 +1,7 @@
 # Art of the Graceful Exit
 
 ## Learning Goals
-* Strategies for responding questions you can't answer.
+* Strategies for responding to questions you can't answer.
 * Identify personal qualities you want to highlight.
 
 ## Warm Up
@@ -21,7 +21,7 @@ When answering interview questions, you are providing the interviewer with lots 
 
 ### Demonstrating Personal Qualities
 
-Take a minute to jod down th personal qualities you would like the interviewer to walk away knowing about you.
+Take a minute to jot down the personal qualities you would like the interviewer to walk away knowing about you.
 
 Examples:  
 * Curious  
@@ -35,7 +35,7 @@ Keep these qualities in mind as you start to formulate you answers to questions 
 
 **Some Example Responses**
 #### Clarifying Questions
-Interview question: “Can you give me some examples of how you might optimize an application?” Response: “By optimizing an application, do you mean making it faster? Could memoization or caching be an example of this?”
+Interview question: “Can you give me some examples of how you might optimize an application?” Response: “By optimizing an application, do you mean making it faster?”
 
 What qualities is the interviewee displaying when they ask questions like this?
 
@@ -45,6 +45,8 @@ Response: “I’m not familiar with that concept, but it reminds me of ____ . C
 What qualities is this interviewee displaying?
 
 ## Instructors Demonstrate Graceful (and Graceless) Interview Answers
+
+** Instructor Note ** Graceless answers might be short responses "I don't know." Or pivoting without permission, or making something up.
 
 As the instructors demonstrate responses, reflect on these questions:
 1. What does this answer tell you about the interviewee? What qualities does it convey?
@@ -63,6 +65,7 @@ After the interviewee answers, the rest of the group can give kind and actionabl
 ### Example Questions
 * What is the difference between an Array and a List?
 * In as much detail as possible, describe the Request/Response Cycle.
+* What does MVC stand for?
 * What are a few benefits of automated testing?
 * What does it mean to compile code?
 * What is HTTP?

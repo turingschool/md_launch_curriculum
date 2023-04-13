@@ -8,7 +8,7 @@
 
 - Explore:
     * Dive into a new (not written by you) code base!
-    * Using TDD to add additional features!
+    * Using TDD to add additional features! (For any new feature that you create, try writing the tests first, and then creating the code that makes those tests pass!)
 
 
 ## Project Description

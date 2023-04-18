@@ -2,7 +2,7 @@
 
 ### Warm Up
 Reflect in your notebook on the following:
-* During the first few days of the Mod, when did you feel like you were struggling the most?
+* During your time at Turing so far, when have you felt like you were struggling the most?
 * What signs/behaviors/feelings indicate when you are struggling?
 * What have you done in the past to move forward through struggle?
 
@@ -17,7 +17,7 @@ Reflect in your notebook on the following:
 
 ## Two Types of Struggle
 
-When working through a challenge - in programming or otherwise.  We often find ourselves struggling to understand the problem, or developing a solution.  This struggle isn't bad, its just part of the process!  But, there are different ways of struggling through a problem - some more productive than others.  We can generally group these behaviors under either **Productive Struggle** or **Unproductive Struggle**.  Productive struggle moves you closer to your goal, while unproductive struggle is stagnant, or can even move you further from your goal.
+When working through a challenge - in programming or otherwise.  We often find ourselves struggling to understand the problem, or developing a solution.  This struggle isn't bad, its just part of the process!  But, there are different ways of struggling through a problem - some more productive than others.  We can generally group these behaviors under either **Productive Struggle** or **Unproductive Struggle**.  Productive struggle moves you closer to your goal, while unproductive struggle is stagnant, or can even move you further from your goal. These definitions might feel familiar - we covered them in Mod0 as well!
 
 ### Identifying Productive Struggle
 
@@ -26,6 +26,8 @@ With your breakout group, the tallest person will share their screen and take no
 Once you have your list, take another 8 minutes to brainstorm ways to avoid unproductive struggle, and ways to move from unproductive to productive struggle. Create a separate chart listing out these strategies.
 
 ## Strategies for Breaking out of Unproductive Struggle
+
+** Instructor Note ** This would be a good opporunity for some individual reading, and then sharing out of one strategy that resonates with them, or even a 'gallery walk' where students present on one of these to the rest of the cohort.
 
 **Clarify the Problem**  
 Revisit the project spec, interaction pattern, or any supporting documents to clarify the problem you are working on.  Ask questions if necessary, and restate the problem to yourself and others to make sure you are working on the correct task.

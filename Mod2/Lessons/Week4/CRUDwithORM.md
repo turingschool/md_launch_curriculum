@@ -2,7 +2,7 @@
 
 ## Intro
 
-Up to this point, you've created a database using PostGreSQL and pgAdmin. You've used CRUD operations to manipulate your database:
+Up to this point, you've created a database using PostgreSQL and pgAdmin. You've used CRUD operations to manipulate your database:
 
 -   (C)reate new data using the INSERT statement
 -   (R)ead existing data using the SELECT statement
@@ -11,7 +11,7 @@ Up to this point, you've created a database using PostGreSQL and pgAdmin. You've
 
 You've also used a `WHERE` clause to filter data, the `JOIN` keyword to combine data from multiple tables, and `ORDER BY` and `GROUP BY` to sort and arrange data for better analysis.
 
-In addition, you've used Entity Framework to create a database in PostGreSQL within a C# application. The next logical step is to CRUD-ify your database through your ORM. Is that a word? Do we have too many acronyms? Don't know yet, stay tuned.
+In addition, you've used Entity Framework to create a database in PostgreSQL within a C# application. The next logical step is to CRUD-ify your database through your ORM. Is that a word? Do we have too many acronyms? Don't know yet, stay tuned.
 
 ## Setup
 
@@ -32,12 +32,8 @@ Let's add a record to the room table. A room has an ID number (integer) as its p
 Let's add a record to the room table. A room has an ID number as its primary key, along with a name field and if the room has sunlight. Our first room is the kitchen that has ample sunlight.
 
 > How would you add this room to your database using SQL statements?
-> `INSERT INTO rooms (id, name, has_sunlight)`
-> `VALUES (1, 'Kitchen', 'true');`
-
-In this example, we have given the room id a value of `1`. Remember that the `id` field automatically increments. This is the first room, so the `id` field of this record will (most likely) be given the value of `1`.
-
-> What happens if there is already a room with an id of `1` in our database?
+> `INSERT INTO rooms (name, has_sunlight)`
+> `VALUES ('Kitchen', 'true');`
 
 Let's use Entity Framework to perform this task for us. In `Program.cs`, add the following code in the `Main` method:
 
@@ -69,8 +65,8 @@ In your breakout room, add another room to our application. This time, we need a
 We now have two rooms. Let's now add a plant. A plant has an ID number as its primary key, a type, a purchase date, and a room. Now it makes sense that we added rooms before adding plants. It also means that we need to select a room for the plant. After much shopping, we purchased a pothos plant on Valentine's Day (February 14, 2023) to add to the kitchen.
 
 > How would you add this plant to your database using SQL statements?
-> `INSERT INTO plants (id, type, purchase_date, room_id)`
-> `VALUES (1, 'Pothos', '2023-02-14 12:00:00', 1);`
+> `INSERT INTO plants (type, purchase_date, room_id)`
+> `VALUES ('Pothos', '2023-02-14 12:00:00', 1);`
 
 Using Entity Framework, add the following code to the using block in the `Main` method in `Program.cs`:
   
@@ -98,8 +94,8 @@ In your breakout room, add a new plant to the bedroom in our application. It is 
 We have records in our database; specifically two rooms with a plant in each room. We can verify that by logging into pgAdmin and querying the PlantTracker database.
   
 > What SQL statement would show all the rooms in your database? What about the plants?
-> `SELECT * FROM rooms`
-> `SELECT * FROM plants` 
+> `SELECT * FROM rooms;`
+> `SELECT * FROM plants;` 
 
 But what fun is that? We can read from the database using our application. Let's get information about the rooms using Entity Framework. Add the following code to the using block in the `Main` method in `Program.cs`:
   
@@ -156,12 +152,15 @@ foreach (var room in context.Rooms)
 {
 	Console.WriteLine($"Room {room.Id}, Name: {room.Name}, Has Sunlight? {room.HasSunlight}");
 }
-
 ```
 
 > `Single` is similar to `Where` with one key difference; `Where` returns a list, while `Single` returns one value that fits the criteria. In this case, it works because we know there is (or should be) exactly one "Bedroom" in our Rooms table. If there are multiple rooms named "Bedroom" (or none), we would need a different solution.
 
-In your breakout room, update the type of your snake plant to a peace lily, then display all the information for each plant in the Plants table to the console. Don't be concerned if you named your variable SnakePlant or some other identifier that no longer makes sense.
+In your breakout room, perform the following tasks using LINQ methods:
+	* update the type of your snake plant to a peace lily
+	* display all information for each plant in the Plants table to the console
+
+Note: Don't be concerned if you named your variable SnakePlant or some other identifier that no longer makes sense.
 
 ## Delete
 
@@ -197,6 +196,8 @@ In your breakout room, delete your pothos plant then display all the information
 
 ## Checks for Understanding
 
-1. 
+1. What is the purpose of creating a local context object?
+1. What does this code do in a CREATE, UPDATE, or DELETE operation? `context.SaveChanges();`
+1. Follow-up from the previous question: why is that code not needed for a READ operation?
   
 **

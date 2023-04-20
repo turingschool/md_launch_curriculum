@@ -20,10 +20,10 @@ All of your messages will be sent through Slack.
 1. Download this SQL file with your customer data: https://drive.google.com/file/d/1ukKxD3NPjEc2Z_lbrzX5DvaLPk7-GnsT/view?usp=share_link
 
 2. Create a new database called SqlTeamSimulation in PgAdmin. Then Open the Query Tool for your SqlTeamSimulation database.
-![create database in pgadmin](/Mod2/Images/Week3/create_database.png)
+![create database in pgadmin](/Mod2/Images/Week5/create_database.png)
 
 3. Click `Open File` and open the `SampleCustomerData` you downloaded. It's probably in your downloads folder.
-![open file in pgadmin](/Mod2/Images/Week3/open_file_in_pgadmin.png)
+![open file in pgadmin](/Mod2/Images/Week5/open_file_in_pgadmin.png)
 
 4. Run the very large insert query to insert the 500 records. Make sure that you now have customer data by running `SELECT * FROM customers LIMIT 10;`
 
@@ -65,7 +65,7 @@ Let's plan out the steps you might take when responding to a request.
 4. Go through the same steps we laid out together for Scenario 2, posting your messages on the thread.
 
 Your slack threads should look like this:
-![open file in pgadmin](/Mod2/Images/Week3/workplace_simulation_thread.png)
+![open file in pgadmin](/Mod2/Images/Week5/workplace_simulation_thread.png)
 
 ### Scenario 1
 <details><summary>Instructions for the person playing Role 2 (Sales Representative):</summary><br/>
